@@ -7,5 +7,5 @@ __Specifications:__
   * time
   * tkinter
   
-  ## Content
-  This program works for automatization of machine that measures silicon semiconductor sensor for updating LHC to HL-LHC in CERN. It is measured planearity of the sensor, size, curvature or other properties. Second part is scanning of the sensor with a microscope. Everything is automated with this python script.
+## Content
+This program works for automatization of machine that measures silicon semiconductor sensor for updating LHC to HL-LHC in CERN. It is measured planearity of the sensor, size, curvature or other properties. Second part is scanning of the sensor with a microscope. Everything is automated with this python script.
