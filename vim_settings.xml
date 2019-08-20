@@ -8,23 +8,23 @@
         <mark key="]" line="124" column="66" />
         <mark key="." line="124" column="66" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566301526259">
-        <mark key="[" line="126" column="52" />
-        <mark key="]" line="125" column="9" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566302437468">
+        <mark key="[" line="94" column="0" />
         <mark key="m" line="95" column="27" />
-        <mark key="." line="125" column="9" />
+        <mark key="]" line="94" column="0" />
+        <mark key="." line="94" column="0" />
         <mark key="^" line="125" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566293401543">
-        <mark key="[" line="591" column="4" />
-        <mark key="]" line="591" column="5" />
-        <mark key="." line="591" column="5" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566302230187">
+        <mark key="[" line="621" column="46" />
+        <mark key="]" line="621" column="46" />
+        <mark key="." line="621" column="46" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566300680861">
-        <mark key="[" line="608" column="30" />
-        <mark key="]" line="608" column="30" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566302418514">
+        <mark key="[" line="610" column="46" />
+        <mark key="]" line="610" column="46" />
         <mark key="^" line="605" column="20" />
-        <mark key="." line="608" column="30" />
+        <mark key="." line="610" column="46" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
         <mark key="[" line="247" column="0" />
@@ -32,11 +32,11 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566301313374">
-        <mark key="[" line="47" column="0" />
-        <mark key="]" line="48" column="0" />
-        <mark key="^" line="48" column="0" />
-        <mark key="." line="48" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566301889611">
+        <mark key="[" line="29" column="17" />
+        <mark key="]" line="297" column="10" />
+        <mark key="^" line="297" column="10" />
+        <mark key="." line="297" column="10" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566294754240">
         <mark key="[" line="16" column="0" />
@@ -54,22 +54,31 @@
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuNSkK</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>desktopOn2,</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuNSkK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc29yUG9zCg==</text>
+        <text encoding="base64">cGFnLkZBSUxTQUZFID0gRmFsc2UKCg==</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">ICAgICAgIHByb3RvY29sKCkKICAgICAgICAgICAgdGltZS5zbGVlcCgxMCk=</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGRlc2t0b3BPbjIgPSBJbWFnZS5vcGVuKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGRlc2t0b3BPbjIucG5nIikK</text>
       </register>
       <register name="4" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc29yUG9zCg==</text>
+      </register>
+      <register name="6" type="4">
+        <text encoding="base64">ICAgICAgIHByb3RvY29sKCkKICAgICAgICAgICAgdGltZS5zbGVlcCgxMCk=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
       <register name="-" type="4">
-        <text>desktopOn2,</text>
+        <text>resetSystem</text>
       </register>
     </registers>
     <search>
