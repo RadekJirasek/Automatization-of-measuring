@@ -3,22 +3,24 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566295633096">
-        <mark key="[" line="95" column="27" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566301532816">
+        <mark key="[" line="124" column="66" />
+        <mark key="]" line="124" column="66" />
+        <mark key="." line="124" column="66" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566295609690">
-        <mark key="[" line="346" column="0" />
-        <mark key="]" line="346" column="18" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566301526259">
+        <mark key="[" line="126" column="52" />
+        <mark key="]" line="125" column="9" />
         <mark key="m" line="95" column="27" />
-        <mark key="." line="346" column="18" />
-        <mark key="^" line="346" column="18" />
+        <mark key="." line="125" column="9" />
+        <mark key="^" line="125" column="9" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566293401543">
         <mark key="[" line="591" column="4" />
         <mark key="]" line="591" column="5" />
         <mark key="." line="591" column="5" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566300581206">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566300680861">
         <mark key="[" line="608" column="30" />
         <mark key="]" line="608" column="30" />
         <mark key="^" line="605" column="20" />
@@ -30,7 +32,7 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566293999073">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566301313374">
         <mark key="[" line="47" column="0" />
         <mark key="]" line="48" column="0" />
         <mark key="^" line="48" column="0" />
@@ -42,6 +44,12 @@
         <mark key="^" line="15" column="4" />
         <mark key="." line="15" column="4" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566301568823">
+        <mark key="[" line="294" column="4" />
+        <mark key="]" line="294" column="64" />
+        <mark key="^" line="294" column="64" />
+        <mark key="." line="294" column="64" />
+      </file>
     </filemarks>
     <jumps />
     <registers>
@@ -49,7 +57,7 @@
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name="&quot;" type="4">
-        <text>resetSystem</text>
+        <text>desktopOn2,</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc29yUG9zCg==</text>
@@ -61,7 +69,7 @@
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name="-" type="4">
-        <text>resetSystem</text>
+        <text>desktopOn2,</text>
       </register>
     </registers>
     <search>
