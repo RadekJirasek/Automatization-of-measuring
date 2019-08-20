@@ -1,0 +1,36 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566293197294">
+        <mark key="[" line="346" column="0" />
+        <mark key="]" line="346" column="0" />
+        <mark key="." line="346" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566293288403">
+        <mark key="[" line="586" column="45" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566291375331" />
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history />
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed S</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>
