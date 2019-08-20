@@ -18,11 +18,11 @@
         <mark key="]" line="591" column="5" />
         <mark key="." line="591" column="5" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566295357441">
-        <mark key="[" line="605" column="20" />
-        <mark key="]" line="605" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566300581206">
+        <mark key="[" line="608" column="30" />
+        <mark key="]" line="608" column="30" />
         <mark key="^" line="605" column="20" />
-        <mark key="." line="605" column="20" />
+        <mark key="." line="608" column="30" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
         <mark key="[" line="247" column="0" />
@@ -48,8 +48,8 @@
       <register name="1" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      <register name="&quot;" type="4">
+        <text>resetSystem</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc29yUG9zCg==</text>
@@ -59,6 +59,9 @@
       </register>
       <register name="4" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="-" type="4">
+        <text>resetSystem</text>
       </register>
     </registers>
     <search>
@@ -75,6 +78,12 @@
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed V</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed X</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
