@@ -3,15 +3,41 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566293197294">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566294877505">
         <mark key="[" line="346" column="0" />
-        <mark key="]" line="346" column="0" />
-        <mark key="." line="346" column="0" />
+        <mark key="]" line="346" column="18" />
+        <mark key="." line="346" column="18" />
+        <mark key="^" line="346" column="18" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566293288403">
-        <mark key="[" line="586" column="45" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566293401543">
+        <mark key="[" line="591" column="4" />
+        <mark key="]" line="591" column="5" />
+        <mark key="." line="591" column="5" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566291375331" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566294943822">
+        <mark key="[" line="605" column="20" />
+        <mark key="]" line="605" column="20" />
+        <mark key="^" line="605" column="20" />
+        <mark key="." line="605" column="20" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
+        <mark key="[" line="247" column="0" />
+        <mark key="]" line="247" column="0" />
+        <mark key="^" line="247" column="0" />
+        <mark key="." line="247" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566293999073">
+        <mark key="[" line="47" column="0" />
+        <mark key="]" line="48" column="0" />
+        <mark key="^" line="48" column="0" />
+        <mark key="." line="48" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566294754240">
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="15" column="4" />
+        <mark key="^" line="15" column="4" />
+        <mark key="." line="15" column="4" />
+      </file>
     </filemarks>
     <jumps />
     <registers>
@@ -19,6 +45,15 @@
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc29yUG9zCg==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">ICAgICAgIHByb3RvY29sKCkKICAgICAgICAgICAgdGltZS5zbGVlcCgxMCk=</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
     </registers>
@@ -30,6 +65,12 @@
     <shortcut-conflicts>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed B</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed V</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
