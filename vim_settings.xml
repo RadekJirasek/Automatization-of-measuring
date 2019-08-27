@@ -39,11 +39,10 @@
         <mark key="^" line="297" column="10" />
         <mark key="." line="297" column="10" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566303799720">
-        <mark key="[" line="13" column="15" />
-        <mark key="]" line="13" column="0" />
-        <mark key="." line="13" column="0" />
-        <mark key="^" line="13" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566909948160">
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="0" />
+        <mark key="." line="14" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566301568823">
         <mark key="[" line="294" column="4" />
@@ -54,33 +53,35 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
+      </register>
+      <register name="2" type="4">
         <text>pag.moveTo(Position.desktop)
             time.sleep(0.5)</text>
-      </register>
-      <register name="&quot;" type="4">
-        <text>pag.moveTo(Position.desktop)
-            time.sleep(0.5)</text>
-      </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHBhZy5hbGVydCgiQWxlcnQgIiArIHN0cihzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdKSkK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5kZXNrdG9wKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHBhZy5hbGVydCgiQWxlcnQgIiArIHN0cihzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdKSkK</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5kZXNrdG9wKQo=</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCg==</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiAgICAgICAgICAgIHRpbWUuc2xlZXAoKQogICAgICAgICAgICBwYWcuY2xpY2soUG9zaXRpb24uc3lzdGVtKQ==</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5zeXN0ZW0pCg==</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CnByaW5wYWcuc2l6ZSgpWzBdLSAxLCBwYWcuc2l6ZSgpWzFdIC0gMSk=</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>a = [0, 0, 0]
 c = 0
 
@@ -97,9 +98,6 @@ if a[c] == 0:
     print(&quot;0&quot;)
 else:
     print(&quot;1&quot;)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuNSkK</text>
       </register>
       <register name="-" type="4">
         <text>resetSystem</text>
