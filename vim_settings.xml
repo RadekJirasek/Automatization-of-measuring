@@ -8,8 +8,8 @@
         <mark key="]" line="124" column="66" />
         <mark key="." line="124" column="66" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566302437468">
-        <mark key="[" line="94" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566906606838">
+        <mark key="[" line="151" column="50" />
         <mark key="m" line="95" column="27" />
         <mark key="]" line="94" column="0" />
         <mark key="." line="94" column="0" />
@@ -21,7 +21,7 @@
         <mark key="." line="595" column="43" />
         <mark key="^" line="595" column="43" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566905195019">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566905973920">
         <mark key="[" line="608" column="0" />
         <mark key="]" line="608" column="0" />
         <mark key="^" line="580" column="29" />
@@ -55,21 +55,24 @@
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5kZXNrdG9wKQo=</text>
       </register>
       <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5kZXNrdG9wKQo=</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">CiAgICAgICAgICAgIHRpbWUuc2xlZXAoKQogICAgICAgICAgICBwYWcuY2xpY2soUG9zaXRpb24uc3lzdGVtKQ==</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5zeXN0ZW0pCg==</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CnByaW5wYWcuc2l6ZSgpWzBdLSAxLCBwYWcuc2l6ZSgpWzFdIC0gMSk=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>a = [0, 0, 0]
 c = 0
 
@@ -87,17 +90,14 @@ if a[c] == 0:
 else:
     print(&quot;1&quot;)</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuNSkK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">cGFnLkZBSUxTQUZFID0gRmFsc2UKCg==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGRlc2t0b3BPbjIgPSBJbWFnZS5vcGVuKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGRlc2t0b3BPbjIucG5nIikK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+        <text encoding="base64">ICAgIGRlc2t0b3BPbjIgPSBJbWFnZS5vcGVuKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGRlc2t0b3BPbjIucG5nIikK</text>
       </register>
       <register name="-" type="4">
         <text>resetSystem</text>
