@@ -3,10 +3,12 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566910295566">
-        <mark key="[" line="124" column="66" />
-        <mark key="]" line="124" column="66" />
-        <mark key="." line="124" column="66" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566917947129">
+        <mark key="i" line="47" column="30" />
+        <mark key="[" line="42" column="7" />
+        <mark key="]" line="42" column="8" />
+        <mark key="^" line="42" column="28" />
+        <mark key="." line="42" column="8" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566910100418">
         <mark key="[" line="150" column="0" />
@@ -15,11 +17,11 @@
         <mark key="." line="150" column="0" />
         <mark key="^" line="125" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566913558083">
-        <mark key="[" line="595" column="12" />
-        <mark key="]" line="595" column="12" />
-        <mark key="^" line="594" column="19" />
-        <mark key="." line="595" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566918054930">
+        <mark key="[" line="592" column="0" />
+        <mark key="]" line="592" column="0" />
+        <mark key="^" line="592" column="14" />
+        <mark key="." line="592" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -39,10 +41,10 @@
         <mark key="^" line="295" column="10" />
         <mark key="." line="111" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566911777898">
-        <mark key="]" line="14" column="3" />
-        <mark key="." line="14" column="3" />
-        <mark key="^" line="14" column="3" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566913660212">
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="14" />
+        <mark key="." line="14" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566912780184">
         <mark key="[" line="26" column="0" />
@@ -53,18 +55,41 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="4">
-        <text>Position.desktop[0] = pag.size()[0] - 2
-            Position.desktop[1] = pag.size()[1] - 5</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCg1MCkK</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>time.sleep(10)</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCg1MCkK</text>
       </register>
       <register name="2" type="4">
+        <text>if not point:
+            pag.doubleClick(minimalize)
+            time.sleep(0.2)
+            pag.doubleClick(minimalize)</text>
+      </register>
+      <register name="3" type="8">
+        <text>print(&quot;a&quot;)
+    pag.hotkey(&quot;win&quot;, &quot;d&quot;)</text>
+      </register>
+      <register name="4" type="4">
+        <text>print(&quot;a&quot;)
+            pag.hotkey(&quot;win&quot;, &quot;d&quot;)
+            print(&quot;b&quot;)</text>
+      </register>
+      <register name="5" type="4">
+        <text>pag.keyDown('win')
+pag.press('d')
+pag.keyUp('win')</text>
+      </register>
+      <register name="6" type="4">
         <text>Position.desktop[0] = pag.size()[0] - 2
             Position.desktop[1] = pag.size()[1] - 5</text>
       </register>
-      <register name="3" type="4">
+      <register name="7" type="4">
+        <text>Position.desktop[0] = pag.size()[0] - 2
+            Position.desktop[1] = pag.size()[1] - 5</text>
+      </register>
+      <register name="8" type="4">
         <text>time.sleep(0.5)
             pag.keyDown('win')
             time.sleep(0.5)
@@ -73,28 +98,11 @@
             pag.keyUp('win')
             time.sleep(0.5)</text>
       </register>
-      <register name="4" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgIGNtZCA9IFsxMDAsIDIwMF0K</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgIGRlc2t0b3AgPSBbMTkxNSwgMTA1MF0K</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcGFnLmRvdWJsZUNsaWNrKFBvc2l0aW9uLmRlc2t0b3ApCg==</text>
-      </register>
-      <register name="7" type="4">
-        <text>Position.desktop[0] = pag.size()[0] - 2
-            Position.desktop[1] = pag.size()[1] - 5</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
-      </register>
-      <register name="9" type="4">
-        <text>pag.moveTo(Position.desktop)
-            time.sleep(0.5)</text>
-      </register>
       <register name="-" type="4">
-        <text>time.sleep(10)</text>
+        <text>point</text>
       </register>
     </registers>
     <search>
@@ -122,6 +130,12 @@
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed X</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed 2</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Q</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
