@@ -3,29 +3,29 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566301532816">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566910295566">
         <mark key="[" line="124" column="66" />
         <mark key="]" line="124" column="66" />
         <mark key="." line="124" column="66" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566909161998">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1566910100418">
         <mark key="[" line="150" column="0" />
         <mark key="m" line="95" column="27" />
         <mark key="]" line="150" column="0" />
         <mark key="." line="150" column="0" />
         <mark key="^" line="125" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566904589658">
-        <mark key="[" line="594" column="38" />
-        <mark key="]" line="595" column="43" />
-        <mark key="." line="595" column="43" />
-        <mark key="^" line="595" column="43" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566913558083">
+        <mark key="[" line="595" column="12" />
+        <mark key="]" line="595" column="12" />
+        <mark key="^" line="594" column="19" />
+        <mark key="." line="595" column="12" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566909251497">
-        <mark key="[" line="610" column="12" />
-        <mark key="]" line="610" column="12" />
-        <mark key="^" line="584" column="42" />
-        <mark key="." line="610" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
+        <mark key="[" line="581" column="12" />
+        <mark key="]" line="581" column="12" />
+        <mark key="^" line="609" column="29" />
+        <mark key="." line="581" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
         <mark key="[" line="247" column="0" />
@@ -33,74 +33,68 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566301889611">
-        <mark key="[" line="29" column="17" />
-        <mark key="]" line="297" column="10" />
-        <mark key="^" line="297" column="10" />
-        <mark key="." line="297" column="10" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566912763716">
+        <mark key="[" line="111" column="0" />
+        <mark key="]" line="111" column="0" />
+        <mark key="^" line="295" column="10" />
+        <mark key="." line="111" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566909948160">
-        <mark key="[" line="14" column="0" />
-        <mark key="]" line="14" column="0" />
-        <mark key="." line="14" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566911777898">
+        <mark key="]" line="14" column="3" />
+        <mark key="." line="14" column="3" />
+        <mark key="^" line="14" column="3" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566301568823">
-        <mark key="[" line="294" column="4" />
-        <mark key="]" line="294" column="64" />
-        <mark key="^" line="294" column="64" />
-        <mark key="." line="294" column="64" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566912780184">
+        <mark key="[" line="26" column="0" />
+        <mark key="]" line="295" column="64" />
+        <mark key="^" line="295" column="64" />
+        <mark key="." line="295" column="64" />
       </file>
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="2">
-        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
+      <register name="1" type="4">
+        <text>Position.desktop[0] = pag.size()[0] - 2
+            Position.desktop[1] = pag.size()[1] - 5</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
+      <register name="&quot;" type="4">
+        <text>time.sleep(10)</text>
       </register>
       <register name="2" type="4">
+        <text>Position.desktop[0] = pag.size()[0] - 2
+            Position.desktop[1] = pag.size()[1] - 5</text>
+      </register>
+      <register name="3" type="4">
+        <text>time.sleep(0.5)
+            pag.keyDown('win')
+            time.sleep(0.5)
+            pag.press('d')
+            time.sleep(0.5)
+            pag.keyUp('win')
+            time.sleep(0.5)</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIGNtZCA9IFsxMDAsIDIwMF0K</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIGRlc2t0b3AgPSBbMTkxNSwgMTA1MF0K</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLmRvdWJsZUNsaWNrKFBvc2l0aW9uLmRlc2t0b3ApCg==</text>
+      </register>
+      <register name="7" type="4">
+        <text>Position.desktop[0] = pag.size()[0] - 2
+            Position.desktop[1] = pag.size()[1] - 5</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">cGFnLmhvdGtleSgid2luIiwgImQiKQo=</text>
+      </register>
+      <register name="9" type="4">
         <text>pag.moveTo(Position.desktop)
             time.sleep(0.5)</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHBhZy5hbGVydCgiQWxlcnQgIiArIHN0cihzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdKSkK</text>
-      </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5kZXNrdG9wKQo=</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjEpCg==</text>
-      </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHRpbWUuc2xlZXAoKQogICAgICAgICAgICBwYWcuY2xpY2soUG9zaXRpb24uc3lzdGVtKQ==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcGFnLm1vdmVUbyhQb3NpdGlvbi5zeXN0ZW0pCg==</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">CnByaW5wYWcuc2l6ZSgpWzBdLSAxLCBwYWcuc2l6ZSgpWzFdIC0gMSk=</text>
-      </register>
-      <register name="9" type="4">
-        <text>a = [0, 0, 0]
-c = 0
-
-
-def b():
-    global c
-    a[c] = 1
-    print(a)
-
-
-b()
-c = 0
-if a[c] == 0:
-    print(&quot;0&quot;)
-else:
-    print(&quot;1&quot;)</text>
-      </register>
       <register name="-" type="4">
-        <text>resetSystem</text>
+        <text>time.sleep(10)</text>
       </register>
     </registers>
     <search>
