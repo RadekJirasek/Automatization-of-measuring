@@ -17,11 +17,11 @@
         <mark key="." line="150" column="0" />
         <mark key="^" line="125" column="9" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566918054930">
-        <mark key="[" line="592" column="0" />
-        <mark key="]" line="592" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1566919105617">
+        <mark key="[" line="593" column="0" />
+        <mark key="]" line="593" column="0" />
         <mark key="^" line="592" column="14" />
-        <mark key="." line="592" column="0" />
+        <mark key="." line="593" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -42,11 +42,11 @@
         <mark key="." line="111" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1566913660212">
-        <mark key="[" line="14" column="0" />
-        <mark key="]" line="14" column="14" />
-        <mark key="." line="14" column="0" />
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="14" />
+        <mark key="." line="16" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566912780184">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
         <mark key="]" line="295" column="64" />
         <mark key="^" line="295" column="64" />
@@ -56,40 +56,43 @@
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCg1MCkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgU01TLnF1aXQoKQo=</text>
       </register>
       <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgU01TLnF1aXQoKQo=</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCg1MCkK</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>if not point:
             pag.doubleClick(minimalize)
             time.sleep(0.2)
             pag.doubleClick(minimalize)</text>
       </register>
-      <register name="3" type="8">
+      <register name="4" type="8">
         <text>print(&quot;a&quot;)
     pag.hotkey(&quot;win&quot;, &quot;d&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>print(&quot;a&quot;)
             pag.hotkey(&quot;win&quot;, &quot;d&quot;)
             print(&quot;b&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>pag.keyDown('win')
 pag.press('d')
 pag.keyUp('win')</text>
-      </register>
-      <register name="6" type="4">
-        <text>Position.desktop[0] = pag.size()[0] - 2
-            Position.desktop[1] = pag.size()[1] - 5</text>
       </register>
       <register name="7" type="4">
         <text>Position.desktop[0] = pag.size()[0] - 2
             Position.desktop[1] = pag.size()[1] - 5</text>
       </register>
       <register name="8" type="4">
+        <text>Position.desktop[0] = pag.size()[0] - 2
+            Position.desktop[1] = pag.size()[1] - 5</text>
+      </register>
+      <register name="9" type="4">
         <text>time.sleep(0.5)
             pag.keyDown('win')
             time.sleep(0.5)
@@ -97,9 +100,6 @@ pag.keyUp('win')</text>
             time.sleep(0.5)
             pag.keyUp('win')
             time.sleep(0.5)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIGNtZCA9IFsxMDAsIDIwMF0K</text>
       </register>
       <register name="-" type="4">
         <text>point</text>
