@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568320067459">
-        <mark key="[" line="36" column="0" />
-        <mark key="]" line="36" column="0" />
-        <mark key="^" line="5" column="54" />
-        <mark key="." line="36" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568320824462">
+        <mark key="[" line="18" column="25" />
+        <mark key="]" line="36" column="22" />
+        <mark key="^" line="36" column="22" />
+        <mark key="." line="36" column="22" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -65,32 +65,38 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="4">
-        <text encoding="base64">CiAgICBpZiBvID49IDEwMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAiICsgc3RyKG8pICsgInR4dCIKICAgIGVsaWYgbyA+PSAxMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwIiArIHN0cihvKSArICJ0eHQiCiAgICBlbGlmIG8gIT0gMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMCIgKyBzdHIobykgKyAidHh0IgogICAgZWxzZToKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMDAudHh0Ig==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgaiA9IDAK</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgZm9yIGogaW4gZGF0YV9saW5lOg==</text>
+        <text encoding="base64">bGluZV9kZWxldGUgPSA=</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICBmaWxlID0gZm9sZGVyICsgIi9zY2FuMDAi</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgZGF0YV9saW5lID0gZl9hbmFseXNpcy5yZWFkbGluZSgpCg==</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ZmlsZV9jb3VudCA9IGxlbihmaWxlcykK</text>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICBpZiBvID49IDEwMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAiICsgc3RyKG8pICsgInR4dCIKICAgIGVsaWYgbyA+PSAxMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwIiArIHN0cihvKSArICJ0eHQiCiAgICBlbGlmIG8gIT0gMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMCIgKyBzdHIobykgKyAidHh0IgogICAgZWxzZToKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMDAudHh0Ig==</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">CmZvciBvIGluIGZpbGVfY291bnQ=</text>
+        <text encoding="base64">CiAgICBmaWxlID0gZm9sZGVyICsgIi9zY2FuMDAi</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">CmZpbGVfY291bnQgPSA=</text>
+      <register name="5" type="2">
+        <text encoding="base64">ZmlsZV9jb3VudCA9IGxlbihmaWxlcykK</text>
       </register>
       <register name="6" type="4">
+        <text encoding="base64">CmZvciBvIGluIGZpbGVfY291bnQ=</text>
+      </register>
+      <register name="7" type="4">
+        <text encoding="base64">CmZpbGVfY291bnQgPSA=</text>
+      </register>
+      <register name="8" type="4">
         <text>import statistics
 
 a = [[2, 5]*10]
 
 print(statistics.mean(a))</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>SM = Tk()
 
 pag.hotkey(&quot;win&quot;, &quot;d&quot;)
@@ -98,14 +104,8 @@ pag.hotkey(&quot;win&quot;, &quot;d&quot;)
 time.sleep(100)
 SM.mainloop()</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgayA9IDAK</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgU01TLnF1aXQoKQo=</text>
-      </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgZm9yIGogaW4gZGF0YV9saW5lOg==</text>
+        <text encoding="base64">bGluZV9kZWxldGUgPSA=</text>
       </register>
     </registers>
     <search>
