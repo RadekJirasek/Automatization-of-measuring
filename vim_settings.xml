@@ -26,11 +26,10 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568323203534">
-        <mark key="[" line="27" column="0" />
-        <mark key="]" line="27" column="0" />
-        <mark key="^" line="42" column="22" />
-        <mark key="." line="27" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568325567016">
+        <mark key="]" line="54" column="11" />
+        <mark key="^" line="54" column="11" />
+        <mark key="." line="54" column="11" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -62,41 +61,44 @@
         <mark key="^" line="295" column="64" />
         <mark key="." line="295" column="64" />
       </file>
+      <file name="D:/Downloads/scatter3d_demo.py" timestamp="1568325445708" />
+      <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568325513201" />
     </filemarks>
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
-      </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
-      </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICBlbHNlOgogICAgICAgIGZpbGUgPSBmb2xkZXIgKyAiXFNDQU4wMDAwMC50eHQi</text>
-      </register>
-      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="&quot;" type="4">
+        <text>numpy</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICBwcmludChzcGVjdHJhbCk=</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgaWYgY2hhciA9PSAiPiI6CiAgICAgICAgICAgICAgICBicmVhaw==</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjaGFyID09ICJcdCI6CiAgICAgICAgICAgICAgICBzcGVjdHJhbFtpXVswXSA9IGZsb2F0KGRhdGFfY2hhcikKICAgICAgICAgICAgICAgIGRhdGFfY2hhciA9ICIi</text>
+        <text>!= &quot;0&quot; and char != &quot;1&quot; and char != &quot;2&quot; and char != &quot;3&quot; and char != &quot;4&quot; and char != &quot;5&quot; \
+                    and char != &quot;6&quot; and char != &quot;7&quot; and char != &quot;8&quot; and char != &quot;9&quot; and char != &quot;.&quot;:</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaiA9IDAK</text>
+      <register name="6" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgIGVsaWYgY2hhciA9PSAKICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZGF0YV9saW5lID0gZl9hbmFseXNpcy5yZWFkbGluZSgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICBpZiBvID49IDEwMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAiICsgc3RyKG8pICsgInR4dCIKICAgIGVsaWYgbyA+PSAxMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwIiArIHN0cihvKSArICJ0eHQiCiAgICBlbGlmIG8gIT0gMDoKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMCIgKyBzdHIobykgKyAidHh0IgogICAgZWxzZToKICAgICAgICBmaWxlID0gZm9sZGVyICsgIi9TQ0FOMDAwMDAudHh0Ig==</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">CiAgICBmaWxlID0gZm9sZGVyICsgIi9zY2FuMDAi</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgY2hhciAhPSAiPiI6CiAgICAgICAgICAgICAgICBicmVhaw==</text>
       </register>
       <register name="-" type="4">
-        <text>== True</text>
+        <text>numpy</text>
       </register>
     </registers>
     <search>
