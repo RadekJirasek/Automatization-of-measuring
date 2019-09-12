@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568328047401">
-        <mark key="[" line="65" column="61" />
-        <mark key="]" line="65" column="61" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568330202540">
+        <mark key="[" line="58" column="0" />
+        <mark key="]" line="58" column="0" />
         <mark key="^" line="56" column="11" />
-        <mark key="." line="65" column="61" />
+        <mark key="." line="58" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -73,38 +73,38 @@
     <jumps />
     <registers>
       <register name="1" type="4">
-        <text encoding="base64">CmdyYXBoLnBsbw==</text>
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
       <register name="&quot;" type="4">
-        <text>cmap=cm.coolwarm,</text>
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      <register name="2" type="4">
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+        <text encoding="base64">c3VyZiA9IGdyYXBoLnBsb3Rfc3VyZmFjZShzcGVjdHJhbFs6XVsxXSwgWSwgc3BlY3RyYWxbOl1bMF0sIGxpbmV3aWR0aD0wLCBhbnRpYWxpYXNlZD1GYWxzZSkK</text>
       </register>
       <register name="4" type="4">
+        <text encoding="base64">CmdyYXBoLnBsbw==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      </register>
+      <register name="7" type="4">
         <text encoding="base64">CiAgICBwcmludChzcGVjdHJhbCk=</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgICAgICAgICAgaWYgY2hhciA9PSAiPiI6CiAgICAgICAgICAgICAgICBicmVhaw==</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>!= &quot;0&quot; and char != &quot;1&quot; and char != &quot;2&quot; and char != &quot;3&quot; and char != &quot;4&quot; and char != &quot;5&quot; \
                     and char != &quot;6&quot; and char != &quot;7&quot; and char != &quot;8&quot; and char != &quot;9&quot; and char != &quot;.&quot;:</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIGVsaWYgY2hhciA9PSAKICAgICAgICAgICAgICAgIA==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
-      </register>
       <register name="-" type="4">
-        <text>cmap=cm.coolwarm,</text>
+        <text>linewidth=0, antialiased=Fals</text>
       </register>
     </registers>
     <search>
