@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568359729037">
-        <mark key="[" line="58" column="4" />
-        <mark key="]" line="58" column="10" />
-        <mark key="^" line="58" column="10" />
-        <mark key="." line="58" column="10" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568361668321">
+        <mark key="[" line="49" column="20" />
+        <mark key="]" line="50" column="32" />
+        <mark key="^" line="50" column="32" />
+        <mark key="." line="50" column="32" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -68,39 +68,39 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
       </register>
-      <register name="&quot;" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">c3VyZiA9IGdyYXBoLnBsb3Rfc3VyZmFjZShzcGVjdHJhbFs6XVsxXSwgWSwgc3BlY3RyYWxbOl1bMF0sIGxpbmV3aWR0aD0wLCBhbnRpYWxpYXNlZD1GYWxzZSkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">CmdyYXBoLnBsbw==</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICBwcmludChzdHIoc3VtMSkgKyAiLCAiICsgc3RyKHN1bTIpKQo=</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      <register name="5" type="4">
+        <text>if sum2 == 0:
+            sum2 = 1</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChkYXRhX2NoYXIpCg==</text>
+      <register name="6" type="4">
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
       <register name="7" type="4">
-        <text encoding="base64">CiAgICBwcmludChzcGVjdHJhbCk=</text>
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgY2hhciA9PSAiPiI6CiAgICAgICAgICAgICAgICBicmVhaw==</text>
+      <register name="8" type="2">
+        <text encoding="base64">c3VyZiA9IGdyYXBoLnBsb3Rfc3VyZmFjZShzcGVjdHJhbFs6XVsxXSwgWSwgc3BlY3RyYWxbOl1bMF0sIGxpbmV3aWR0aD0wLCBhbnRpYWxpYXNlZD1GYWxzZSkK</text>
       </register>
       <register name="9" type="4">
-        <text>!= &quot;0&quot; and char != &quot;1&quot; and char != &quot;2&quot; and char != &quot;3&quot; and char != &quot;4&quot; and char != &quot;5&quot; \
-                    and char != &quot;6&quot; and char != &quot;7&quot; and char != &quot;8&quot; and char != &quot;9&quot; and char != &quot;.&quot;:</text>
+        <text encoding="base64">CmdyYXBoLnBsbw==</text>
       </register>
       <register name="-" type="4">
-        <text>linewidth=0, antialiased=Fals</text>
+        <text>mean[o] = sum(spectral[:][0]*spectral[:][1]) / sum(spectral[:][1])</text>
       </register>
     </registers>
     <search>
