@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568364968589">
-        <mark key="[" line="79" column="35" />
-        <mark key="]" line="77" column="0" />
-        <mark key="." line="77" column="0" />
-        <mark key="^" line="77" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568368369363">
+        <mark key="[" line="100" column="43" />
+        <mark key="]" line="11" column="17" />
+        <mark key="." line="11" column="17" />
+        <mark key="^" line="11" column="17" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -66,43 +66,46 @@
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
       </file>
-      <file name="D:/Downloads/surface3d_demo.py" timestamp="1568365287169" />
+      <file name="D:/Downloads/surface3d_demo.py" timestamp="1568367770215">
+        <mark key="[" line="41" column="0" />
+        <mark key="]" line="41" column="0" />
+        <mark key="." line="41" column="0" />
+      </file>
     </filemarks>
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">cHJpbnQobikK</text>
+        <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>Z = np.arange(0, 230*3648).reshape(230, 3648)</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICBwcmludChzcGVjdHJ1bSkKICAgIHByaW50KHdhdmVMZW5ndGgp</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
+        <text encoding="base64">cHJpbnQobGVuKGFsbFNwZWN0cnVtKSkK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
+        <text encoding="base64">cHJpbnQobikK</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
+      <register name="5" type="4">
+        <text encoding="base64">CiAgICBwcmludChzcGVjdHJ1bSkKICAgIHByaW50KHdhdmVMZW5ndGgp</text>
       </register>
       <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
+      </register>
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICBwcmludChzdHIoc3VtMSkgKyAiLCAiICsgc3RyKHN1bTIpKQo=</text>
       </register>
-      <register name="7" type="4">
-        <text>if sum2 == 0:
-            sum2 = 1</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
-      </register>
       <register name="-" type="4">
-        <text>Z = np.arange(0, 230*3648).reshape(230, 3648)</text>
+        <text>map=cm.coolwarm,</text>
       </register>
     </registers>
     <search>
