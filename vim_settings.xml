@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568372102271">
-        <mark key="[" line="97" column="14" />
-        <mark key="]" line="100" column="29" />
-        <mark key="^" line="100" column="29" />
-        <mark key="." line="100" column="29" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568373492589">
+        <mark key="[" line="100" column="14" />
+        <mark key="]" line="99" column="13" />
+        <mark key="^" line="99" column="13" />
+        <mark key="." line="99" column="13" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -79,8 +79,7 @@
 print(np.array(allWaveLength))</text>
       </register>
       <register name="&quot;" type="4">
-        <text>print(np.arange(0, len(files)))
-print(np.array(allWaveLength))</text>
+        <text>allWaveLength</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
@@ -107,7 +106,7 @@ print(np.array(allWaveLength))</text>
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>map=cm.coolwarm,</text>
+        <text>allWaveLength</text>
       </register>
     </registers>
     <search>
