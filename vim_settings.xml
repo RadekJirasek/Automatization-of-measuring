@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568368369363">
-        <mark key="[" line="100" column="43" />
-        <mark key="]" line="11" column="17" />
-        <mark key="." line="11" column="17" />
-        <mark key="^" line="11" column="17" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568371113654">
+        <mark key="[" line="98" column="19" />
+        <mark key="]" line="100" column="10" />
+        <mark key="." line="100" column="10" />
+        <mark key="^" line="100" column="10" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -74,35 +74,37 @@
     </filemarks>
     <jumps />
     <registers>
-      <register name="1" type="2">
-        <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
+      <register name="1" type="4">
+        <text>print(np.arange(0, len(files)))
+print(np.array(allWaveLength))</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
+      <register name="&quot;" type="4">
+        <text>print(np.arange(0, len(files)))
+print(np.array(allWaveLength))</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
+        <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">cHJpbnQobGVuKGFsbFNwZWN0cnVtKSkK</text>
+        <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">cHJpbnQobGVuKGFsbFNwZWN0cnVtKSkK</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">cHJpbnQobikK</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiAgICBwcmludChzcGVjdHJ1bSkKICAgIHByaW50KHdhdmVMZW5ndGgp</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChzdHIoc3VtMSkgKyAiLCAiICsgc3RyKHN1bTIpKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
       </register>
       <register name="-" type="4">
         <text>map=cm.coolwarm,</text>
