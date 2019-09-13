@@ -26,11 +26,11 @@
         <mark key="^" line="592" column="14" />
         <mark key="." line="593" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568361668321">
-        <mark key="[" line="49" column="20" />
-        <mark key="]" line="50" column="32" />
-        <mark key="^" line="50" column="32" />
-        <mark key="." line="50" column="32" />
+      <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568364968589">
+        <mark key="[" line="79" column="35" />
+        <mark key="]" line="77" column="0" />
+        <mark key="." line="77" column="0" />
+        <mark key="^" line="77" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
         <mark key="[" line="581" column="12" />
@@ -62,45 +62,47 @@
         <mark key="^" line="295" column="64" />
         <mark key="." line="295" column="64" />
       </file>
+      <file name="D:/Downloads/scatter3d_demo (1).py" timestamp="1568364814552" />
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
       </file>
+      <file name="D:/Downloads/surface3d_demo.py" timestamp="1568365287169" />
     </filemarks>
     <jumps />
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
+        <text encoding="base64">cHJpbnQobikK</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
+      <register name="&quot;" type="4">
+        <text>Z = np.arange(0, 230*3648).reshape(230, 3648)</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICBwcmludChzcGVjdHJ1bSkKICAgIHByaW50KHdhdmVMZW5ndGgp</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHNwZWN0cmFsKQo=</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICBwcmludChzcGVjdHJhbCkK</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBwcmludChzdHIoc3VtMSkgKyAiLCAiICsgc3RyKHN1bTIpKQo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>if sum2 == 0:
             sum2 = 1</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">c3VyZiA9IGdyYXBoLnBsb3Rfc3VyZmFjZShzcGVjdHJhbFs6XVsxXSwgWSwgc3BlY3RyYWxbOl1bMF0sIGxpbmV3aWR0aD0wLCBhbnRpYWxpYXNlZD1GYWxzZSkK</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">CmdyYXBoLnBsbw==</text>
+        <text encoding="base64">WSA9IFswXSoyMzAKYSA9IDAKd2hpbGUgYSA8IDIzMDoKICAgIFlbYV0gPSBhICsgMQogICAgYSArPSAx</text>
       </register>
       <register name="-" type="4">
-        <text>mean[o] = sum(spectral[:][0]*spectral[:][1]) / sum(spectral[:][1])</text>
+        <text>Z = np.arange(0, 230*3648).reshape(230, 3648)</text>
       </register>
     </registers>
     <search>
