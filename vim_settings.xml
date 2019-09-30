@@ -32,11 +32,11 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1566912202308">
-        <mark key="[" line="581" column="12" />
-        <mark key="]" line="581" column="12" />
-        <mark key="^" line="609" column="29" />
-        <mark key="." line="581" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1569830211848">
+        <mark key="[" line="42" column="44" />
+        <mark key="]" line="42" column="44" />
+        <mark key="^" line="582" column="11" />
+        <mark key="." line="42" column="44" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
         <mark key="[" line="247" column="0" />
@@ -62,7 +62,6 @@
         <mark key="^" line="295" column="64" />
         <mark key="." line="295" column="64" />
       </file>
-      <file name="D:/Downloads/scatter3d_demo (1).py" timestamp="1568364814552" />
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
       </file>
@@ -79,7 +78,7 @@
 print(np.array(allWaveLength))</text>
       </register>
       <register name="&quot;" type="4">
-        <text>allWaveLength</text>
+        <text>DRUH</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
@@ -106,7 +105,7 @@ print(np.array(allWaveLength))</text>
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChmbG9hdChkYXRhX2NoYXIpKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>allWaveLength</text>
+        <text>DRUH</text>
       </register>
     </registers>
     <search>
@@ -146,6 +145,9 @@ print(np.array(allWaveLength))</text>
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed F</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed R</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
