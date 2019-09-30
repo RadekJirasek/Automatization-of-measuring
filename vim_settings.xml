@@ -13,7 +13,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1569839138771">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1569848034796">
         <mark key="[" line="101" column="4" />
         <mark key="m" line="95" column="27" />
         <mark key="]" line="151" column="0" />
@@ -32,13 +32,17 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1569846759077">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1569847680944">
+        <mark key="a" line="56" column="20" />
+        <mark key="e" line="56" column="20" />
+        <mark key="'" line="688" column="44" />
+        <mark key="i" line="688" column="44" />
         <mark key="[" line="678" column="29" />
         <mark key="]" line="639" column="38" />
         <mark key="^" line="639" column="38" />
         <mark key="." line="639" column="38" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1566293935745">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1569847023838">
         <mark key="[" line="247" column="0" />
         <mark key="]" line="247" column="0" />
         <mark key="^" line="247" column="0" />
@@ -71,7 +75,11 @@
         <mark key="." line="41" column="0" />
       </file>
     </filemarks>
-    <jumps />
+    <jumps>
+      <jump line="191" column="20" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
+      <jump line="56" column="20" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
+      <jump line="688" column="44" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
+    </jumps>
     <registers>
       <register name="1" type="4">
         <text>print(np.arange(0, len(files)))
@@ -107,13 +115,21 @@ print(np.array(allWaveLength))</text>
       <register name="-" type="4">
         <text>DRUH</text>
       </register>
+      <register name="/" type="4">
+        <text encoding="base64">XDx3YWl0XD4=</text>
+      </register>
     </registers>
     <search>
-      <last-dir>0</last-dir>
+      <last-search encoding="base64">XDx3YWl0XD4=</last-search>
+      <last-offset />
+      <last-pattern encoding="base64">XDx3YWl0XD4=</last-pattern>
+      <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
-      <history-search />
+      <history-search>
+        <entry encoding="base64">XDx3YWl0XD4=</entry>
+      </history-search>
       <history-cmd />
       <history-expr />
       <history-input />
