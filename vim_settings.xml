@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Python Console" timestamp="1568313689553">
+      <file name="/Python Console" timestamp="1570108365150">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1566917947129">
@@ -46,9 +46,6 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
-        <mark key="[" line="24" column="11" />
-      </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1566912763716">
         <mark key="[" line="111" column="0" />
         <mark key="]" line="111" column="0" />
@@ -61,16 +58,22 @@
         <mark key="^" line="13" column="22" />
         <mark key="." line="13" column="0" />
       </file>
-      <file name="D:/Downloads/surface3d_demo.py" timestamp="1568367770215">
-        <mark key="[" line="41" column="0" />
-        <mark key="]" line="41" column="0" />
-        <mark key="." line="41" column="0" />
-      </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
         <mark key="]" line="295" column="64" />
         <mark key="^" line="295" column="64" />
         <mark key="." line="295" column="64" />
+      </file>
+      <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
+        <mark key="[" line="24" column="11" />
+      </file>
+      <file name="D:/Downloads/surface3d_demo.py" timestamp="1568367770215">
+        <mark key="[" line="41" column="0" />
+        <mark key="]" line="41" column="0" />
+        <mark key="." line="41" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1570109280594">
+        <mark key="[" line="0" column="0" />
       </file>
     </filemarks>
     <jumps>
