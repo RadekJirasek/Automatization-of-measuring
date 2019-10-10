@@ -72,8 +72,10 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1570710696571">
-        <mark key="[" line="7" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1570712276984">
+        <mark key="[" line="12" column="11" />
+        <mark key="]" line="12" column="11" />
+        <mark key="." line="12" column="11" />
       </file>
     </filemarks>
     <jumps>
@@ -83,38 +85,38 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICMgcm9vdC5pY29uaWZ5KCkK</text>
+        <text encoding="base64">cGx0LmNvbG9yYmFyKCkK</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICMgcm9vdC5pY29uaWZ5KCkK</text>
+      <register name="&quot;" type="4">
+        <text>img_array</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtYW51YWxseToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIlN0ZXBzOiIgKyAiXG4iICsgIjEuKSBZb3UgbXVzdCBzZXQgYXhlcyBpbiB0aGUgcHJvZ3JhbSBtYW51YWxseSAoVXNlIG1hbnVhbCkuIgo=</text>
+        <text encoding="base64">ICAgICMgcm9vdC5pY29uaWZ5KCkK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtYW51YWxseToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIlN0ZXBzOiIgKyAiXG4iICsgIjEuKSBZb3UgbXVzdCBzZXQgYXhlcyBpbiB0aGUgcHJvZ3JhbSBtYW51YWxseSAoVXNlIG1hbnVhbCkuIgo=</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToK</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgaWYgc2Vuc29yUG9zW051bWJlck9mU2Vuc29yXSAhPSAwOgo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>print(np.arange(0, len(files)))
 print(np.array(allWaveLength))</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">cHJpbnQobGVuKGFsbFNwZWN0cnVtKSkK</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">cHJpbnQobikK</text>
-      </register>
       <register name="-" type="4">
-        <text>DRUHY</text>
+        <text>img_array</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
