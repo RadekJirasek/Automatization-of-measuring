@@ -52,11 +52,11 @@
         <mark key="^" line="295" column="10" />
         <mark key="." line="111" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1568317330394">
-        <mark key="[" line="13" column="0" />
-        <mark key="]" line="13" column="0" />
-        <mark key="^" line="13" column="22" />
-        <mark key="." line="13" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1570636501152">
+        <mark key="[" line="21" column="0" />
+        <mark key="]" line="21" column="0" />
+        <mark key="^" line="24" column="48" />
+        <mark key="." line="21" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -83,35 +83,35 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtYW51YWxseToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIlN0ZXBzOiIgKyAiXG4iICsgIjEuKSBZb3UgbXVzdCBzZXQgYXhlcyBpbiB0aGUgcHJvZ3JhbSBtYW51YWxseSAoVXNlIG1hbnVhbCkuIgo=</text>
+        <text encoding="base64">ICAgICMgcm9vdC5pY29uaWZ5KCkK</text>
       </register>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtYW51YWxseToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIlN0ZXBzOiIgKyAiXG4iICsgIjEuKSBZb3UgbXVzdCBzZXQgYXhlcyBpbiB0aGUgcHJvZ3JhbSBtYW51YWxseSAoVXNlIG1hbnVhbCkuIgo=</text>
+        <text encoding="base64">ICAgICMgcm9vdC5pY29uaWZ5KCkK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBtYW51YWxseToKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIlN0ZXBzOiIgKyAiXG4iICsgIjEuKSBZb3UgbXVzdCBzZXQgYXhlcyBpbiB0aGUgcHJvZ3JhbSBtYW51YWxseSAoVXNlIG1hbnVhbCkuIgo=</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToK</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgaWYgc2Vuc29yUG9zW051bWJlck9mU2Vuc29yXSAhPSAwOgo=</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>print(np.arange(0, len(files)))
 print(np.array(allWaveLength))</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">cGx0Lmltc2hvdyhmKQo=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIHByaW50KG4pCg==</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">cHJpbnQobGVuKGFsbFNwZWN0cnVtKSkK</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">cHJpbnQobikK</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICBwcmludChzcGVjdHJ1bSkKICAgIHByaW50KHdhdmVMZW5ndGgp</text>
       </register>
       <register name="-" type="4">
         <text>DRUHY</text>
