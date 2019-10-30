@@ -32,7 +32,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1572434107052">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1572439413527">
         <mark key="'" line="684" column="44" />
         <mark key="i" line="684" column="44" />
         <mark key="[" line="412" column="40" />
@@ -52,11 +52,12 @@
         <mark key="^" line="295" column="10" />
         <mark key="." line="111" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1572353225666">
-        <mark key="'" line="14" column="14" />
-        <mark key="[" line="14" column="0" />
-        <mark key="]" line="14" column="15" />
-        <mark key="." line="14" column="15" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1572440368592">
+        <mark key="'" line="15" column="14" />
+        <mark key="[" line="21" column="0" />
+        <mark key="]" line="26" column="14" />
+        <mark key="." line="26" column="14" />
+        <mark key="^" line="26" column="14" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -96,7 +97,7 @@
         <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
       </register>
       <register name="&quot;" type="4">
-        <text encoding="base64">IA==</text>
+        <text>p</text>
       </register>
       <register name="2" type="4">
         <text encoding="base64">aWYgbmV3X3RpbWU6CiAgICAgICAgICAgIHNsZWVwX3RpbWVfcyA9IGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnNlY29uZCArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLm1pY3Jvc2Vjb25kIC8gMTAwMDAwMAogICAgICAgICAgICBzbGVlcF90aW1lX20gPSBkYXRldGltZS5kYXRldGltZS5ub3coKS5taW51dGUKICAgICAgICBzbGVlcF90aW1lID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc2Vjb25kICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWljcm9zZWNvbmQgLyAxMDAwMDAwCiAgICAgICAgaWYgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWludXRlICE9IHNsZWVwX3RpbWVfbToKICAgICAgICAgICAgc2xlZXBfdGltZSArPSA2MAogICAgICAgIGlmIHNsZWVwX3RpbWUgLSBzbGVlcF90aW1lX3MgPCBtYXhfc2xlZXBfdGltZToKICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbCwgbmV3X3RpbWU9RmFsc2UsIHNsZWVwX3RpbWVfcz1zbGVlcF90aW1lX3MsIHNsZWVwX3RpbWVfbT1zbGVlcF90aW1lX20pCiAgICAgICAgZWxzZTo=</text>
@@ -183,7 +184,7 @@ img_fft = sc.fftpack.fft(img_array)</text>
         <text encoding="base64">cGx0LmNvbG9yYmFyKCkK</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text>p</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
@@ -235,6 +236,9 @@ img_fft = sc.fftpack.fft(img_array)</text>
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed R</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed Y</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
