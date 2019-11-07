@@ -77,12 +77,12 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1573133723258">
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1573137606453">
         <mark key="'" line="24" column="10" />
-        <mark key="[" line="18" column="17" />
-        <mark key="]" line="18" column="18" />
-        <mark key="." line="18" column="17" />
-        <mark key="^" line="21" column="0" />
+        <mark key="[" line="32" column="0" />
+        <mark key="]" line="30" column="20" />
+        <mark key="." line="30" column="20" />
+        <mark key="^" line="30" column="20" />
       </file>
     </filemarks>
     <jumps>
@@ -95,15 +95,18 @@
     </jumps>
     <registers>
       <register name="1" type="2">
+        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
       </register>
-      <register name="&quot;" type="4">
-        <text />
-      </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">aWYgbmV3X3RpbWU6CiAgICAgICAgICAgIHNsZWVwX3RpbWVfcyA9IGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnNlY29uZCArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLm1pY3Jvc2Vjb25kIC8gMTAwMDAwMAogICAgICAgICAgICBzbGVlcF90aW1lX20gPSBkYXRldGltZS5kYXRldGltZS5ub3coKS5taW51dGUKICAgICAgICBzbGVlcF90aW1lID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc2Vjb25kICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWljcm9zZWNvbmQgLyAxMDAwMDAwCiAgICAgICAgaWYgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWludXRlICE9IHNsZWVwX3RpbWVfbToKICAgICAgICAgICAgc2xlZXBfdGltZSArPSA2MAogICAgICAgIGlmIHNsZWVwX3RpbWUgLSBzbGVlcF90aW1lX3MgPCBtYXhfc2xlZXBfdGltZToKICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbCwgbmV3X3RpbWU9RmFsc2UsIHNsZWVwX3RpbWVfcz1zbGVlcF90aW1lX3MsIHNsZWVwX3RpbWVfbT1zbGVlcF90aW1lX20pCiAgICAgICAgZWxzZTo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>root = Tk()
 
 
@@ -119,7 +122,7 @@ button.pack()
 
 root.mainloop()</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
                         if False:  # vratit: sensorPos[NumberOfSensor] == 0:
                             ErrorId.startMeasuring[NumberOfSensor] = 2
@@ -152,10 +155,10 @@ root.mainloop()</text>
                                 save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
                                          &quot;| Origin of Z axis has been successfully set&quot;)</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDkK</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
 #        if sensorPos[NumberOfSensor] == 0:
 #            raise WaitError(&quot;Error has been occurred in 'start_routine' function (specifically Z origin routine).&quot;)
@@ -172,17 +175,14 @@ root.mainloop()</text>
 #        if sensorPos[NumberOfSensor] == 0:
 #            raise WaitError(&quot;Not located 'resetZOn.png'&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text># plt.figure()
 # plt.imshow(img, plt.cm.gray)</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>img)
 
 img_fft = sc.fftpack.fft(img_array)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">cGx0LmNvbG9yYmFyKCkK</text>
       </register>
       <register name="-" type="4">
         <text />
