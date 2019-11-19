@@ -32,13 +32,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574156950566">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574156992676">
         <mark key="'" line="698" column="44" />
         <mark key="i" line="698" column="44" />
-        <mark key="[" line="809" column="50" />
-        <mark key="]" line="809" column="50" />
+        <mark key="[" line="822" column="0" />
         <mark key="m" line="615" column="55" />
-        <mark key="." line="809" column="50" />
+        <mark key="]" line="822" column="0" />
+        <mark key="." line="822" column="0" />
         <mark key="^" line="11" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1569847023838">
@@ -98,38 +98,38 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLmhvdGtleSgnd2luJywgJ2QnKQo=</text>
       </register>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcGFnLmhvdGtleSgnd2luJywgJ2QnKQo=</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcmVzZXRfbW0zZChUcnVlKSAgIyBSZXNldCBtbTNkLgo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>ag.click(Position.mm3d)
             wait(sleep_until=&quot;mm3dOn.png&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>#            pag.keyDown('win')
 #            pag.press('d')
 #            pag.keyUp('win')
 #            wait(sleep_until=&quot;desktopOn.png&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiMgICAgICAgICAgICBwYWcuaG90a2V5KCJ3aW4iLCAiZCIpCiMgICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJkZXNrdG9wT24ucG5nIik=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">IHBhZy5ob3RrZXkoIndpbiIsICJkIikKIyAgICAgICAgICAgICAgICAgICAgICAgIHdhaXQoc2xlZXBfdW50aWw9ImRlc2t0b3BPbi5wbmciKQ==</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">Cgo6</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">IGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gIT0gMDoKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
+        <text encoding="base64">Cgo6</text>
       </register>
       <register name="-" type="4">
         <text>and switch to desktop.</text>
