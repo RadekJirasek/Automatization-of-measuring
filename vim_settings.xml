@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1572452185695">
-        <mark key="[" line="350" column="6" />
-        <mark key="m" line="95" column="27" />
-        <mark key="]" line="350" column="6" />
-        <mark key="." line="350" column="6" />
-        <mark key="^" line="350" column="18" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574155723997">
+        <mark key="[" line="168" column="46" />
+        <mark key="m" line="168" column="52" />
+        <mark key="]" line="34" column="0" />
+        <mark key="^" line="34" column="0" />
+        <mark key="." line="34" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -46,11 +46,11 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1572433141110">
-        <mark key="[" line="111" column="0" />
-        <mark key="]" line="111" column="0" />
-        <mark key="^" line="295" column="10" />
-        <mark key="." line="111" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574155718846">
+        <mark key="[" line="293" column="0" />
+        <mark key="]" line="293" column="0" />
+        <mark key="^" line="294" column="10" />
+        <mark key="." line="293" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1572440368592">
         <mark key="'" line="15" column="14" />
@@ -97,97 +97,40 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
+        <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
       </register>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
+        <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
+      <register name="2" type="4">
+        <text encoding="base64">Cgo6</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">aWYgbmV3X3RpbWU6CiAgICAgICAgICAgIHNsZWVwX3RpbWVfcyA9IGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnNlY29uZCArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLm1pY3Jvc2Vjb25kIC8gMTAwMDAwMAogICAgICAgICAgICBzbGVlcF90aW1lX20gPSBkYXRldGltZS5kYXRldGltZS5ub3coKS5taW51dGUKICAgICAgICBzbGVlcF90aW1lID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc2Vjb25kICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWljcm9zZWNvbmQgLyAxMDAwMDAwCiAgICAgICAgaWYgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWludXRlICE9IHNsZWVwX3RpbWVfbToKICAgICAgICAgICAgc2xlZXBfdGltZSArPSA2MAogICAgICAgIGlmIHNsZWVwX3RpbWUgLSBzbGVlcF90aW1lX3MgPCBtYXhfc2xlZXBfdGltZToKICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbCwgbmV3X3RpbWU9RmFsc2UsIHNsZWVwX3RpbWVfcz1zbGVlcF90aW1lX3MsIHNsZWVwX3RpbWVfbT1zbGVlcF90aW1lX20pCiAgICAgICAgZWxzZTo=</text>
+        <text encoding="base64">IGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gIT0gMDoKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
       </register>
-      <register name="4" type="4">
-        <text>root = Tk()
-
-
-def do():
-    time.sleep(1)
-    root.iconify()
-    pag.click(pag.size())
-    time.sleep(100)
-
-
-button = tkinter.Button(root, text=&quot;Click&quot;, command=do)
-button.pack()
-
-root.mainloop()</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICIiIgo=</text>
       </register>
-      <register name="5" type="4">
-        <text>start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
-                        if False:  # vratit: sensorPos[NumberOfSensor] == 0:
-                            ErrorId.startMeasuring[NumberOfSensor] = 2
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Setting origin of Z axis has failed (during start of Z origin routine).&quot;)
-                        else:
-                            wait(False)
-                            if sensorPos[NumberOfSensor] == 0:
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Setting origin of Z axis has failed (during process of Z origin routine).&quot;)
-
-                        if sensorPos[NumberOfSensor] != 0:
-                            time.sleep(0.5)  # asi nemazat
-                            pag.click(Position.resetRoutine)
-                            time.sleep(0.5)  # wait(sleep_until=&quot;resetRoutine.png&quot;)
-                            if sensorPos[NumberOfSensor] == 0:
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'resetRoutine.png'.&quot;)
-                            if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                                pag.click(Position.resetZ)
-                                time.sleep(0.5)  # wait(sleep_until=&quot;resetZOn.png&quot;)
-                                if sensorPos[NumberOfSensor] == 0:
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                             &quot; - wait function (locate on screen) of 'resetZOn.png'.&quot;)
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Origin of Z axis has been successfully set&quot;)</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICIiIgo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDkK</text>
+      <register name="6" type="4">
+        <text>if desktop and sensorPos[NumberOfSensor] != 0:
+        pag.hotkey(&quot;win&quot;, &quot;d&quot;)
+        wait(sleep_until=&quot;desktopOn.png&quot;)
+    # ↑ Switch to desktop.</text>
       </register>
-      <register name="7" type="4">
-        <text>start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
-#        if sensorPos[NumberOfSensor] == 0:
-#            raise WaitError(&quot;Error has been occurred in 'start_routine' function (specifically Z origin routine).&quot;)
-        wait(False)
-#        if sensorPos[NumberOfSensor] == 0:
-#            raise ZAxisError
-        time.sleep(0.5)  # Asi nemazat
-        pag.click(Position.resetRoutine)
-        time.sleep(0.5)  # wait(sleep_until=&quot;resetRoutine.png&quot;)
-#        if sensorPos[NumberOfSensor] == 0:
-#            raise WaitError(&quot;Not located 'resetRoutine.png'&quot;)
-        pag.click(Position.resetZ)
-        time.sleep(0.5)  # wait(sleep_until=&quot;resetZOn.png&quot;)
-#        if sensorPos[NumberOfSensor] == 0:
-#            raise WaitError(&quot;Not located 'resetZOn.png'&quot;)</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
       </register>
-      <register name="8" type="4">
-        <text># plt.figure()
-# plt.imshow(img, plt.cm.gray)</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
       </register>
       <register name="9" type="4">
-        <text>img)
-
-img_fft = sc.fftpack.fft(img_array)</text>
+        <text encoding="base64">aWYgbmV3X3RpbWU6CiAgICAgICAgICAgIHNsZWVwX3RpbWVfcyA9IGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnNlY29uZCArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLm1pY3Jvc2Vjb25kIC8gMTAwMDAwMAogICAgICAgICAgICBzbGVlcF90aW1lX20gPSBkYXRldGltZS5kYXRldGltZS5ub3coKS5taW51dGUKICAgICAgICBzbGVlcF90aW1lID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc2Vjb25kICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWljcm9zZWNvbmQgLyAxMDAwMDAwCiAgICAgICAgaWYgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWludXRlICE9IHNsZWVwX3RpbWVfbToKICAgICAgICAgICAgc2xlZXBfdGltZSArPSA2MAogICAgICAgIGlmIHNsZWVwX3RpbWUgLSBzbGVlcF90aW1lX3MgPCBtYXhfc2xlZXBfdGltZToKICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbCwgbmV3X3RpbWU9RmFsc2UsIHNsZWVwX3RpbWVfcz1zbGVlcF90aW1lX3MsIHNsZWVwX3RpbWVfbT1zbGVlcF90aW1lX20pCiAgICAgICAgZWxzZTo=</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>desktop</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
