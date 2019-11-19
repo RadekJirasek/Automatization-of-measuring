@@ -32,14 +32,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574168876805">
-        <mark key="'" line="695" column="44" />
-        <mark key="i" line="695" column="44" />
-        <mark key="[" line="601" column="78" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574172091379">
+        <mark key="'" line="705" column="44" />
+        <mark key="i" line="705" column="44" />
+        <mark key="[" line="773" column="12" />
         <mark key="m" line="614" column="55" />
-        <mark key="]" line="601" column="78" />
-        <mark key="^" line="11" column="0" />
-        <mark key="." line="601" column="78" />
+        <mark key="]" line="773" column="12" />
+        <mark key="^" line="706" column="25" />
+        <mark key="." line="773" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1569847023838">
         <mark key="[" line="247" column="0" />
@@ -96,12 +96,18 @@
     </jumps>
     <registers>
       <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgIiIiCg==</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>wait(sleep_until=&quot;resetRoutineOn.png&quot;)</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgIiIiICAgICAgCg==</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
-      </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>root = Tk()
 
 def click():
@@ -116,29 +122,23 @@ button.pack()
 
 root.mainloop()</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CgpkZWYgYSgpOgogICAgd2hpbGUgMToKICAgICAgICBwcmludChhKQogICAgICAgIHRpbWUuc2xlZXAoMC4wNSkKCgpkZWYgYigpOgogICAgd2hpbGUgMToKICAgICAgICBwcmludChiKQogICAgICAgIHRpbWUuc2xlZXAoMC4wNSkKCg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwYXNzICAjZGVsCg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICBzZW5zb3JQb3NbMF0gPSAwICAjZGVsCg==</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpICAjIGRlbAo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIHByb2Nlc3NFcnJvciA9IDAK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
       </register>
       <register name="-" type="4">
-        <text>round(</text>
+        <text>wait(sleep_until=&quot;resetRoutineOn.png&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
