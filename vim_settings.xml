@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574155723997">
-        <mark key="[" line="168" column="46" />
-        <mark key="m" line="168" column="52" />
-        <mark key="]" line="34" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574156471046">
+        <mark key="[" line="95" column="13" />
+        <mark key="m" line="170" column="52" />
+        <mark key="]" line="95" column="13" />
         <mark key="^" line="34" column="0" />
-        <mark key="." line="34" column="0" />
+        <mark key="." line="95" column="13" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -32,12 +32,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1572439413527">
-        <mark key="'" line="684" column="44" />
-        <mark key="i" line="684" column="44" />
-        <mark key="[" line="412" column="40" />
-        <mark key="]" line="11" column="0" />
-        <mark key="." line="11" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574156950566">
+        <mark key="'" line="698" column="44" />
+        <mark key="i" line="698" column="44" />
+        <mark key="[" line="809" column="50" />
+        <mark key="]" line="809" column="50" />
+        <mark key="m" line="615" column="55" />
+        <mark key="." line="809" column="50" />
         <mark key="^" line="11" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1569847023838">
@@ -52,11 +53,11 @@
         <mark key="^" line="294" column="10" />
         <mark key="." line="293" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1572440368592">
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574156967309">
         <mark key="'" line="15" column="14" />
-        <mark key="[" line="21" column="0" />
-        <mark key="]" line="26" column="14" />
-        <mark key="." line="26" column="14" />
+        <mark key="[" line="32" column="0" />
+        <mark key="]" line="32" column="0" />
+        <mark key="." line="32" column="0" />
         <mark key="^" line="26" column="14" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
@@ -97,40 +98,41 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
+        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
       </register>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
+        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">Cgo6</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgcmVzZXRfbW0zZChUcnVlKSAgIyBSZXNldCBtbTNkLgo=</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">IGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gIT0gMDoKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
+        <text>ag.click(Position.mm3d)
+            wait(sleep_until=&quot;mm3dOn.png&quot;)</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICIiIgo=</text>
+      <register name="4" type="4">
+        <text>#            pag.keyDown('win')
+#            pag.press('d')
+#            pag.keyUp('win')
+#            wait(sleep_until=&quot;desktopOn.png&quot;)</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICIiIgo=</text>
+      <register name="5" type="4">
+        <text encoding="base64">CiMgICAgICAgICAgICBwYWcuaG90a2V5KCJ3aW4iLCAiZCIpCiMgICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJkZXNrdG9wT24ucG5nIik=</text>
       </register>
       <register name="6" type="4">
-        <text>if desktop and sensorPos[NumberOfSensor] != 0:
-        pag.hotkey(&quot;win&quot;, &quot;d&quot;)
-        wait(sleep_until=&quot;desktopOn.png&quot;)
-    # ↑ Switch to desktop.</text>
+        <text encoding="base64">IHBhZy5ob3RrZXkoIndpbiIsICJkIikKIyAgICAgICAgICAgICAgICAgICAgICAgIHdhaXQoc2xlZXBfdW50aWw9ImRlc2t0b3BPbi5wbmciKQ==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIHByaW50KG1heChpbWdfZmZ0KSkK</text>
+        <text encoding="base64">ICAgIGRlc2t0b3BPbiA9IEltYWdlLm9wZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcZGVza3RvcE9uLnBuZyIpCg==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
+      <register name="8" type="4">
+        <text encoding="base64">Cgo6</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">aWYgbmV3X3RpbWU6CiAgICAgICAgICAgIHNsZWVwX3RpbWVfcyA9IGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnNlY29uZCArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLm1pY3Jvc2Vjb25kIC8gMTAwMDAwMAogICAgICAgICAgICBzbGVlcF90aW1lX20gPSBkYXRldGltZS5kYXRldGltZS5ub3coKS5taW51dGUKICAgICAgICBzbGVlcF90aW1lID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc2Vjb25kICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWljcm9zZWNvbmQgLyAxMDAwMDAwCiAgICAgICAgaWYgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkubWludXRlICE9IHNsZWVwX3RpbWVfbToKICAgICAgICAgICAgc2xlZXBfdGltZSArPSA2MAogICAgICAgIGlmIHNsZWVwX3RpbWUgLSBzbGVlcF90aW1lX3MgPCBtYXhfc2xlZXBfdGltZToKICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbCwgbmV3X3RpbWU9RmFsc2UsIHNsZWVwX3RpbWVfcz1zbGVlcF90aW1lX3MsIHNsZWVwX3RpbWVfbT1zbGVlcF90aW1lX20pCiAgICAgICAgZWxzZTo=</text>
+        <text encoding="base64">IGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gIT0gMDoKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
       </register>
       <register name="-" type="4">
-        <text>desktop</text>
+        <text>and switch to desktop.</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
