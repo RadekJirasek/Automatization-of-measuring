@@ -32,13 +32,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574341228156">
-        <mark key="'" line="699" column="44" />
-        <mark key="i" line="699" column="44" />
-        <mark key="[" line="362" column="23" />
-        <mark key="]" line="362" column="23" />
-        <mark key="^" line="44" column="26" />
-        <mark key="." line="362" column="23" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574341917419">
+        <mark key="'" line="696" column="44" />
+        <mark key="i" line="696" column="44" />
+        <mark key="[" line="653" column="8" />
+        <mark key="]" line="653" column="8" />
+        <mark key="^" line="653" column="14" />
+        <mark key="." line="653" column="8" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
         <mark key="[" line="247" column="0" />
@@ -93,43 +93,58 @@
       <jump line="27" column="14" filename="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" />
     </jumps>
     <registers>
-      <register name="1" type="2">
-        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
+      <register name="1" type="4">
+        <text>pag.click(Position.system)
+        wait(sleep_until=&quot;resetSystem.png&quot;)
+        if if_find_error():
+            raise WaitError(&quot;Not located 'resetSystem.png'&quot;)
+        pag.click(Position.resetSystem)
+        wait(sleep_until=&quot;system.png&quot;)
+        if if_find_error():
+            raise WaitError(&quot;Not located 'system.png'&quot;)
+        if pag.locateCenterOnScreen(Img.resetSystem, grayscale=True):
+            pag.click(Position.system)
+            wait(sleep_until=&quot;resetSystem.png&quot;)</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
+      <register name="&quot;" type="4">
+        <text>pag.click(Position.system)
+        wait(sleep_until=&quot;resetSystem.png&quot;)
+        if if_find_error():
+            raise WaitError(&quot;Not located 'resetSystem.png'&quot;)
+        pag.click(Position.resetSystem)
+        wait(sleep_until=&quot;system.png&quot;)
+        if if_find_error():
+            raise WaitError(&quot;Not located 'system.png'&quot;)
+        if pag.locateCenterOnScreen(Img.resetSystem, grayscale=True):
+            pag.click(Position.system)
+            wait(sleep_until=&quot;resetSystem.png&quot;)</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+        <text encoding="base64">ICAgIFBvc2l0aW9uLnJlc2V0U3lzdGVtID0gcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5yZXNldFN5c3RlbSwgZ3JheXNjYWxlPVRydWUpCg==</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBzZXRfcHJvY2Vzc19lcnJvcigpCg==</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihJbWcubW0zZE9uLCBncmF5c2NhbGU9VHJ1ZSkgXAogICAgICAgICAgICAgICAgICAgIG9yIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKToKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgICAgICBpZiBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24sIGdyYXlzY2FsZT1UcnVlKSBcCiAgICAgICAgICAgICAgICBvciBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24yLCBncmF5c2NhbGU9VHJ1ZSk6CiAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJtbTNkT24ucG5nIikKICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ21tM2RPbi5wbmcnIik=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCiAgICAgICAgICAgIHBhZy50eXBld3JpdGUoWyJlbnRlciJdKQogICAgICAgICAgICB0aW1lLnNsZWVwKDAuNSk=</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCiAgICAgICAgICAgICAgICAgICAgICAgIHBhZy50eXBld3JpdGUoWyJlbnRlciJdKQogICAgICAgICAgICAgICAgICAgICAgICB0aW1lLnNsZWVwKDAuNSk=</text>
       </register>
-      <register name="8" type="4">
-        <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
-                    or not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):
-                pag.click(Position.mm3d)
-                wait(sleep_until=&quot;mm3dOn.png&quot;)
-            if if_find_error():
-                raise WaitError(&quot;Not located 'mm3dOn.png'&quot;)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gPSAxICAjIGRlbCAodmlkaSBlcnJvciBwcmVkIHphY2F0a2VtIGt2dWxpIG1hZ25pZmlrYWNpKQo=</text>
-      </register>
       <register name="-" type="4">
-        <text>&quot;C:/&quot;</text>
+        <text>k</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
