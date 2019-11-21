@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574347944538">
-        <mark key="[" line="48" column="0" />
-        <mark key="m" line="191" column="52" />
-        <mark key="]" line="48" column="0" />
-        <mark key="^" line="172" column="26" />
-        <mark key="." line="48" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574350026675">
+        <mark key="[" line="70" column="8" />
+        <mark key="m" line="195" column="52" />
+        <mark key="]" line="70" column="8" />
+        <mark key="^" line="176" column="26" />
+        <mark key="." line="70" column="8" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -33,12 +33,12 @@
         <mark key="." line="99" column="13" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574348984180">
-        <mark key="'" line="696" column="44" />
-        <mark key="i" line="696" column="44" />
-        <mark key="[" line="696" column="20" />
-        <mark key="]" line="696" column="20" />
-        <mark key="^" line="653" column="14" />
-        <mark key="." line="696" column="20" />
+        <mark key="'" line="697" column="44" />
+        <mark key="i" line="697" column="44" />
+        <mark key="[" line="697" column="20" />
+        <mark key="]" line="697" column="20" />
+        <mark key="^" line="654" column="14" />
+        <mark key="." line="697" column="20" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
         <mark key="[" line="247" column="0" />
@@ -94,17 +94,21 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>time.sleep(0.5)
-                    pag.typewrite([&quot;enter&quot;])</text>
+        <text>pag.typewrite([&quot;enter&quot;])
+        wait(sleep_until=&quot;folderOn.png&quot;)</text>
       </register>
       <register name="&quot;" type="4">
+        <text>pag.typewrite([&quot;enter&quot;])
+        wait(sleep_until=&quot;folderOn.png&quot;)</text>
+      </register>
+      <register name="2" type="4">
         <text>time.sleep(0.5)
                     pag.typewrite([&quot;enter&quot;])</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuMjUpCg==</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>pag.click(Position.system)
         wait(sleep_until=&quot;resetSystem.png&quot;)
         if if_find_error():
@@ -117,23 +121,20 @@
             pag.click(Position.system)
             wait(sleep_until=&quot;resetSystem.png&quot;)</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgIFBvc2l0aW9uLnJlc2V0U3lzdGVtID0gcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5yZXNldFN5c3RlbSwgZ3JheXNjYWxlPVRydWUpCg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBzZXRfcHJvY2Vzc19lcnJvcigpCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihJbWcubW0zZE9uLCBncmF5c2NhbGU9VHJ1ZSkgXAogICAgICAgICAgICAgICAgICAgIG9yIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKToKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24sIGdyYXlzY2FsZT1UcnVlKSBcCiAgICAgICAgICAgICAgICBvciBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24yLCBncmF5c2NhbGU9VHJ1ZSk6CiAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJtbTNkT24ucG5nIikKICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ21tM2RPbi5wbmcnIik=</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihJbWcubW0zZE9uLCBncmF5c2NhbGU9VHJ1ZSkgXAogICAgICAgICAgICAgICAgICAgIG9yIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKToKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IGlmIG5vdCBpZl9maW5kX2Vycm9yKCk6</text>
