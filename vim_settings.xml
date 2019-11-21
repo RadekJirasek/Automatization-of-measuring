@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Python Console" timestamp="1570108365150">
+      <file name="/Python Console" timestamp="1574341191547">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1573056600375">
@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574333923816">
-        <mark key="[" line="430" column="31" />
-        <mark key="m" line="172" column="52" />
-        <mark key="]" line="430" column="31" />
-        <mark key="^" line="410" column="0" />
-        <mark key="." line="430" column="31" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574340999045">
+        <mark key="[" line="170" column="49" />
+        <mark key="m" line="187" column="52" />
+        <mark key="]" line="167" column="26" />
+        <mark key="^" line="167" column="26" />
+        <mark key="." line="167" column="26" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -32,7 +32,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574334478414">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574341228156">
         <mark key="'" line="699" column="44" />
         <mark key="i" line="699" column="44" />
         <mark key="[" line="362" column="23" />
@@ -52,10 +52,9 @@
         <mark key="^" line="295" column="10" />
         <mark key="." line="40" column="75" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574187020157">
-        <mark key="[" line="22" column="31" />
-        <mark key="]" line="22" column="31" />
-        <mark key="." line="22" column="31" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574341183929">
+        <mark key="]" line="26" column="0" />
+        <mark key="." line="26" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -95,27 +94,30 @@
     </jumps>
     <registers>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>&quot;C:/&quot;</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBzZXRfcHJvY2Vzc19lcnJvcigpCg==</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihJbWcubW0zZE9uLCBncmF5c2NhbGU9VHJ1ZSkgXAogICAgICAgICAgICAgICAgICAgIG9yIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKToKICAgICAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ibW0zZE9uLnBuZyIp</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICAgICAgICBpZiBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24sIGdyYXlzY2FsZT1UcnVlKSBcCiAgICAgICAgICAgICAgICBvciBub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24yLCBncmF5c2NhbGU9VHJ1ZSk6CiAgICAgICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5tbTNkKQogICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJtbTNkT24ucG5nIikKICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ21tM2RPbi5wbmcnIik=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCiAgICAgICAgICAgIHBhZy50eXBld3JpdGUoWyJlbnRlciJdKQogICAgICAgICAgICB0aW1lLnNsZWVwKDAuNSk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCiAgICAgICAgICAgICAgICAgICAgICAgIHBhZy50eXBld3JpdGUoWyJlbnRlciJdKQogICAgICAgICAgICAgICAgICAgICAgICB0aW1lLnNsZWVwKDAuNSk=</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
                     or not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):
                 pag.click(Position.mm3d)
@@ -123,11 +125,8 @@
             if if_find_error():
                 raise WaitError(&quot;Not located 'mm3dOn.png'&quot;)</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gPSAxICAjIGRlbCAodmlkaSBlcnJvciBwcmVkIHphY2F0a2VtIGt2dWxpIG1hZ25pZmlrYWNpKQo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">IyAgICAgICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJtbTNkT24ucG5nIikK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gPSAxICAjIGRlbCAodmlkaSBlcnJvciBwcmVkIHphY2F0a2VtIGt2dWxpIG1hZ25pZmlrYWNpKQo=</text>
       </register>
       <register name="-" type="4">
         <text>&quot;C:/&quot;</text>
