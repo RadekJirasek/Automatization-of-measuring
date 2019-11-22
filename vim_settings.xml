@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574350026675">
-        <mark key="[" line="70" column="8" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574446191352">
+        <mark key="[" line="494" column="12" />
         <mark key="m" line="196" column="52" />
-        <mark key="]" line="70" column="8" />
-        <mark key="^" line="177" column="26" />
-        <mark key="." line="70" column="8" />
+        <mark key="]" line="494" column="12" />
+        <mark key="^" line="463" column="22" />
+        <mark key="." line="494" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -32,13 +32,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574352811225">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574445863548">
+        <mark key="e" line="785" column="16" />
         <mark key="'" line="698" column="44" />
         <mark key="i" line="698" column="44" />
-        <mark key="[" line="456" column="54" />
-        <mark key="]" line="456" column="54" />
+        <mark key="[" line="785" column="16" />
+        <mark key="]" line="785" column="16" />
         <mark key="^" line="655" column="14" />
-        <mark key="." line="456" column="54" />
+        <mark key="." line="785" column="16" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
         <mark key="[" line="247" column="0" />
@@ -47,10 +48,10 @@
         <mark key="." line="247" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574187109556">
-        <mark key="[" line="40" column="75" />
-        <mark key="]" line="40" column="75" />
-        <mark key="^" line="295" column="10" />
-        <mark key="." line="40" column="75" />
+        <mark key="[" line="41" column="75" />
+        <mark key="]" line="41" column="75" />
+        <mark key="^" line="296" column="10" />
+        <mark key="." line="41" column="75" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574341183929">
         <mark key="]" line="26" column="0" />
@@ -91,52 +92,58 @@
       <jump line="11" column="0" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="15" column="10" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="27" column="14" filename="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" />
+      <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsgInwgTWVhc3VyZW1lbnQgb2YgdGhlIHNlbnNvciBoYXMgZmFpbGVkIGF0IHN0YXJ0dXAiCg==</text>
+      <register name="1" type="4">
+        <text>file in os.listdir(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]):
+            if file.endswith(&quot;.BMP&quot;):
+               finished_steps = len(os.path.join(measurePath + sType[NumberOfSensor] +
+                                                 &quot;\\&quot; + nameSensor[NumberOfSensor], file))</text>
       </register>
       <register name="&quot;" type="4">
-        <text>Measurement</text>
+        <text>file in os.listdir(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]):
+            if file.endswith(&quot;.BMP&quot;):
+               finished_steps = len(os.path.join(measurePath + sType[NumberOfSensor] +
+                                                 &quot;\\&quot; + nameSensor[NumberOfSensor], file))</text>
       </register>
       <register name="2" type="4">
+        <text>try:
+            with open(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]
+                      , 'r') as finished_planarity_file:
+                finished_planarity_lines = finished_planarity_file.readlines()
+                finished_steps = len(finished_planarity_lines)
+        except OSError:
+            pass
+    elif typeOfProcess == 2:
+        for file in os.listdir(&quot;/mydir&quot;):
+            if file.endswith(&quot;.txt</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgxNSkK</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgIGlmIHR5cGVPZlByb2Nlc3MgPT0gMDoKICAgICAgICBwYXNz</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgICAgICBwYXNzCiAgICBlbHNlOgogICAgICAgIHBhc3M=</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsgInwgTWVhc3VyZW1lbnQgb2YgdGhlIHNlbnNvciBoYXMgZmFpbGVkIGF0IHN0YXJ0dXAiCg==</text>
+      </register>
+      <register name="7" type="4">
         <text>pag.typewrite([&quot;enter&quot;])
         wait(sleep_until=&quot;folderOn.png&quot;)</text>
       </register>
-      <register name="3" type="4">
+      <register name="8" type="4">
         <text>time.sleep(0.5)
                     pag.typewrite([&quot;enter&quot;])</text>
       </register>
-      <register name="4" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDAuMjUpCg==</text>
       </register>
-      <register name="5" type="4">
-        <text>pag.click(Position.system)
-        wait(sleep_until=&quot;resetSystem.png&quot;)
-        if if_find_error():
-            raise WaitError(&quot;Not located 'resetSystem.png'&quot;)
-        pag.click(Position.resetSystem)
-        wait(sleep_until=&quot;system.png&quot;)
-        if if_find_error():
-            raise WaitError(&quot;Not located 'system.png'&quot;)
-        if pag.locateCenterOnScreen(Img.resetSystem, grayscale=True):
-            pag.click(Position.system)
-            wait(sleep_until=&quot;resetSystem.png&quot;)</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgIFBvc2l0aW9uLnJlc2V0U3lzdGVtID0gcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5yZXNldFN5c3RlbSwgZ3JheXNjYWxlPVRydWUpCg==</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">cHJpbnQobWVtb3J5KCJESVNLIikpCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBzZXRfcHJvY2Vzc19lcnJvcigpCg==</text>
-      </register>
       <register name="-" type="4">
-        <text>Measurement</text>
+        <text encoding="base64">IHBy</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
