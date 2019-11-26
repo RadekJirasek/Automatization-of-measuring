@@ -33,7 +33,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574776413528">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574777015091">
         <mark key="e" line="806" column="16" />
         <mark key="'" line="707" column="44" />
         <mark key="i" line="707" column="44" />
@@ -54,11 +54,11 @@
         <mark key="^" line="298" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574774656655">
-        <mark key="[" line="13" column="0" />
-        <mark key="]" line="14" column="0" />
-        <mark key="." line="14" column="0" />
-        <mark key="^" line="13" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574776512228">
+        <mark key="[" line="18" column="12" />
+        <mark key="]" line="18" column="12" />
+        <mark key="." line="18" column="12" />
+        <mark key="^" line="18" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -69,10 +69,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574771980222">
-        <mark key="[" line="160" column="4" />
-        <mark key="]" line="160" column="4" />
-        <mark key="." line="160" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574777105692">
+        <mark key="[" line="21" column="11" />
+        <mark key="]" line="22" column="0" />
+        <mark key="." line="22" column="0" />
+        <mark key="^" line="22" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -100,13 +101,22 @@
       <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="1" type="2">
+      <register name="&quot;" type="4">
+        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICArIA==</text>
+      </register>
+      <register name="-" type="4">
+        <text>Unexpected error has been occurred before or after measuring:&quot; + 3*&quot;\n&quot;</text>
+      </register>
+      <register name="/" type="4">
+        <text encoding="base64">XDxpbWdcPg==</text>
+      </register>
+      <register name="1" type="4">
+        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICArIA==</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxfbGVmdC50eHQiKQo=</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxfbGVmdC50eHQiKQo=</text>
-      </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>disk = &quot;D:/eellel&quot;
 
 
@@ -122,51 +132,28 @@ def memory(memory_type):
 
 print(memory(&quot;RAM&quot;))</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcXVpdF9vbiA9IAo=</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>if if_find_error():
                 raise WaitError(&quot;Error has been occurred in 'reset_mm3d' function.&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>Position of &quot; + str(NumberOfSensor + 1) + &quot;. sensor (&quot; +
                          nameSensor[NumberOfSensor] + &quot;) is: &quot;</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ29wZW4ucG5nJyIpCg==</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">dHlwZU9mUHJvY2VzcyA9IDAgICMgVHlwZSBvZiBtZWFzdXJpbmcgcHJvY2VzcyAoMCA9IGNvbnRyb2wgcHJvY2VzcywgMSA9IG1lYXN1cmluZyBvZiBwbGFuYXJpdHksIDIgPSBzY2FubmluZykuCg==</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCB0eXBlT2ZQcm9jZXNzCg==</text>
       </register>
-      <register name="9" type="4">
-        <text>elif sType == &quot;B&quot;:
-        defName = [&quot;Sensor_A12-&quot;, &quot;_Pos-&quot;, &quot;_Scanning-&quot;]
-        nX = 4
-        nY = 4
-        x = 16
-        y = 23
-        a = [32, 16, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3,
-             3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7,
-             7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9]
-        b = [32, 13, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-             2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-             4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6]
-        c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 13]
-        d = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 10]</text>
-      </register>
-      <register name="-" type="4">
-        <text>programPath</text>
-      </register>
-      <register name="/" type="4">
-        <text encoding="base64">XDxpbWdcPg==</text>
+      <register name=":" type="4">
+        <text>w</text>
       </register>
     </registers>
     <search>
@@ -181,7 +168,9 @@ print(memory(&quot;RAM&quot;))</text>
         <entry encoding="base64">XDx3YWl0XD4=</entry>
         <entry encoding="base64">XDxpbWdcPg==</entry>
       </history-search>
-      <history-cmd />
+      <history-cmd>
+        <entry>w</entry>
+      </history-cmd>
       <history-expr />
       <history-input />
     </history>
