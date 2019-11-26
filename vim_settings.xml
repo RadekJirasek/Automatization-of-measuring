@@ -13,7 +13,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574774702816">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574781437979">
         <mark key="e" line="511" column="28" />
         <mark key="[" line="511" column="18" />
         <mark key="m" line="212" column="52" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574777015091">
-        <mark key="e" line="806" column="16" />
-        <mark key="'" line="707" column="44" />
-        <mark key="i" line="707" column="44" />
-        <mark key="[" line="826" column="12" />
-        <mark key="]" line="826" column="12" />
-        <mark key="^" line="632" column="90" />
-        <mark key="." line="826" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574781757602">
+        <mark key="e" line="807" column="16" />
+        <mark key="'" line="708" column="44" />
+        <mark key="i" line="708" column="44" />
+        <mark key="[" line="523" column="37" />
+        <mark key="]" line="523" column="37" />
+        <mark key="^" line="633" column="90" />
+        <mark key="." line="523" column="37" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
         <mark key="[" line="247" column="0" />
@@ -48,17 +48,17 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574764076960">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574781344572">
         <mark key="[" line="317" column="59" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="298" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574776512228">
-        <mark key="[" line="18" column="12" />
-        <mark key="]" line="18" column="12" />
-        <mark key="." line="18" column="12" />
-        <mark key="^" line="18" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574781717039">
+        <mark key="[" line="20" column="72" />
+        <mark key="]" line="14" column="55" />
+        <mark key="." line="14" column="55" />
+        <mark key="^" line="14" column="55" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -69,11 +69,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574777747321">
-        <mark key="[" line="16" column="0" />
-        <mark key="]" line="16" column="0" />
-        <mark key="." line="16" column="0" />
-        <mark key="^" line="16" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574781127229">
+        <mark key="[" line="271" column="14" />
+        <mark key="]" line="266" column="0" />
+        <mark key="^" line="266" column="0" />
+        <mark key="." line="266" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -102,21 +102,34 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICArIA==</text>
+        <text>sType</text>
       </register>
       <register name="-" type="4">
-        <text>Unexpected error has been occurred before or after measuring:&quot; + 3*&quot;\n&quot;</text>
+        <text>sType</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="4">
+        <text>print(programPath.split(&quot;logs&quot;)[0])
+print(programPath.split(&quot;logs&quot;)[1])</text>
+      </register>
+      <register name="2" type="4">
+        <text>if os.path.exists(&quot;C:\\Users\\&quot; + &quot;JS_ok_&quot;
+                  + str(1) + &quot;.txt&quot;):
+    os.remove(&quot;C:\\Users\\&quot; + &quot;JS_ok_&quot; + str(1) + &quot;.txt&quot;)
+print(&quot;Done&quot;)</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGxvZyA9ICIiCg==</text>
+      </register>
+      <register name="4" type="4">
         <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICArIA==</text>
       </register>
-      <register name="2" type="2">
+      <register name="5" type="2">
         <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxfbGVmdC50eHQiKQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text>disk = &quot;D:/eellel&quot;
 
 
@@ -132,25 +145,16 @@ def memory(memory_type):
 
 print(memory(&quot;RAM&quot;))</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgcXVpdF9vbiA9IAo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text>if if_find_error():
                 raise WaitError(&quot;Error has been occurred in 'reset_mm3d' function.&quot;)</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>Position of &quot; + str(NumberOfSensor + 1) + &quot;. sensor (&quot; +
                          nameSensor[NumberOfSensor] + &quot;) is: &quot;</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ29wZW4ucG5nJyIpCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">dHlwZU9mUHJvY2VzcyA9IDAgICMgVHlwZSBvZiBtZWFzdXJpbmcgcHJvY2VzcyAoMCA9IGNvbnRyb2wgcHJvY2VzcywgMSA9IG1lYXN1cmluZyBvZiBwbGFuYXJpdHksIDIgPSBzY2FubmluZykuCg==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCB0eXBlT2ZQcm9jZXNzCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
