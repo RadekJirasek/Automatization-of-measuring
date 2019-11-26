@@ -32,14 +32,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574767682850">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574772132973">
         <mark key="e" line="806" column="16" />
         <mark key="'" line="707" column="44" />
         <mark key="i" line="707" column="44" />
-        <mark key="[" line="780" column="28" />
-        <mark key="]" line="780" column="28" />
+        <mark key="[" line="826" column="12" />
+        <mark key="]" line="826" column="12" />
         <mark key="^" line="632" column="90" />
-        <mark key="." line="780" column="28" />
+        <mark key="." line="826" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
         <mark key="[" line="247" column="0" />
@@ -66,7 +66,7 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574758580810">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1574771980222">
         <mark key="[" line="160" column="4" />
         <mark key="]" line="160" column="4" />
         <mark key="." line="160" column="4" />
@@ -98,23 +98,27 @@
     </jumps>
     <registers>
       <register name="1" type="4">
-        <text>Position of &quot; + str(NumberOfSensor + 1) + &quot;. sensor (&quot; +
-                         nameSensor[NumberOfSensor] + &quot;) is: &quot;</text>
+        <text>if if_find_error():
+                raise WaitError(&quot;Error has been occurred in 'reset_mm3d' function.&quot;)</text>
       </register>
       <register name="&quot;" type="4">
+        <text>if if_find_error():
+                raise WaitError(&quot;Error has been occurred in 'reset_mm3d' function.&quot;)</text>
+      </register>
+      <register name="2" type="4">
         <text>Position of &quot; + str(NumberOfSensor + 1) + &quot;. sensor (&quot; +
                          nameSensor[NumberOfSensor] + &quot;) is: &quot;</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiTm90IGxvY2F0ZWQgJ29wZW4ucG5nJyIpCg==</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">dHlwZU9mUHJvY2VzcyA9IDAgICMgVHlwZSBvZiBtZWFzdXJpbmcgcHJvY2VzcyAoMCA9IGNvbnRyb2wgcHJvY2VzcywgMSA9IG1lYXN1cmluZyBvZiBwbGFuYXJpdHksIDIgPSBzY2FubmluZykuCg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCB0eXBlT2ZQcm9jZXNzCg==</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>elif sType == &quot;B&quot;:
         defName = [&quot;Sensor_A12-&quot;, &quot;_Pos-&quot;, &quot;_Scanning-&quot;]
         nX = 4
@@ -134,13 +138,13 @@
              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 10]</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>file in os.listdir(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]):
             if file.endswith(&quot;.BMP&quot;):
                finished_steps = len(os.path.join(measurePath + sType[NumberOfSensor] +
                                                  &quot;\\&quot; + nameSensor[NumberOfSensor], file))</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>try:
             with open(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]
                       , 'r') as finished_planarity_file:
@@ -152,11 +156,8 @@
         for file in os.listdir(&quot;/mydir&quot;):
             if file.endswith(&quot;.txt</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgxNSkK</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgIGlmIHR5cGVPZlByb2Nlc3MgPT0gMDoKICAgICAgICBwYXNz</text>
       </register>
       <register name="-" type="4">
         <text>nameSensor[NumberOfSensor]))</text>
