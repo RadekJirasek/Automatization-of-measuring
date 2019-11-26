@@ -13,12 +13,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574446191352">
-        <mark key="[" line="494" column="12" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1574762596521">
+        <mark key="[" line="478" column="0" />
         <mark key="m" line="196" column="52" />
-        <mark key="]" line="494" column="12" />
+        <mark key="]" line="478" column="0" />
         <mark key="^" line="463" column="22" />
-        <mark key="." line="494" column="12" />
+        <mark key="." line="478" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -32,7 +32,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574759737743">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1574761869157">
         <mark key="e" line="785" column="16" />
         <mark key="'" line="698" column="44" />
         <mark key="i" line="698" column="44" />
@@ -47,11 +47,11 @@
         <mark key="^" line="247" column="0" />
         <mark key="." line="247" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574187109556">
-        <mark key="[" line="41" column="75" />
-        <mark key="]" line="41" column="75" />
-        <mark key="^" line="296" column="10" />
-        <mark key="." line="41" column="75" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574762536286">
+        <mark key="[" line="38" column="0" />
+        <mark key="]" line="38" column="0" />
+        <mark key="^" line="295" column="10" />
+        <mark key="." line="38" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574341183929">
         <mark key="]" line="26" column="0" />
@@ -97,7 +97,16 @@
       <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">dHlwZU9mUHJvY2VzcyA9IDAgICMgVHlwZSBvZiBtZWFzdXJpbmcgcHJvY2VzcyAoMCA9IGNvbnRyb2wgcHJvY2VzcywgMSA9IG1lYXN1cmluZyBvZiBwbGFuYXJpdHksIDIgPSBzY2FubmluZykuCg==</text>
+      </register>
+      <register name="&quot;" type="2">
+        <text encoding="base64">dHlwZU9mUHJvY2VzcyA9IDAgICMgVHlwZSBvZiBtZWFzdXJpbmcgcHJvY2VzcyAoMCA9IGNvbnRyb2wgcHJvY2VzcywgMSA9IG1lYXN1cmluZyBvZiBwbGFuYXJpdHksIDIgPSBzY2FubmluZykuCg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCB0eXBlT2ZQcm9jZXNzCg==</text>
+      </register>
+      <register name="3" type="4">
         <text>elif sType == &quot;B&quot;:
         defName = [&quot;Sensor_A12-&quot;, &quot;_Pos-&quot;, &quot;_Scanning-&quot;]
         nX = 4
@@ -117,33 +126,13 @@
              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 10]</text>
       </register>
-      <register name="&quot;" type="4">
-        <text>elif sType == &quot;B&quot;:
-        defName = [&quot;Sensor_A12-&quot;, &quot;_Pos-&quot;, &quot;_Scanning-&quot;]
-        nX = 4
-        nY = 4
-        x = 16
-        y = 23
-        a = [32, 16, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3,
-             3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7,
-             7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9]
-        b = [32, 13, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-             2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-             4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6]
-        c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 13]
-        d = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 10]</text>
-      </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>file in os.listdir(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]):
             if file.endswith(&quot;.BMP&quot;):
                finished_steps = len(os.path.join(measurePath + sType[NumberOfSensor] +
                                                  &quot;\\&quot; + nameSensor[NumberOfSensor], file))</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>try:
             with open(measurePath + sType[NumberOfSensor] + &quot;\\&quot; + nameSensor[NumberOfSensor]
                       , 'r') as finished_planarity_file:
@@ -155,28 +144,20 @@
         for file in os.listdir(&quot;/mydir&quot;):
             if file.endswith(&quot;.txt</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgxNSkK</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgIGlmIHR5cGVPZlByb2Nlc3MgPT0gMDoKICAgICAgICBwYXNz</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgICAgICBwYXNzCiAgICBlbHNlOgogICAgICAgIHBhc3M=</text>
       </register>
-      <register name="7" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsgInwgTWVhc3VyZW1lbnQgb2YgdGhlIHNlbnNvciBoYXMgZmFpbGVkIGF0IHN0YXJ0dXAiCg==</text>
       </register>
-      <register name="8" type="4">
-        <text>pag.typewrite([&quot;enter&quot;])
-        wait(sleep_until=&quot;folderOn.png&quot;)</text>
-      </register>
-      <register name="9" type="4">
-        <text>time.sleep(0.5)
-                    pag.typewrite([&quot;enter&quot;])</text>
-      </register>
       <register name="-" type="4">
-        <text encoding="base64">c3RyKE51bWJlck9mU2Vuc29yKSArIGRlZk5hbWVbMl0g</text>
+        <text>i</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
