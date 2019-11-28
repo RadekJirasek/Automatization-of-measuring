@@ -3,7 +3,7 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="/Python Console" timestamp="1574341191547">
+      <file name="/Python Console" timestamp="1574951432710">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1573056600375">
@@ -80,12 +80,12 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1573137606453">
-        <mark key="'" line="24" column="10" />
-        <mark key="[" line="32" column="0" />
-        <mark key="]" line="30" column="20" />
-        <mark key="." line="30" column="20" />
-        <mark key="^" line="30" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574952203207">
+        <mark key="'" line="39" column="18" />
+        <mark key="[" line="24" column="0" />
+        <mark key="]" line="24" column="0" />
+        <mark key="^" line="37" column="26" />
+        <mark key="." line="24" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -96,25 +96,38 @@
       <jump line="15" column="10" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="27" column="14" filename="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" />
       <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
+      <jump line="44" column="18" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>1</text>
+        <text encoding="base64">CiAgICBpZgogICAgICAgIHBsdC5pbXNob3coaW1nKQogICAgICAgIHBsdC5zaG93KCk=</text>
       </register>
       <register name="-" type="4">
-        <text>1</text>
+        <text>1]</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="4">
+        <text encoding="base64">CiAgICBpZgogICAgICAgIHBsdC5pbXNob3coaW1nKQogICAgICAgIHBsdC5zaG93KCk=</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICAjIGltZyA9IHBsdC5pbXJlYWQoIkM6XFxVc2Vyc1xcVXppdmF0ZWxcXERlc2t0b3BcXGJyYW1ib3J5LnBuZyIpCgogICAgIyBpbWdfZmZ0ID0gc2MuZmZ0cGFjay5mZnQyKGltZ19hcnJheSkKCiAgICAjIHBsdC5pbXNob3cobnAuYWJzKGltZ19mZnQpLCBub3JtPUxvZ05vcm0odm1pbj01KSk=</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGltZ19hcnJheSA9IG5wLmFycmF5KGltZykK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIHByaW50KGltZ19mZnRbMV0pCg==</text>
+      </register>
+      <register name="5" type="4">
         <text>if ErrorId.startJoinScreens[NumberOfSensor] == 1:
             ErrorId.completeJoinScreens[NumberOfSensor] = 2</text>
       </register>
-      <register name="2" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBFcnJvcklkLmNvbXBsZXRlSm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="7" type="4">
         <text>programPath = &quot;C:\\Program Files\\MetrologyAndScanning\\&quot;
 logFile = &quot;C:\\Program Files\\MetrologyAndScanning\\logs\\19_11_26_16_28.txt&quot;
 
@@ -124,27 +137,12 @@ print(programPath + &quot;join_images_script.exe 1 &quot; + &quot;C:\\Partrtn&qu
       + &quot; &quot; + programPath.split(&quot; &quot;)[0] + &quot; &quot; + programPath.split(&quot; &quot;)[1] \
       + &quot; &quot; + &quot;logs&quot; + logFile.split(&quot;logs&quot;)[1])</text>
       </register>
-      <register name="4" type="4">
+      <register name="8" type="4">
         <text encoding="base64">ICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICBzZXRfcHJvY2Vzc19lcnJvcigpCiAgICAgICAgcGFnLmNsaWNrKDM1MCwgMjcwKQogICAgICAgIHdhaXQoc2xlZXBfdW50aWw9InF1aXRTdGVwLnBuZyIp</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text>print(programPath.split(&quot;logs&quot;)[0])
 print(programPath.split(&quot;logs&quot;)[1])</text>
-      </register>
-      <register name="6" type="4">
-        <text>if os.path.exists(&quot;C:\\Users\\&quot; + &quot;JS_ok_&quot;
-                  + str(1) + &quot;.txt&quot;):
-    os.remove(&quot;C:\\Users\\&quot; + &quot;JS_ok_&quot; + str(1) + &quot;.txt&quot;)
-print(&quot;Done&quot;)</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIGxvZyA9ICIiCg==</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICArIA==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxfbGVmdC50eHQiKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
