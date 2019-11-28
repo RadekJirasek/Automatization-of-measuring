@@ -80,12 +80,12 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574952203207">
-        <mark key="'" line="39" column="18" />
-        <mark key="[" line="24" column="0" />
-        <mark key="]" line="24" column="0" />
-        <mark key="^" line="37" column="26" />
-        <mark key="." line="24" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574955665181">
+        <mark key="'" line="40" column="18" />
+        <mark key="[" line="32" column="21" />
+        <mark key="]" line="32" column="21" />
+        <mark key="^" line="32" column="21" />
+        <mark key="." line="32" column="21" />
       </file>
     </filemarks>
     <jumps>
@@ -100,10 +100,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICBpZgogICAgICAgIHBsdC5pbXNob3coaW1nKQogICAgICAgIHBsdC5zaG93KCk=</text>
+        <text>getdouble()</text>
       </register>
       <register name="-" type="4">
-        <text>1]</text>
+        <text>getdouble()</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
