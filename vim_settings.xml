@@ -80,12 +80,11 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574955665181">
-        <mark key="'" line="40" column="18" />
-        <mark key="[" line="32" column="21" />
-        <mark key="]" line="32" column="21" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574973132977">
+        <mark key="[" line="47" column="55" />
+        <mark key="]" line="47" column="56" />
         <mark key="^" line="32" column="21" />
-        <mark key="." line="32" column="21" />
+        <mark key="." line="47" column="55" />
       </file>
     </filemarks>
     <jumps>
@@ -96,14 +95,14 @@
       <jump line="15" column="10" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="27" column="14" filename="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" />
       <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
-      <jump line="44" column="18" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
+      <jump line="44" column="35" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>getdouble()</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>getdouble()</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
