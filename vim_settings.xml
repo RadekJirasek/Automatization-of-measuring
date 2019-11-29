@@ -80,12 +80,10 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1574974922988">
-        <mark key="'" line="48" column="43" />
-        <mark key="[" line="42" column="10" />
-        <mark key="]" line="42" column="10" />
-        <mark key="." line="42" column="10" />
-        <mark key="^" line="48" column="38" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1575063969012">
+        <mark key="[" line="28" column="0" />
+        <mark key="]" line="28" column="0" />
+        <mark key="." line="28" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -100,42 +98,42 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text />
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBmb3VyaWVyKGltZykK</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>plt.close()</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBmb3VyaWVyKGltZykK</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgIGkgPSBucC5zcXJ0KC0xKQo=</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">ICAgIAoKICAgIGludl9mZnRfaW1nID0gbnAuZmZ0LmlmZnQyKG5wLmZmdC5pZmZ0c2hpZnQoc2hpZnRfZmZ0KSkKICAgICMgcHJpbnQoYWJzX2ltZ19mZnQpCiAgICBwbHQuaW1zaG93KGludl9mZnRfaW1nKQogICAgcGx0LnNob3coKQoKCmNoZWNrID0gSW50VmFyKCkKCnJvb3QudGl0bGUoIkFuYWx5c2luZyBvZiB0aGUgaW1hZ2UiKQpyb290LnJlc2l6YWJsZSgwLCAwKQpCdXR0b25Gb3VyaWVyID0gdGtpbnRlci5CdXR0b24ocm9vdCwgdGV4dD0iU3RhciBhbmFseXNpcyIsIGNvbW1hbmQ9</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">ICAgICAgICAgICAgICAgICMgcHJpbnQoYSkKICAgICAgICAgICAgICAgICMgcHJpbnQoYik=</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CiAgICBpZgogICAgICAgIHBsdC5pbXNob3coaW1nKQogICAgICAgIHBsdC5zaG93KCk=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiAgICAjIGltZyA9IHBsdC5pbXJlYWQoIkM6XFxVc2Vyc1xcVXppdmF0ZWxcXERlc2t0b3BcXGJyYW1ib3J5LnBuZyIpCgogICAgIyBpbWdfZmZ0ID0gc2MuZmZ0cGFjay5mZnQyKGltZ19hcnJheSkKCiAgICAjIHBsdC5pbXNob3cobnAuYWJzKGltZ19mZnQpLCBub3JtPUxvZ05vcm0odm1pbj01KSk=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIGltZ19hcnJheSA9IG5wLmFycmF5KGltZykK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIHByaW50KGltZ19mZnRbMV0pCg==</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>if ErrorId.startJoinScreens[NumberOfSensor] == 1:
             ErrorId.completeJoinScreens[NumberOfSensor] = 2</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBFcnJvcklkLmNvbXBsZXRlSm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
