@@ -30,14 +30,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575144117678">
-        <mark key="e" line="858" column="16" />
-        <mark key="'" line="759" column="44" />
-        <mark key="i" line="759" column="44" />
-        <mark key="[" line="204" column="36" />
-        <mark key="]" line="204" column="36" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575148385278">
+        <mark key="e" line="859" column="16" />
+        <mark key="'" line="760" column="44" />
+        <mark key="i" line="760" column="44" />
+        <mark key="[" line="210" column="75" />
+        <mark key="]" line="210" column="75" />
         <mark key="^" line="170" column="70" />
-        <mark key="." line="204" column="36" />
+        <mark key="." line="210" column="75" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575119830591">
         <mark key="[" line="243" column="0" />
@@ -99,10 +99,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text />
+        <text encoding="base64">b3JpZ2lucyA=</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text encoding="base64">b3JpZ2lucyA=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
