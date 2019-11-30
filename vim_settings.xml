@@ -39,11 +39,10 @@
         <mark key="^" line="633" column="90" />
         <mark key="." line="523" column="37" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1574187203639">
-        <mark key="[" line="247" column="0" />
-        <mark key="]" line="247" column="0" />
-        <mark key="^" line="247" column="0" />
-        <mark key="." line="247" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575114622470">
+        <mark key="[" line="254" column="0" />
+        <mark key="]" line="254" column="0" />
+        <mark key="." line="254" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574784015594">
         <mark key="[" line="319" column="63" />
@@ -80,7 +79,7 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1575063969012">
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1575113783754">
         <mark key="[" line="28" column="0" />
         <mark key="]" line="28" column="0" />
         <mark key="." line="28" column="0" />
@@ -98,42 +97,65 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBmb3VyaWVyKGltZykK</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">ICAgIFIwID0gCiAgICBSMSA9IEludFZhcigpCiAgICBSMiA9IEludFZhcigpCiAgICBSMyA9IEludFZhcigpCiAgICBSNCA9IEludFZhcigpCiAgICBSNSA9IEludFZhcigp</text>
       </register>
       <register name="-" type="4">
-        <text>plt.close()</text>
+        <text>IntVar()</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text encoding="base64">ICAgIFIwID0gCiAgICBSMSA9IEludFZhcigpCiAgICBSMiA9IEludFZhcigpCiAgICBSMyA9IEludFZhcigpCiAgICBSNCA9IEludFZhcigpCiAgICBSNSA9IEludFZhcigp</text>
+      </register>
+      <register name="2" type="4">
+        <text>def measurement_select():
+        global mSensor
+        if mSensor[NumberOfSensor] == 1:
+            mSensor[NumberOfSensor] = 0
+        else:
+            mSensor[NumberOfSensor] = 1
+    # ↑ Switch function of Measurement.
+
+
+    def scanning_select():
+        global sSensor
+        if sSensor[NumberOfSensor] == 1:
+            sSensor[NumberOfSensor] = 0
+        else:
+            sSensor[NumberOfSensor] = 1
+    # ↑ Switch function of Scanning.
+
+
+    def aps_select():
+        global pSensor
+        if pSensor[NumberOfSensor] == 1:
+            pSensor[NumberOfSensor] = 0
+        else:
+            pSensor[NumberOfSensor] = 1
+    # ↑ Switch function of automatic position system.</text>
+      </register>
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICBmb3VyaWVyKGltZykK</text>
       </register>
-      <register name="2" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgIGkgPSBucC5zcXJ0KC0xKQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICAgIAoKICAgIGludl9mZnRfaW1nID0gbnAuZmZ0LmlmZnQyKG5wLmZmdC5pZmZ0c2hpZnQoc2hpZnRfZmZ0KSkKICAgICMgcHJpbnQoYWJzX2ltZ19mZnQpCiAgICBwbHQuaW1zaG93KGludl9mZnRfaW1nKQogICAgcGx0LnNob3coKQoKCmNoZWNrID0gSW50VmFyKCkKCnJvb3QudGl0bGUoIkFuYWx5c2luZyBvZiB0aGUgaW1hZ2UiKQpyb290LnJlc2l6YWJsZSgwLCAwKQpCdXR0b25Gb3VyaWVyID0gdGtpbnRlci5CdXR0b24ocm9vdCwgdGV4dD0iU3RhciBhbmFseXNpcyIsIGNvbW1hbmQ9</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgICAgICAgICAgICAgICMgcHJpbnQoYSkKICAgICAgICAgICAgICAgICMgcHJpbnQoYik=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICBpZgogICAgICAgIHBsdC5pbXNob3coaW1nKQogICAgICAgIHBsdC5zaG93KCk=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">CiAgICAjIGltZyA9IHBsdC5pbXJlYWQoIkM6XFxVc2Vyc1xcVXppdmF0ZWxcXERlc2t0b3BcXGJyYW1ib3J5LnBuZyIpCgogICAgIyBpbWdfZmZ0ID0gc2MuZmZ0cGFjay5mZnQyKGltZ19hcnJheSkKCiAgICAjIHBsdC5pbXNob3cobnAuYWJzKGltZ19mZnQpLCBub3JtPUxvZ05vcm0odm1pbj01KSk=</text>
       </register>
-      <register name="7" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgIGltZ19hcnJheSA9IG5wLmFycmF5KGltZykK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIHByaW50KGltZ19mZnRbMV0pCg==</text>
-      </register>
-      <register name="9" type="4">
-        <text>if ErrorId.startJoinScreens[NumberOfSensor] == 1:
-            ErrorId.completeJoinScreens[NumberOfSensor] = 2</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
