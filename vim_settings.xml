@@ -13,13 +13,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575149366415">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575224329818">
         <mark key="e" line="513" column="28" />
-        <mark key="[" line="527" column="0" />
+        <mark key="[" line="404" column="0" />
         <mark key="m" line="212" column="52" />
-        <mark key="]" line="527" column="0" />
+        <mark key="]" line="404" column="0" />
         <mark key="^" line="117" column="63" />
-        <mark key="." line="527" column="0" />
+        <mark key="." line="404" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -33,20 +33,20 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575201948865">
-        <mark key="e" line="759" column="16" />
-        <mark key="'" line="660" column="44" />
-        <mark key="i" line="660" column="44" />
-        <mark key="[" line="449" column="0" />
-        <mark key="]" line="449" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575223955159">
+        <mark key="e" line="762" column="16" />
+        <mark key="'" line="663" column="44" />
+        <mark key="i" line="663" column="44" />
+        <mark key="[" line="127" column="25" />
+        <mark key="]" line="127" column="25" />
         <mark key="^" line="66" column="19" />
-        <mark key="." line="449" column="0" />
+        <mark key="." line="127" column="25" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575119830591">
-        <mark key="[" line="243" column="0" />
-        <mark key="]" line="243" column="0" />
-        <mark key="." line="243" column="0" />
-        <mark key="^" line="243" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575224741790">
+        <mark key="[" line="10" column="0" />
+        <mark key="]" line="10" column="0" />
+        <mark key="^" line="236" column="0" />
+        <mark key="." line="10" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1574784015594">
         <mark key="[" line="319" column="63" />
@@ -102,300 +102,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+        <text encoding="base64">ICAgICAgICBzVHlwZSA9ICIiCg==</text>
       </register>
       <register name="-" type="4">
-        <text>ErrorId.startMeasuring[NumberOfSensor] = 2</text>
+        <text>[NumberOfSensor]</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+        <text encoding="base64">ICAgICAgICBzVHlwZSA9ICIiCg==</text>
       </register>
       <register name="2" type="4">
-        <text>&quot;&quot;&quot;
-                    if ErrorId.completeMeasuring[NumberOfSensor] != 1 or not manually: 
-                        start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
-                        if if_find_error():
-                            ErrorId.startScanning[NumberOfSensor] = 2
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Setting origin of Z axis has failed (during start of Z origin routine).&quot;)
-#                            continue
-                        wait(False)
-                        if if_find_error():
-                            ErrorId.startScanning[NumberOfSensor] = 2
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Scanning of the sensor has failed at startup &quot;
-                                     &quot;(during process of Z origin routine).&quot;)
-#                            continue
-                        else:
-                            time.sleep(0.5)  # asi nemazat
-                            pag.click(Position.resetRoutine)
-                            time.sleep(0.5)  # wait(sleep_until=&quot;resetRoutine.png&quot;)
-                            if if_find_error():
-                                ErrorId.startScanning[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'resetRoutine.png'.&quot;)
-#                                continue
-                            pag.click(Position.resetZ)
-                            time.sleep(0.5)  # wait(sleep_until=&quot;resetZOn.png&quot;)
-                            if if_find_error():
-                                ErrorId.startScanning[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'resetZOn.png'.&quot;)
-#                                continue
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Origin of Z axis has been successfully set&quot;)
-                    &quot;&quot;&quot;</text>
+        <text encoding="base64">CiAgICBkZWYgYl9zZWxlY3QoKToKICAgICAgICBnbG9iYWwgc1R5cGUKICAgICAgICBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPSAiQiIKICAgICAgICBUeXBlTWVudVsidGV4dCJdID0gIlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICAiICsgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdCiAgICAjID8gU3dpdGNoIGZ1bmN0aW9uIG9mIHR5cGUgb2Ygc2Vuc29yLiBJdCB3aWxsIHNlbGVjdCB0eXBlIEIu</text>
       </register>
       <register name="3" type="4">
-        <text>def scanning_process():
-    start_routine(str(NumberOfSensor + 1) + &quot;_left.RTN&quot;)
-    if if_find_error():
-        ErrorId.startScanning[NumberOfSensor] = 2
-        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                 + &quot;| Scanning of the sensor has failed at startup &quot;
-                   &quot;(during start of position routine).&quot;)
-        continue
-    time.sleep(10)
-    wait(False)
-    if if_find_error():
-        ErrorId.startScanning[NumberOfSensor] = 2
-        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                 + &quot;| Scanning of the sensor has failed at startup &quot;
-                   &quot;(during process of position routine).&quot;)
-        continue
-    else:
-        time.sleep(0.5)
-        pag.click(Position.resetRoutine)
-        wait(sleep_until=&quot;resetRoutineOn.png&quot;)
-        if if_find_error():
-            ErrorId.startScanning[NumberOfSensor] = 2
-            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                     + &quot;| Has been detected that result of previous line of code was &quot;
-                       &quot;unsuccessful - wait function (locate on screen) of&quot;
-                       &quot; 'resetRoutineOn.png'.&quot;)
-            continue
-        if ErrorId.startScanning[NumberOfSensor] == 0:
-            reset_origins()
-            if if_find_error():
-                ErrorId.startScanning[NumberOfSensor] = 2
-                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                         + &quot;| Scanning of the sensor has failed at startup&quot;
-                           &quot; (during resetting the origins of axis).&quot;)
-                continue
-# ↑ Start routine for correct sensor type.</text>
+        <text encoding="base64">CiAgICBkZWYgYl9zZWxlY3QoKToKICAgICAgICBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPSAiQiIKICAgICAgICBUeXBlTWVudVsidGV4dCJdID0gIlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICAiICsgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdCiAgICAjID8gU3dpdGNoIGZ1bmN0aW9uIG9mIHR5cGUgb2Ygc2Vuc29yLiBJdCB3aWxsIHNlbGVjdCB0eXBlIEIuCg==</text>
       </register>
-      <register name="4" type="4">
-        <text>&quot;&quot;&quot;
-                    if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                        
-                        start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
-                        if if_find_error():
-                            ErrorId.startMeasuring[NumberOfSensor] = 2
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Setting origin of Z axis has failed (during start of Z origin routine).&quot;)
-                        else:
-                            wait(False)
-                            if if_find_error():
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Setting origin of Z axis has failed (during process of Z origin routine).&quot;)
-
-                        if not if_find_error(): 
-                            time.sleep(0.5)  # asi nemazat
-                            pag.click(Position.resetRoutine)
-                            time.sleep(0.5)  # wait(sleep_until=&quot;resetRoutine.png&quot;)
-                            if if_find_error():
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'resetRoutine.png'.&quot;)
-                            if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                                pag.click(Position.resetZ)
-                                time.sleep(0.5)  # wait(sleep_until=&quot;resetZOn.png&quot;)
-                                if if_find_error():
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                             &quot; - wait function (locate on screen) of 'resetZOn.png'.&quot;)
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Origin of Z axis has been successfully set&quot;)
-                        &quot;&quot;&quot;
-
-                    if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                        if manually:
-                            &quot;&quot;&quot;
-                            pag.alert(&quot;Steps:&quot; + &quot;\n&quot; + &quot;1.) You must set axes in the program manually &quot;
-                                                        &quot;(Use manual).&quot;
-                                      + &quot;\n&quot; + &quot;2.) The lower left hand corner of sensor is zero &quot;
-                                               &quot;position of X a Y axes.&quot;
-                                      + &quot;\n&quot; + &quot;3.) The lower right hand corner of sensor is zero &quot;
-                                               &quot;position of angle.&quot;
-                                      + &quot;\n&quot; + &quot;4.) Click here to 'Start' button.&quot;,
-                                      &quot;Set manually position of sensor&quot;, &quot;START&quot;, root=SMS)
-
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Manually setting position of &quot; + str(NumberOfSensor + 1) +
-                                     &quot;. sensor has been successfully completed&quot;)
-                            time.sleep(2)
- 
-                            if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
-                                    and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):
-                                pag.click(Position.mm3d)
-                                wait(sleep_until=&quot;mm3dOn.png&quot;)
-                            if if_find_error():
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'mm3dOn.png'.&quot;)
-                                continue
-                            &quot;&quot;&quot;
-                            
-                        else:
-                            start_routine(str(NumberOfSensor + 1) + &quot;_left.RTN&quot;)
-                            if if_find_error():
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Measurement of the sensor has failed at startup &quot;
-                                         &quot;(during start of position routine).&quot;)
-                            else:
-                                time.sleep(5)
-                                wait(False)
-                                if if_find_error():
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Measurement of the sensor has failed at startup &quot;
-                                             &quot;(during process of position routine).&quot;)
-                            if not if_find_error():
-                                time.sleep(0.5)
-                                pag.click(Position.resetRoutine)
-                                wait(sleep_until=&quot;resetRoutine.png&quot;)
-                                if if_find_error():
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Has been detected that result of previous line of&quot;
-                                             &quot; code was unsuccessful - wait function (locate on screen)&quot;
-                                             &quot; of 'resetRoutine.png'.&quot;)
-                                if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                                    reset_origins()
-                                    if if_find_error():
-                                        ErrorId.startMeasuring[NumberOfSensor] = 2
-                                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                                                 + &quot;| Measurement of the sensor has failed at startup&quot;
-                                                   &quot; (during resetting the origins of axis).&quot;)
-                                    else:
-                                        start_routine(&quot;Sensor_A12-&quot; + sType[NumberOfSensor] + &quot;_Measuring.RTN&quot;)
-                                        if if_find_error():
-                                            ErrorId.startMeasuring[NumberOfSensor] = 2
-                                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                                                     + &quot;| Measurement of the sensor has failed at startup&quot;
-                                                     &quot; (during start of routine).&quot;)</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
-      <register name="5" type="4">
-        <text>if manually:
-                            &quot;&quot;&quot;
-                            pag.alert(&quot;Steps:&quot; + &quot;\n&quot; + &quot;1.) You must set axes in the program manually &quot;
-                                                        &quot;(Use manual).&quot;
-                                      + &quot;\n&quot; + &quot;2.) The lower left hand corner of sensor is zero &quot;
-                                               &quot;position of X a Y axes.&quot;
-                                      + &quot;\n&quot; + &quot;3.) The lower right hand corner of sensor is zero &quot;
-                                               &quot;position of angle.&quot;
-                                      + &quot;\n&quot; + &quot;4.) Click here to 'Start' button.&quot;,
-                                      &quot;Set manually position of sensor&quot;, &quot;START&quot;, root=SMS)
-
-                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                     &quot;| Manually setting position of &quot; + str(NumberOfSensor + 1) +
-                                     &quot;. sensor has been successfully completed&quot;)
-                            time.sleep(2)
- 
-                            if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
-                                    and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):
-                                pag.click(Position.mm3d)
-                                wait(sleep_until=&quot;mm3dOn.png&quot;)
-                            if if_find_error():
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'mm3dOn.png'.&quot;)
-                                continue
-                            &quot;&quot;&quot;
-                            
-                        else:
-                            start_routine(str(NumberOfSensor + 1) + &quot;_left.RTN&quot;)
-                            if if_find_error():
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Measurement of the sensor has failed at startup &quot;
-                                         &quot;(during start of position routine).&quot;)
-                            else:
-                                time.sleep(5)
-                                wait(False)
-                                if if_find_error():
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Measurement of the sensor has failed at startup &quot;
-                                             &quot;(during process of position routine).&quot;)
-                            if not if_find_error():
-                                time.sleep(0.5)
-                                pag.click(Position.resetRoutine)
-                                wait(sleep_until=&quot;resetRoutine.png&quot;)
-                                if if_find_error():
-                                    ErrorId.startMeasuring[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                             &quot;| Has been detected that result of previous line of&quot;
-                                             &quot; code was unsuccessful - wait function (locate on screen)&quot;
-                                             &quot; of 'resetRoutine.png'.&quot;)
-                                if ErrorId.startMeasuring[NumberOfSensor] == 0:
-                                    reset_origins()
-                                    if if_find_error():
-                                        ErrorId.startMeasuring[NumberOfSensor] = 2
-                                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                                                 + &quot;| Measurement of the sensor has failed at startup&quot;
-                                                   &quot; (during resetting the origins of axis).&quot;)
-                                    else:
-                                        start_routine(&quot;Sensor_A12-&quot; + sType[NumberOfSensor] + &quot;_Measuring.RTN&quot;)
-                                        if if_find_error():
-                                            ErrorId.startMeasuring[NumberOfSensor] = 2
-                                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                                                     + &quot;| Measurement of the sensor has failed at startup&quot;
-                                                     &quot; (during start of routine).&quot;)</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">Cgo=</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
-      <register name="7" type="4">
-        <text>start_routine(&quot;Sensor_A12-&quot; + sType[NumberOfSensor] + &quot;_Measuring-Manually.RTN&quot;)
-                            if if_find_error():
-                                ErrorId.startMeasuring[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Measurement of the sensor has failed at startup &quot;
-                                         &quot;(during start of routine).&quot;)</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
-      <register name="8" type="4">
-        <text>if manually:
-                            pag.click(Position.resetAngle)
-                            wait(sleep_until=&quot;resetAngleOn.png&quot;)
-                            if if_find_error():
-                                ErrorId.startScanning[NumberOfSensor] = 2
-                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
-                                         &quot; - wait function (locate on screen) of 'resetAngleOn.png'.&quot;)
-                                continue
-                            if ErrorId.startScanning[NumberOfSensor] == 0:
-                                start_routine(&quot;Sensor_A12-&quot; + sType[NumberOfSensor] + &quot;_Scanning-Manually.RTN&quot;)
-                                if if_find_error():
-                                    ErrorId.startScanning[NumberOfSensor] = 2
-                                    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
-                                             + &quot;| Scanning of the sensor has failed at startup &quot;
-                                             &quot;(during start of routine).&quot;)
-                                    continue
-                        else:</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
-      <register name="9" type="4">
-        <text>:
-                                ErrorId</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc1R5cGUK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
