@@ -33,11 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575150235977">
-        <mark key="e" line="806" column="16" />
-        <mark key="'" line="707" column="44" />
-        <mark key="i" line="707" column="44" />
-        <mark key="[" line="81" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575201948865">
+        <mark key="e" line="759" column="16" />
+        <mark key="'" line="660" column="44" />
+        <mark key="i" line="660" column="44" />
+        <mark key="[" line="449" column="0" />
+        <mark key="]" line="449" column="0" />
+        <mark key="^" line="66" column="19" />
+        <mark key="." line="449" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575119830591">
         <mark key="[" line="243" column="0" />
@@ -98,16 +101,95 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">bm90IG1hbnVhbGx5IGFuZCA=</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">bm90IG1hbnVhbGx5IGFuZCA=</text>
+        <text>ErrorId.startMeasuring[NumberOfSensor] = 2</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoKQo=</text>
+      </register>
+      <register name="2" type="4">
+        <text>&quot;&quot;&quot;
+                    if ErrorId.completeMeasuring[NumberOfSensor] != 1 or not manually: 
+                        start_routine(&quot;Sensor_A12-AllType_Z-Origin.RTN&quot;)
+                        if if_find_error():
+                            ErrorId.startScanning[NumberOfSensor] = 2
+                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                     &quot;| Setting origin of Z axis has failed (during start of Z origin routine).&quot;)
+#                            continue
+                        wait(False)
+                        if if_find_error():
+                            ErrorId.startScanning[NumberOfSensor] = 2
+                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                     &quot;| Scanning of the sensor has failed at startup &quot;
+                                     &quot;(during process of Z origin routine).&quot;)
+#                            continue
+                        else:
+                            time.sleep(0.5)  # asi nemazat
+                            pag.click(Position.resetRoutine)
+                            time.sleep(0.5)  # wait(sleep_until=&quot;resetRoutine.png&quot;)
+                            if if_find_error():
+                                ErrorId.startScanning[NumberOfSensor] = 2
+                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
+                                         &quot; - wait function (locate on screen) of 'resetRoutine.png'.&quot;)
+#                                continue
+                            pag.click(Position.resetZ)
+                            time.sleep(0.5)  # wait(sleep_until=&quot;resetZOn.png&quot;)
+                            if if_find_error():
+                                ErrorId.startScanning[NumberOfSensor] = 2
+                                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                         &quot;| Has been detected that result of previous line of code was unsuccessful&quot;
+                                         &quot; - wait function (locate on screen) of 'resetZOn.png'.&quot;)
+#                                continue
+                            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                     &quot;| Origin of Z axis has been successfully set&quot;)
+                    &quot;&quot;&quot;</text>
+      </register>
+      <register name="3" type="4">
+        <text>def scanning_process():
+    start_routine(str(NumberOfSensor + 1) + &quot;_left.RTN&quot;)
+    if if_find_error():
+        ErrorId.startScanning[NumberOfSensor] = 2
+        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
+                 + &quot;| Scanning of the sensor has failed at startup &quot;
+                   &quot;(during start of position routine).&quot;)
+        continue
+    time.sleep(10)
+    wait(False)
+    if if_find_error():
+        ErrorId.startScanning[NumberOfSensor] = 2
+        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
+                 + &quot;| Scanning of the sensor has failed at startup &quot;
+                   &quot;(during process of position routine).&quot;)
+        continue
+    else:
+        time.sleep(0.5)
+        pag.click(Position.resetRoutine)
+        wait(sleep_until=&quot;resetRoutineOn.png&quot;)
+        if if_find_error():
+            ErrorId.startScanning[NumberOfSensor] = 2
+            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
+                     + &quot;| Has been detected that result of previous line of code was &quot;
+                       &quot;unsuccessful - wait function (locate on screen) of&quot;
+                       &quot; 'resetRoutineOn.png'.&quot;)
+            continue
+        if ErrorId.startScanning[NumberOfSensor] == 0:
+            reset_origins()
+            if if_find_error():
+                ErrorId.startScanning[NumberOfSensor] = 2
+                save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
+                         + &quot;| Scanning of the sensor has failed at startup&quot;
+                           &quot; (during resetting the origins of axis).&quot;)
+                continue
+# ↑ Start routine for correct sensor type.</text>
+      </register>
+      <register name="4" type="4">
         <text>&quot;&quot;&quot;
                     if ErrorId.startMeasuring[NumberOfSensor] == 0:
                         
@@ -212,7 +294,7 @@
                                                      + &quot;| Measurement of the sensor has failed at startup&quot;
                                                      &quot; (during start of routine).&quot;)</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text>if manually:
                             &quot;&quot;&quot;
                             pag.alert(&quot;Steps:&quot; + &quot;\n&quot; + &quot;1.) You must set axes in the program manually &quot;
@@ -280,10 +362,10 @@
                                                      + &quot;| Measurement of the sensor has failed at startup&quot;
                                                      &quot; (during start of routine).&quot;)</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text encoding="base64">Cgo=</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="4">
         <text>start_routine(&quot;Sensor_A12-&quot; + sType[NumberOfSensor] + &quot;_Measuring-Manually.RTN&quot;)
                             if if_find_error():
                                 ErrorId.startMeasuring[NumberOfSensor] = 2
@@ -291,7 +373,7 @@
                                          &quot;| Measurement of the sensor has failed at startup &quot;
                                          &quot;(during start of routine).&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="8" type="4">
         <text>if manually:
                             pag.click(Position.resetAngle)
                             wait(sleep_until=&quot;resetAngleOn.png&quot;)
@@ -311,19 +393,9 @@
                                     continue
                         else:</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text>:
                                 ErrorId</text>
-      </register>
-      <register name="7" type="4">
-        <text>)
-                            if</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0YXJ0X3JvdXRpbmUoc3RyKE51bWJlck9mU2Vuc29yICsgMSkgKyAiX2xlZnQiKQo=</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
