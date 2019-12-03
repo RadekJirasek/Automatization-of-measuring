@@ -13,7 +13,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575225547779">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575368244078">
         <mark key="e" line="511" column="28" />
         <mark key="[" line="458" column="13" />
         <mark key="m" line="212" column="52" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575362771393">
-        <mark key="e" line="800" column="16" />
-        <mark key="'" line="701" column="44" />
-        <mark key="i" line="701" column="44" />
-        <mark key="[" line="262" column="0" />
-        <mark key="]" line="262" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575368709183">
+        <mark key="e" line="831" column="16" />
+        <mark key="'" line="732" column="44" />
+        <mark key="i" line="732" column="44" />
+        <mark key="[" line="167" column="22" />
+        <mark key="]" line="167" column="22" />
         <mark key="^" line="85" column="19" />
-        <mark key="." line="262" column="0" />
+        <mark key="." line="167" column="22" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575225106449">
         <mark key="[" line="46" column="0" />
@@ -102,10 +102,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiKHNvbHZhYmxlKSBlcnJvciBoYXMgYmVlbiBvY2N1cnJlZCB0aHJlZSB0aW1lcyBpbiBhIHJvdy4iKQ==</text>
+        <text>routine</text>
       </register>
       <register name="-" type="4">
-        <text>pass</text>
+        <text>routine</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
