@@ -13,7 +13,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575368244078">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575495888097">
         <mark key="e" line="511" column="28" />
         <mark key="[" line="458" column="13" />
         <mark key="m" line="212" column="52" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575370151089">
-        <mark key="e" line="831" column="16" />
-        <mark key="'" line="732" column="44" />
-        <mark key="i" line="732" column="44" />
-        <mark key="[" line="167" column="22" />
-        <mark key="]" line="167" column="22" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575496109169">
+        <mark key="e" line="845" column="16" />
+        <mark key="'" line="746" column="44" />
+        <mark key="i" line="746" column="44" />
+        <mark key="[" line="183" column="29" />
+        <mark key="]" line="183" column="29" />
         <mark key="^" line="85" column="19" />
-        <mark key="." line="167" column="22" />
+        <mark key="." line="183" column="29" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575225106449">
         <mark key="[" line="46" column="0" />
@@ -48,17 +48,17 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1575225000146">
-        <mark key="[" line="41" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1575495445067">
+        <mark key="[" line="108" column="18" />
         <mark key="]" line="38" column="0" />
-        <mark key="^" line="298" column="10" />
+        <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1574787734183">
-        <mark key="[" line="23" column="16" />
-        <mark key="]" line="23" column="20" />
-        <mark key="." line="23" column="20" />
-        <mark key="^" line="23" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575495545723">
+        <mark key="[" line="15" column="12" />
+        <mark key="]" line="17" column="21" />
+        <mark key="." line="17" column="21" />
+        <mark key="^" line="17" column="21" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -102,40 +102,59 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>routine</text>
+        <text>&quot;&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>routine</text>
+        <text>&quot;&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiKHNvbHZhYmxlKSBlcnJvciBoYXMgYmVlbiBvY2N1cnJlZCB0aHJlZSB0aW1lcyBpbiBhIHJvdy4iKQ==</text>
+        <text>def wait_end_process(name):
+    r = os.popen('tasklist /v').read().strip().split('\n')
+    for i in range(len(r)):
+        if name in r[i]:
+            return True
+
+
+while wait_end_process(&quot;chrome.exe&quot;):
+    print(&quot;Running...&quot;)
+
+programPath = &quot;C:\\Users\\Uzivatel\\Desktop\\&quot;
+NumberOfSensor = 0
+for NumberOfSensor in range(0, 9):
+    if os.path.exists(programPath + &quot;JS_ok_&quot;
+                      + str(NumberOfSensor) + &quot;.txt&quot;):
+        print(&quot;YES&quot;)
+        os.remove(programPath + &quot;JS_ok_&quot; + str(NumberOfSensor) + &quot;.txt&quot;)
+    else:
+        print(&quot;NO&quot;)</text>
       </register>
       <register name="2" type="4">
+        <text>pass
+        # delele steps</text>
+      </register>
+      <register name="3" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiKHNvbHZhYmxlKSBlcnJvciBoYXMgYmVlbiBvY2N1cnJlZCB0aHJlZSB0aW1lcyBpbiBhIHJvdy4iKQ==</text>
+      </register>
+      <register name="4" type="4">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgICAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudCgiTWVhc3VyZW1lbnQiLCBtYW51YWxseSkKICAgICAgICAgICAgICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgICAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudCgiTWVhc3VyZW1lbnQiLCBtYW51YWxseSk=</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICMgWmFwbnV07SByb3V0aW55Cg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICMgWmppmnTsbu0sIGNvIHaaZSBzZSBuYW3s+Glsbwo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICMgTmFzdGF2ZW7tIHBvemljZSAocPhlZG5hc3RhdmVu7SkK</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICMgU21heuFu7SDo4XN0aSByb3V0aW55IGNvIHWeIGplIGhvdG92byAobmV1a2zhZGF0ISkK</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZGVmYXVsdCgpCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBsb2dGaWxlCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
+        <text encoding="base64">ICAgICAgICAgICAgZGVmYXVsdCgpCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
