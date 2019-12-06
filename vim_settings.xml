@@ -13,13 +13,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575496493251">
-        <mark key="e" line="511" column="28" />
-        <mark key="[" line="458" column="13" />
-        <mark key="m" line="212" column="52" />
-        <mark key="]" line="458" column="13" />
-        <mark key="^" line="458" column="13" />
-        <mark key="." line="458" column="13" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575625805378">
+        <mark key="e" line="514" column="28" />
+        <mark key="[" line="125" column="38" />
+        <mark key="m" line="215" column="52" />
+        <mark key="]" line="461" column="13" />
+        <mark key="^" line="461" column="13" />
+        <mark key="." line="461" column="13" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575623793226">
-        <mark key="e" line="895" column="16" />
-        <mark key="'" line="796" column="44" />
-        <mark key="i" line="796" column="44" />
-        <mark key="[" line="73" column="20" />
-        <mark key="]" line="73" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575625443910">
+        <mark key="e" line="903" column="16" />
+        <mark key="'" line="804" column="44" />
+        <mark key="i" line="804" column="44" />
+        <mark key="[" line="119" column="32" />
+        <mark key="]" line="119" column="32" />
         <mark key="^" line="75" column="19" />
-        <mark key="." line="73" column="20" />
+        <mark key="." line="119" column="32" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575225106449">
         <mark key="[" line="46" column="0" />
@@ -54,7 +54,7 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575624595471">
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575624811347">
         <mark key="[" line="18" column="0" />
         <mark key="]" line="18" column="0" />
         <mark key="." line="18" column="0" />
@@ -100,11 +100,11 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Cgo=</text>
+      <register name="&quot;" type="4">
+        <text>radky</text>
       </register>
       <register name="-" type="4">
-        <text>print(&quot;nothing\n&quot;)</text>
+        <text>radky</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
