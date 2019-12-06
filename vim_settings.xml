@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575496604234">
-        <mark key="e" line="863" column="16" />
-        <mark key="'" line="764" column="44" />
-        <mark key="i" line="764" column="44" />
-        <mark key="[" line="121" column="75" />
-        <mark key="]" line="122" column="0" />
-        <mark key="^" line="85" column="19" />
-        <mark key="." line="122" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575623793226">
+        <mark key="e" line="895" column="16" />
+        <mark key="'" line="796" column="44" />
+        <mark key="i" line="796" column="44" />
+        <mark key="[" line="73" column="20" />
+        <mark key="]" line="73" column="20" />
+        <mark key="^" line="75" column="19" />
+        <mark key="." line="73" column="20" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575225106449">
         <mark key="[" line="46" column="0" />
@@ -54,11 +54,10 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575495545723">
-        <mark key="[" line="15" column="12" />
-        <mark key="]" line="17" column="21" />
-        <mark key="." line="17" column="21" />
-        <mark key="^" line="17" column="21" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575624595471">
+        <mark key="[" line="18" column="0" />
+        <mark key="]" line="18" column="0" />
+        <mark key="." line="18" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -102,59 +101,49 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICJ8IE1lYXN1cmVtZW50IG9mIHRoZSBzZW5zb3IgaGFzIGZhaWxlZCAoZHVyaW5nIG1lYXN1cmVtZW50KS4iKQo=</text>
+        <text encoding="base64">Cgo=</text>
       </register>
       <register name="-" type="4">
-        <text>&quot;&quot;)</text>
+        <text>print(&quot;nothing\n&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICJ8IE1lYXN1cmVtZW50IG9mIHRoZSBzZW5zb3IgaGFzIGZhaWxlZCAoZHVyaW5nIG1lYXN1cmVtZW50KS4iKQo=</text>
+        <text encoding="base64">Cgo=</text>
       </register>
       <register name="2" type="4">
-        <text>def wait_end_process(name):
-    r = os.popen('tasklist /v').read().strip().split('\n')
-    for i in range(len(r)):
-        if name in r[i]:
-            return True
-
-
-while wait_end_process(&quot;chrome.exe&quot;):
-    print(&quot;Running...&quot;)
-
-programPath = &quot;C:\\Users\\Uzivatel\\Desktop\\&quot;
-NumberOfSensor = 0
-for NumberOfSensor in range(0, 9):
-    if os.path.exists(programPath + &quot;JS_ok_&quot;
-                      + str(NumberOfSensor) + &quot;.txt&quot;):
-        print(&quot;YES&quot;)
-        os.remove(programPath + &quot;JS_ok_&quot; + str(NumberOfSensor) + &quot;.txt&quot;)
-    else:
-        print(&quot;NO&quot;)</text>
+        <text encoding="base64">ICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzW2FdKQogICAgYSArPSAx</text>
       </register>
-      <register name="3" type="4">
-        <text>pass
-        # delele steps</text>
+      <register name="3" type="2">
+        <text encoding="base64">Zm9yIGkgaW4gZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzOgo=</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAiKHNvbHZhYmxlKSBlcnJvciBoYXMgYmVlbiBvY2N1cnJlZCB0aHJlZSB0aW1lcyBpbiBhIHJvdy4iKQ==</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICMgb2RlY2lzdCB2b2xuZSByYWRreQo=</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgICAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudCgiTWVhc3VyZW1lbnQiLCBtYW51YWxseSkKICAgICAgICAgICAgICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgICAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudCgiTWVhc3VyZW1lbnQiLCBtYW51YWxseSk=</text>
+        <text>time.sleep(5)
+p = 5
+pag.typewrite(&quot;1-&quot; + str(p))</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICMgWmFwbnV07SByb3V0aW55Cg==</text>
+      <register name="6" type="4">
+        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                             &quot;| &quot; + process_type + &quot;: repetition of process has failed because &quot;
+                             &quot;(solvable) error has been occurred three times in a row.&quot;)</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICMgWmppmnTsbu0sIGNvIHaaZSBzZSBuYW3s+Glsbwo=</text>
+      <register name="7" type="4">
+        <text>if sensorPos[NumberOfSensor] == 0:
+                    repeat_measurement(process_type, manually_on)
+                if sensorPos[NumberOfSensor] == 0:
+                    repeat_measurement(process_type, manually_on)</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICMgTmFzdGF2ZW7tIHBvemljZSAocPhlZG5hc3RhdmVu7SkK</text>
+      <register name="8" type="4">
+        <text encoding="base64">ICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudChwcm9jZXNzX3R5cGUsIG1hbnVhbGx5X29uKQogICAgICAgIGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gPT0gMDoKICAgICAgICAgICAgcmVwZWF0X21lYXN1cmVtZW50KHByb2Nlc3NfdHlwZSwgbWFudWFsbHlfb24p</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICMgU21heuFu7SDo4XN0aSByb3V0aW55IGNvIHWeIGplIGhvdG92byAobmV1a2zhZGF0ISkK</text>
+      <register name="9" type="4">
+        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                     &quot;| Measurement: repetition of process has failed because &quot;
+                     &quot;(solvable) error has been occurred three times in a row.&quot;)</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
