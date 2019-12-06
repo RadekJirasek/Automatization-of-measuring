@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575625443910">
-        <mark key="e" line="903" column="16" />
-        <mark key="'" line="804" column="44" />
-        <mark key="i" line="804" column="44" />
-        <mark key="[" line="119" column="32" />
-        <mark key="]" line="119" column="32" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1575626388157">
+        <mark key="e" line="912" column="16" />
+        <mark key="'" line="813" column="44" />
+        <mark key="i" line="813" column="44" />
+        <mark key="[" line="564" column="40" />
+        <mark key="]" line="564" column="40" />
         <mark key="^" line="75" column="19" />
-        <mark key="." line="119" column="32" />
+        <mark key="." line="564" column="40" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1575225106449">
         <mark key="[" line="46" column="0" />
@@ -101,49 +101,61 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>radky</text>
+        <text>Measurement</text>
       </register>
       <register name="-" type="4">
-        <text>radky</text>
+        <text>Measurement</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgo=</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzW2FdKQogICAgYSArPSAx</text>
+        <text>if sensorPos[NumberOfSensor] == 0:
+                        repeat_measurement(&quot;Scanning&quot;, manually)
+                    if sensorPos[NumberOfSensor] == 0:
+                        repeat_measurement(&quot;Scanning&quot;, manually)
+                    if sensorPos[NumberOfSensor] == 0:
+                        error = 2
+                        set_process_error(1)
+                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                 &quot;| Scanning: repetition of process has failed because &quot;
+                                 &quot;(solvable) error has been occurred three times in a row.&quot;)
+
+                    if if_find_error():
+                        ErrorId.completeScanning[NumberOfSensor] = 2
+                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                 &quot;| Scanning of the sensor has failed&quot;)</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">Cgo=</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzW2FdKQogICAgYSArPSAx</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">Zm9yIGkgaW4gZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzOgo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICMgb2RlY2lzdCB2b2xuZSByYWRreQo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>time.sleep(5)
 p = 5
 pag.typewrite(&quot;1-&quot; + str(p))</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
                              &quot;| &quot; + process_type + &quot;: repetition of process has failed because &quot;
                              &quot;(solvable) error has been occurred three times in a row.&quot;)</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>if sensorPos[NumberOfSensor] == 0:
                     repeat_measurement(process_type, manually_on)
                 if sensorPos[NumberOfSensor] == 0:
                     repeat_measurement(process_type, manually_on)</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBzZW5zb3JQb3NbTnVtYmVyT2ZTZW5zb3JdID09IDA6CiAgICAgICAgICAgIHJlcGVhdF9tZWFzdXJlbWVudChwcm9jZXNzX3R5cGUsIG1hbnVhbGx5X29uKQogICAgICAgIGlmIHNlbnNvclBvc1tOdW1iZXJPZlNlbnNvcl0gPT0gMDoKICAgICAgICAgICAgcmVwZWF0X21lYXN1cmVtZW50KHByb2Nlc3NfdHlwZSwgbWFudWFsbHlfb24p</text>
-      </register>
-      <register name="9" type="4">
-        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                     &quot;| Measurement: repetition of process has failed because &quot;
-                     &quot;(solvable) error has been occurred three times in a row.&quot;)</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
