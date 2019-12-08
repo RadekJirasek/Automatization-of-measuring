@@ -54,8 +54,11 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575806170299">
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575809816646">
+        <mark key="[" line="16" column="32" />
+        <mark key="]" line="16" column="32" />
         <mark key="^" line="28" column="6" />
+        <mark key="." line="16" column="32" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -98,11 +101,11 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHIuY2xvc2UoKQo=</text>
+      <register name="&quot;" type="4">
+        <text>shell</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAgIHIuY2xvc2UoKQ==</text>
+        <text>shell</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
