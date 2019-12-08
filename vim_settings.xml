@@ -13,13 +13,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575639590118">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1575806440045">
         <mark key="e" line="515" column="28" />
-        <mark key="[" line="478" column="46" />
+        <mark key="[" line="479" column="0" />
         <mark key="m" line="215" column="52" />
-        <mark key="]" line="478" column="8" />
+        <mark key="]" line="479" column="0" />
         <mark key="^" line="478" column="8" />
-        <mark key="." line="478" column="8" />
+        <mark key="." line="479" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -48,17 +48,14 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1575626972324">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1575806218825">
         <mark key="[" line="317" column="10" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575632960657">
-        <mark key="[" line="28" column="42" />
-        <mark key="]" line="27" column="6" />
-        <mark key="." line="27" column="6" />
-        <mark key="^" line="27" column="6" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1575806170299">
+        <mark key="^" line="28" column="6" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -101,55 +98,45 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>subprocess</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIHIuY2xvc2UoKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>subprocess</text>
+        <text encoding="base64">ICAgIHIuY2xvc2UoKQ==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHIuY2xvc2UoKQo=</text>
+      </register>
+      <register name="2" type="4">
+        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\finded.txt&quot;, 'w') as f:
+            f.close()</text>
+      </register>
+      <register name="3" type="4">
+        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\error.txt&quot;, 'w') as f:
+        f.write(traceback.format_exc())
+        f.close()</text>
+      </register>
+      <register name="4" type="4">
+        <text>with open(&quot;C:\\Users\\U\\Desktop\\done.txt&quot;, 'w') as f:
+        f.close()</text>
+      </register>
+      <register name="5" type="4">
         <text encoding="base64">d2l0aCBvcGVuKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxhLnR4dCIsICdyJykgYXMgZmluaXNoZWRfcGxhbmFyaXR5X2ZpbGU6CiAgICBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXMgPSBmaW5pc2hlZF9wbGFuYXJpdHlfZmlsZS5yZWFkbGluZXMoKQogICAgZmluaXNoZWRfc3RlcHMgPSBsZW4oZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzKQogICAgcHJpbnQoZmluaXNoZWRfc3RlcHMpCgphID0gMAp3aGlsZSBhIDwgZmluaXNoZWRfc3RlcHM6CiAgICBpZiBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXNbYV0gPT0gIlxuIiBvciBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXNbYV0gPT0gIiI6CiAgICAgICAgZmluaXNoZWRfc3RlcHMgLT0gMQogICAgYSArPSAxCgpwcmludChmaW5pc2hlZF9zdGVwcyk=</text>
       </register>
-      <register name="2" type="2">
+      <register name="6" type="2">
         <text encoding="base64">dGltZS5zbGVlcCgxMDAwKQo=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
-      </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgo=</text>
-      </register>
-      <register name="6" type="4">
-        <text>if sensorPos[NumberOfSensor] == 0:
-                        repeat_measurement(&quot;Scanning&quot;, manually)
-                    if sensorPos[NumberOfSensor] == 0:
-                        repeat_measurement(&quot;Scanning&quot;, manually)
-                    if sensorPos[NumberOfSensor] == 0:
-                        error = 2
-                        set_process_error(1)
-                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                 &quot;| Scanning: repetition of process has failed because &quot;
-                                 &quot;(solvable) error has been occurred three times in a row.&quot;)
-
-                    if if_find_error():
-                        ErrorId.completeScanning[NumberOfSensor] = 2
-                        save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                 &quot;| Scanning of the sensor has failed&quot;)</text>
-      </register>
       <register name="7" type="2">
-        <text encoding="base64">Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgIGVsc2U6CiAgICAgICAgcHJpbnQoZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzW2FdKQogICAgYSArPSAx</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">Zm9yIGkgaW4gZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzOgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
