@@ -83,11 +83,9 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576161497043">
-        <mark key="[" line="91" column="37" />
-        <mark key="]" line="91" column="36" />
-        <mark key="." line="91" column="36" />
-        <mark key="^" line="91" column="36" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576162059879">
+        <mark key="'" line="101" column="32" />
+        <mark key="^" line="109" column="34" />
       </file>
     </filemarks>
     <jumps>
@@ -100,44 +98,62 @@
       <jump line="492" column="15" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="44" column="35" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
+      <jump line="104" column="32" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">cGF0aEJveC5wYWNrKHNpZGU9Qk9UVE9NKQo=</text>
+        <text encoding="base64">Cgo=</text>
       </register>
       <register name="-" type="4">
-        <text>BOTTOM</text>
+        <text>= tkinter.Frame(frameBL)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cGF0aEJveC5wYWNrKHNpZGU9Qk9UVE9NKQo=</text>
+        <text encoding="base64">Cgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCnBhdGhMYWJlbC5wYWNrKHNpZGU9TEVGVCkK</text>
+        <text encoding="base64">Cgo=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">Y2hlY2sgPSBJbnRWYXIoKQo=</text>
+      <register name="3" type="4">
+        <text>labelEdge.pack(side=CENTER)
+
+frameBL_T = tkinter.Frame(frameBL)
+frameBL_B = tkinter.Frame(frameBL)
+frameBL_B_L = tkinter.Frame(frameBL_B)
+
+frameBL_B_R = tkinter.Frame(frameBL_B)
+
+frameBL_B_B = tkinter.Frame(frameBL_B)
+
+frameBR = tkinter.Frame(frameBottom)
+
+labelBlur = tkinter.Label(frameBL, text=&quot;Detection of edges&quot;, height=2)</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCg==</text>
+      <register name="4" type="4">
+        <text>labelEdge.pack(side=CENTER)
+frameBL_T.pack(side=TOP)
+
+frameBL_B.pack(side=BOTTOM)
+
+frameBR.pack(side=RIGHT)</text>
       </register>
-      <register name="5" type="4">
-        <text>checkShow = tkinter.Checkbutton(root, text=&quot;Show picture&quot;, variable=check)
-checkShow.var = check</text>
+      <register name="5" type="2">
+        <text encoding="base64">cGF0aEJveC5wYWNrKHNpZGU9Qk9UVE9NKQo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">QnV0dG9uRm91cmllciA9IHRraW50ZXIuQnV0dG9uKHJvb3QsIHRleHQ9IlN0YXIgYW5hbHlzaXMiLCBjb21tYW5kPWRvKQo=</text>
+        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCnBhdGhMYWJlbC5wYWNrKHNpZGU9TEVGVCkK</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CmRlZiBsb2FkX3BpY3R1cmUoKToKICAgIGZvdXJp</text>
+      <register name="7" type="2">
+        <text encoding="base64">Y2hlY2sgPSBJbnRWYXIoKQo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGlmIGNoZWNrU2hvdy52YXIuZ2V0KCkgPT0gMToK</text>
+        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCg==</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIHJldHVybiBpbWcK</text>
+      <register name="9" type="4">
+        <text>checkShow = tkinter.Checkbutton(root, text=&quot;Show picture&quot;, variable=check)
+checkShow.var = check</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
