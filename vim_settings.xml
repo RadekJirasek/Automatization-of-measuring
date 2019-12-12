@@ -83,10 +83,11 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576156417685">
-        <mark key="[" line="59" column="5" />
-        <mark key="]" line="28" column="0" />
-        <mark key="." line="28" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576161497043">
+        <mark key="[" line="91" column="37" />
+        <mark key="]" line="91" column="36" />
+        <mark key="." line="91" column="36" />
+        <mark key="^" line="91" column="36" />
       </file>
     </filemarks>
     <jumps>
@@ -101,45 +102,42 @@
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>three</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">cGF0aEJveC5wYWNrKHNpZGU9Qk9UVE9NKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>three</text>
+        <text>BOTTOM</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHIuY2xvc2UoKQo=</text>
+        <text encoding="base64">cGF0aEJveC5wYWNrKHNpZGU9Qk9UVE9NKQo=</text>
       </register>
-      <register name="2" type="4">
-        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\finded.txt&quot;, 'w') as f:
-            f.close()</text>
+      <register name="2" type="2">
+        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCnBhdGhMYWJlbC5wYWNrKHNpZGU9TEVGVCkK</text>
       </register>
-      <register name="3" type="4">
-        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\error.txt&quot;, 'w') as f:
-        f.write(traceback.format_exc())
-        f.close()</text>
+      <register name="3" type="2">
+        <text encoding="base64">Y2hlY2sgPSBJbnRWYXIoKQo=</text>
       </register>
-      <register name="4" type="4">
-        <text>with open(&quot;C:\\Users\\U\\Desktop\\done.txt&quot;, 'w') as f:
-        f.close()</text>
+      <register name="4" type="2">
+        <text encoding="base64">Y2hlY2tTaG93LnBhY2soc2lkZT1CT1RUT00pCg==</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">d2l0aCBvcGVuKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxhLnR4dCIsICdyJykgYXMgZmluaXNoZWRfcGxhbmFyaXR5X2ZpbGU6CiAgICBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXMgPSBmaW5pc2hlZF9wbGFuYXJpdHlfZmlsZS5yZWFkbGluZXMoKQogICAgZmluaXNoZWRfc3RlcHMgPSBsZW4oZmluaXNoZWRfcGxhbmFyaXR5X2xpbmVzKQogICAgcHJpbnQoZmluaXNoZWRfc3RlcHMpCgphID0gMAp3aGlsZSBhIDwgZmluaXNoZWRfc3RlcHM6CiAgICBpZiBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXNbYV0gPT0gIlxuIiBvciBmaW5pc2hlZF9wbGFuYXJpdHlfbGluZXNbYV0gPT0gIiI6CiAgICAgICAgZmluaXNoZWRfc3RlcHMgLT0gMQogICAgYSArPSAxCgpwcmludChmaW5pc2hlZF9zdGVwcyk=</text>
+        <text>checkShow = tkinter.Checkbutton(root, text=&quot;Show picture&quot;, variable=check)
+checkShow.var = check</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">dGltZS5zbGVlcCgxMDAwKQo=</text>
+        <text encoding="base64">QnV0dG9uRm91cmllciA9IHRraW50ZXIuQnV0dG9uKHJvb3QsIHRleHQ9IlN0YXIgYW5hbHlzaXMiLCBjb21tYW5kPWRvKQo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
+      <register name="7" type="4">
+        <text encoding="base64">CmRlZiBsb2FkX3BpY3R1cmUoKToKICAgIGZvdXJp</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAyCg==</text>
+        <text encoding="base64">ICAgIGlmIGNoZWNrU2hvdy52YXIuZ2V0KCkgPT0gMToK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgInwgTWVhc3VyZW1lbnQ6IHJlcGV0aXRpb24gb2YgcHJvY2VzcyBoYXMgZmFpbGVkIGJlY2F1c2UgIgo=</text>
+        <text encoding="base64">ICAgIHJldHVybiBpbWcK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
