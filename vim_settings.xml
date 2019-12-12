@@ -42,7 +42,7 @@
         <mark key="^" line="622" column="19" />
         <mark key="." line="639" column="69" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1576167749993">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1576171551767">
         <mark key="[" line="46" column="0" />
         <mark key="]" line="46" column="0" />
         <mark key="^" line="229" column="0" />
@@ -83,12 +83,12 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576168973160">
-        <mark key="'" line="115" column="32" />
-        <mark key="[" line="167" column="11" />
-        <mark key="]" line="167" column="11" />
-        <mark key="^" line="118" column="6" />
-        <mark key="." line="167" column="11" />
+      <file name="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" timestamp="1576172885428">
+        <mark key="'" line="124" column="32" />
+        <mark key="[" line="2" column="0" />
+        <mark key="]" line="2" column="0" />
+        <mark key="^" line="183" column="24" />
+        <mark key="." line="2" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -104,51 +104,45 @@
       <jump line="104" column="32" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">IHRraW50ZXIuRnJhbWUoZnJhbWVCUik=</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">aW1wb3J0IHNjaXB5IGFzIHNjCg==</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IHRraW50ZXIuRnJhbWUoZnJhbWVCUik=</text>
+        <text>pack(side=BOTTOM)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxpbWdcPg==</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">dmFyQmx1cjIgPSBJbnRWYXIoKQo=</text>
+        <text encoding="base64">aW1wb3J0IHNjaXB5IGFzIHNjCg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">dmFyQmx1cjEgPSBJbnRWYXIoKQo=</text>
+        <text encoding="base64">ZnJvbSBzY2lweS5mZnRwYWNrIGltcG9ydCBmZnQK</text>
       </register>
-      <register name="3" type="4">
-        <text>frameBR.pack(side=RIGHT)
-frameBR_T.pack(side=TOP)
-
-labelBlur.pack(side=LEFT)
-
-frameBR_B.pack(side=BOTTOM)
-frameBR_B_L.pack(side=LEFT)
-
-frameBR_B_R.pack(side=RIGHT)
-
-frameBR_B_B.pack(side=BOTTOM)</text>
+      <register name="3" type="2">
+        <text encoding="base64">ZnJvbSBQSUwgaW1wb3J0IEltYWdlCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">bGFiZWxFZGdlID0gdGtpbnRlci5MYWJlbChmcmFtZUJMX1QsIHRleHQ9IkRldGVjdGlvbiBvZiBlZGdlcyIsIGhlaWdodD0yKQo=</text>
+        <text encoding="base64">ZnJvbSBtYXRwbG90bGliLmNvbG9ycyBpbXBvcnQgTG9nTm9ybQo=</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">dmFyRWRnZTIgPSBJbnRWYXIoKQo=</text>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgIGdsb2JhbCBibHVyUGFyMQogICAgZ2xvYmFsIGJsdXJQYXIy</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">dmFyRWRnZTEgPSBJbnRWYXIoKQo=</text>
+        <text encoding="base64">ZnJhbWVCUl9CLnBhY2soc2lkZT1SSUdIVCkK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIHJvb3QuZGVzdHJveSgpCg==</text>
+        <text encoding="base64">ZnJhbWVCUl9CX0IgPSB0a2ludGVyLkZyYW1lKGZyYW1lQlJfQikK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ZnJhbWVUUi5wYWNrKHNpZGU9UklHSFQpCg==</text>
+        <text encoding="base64">ZnJhbWVCTF9CX0wucGFjayhzaWRlPUxFRlQpCg==</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ZnJhbWVUTC5wYWNrKHNpZGU9TEVGVCkK</text>
+      <register name="9" type="4">
+        <text>frameBL_B_R = tkinter.Frame(frameBL_B)
+
+
+
+frameBL_B_B = tkinter.Frame(frameBL_B)</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
