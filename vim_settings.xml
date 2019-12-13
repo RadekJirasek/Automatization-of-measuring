@@ -13,7 +13,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576243184137">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576247476094">
         <mark key="e" line="516" column="28" />
         <mark key="[" line="502" column="25" />
         <mark key="m" line="215" column="52" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576244054401">
-        <mark key="e" line="972" column="16" />
-        <mark key="'" line="873" column="44" />
-        <mark key="i" line="873" column="44" />
-        <mark key="[" line="639" column="69" />
-        <mark key="]" line="639" column="69" />
-        <mark key="^" line="622" column="19" />
-        <mark key="." line="639" column="69" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576247561722">
+        <mark key="e" line="993" column="16" />
+        <mark key="'" line="816" column="12" />
+        <mark key="i" line="893" column="44" />
+        <mark key="[" line="652" column="69" />
+        <mark key="]" line="652" column="69" />
+        <mark key="^" line="635" column="19" />
+        <mark key="." line="652" column="69" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1576173119967">
         <mark key="[" line="46" column="0" />
@@ -48,8 +48,8 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1575806218825">
-        <mark key="[" line="317" column="10" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576247389885">
+        <mark key="[" line="36" column="5" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
@@ -101,6 +101,7 @@
       <jump line="44" column="35" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="49" column="43" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
       <jump line="104" column="32" filename="$USER_HOME$/PycharmProjects/AI_picture_seminare/AI_PictureRecogntion.py" />
+      <jump line="801" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
@@ -126,7 +127,7 @@ else:
         <text>pack(side=BOTTOM)</text>
       </register>
       <register name="/" type="4">
-        <text encoding="base64">XDxpbWdcPg==</text>
+        <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
         <text>def wait_end_process(name):
@@ -176,16 +177,16 @@ else:
       </register>
     </registers>
     <search>
-      <last-search encoding="base64">XDxpbWdcPg==</last-search>
+      <last-search encoding="base64">XDx3YWl0XD4=</last-search>
       <last-offset />
-      <last-pattern encoding="base64">XDxpbWdcPg==</last-pattern>
+      <last-pattern encoding="base64">XDx3YWl0XD4=</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>
     <history>
       <history-search>
-        <entry encoding="base64">XDx3YWl0XD4=</entry>
         <entry encoding="base64">XDxpbWdcPg==</entry>
+        <entry encoding="base64">XDx3YWl0XD4=</entry>
       </history-search>
       <history-cmd>
         <entry>w</entry>
