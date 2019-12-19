@@ -13,13 +13,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576423960808">
-        <mark key="e" line="547" column="28" />
-        <mark key="[" line="482" column="19" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576790905590">
+        <mark key="e" line="546" column="28" />
+        <mark key="[" line="505" column="22" />
         <mark key="m" line="240" column="52" />
-        <mark key="]" line="426" column="18" />
+        <mark key="]" line="505" column="22" />
         <mark key="^" line="426" column="18" />
-        <mark key="." line="426" column="18" />
+        <mark key="." line="505" column="22" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -33,7 +33,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576782212155">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576790154302">
         <mark key="e" line="993" column="16" />
         <mark key="'" line="816" column="12" />
         <mark key="i" line="893" column="44" />
@@ -48,16 +48,16 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576247389885">
-        <mark key="[" line="36" column="5" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576789669054">
+        <mark key="[" line="24" column="32" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576243060263">
-        <mark key="[" line="15" column="0" />
-        <mark key="]" line="15" column="0" />
-        <mark key="." line="15" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576790782692">
+        <mark key="[" line="21" column="15" />
+        <mark key="]" line="21" column="15" />
+        <mark key="." line="21" column="15" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -105,31 +105,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>def wait_end_process(name):
-    r = os.popen('tasklist /v').read().strip().split('\n')
-    for i in range(len(r)):
-        if name in r[i]:
-            return True
-# ↑ Program will wait until end of process.
-
-
-try:
-    if wait_end_process(&quot;chrome.exe&quot;):
-        print(&quot;Found&quot;)
-    else:
-        print(&quot;Not found&quot;)
-except:
-    print(&quot;Error\n&quot; + traceback.format_exc())
-else:
-    print(&quot;Dne&quot;)</text>
+        <text>True</text>
       </register>
       <register name="-" type="4">
-        <text>pack(side=BOTTOM)</text>
+        <text>True</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>with open(&quot;C:\\Users\\Uzivatel\\Desktop\\chrome_exe.txt&quot;, 'w') as f:
+    f.write(str(program_end('chrome.exe')))
+
+with open(&quot;C:\\Users\\Uzivatel\\Desktop\\blbost_exe.txt&quot;, 'w') as f:
+    f.write(str(program_end('blbost.exe')))</text>
+      </register>
+      <register name="2" type="4">
+        <text>def process_exists(process_name):
+    call = 'TASKLIST', '/FI', 'imagename eq %s' % process_name
+    # use buildin check_output right away
+    output = subprocess.check_output(call)
+    # check in last line for process name
+    last_line = output.strip().split('\r\n')[-1]
+    # because Fail message could be translated
+    return last_line.lower().startswith(process_name.lower())
+
+
+print(process_exists('chrome.exe'))</text>
+      </register>
+      <register name="3" type="4">
+        <text>pag.click(pag.size()[0] / 2, pag.size()[1] / 2)
+print(pag.size())
+print(pag.position())</text>
+      </register>
+      <register name="4" type="4">
         <text>def wait_end_process(name):
     r = os.popen('tasklist /v').read().strip().split('\n')
     for i in range(len(r)):
@@ -148,29 +157,20 @@ except:
 else:
     print(&quot;Dne&quot;)</text>
       </register>
-      <register name="2" type="2">
+      <register name="5" type="2">
         <text encoding="base64">aW1wb3J0IHNjaXB5IGFzIHNjCg==</text>
       </register>
-      <register name="3" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ZnJvbSBzY2lweS5mZnRwYWNrIGltcG9ydCBmZnQK</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ZnJvbSBQSUwgaW1wb3J0IEltYWdlCg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ZnJvbSBtYXRwbG90bGliLmNvbG9ycyBpbXBvcnQgTG9nTm9ybQo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text encoding="base64">ICAgIGdsb2JhbCBibHVyUGFyMQogICAgZ2xvYmFsIGJsdXJQYXIy</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ZnJhbWVCUl9CLnBhY2soc2lkZT1SSUdIVCkK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ZnJhbWVCUl9CX0IgPSB0a2ludGVyLkZyYW1lKGZyYW1lQlJfQikK</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ZnJhbWVCTF9CX0wucGFjayhzaWRlPUxFRlQpCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
