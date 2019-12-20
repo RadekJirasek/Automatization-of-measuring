@@ -54,10 +54,10 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576849963172">
-        <mark key="[" line="16" column="14" />
-        <mark key="]" line="16" column="14" />
-        <mark key="." line="16" column="14" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576851615749">
+        <mark key="[" line="76" column="0" />
+        <mark key="]" line="76" column="0" />
+        <mark key="." line="76" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -104,61 +104,49 @@
       <jump line="801" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>programPath1 + &quot; &quot; + programPath2 + &quot;JS_configFile_&quot; + sType + &quot;</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfaW5kZXgpCg==</text>
       </register>
       <register name="-" type="4">
-        <text>programPath1 + &quot; &quot; + programPath2 + &quot;JS_configFile_&quot; + sType + &quot;</text>
+        <text>get_txt_data</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICBjX2NoYXIgPSAiIgogICAgICAgIGNfbnVtID0gMA==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfaW5kZXgpCg==</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgY195ID0gaW50KFIwX2NvbmZpZ19maWxlLnJlYWRsaW5lKCkpCiAgICAgICAgICAgIGNfdjEgPSBbIiIsICIiXQogICAgICAgICAgICBjX3YyID0gIiIKICAgICAgICAgICAgY192MyA9IFsiIl0qY195</text>
+        <text>if data_type == 0:
+                        print(&quot;c_num is: &quot;)
+                        print(c_num)
+                        time.sleep(1)
+                        return c_num</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDI6Cg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZGVmTmFtZVtpbnQoKCkpXSA9IGdldF90eHRfZGF0YSgxKQo=</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgICAgICBjX2NoYXIgPSAiIgogICAgICAgIGNfbnVtID0gMA==</text>
+      </register>
+      <register name="6" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgY195ID0gaW50KFIwX2NvbmZpZ19maWxlLnJlYWRsaW5lKCkpCiAgICAgICAgICAgIGNfdjEgPSBbIiIsICIiXQogICAgICAgICAgICBjX3YyID0gIiIKICAgICAgICAgICAgY192MyA9IFsiIl0qY195</text>
+      </register>
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgY19udW0gPSAwCg==</text>
       </register>
-      <register name="4" type="4">
+      <register name="8" type="4">
         <text>open(&quot;C:\\Users\\Uzivatel\\Desktop\\t.txt&quot;, 'r') as f:
     c = f.readline()
     b = f.readline()
 
 print(int(b) + 1)</text>
       </register>
-      <register name="5" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICAgICAgY195ID0gMAo=</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">cHJpbnQoYikK</text>
-      </register>
-      <register name="7" type="4">
-        <text>a = [32, 14, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,
-     3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
-     7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 16]
-b = [32, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2,
-     2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
-     5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
-c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 16]
-d = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 14]
-
-print(len(a))
-print(len(b))
-print(len(c))
-print(len(d))</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZGVmTmFtZSA9IGdldF90eHRfZGF0YSgxKQo=</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">CgoKdGltZS5zbGVlcCgyKQpwcmludCh3YWl0X3ByZXZpb3VzKCkp</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
