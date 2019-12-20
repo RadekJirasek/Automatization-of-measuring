@@ -48,7 +48,7 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576837315833">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576838608718">
         <mark key="[" line="24" column="32" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="299" column="10" />
@@ -68,11 +68,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576836174973">
-        <mark key="[" line="58" column="0" />
-        <mark key="]" line="58" column="0" />
-        <mark key="^" line="61" column="14" />
-        <mark key="." line="58" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576838692836">
+        <mark key="[" line="62" column="12" />
+        <mark key="]" line="62" column="12" />
+        <mark key="^" line="60" column="12" />
+        <mark key="." line="62" column="12" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -104,19 +104,38 @@
       <jump line="801" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBkZWZOYW1lID0gWyJTZW5zb3JfQTEyLSIsICJfU2Nhbm5pbmctIl0K</text>
+      <register name="&quot;" type="4">
+        <text>for c_index in R0_config_file</text>
       </register>
       <register name="-" type="4">
-        <text>True</text>
+        <text>for c_index in R0_config_file</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text>defName = [&quot;Sensor_A12-&quot;, &quot;_Scanning-&quot;]
+    nX = 4
+    nY = 4
+    x = 16
+    y = 23
+    a = [32, 14, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,
+         3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+         7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 16]
+    b = [32, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2,
+         2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+         5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+    c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 16]
+    d = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 14]</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICBkZWZOYW1lID0gWyJTZW5zb3JfQTEyLSIsICJfU2Nhbm5pbmctIl0K</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>if sType == &quot;R0&quot;:
             with open(programPath1 + &quot; &quot; + programPath2 + &quot;JS_configFile_R0.txt&quot;, 'r') as R0_congig_file:
                 
@@ -132,46 +151,33 @@
             
         elif sType == &quot;R5&quot;:</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
                             and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
                         and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
                         and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True)</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
                 and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True) \
                 and not pag.locateCenterOnScreen(Img.mm3dOn3, grayscale=True) \
                 and not pag.locateCenterOnScreen(Img.mm3dOn4, grayscale=True):</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">IChub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24sIGdyYXlzY2FsZT1UcnVlKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYW5kIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKSk6</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>with open(&quot;C:\\Users\\Uzivatel\\Desktop\\chrome_exe.txt&quot;, 'w') as f:
     f.write(str(program_end('chrome.exe')))
 
 with open(&quot;C:\\Users\\Uzivatel\\Desktop\\blbost_exe.txt&quot;, 'w') as f:
     f.write(str(program_end('blbost.exe')))</text>
-      </register>
-      <register name="9" type="4">
-        <text>def process_exists(process_name):
-    call = 'TASKLIST', '/FI', 'imagename eq %s' % process_name
-    # use buildin check_output right away
-    output = subprocess.check_output(call)
-    # check in last line for process name
-    last_line = output.strip().split('\r\n')[-1]
-    # because Fail message could be translated
-    return last_line.lower().startswith(process_name.lower())
-
-
-print(process_exists('chrome.exe'))</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
