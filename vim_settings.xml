@@ -54,10 +54,10 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576851615749">
-        <mark key="[" line="76" column="0" />
-        <mark key="]" line="76" column="0" />
-        <mark key="." line="76" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576855723766">
+        <mark key="[" line="96" column="0" />
+        <mark key="]" line="96" column="0" />
+        <mark key="." line="96" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -105,7 +105,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfaW5kZXgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY19udW0pCg==</text>
       </register>
       <register name="-" type="4">
         <text>get_txt_data</text>
@@ -114,39 +114,35 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY19udW0pCg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfY2hhcikK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImVlIikK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImUiKQo=</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfaW5kZXgpCg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="6" type="4">
         <text>if data_type == 0:
                         print(&quot;c_num is: &quot;)
                         print(c_num)
                         time.sleep(1)
                         return c_num</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDI6Cg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZGVmTmFtZVtpbnQoKCkpXSA9IGdldF90eHRfZGF0YSgxKQo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text encoding="base64">ICAgICAgICBjX2NoYXIgPSAiIgogICAgICAgIGNfbnVtID0gMA==</text>
-      </register>
-      <register name="6" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgY195ID0gaW50KFIwX2NvbmZpZ19maWxlLnJlYWRsaW5lKCkpCiAgICAgICAgICAgIGNfdjEgPSBbIiIsICIiXQogICAgICAgICAgICBjX3YyID0gIiIKICAgICAgICAgICAgY192MyA9IFsiIl0qY195</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY19udW0gPSAwCg==</text>
-      </register>
-      <register name="8" type="4">
-        <text>open(&quot;C:\\Users\\Uzivatel\\Desktop\\t.txt&quot;, 'r') as f:
-    c = f.readline()
-    b = f.readline()
-
-print(int(b) + 1)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY195ID0gMAo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
