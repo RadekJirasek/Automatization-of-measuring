@@ -54,10 +54,10 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576840623455">
-        <mark key="[" line="15" column="0" />
-        <mark key="]" line="15" column="0" />
-        <mark key="." line="15" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576849963172">
+        <mark key="[" line="16" column="14" />
+        <mark key="]" line="16" column="14" />
+        <mark key="." line="16" column="14" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -68,11 +68,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576840925677">
-        <mark key="[" line="88" column="0" />
-        <mark key="]" line="88" column="0" />
-        <mark key="^" line="102" column="21" />
-        <mark key="." line="88" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576849795775">
+        <mark key="[" line="85" column="38" />
+        <mark key="]" line="154" column="24" />
+        <mark key="^" line="154" column="24" />
+        <mark key="." line="154" column="24" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -104,32 +104,38 @@
       <jump line="801" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY19udW0gPSAwCg==</text>
+      <register name="&quot;" type="4">
+        <text>programPath1 + &quot; &quot; + programPath2 + &quot;JS_configFile_&quot; + sType + &quot;</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>programPath1 + &quot; &quot; + programPath2 + &quot;JS_configFile_&quot; + sType + &quot;</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY19udW0gPSAwCg==</text>
+      <register name="1" type="4">
+        <text encoding="base64">ICAgICAgICBjX2NoYXIgPSAiIgogICAgICAgIGNfbnVtID0gMA==</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgY195ID0gaW50KFIwX2NvbmZpZ19maWxlLnJlYWRsaW5lKCkpCiAgICAgICAgICAgIGNfdjEgPSBbIiIsICIiXQogICAgICAgICAgICBjX3YyID0gIiIKICAgICAgICAgICAgY192MyA9IFsiIl0qY195</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgY19udW0gPSAwCg==</text>
+      </register>
+      <register name="4" type="4">
         <text>open(&quot;C:\\Users\\Uzivatel\\Desktop\\t.txt&quot;, 'r') as f:
     c = f.readline()
     b = f.readline()
 
 print(int(b) + 1)</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgY195ID0gMAo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">cHJpbnQoYikK</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>a = [32, 14, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3,
      3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
      7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 16]
@@ -148,17 +154,11 @@ print(len(b))
 print(len(c))
 print(len(d))</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZGVmTmFtZSA9IGdldF90eHRfZGF0YSgxKQo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CgoKdGltZS5zbGVlcCgyKQpwcmludCh3YWl0X3ByZXZpb3VzKCkp</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">CmRlZiB3YWl0X3ByZXZpb3VzKCk6CiAgICBnbG9iYWwgTnVtYmVyT2ZTZW5zb3IKICAgIGlmIHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxcdGVzdC5wbmciLCBncmF5c2NhbGU9VHJ1ZSk6CiAgICAgICAgcmV0dXJuIFRydWUKICAgIGVsc2U6CiAgICAgICAgcmV0dXJuIEZhbHNl</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjIHY0ID0gWyIiLCAiIiwgIiIsICIiLCAiIl0K</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
