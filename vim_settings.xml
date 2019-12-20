@@ -54,10 +54,10 @@
         <mark key="^" line="299" column="10" />
         <mark key="." line="38" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576860709256">
-        <mark key="[" line="97" column="0" />
-        <mark key="]" line="97" column="0" />
-        <mark key="." line="97" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1576861543875">
+        <mark key="[" line="68" column="0" />
+        <mark key="]" line="68" column="0" />
+        <mark key="." line="68" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -68,11 +68,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576849795775">
-        <mark key="[" line="85" column="38" />
-        <mark key="]" line="154" column="24" />
-        <mark key="^" line="154" column="24" />
-        <mark key="." line="154" column="24" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576861658355">
+        <mark key="[" line="87" column="38" />
+        <mark key="]" line="95" column="24" />
+        <mark key="^" line="95" column="24" />
+        <mark key="." line="95" column="24" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -105,7 +105,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY19udW0pCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChjX3YzW2NfbnVtXSkK</text>
       </register>
       <register name="-" type="4">
         <text>get_txt_data</text>
@@ -114,35 +114,35 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY19udW0pCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludChjX3YzW2NfbnVtXSkK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfY2hhcikK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY19udW0pCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImVlIikK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfY2hhcikK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImUiKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImVlIikK</text>
       </register>
       <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoImUiKQo=</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGNfaW5kZXgpCg==</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>if data_type == 0:
                         print(&quot;c_num is: &quot;)
                         print(c_num)
                         time.sleep(1)
                         return c_num</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDI6Cg==</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZGVmTmFtZVtpbnQoKCkpXSA9IGdldF90eHRfZGF0YSgxKQo=</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgICAgICBjX2NoYXIgPSAiIgogICAgICAgIGNfbnVtID0gMA==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
