@@ -13,13 +13,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576790905590">
-        <mark key="e" line="546" column="28" />
-        <mark key="[" line="505" column="22" />
-        <mark key="m" line="240" column="52" />
-        <mark key="]" line="505" column="22" />
-        <mark key="^" line="426" column="18" />
-        <mark key="." line="505" column="22" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1576834674947">
+        <mark key="e" line="551" column="28" />
+        <mark key="[" line="13" column="19" />
+        <mark key="m" line="224" column="23" />
+        <mark key="]" line="140" column="7" />
+        <mark key="^" line="140" column="7" />
+        <mark key="." line="140" column="7" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -33,14 +33,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576790154302">
-        <mark key="e" line="993" column="16" />
-        <mark key="'" line="816" column="12" />
-        <mark key="i" line="893" column="44" />
-        <mark key="[" line="652" column="69" />
-        <mark key="]" line="652" column="69" />
-        <mark key="^" line="635" column="19" />
-        <mark key="." line="652" column="69" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1576834650892">
+        <mark key="e" line="988" column="16" />
+        <mark key="'" line="813" column="12" />
+        <mark key="i" line="889" column="44" />
+        <mark key="[" line="661" column="15" />
+        <mark key="]" line="535" column="36" />
+        <mark key="^" line="535" column="36" />
+        <mark key="." line="535" column="36" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1576173119967">
         <mark key="[" line="46" column="0" />
@@ -48,7 +48,7 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576789669054">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1576834000055">
         <mark key="[" line="24" column="32" />
         <mark key="]" line="38" column="0" />
         <mark key="^" line="299" column="10" />
@@ -68,7 +68,7 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576833300184">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1576834988886">
         <mark key="[" line="215" column="0" />
         <mark key="]" line="28" column="29" />
         <mark key="^" line="28" column="29" />
@@ -105,7 +105,8 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>True</text>
+        <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
+                            and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):</text>
       </register>
       <register name="-" type="4">
         <text>True</text>
@@ -114,13 +115,34 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
+                            and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):</text>
+      </register>
+      <register name="2" type="4">
+        <text>if not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
+                        and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):</text>
+      </register>
+      <register name="3" type="4">
+        <text>pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
+                        and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True)</text>
+      </register>
+      <register name="4" type="4">
+        <text>not pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
+                and not pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True) \
+                and not pag.locateCenterOnScreen(Img.mm3dOn3, grayscale=True) \
+                and not pag.locateCenterOnScreen(Img.mm3dOn4, grayscale=True):</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">IChub3QgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5tbTNkT24sIGdyYXlzY2FsZT1UcnVlKQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYW5kIG5vdCBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4oSW1nLm1tM2RPbjIsIGdyYXlzY2FsZT1UcnVlKSk6</text>
+      </register>
+      <register name="6" type="4">
         <text>with open(&quot;C:\\Users\\Uzivatel\\Desktop\\chrome_exe.txt&quot;, 'w') as f:
     f.write(str(program_end('chrome.exe')))
 
 with open(&quot;C:\\Users\\Uzivatel\\Desktop\\blbost_exe.txt&quot;, 'w') as f:
     f.write(str(program_end('blbost.exe')))</text>
       </register>
-      <register name="2" type="4">
+      <register name="7" type="4">
         <text>def process_exists(process_name):
     call = 'TASKLIST', '/FI', 'imagename eq %s' % process_name
     # use buildin check_output right away
@@ -133,12 +155,12 @@ with open(&quot;C:\\Users\\Uzivatel\\Desktop\\blbost_exe.txt&quot;, 'w') as f:
 
 print(process_exists('chrome.exe'))</text>
       </register>
-      <register name="3" type="4">
+      <register name="8" type="4">
         <text>pag.click(pag.size()[0] / 2, pag.size()[1] / 2)
 print(pag.size())
 print(pag.position())</text>
       </register>
-      <register name="4" type="4">
+      <register name="9" type="4">
         <text>def wait_end_process(name):
     r = os.popen('tasklist /v').read().strip().split('\n')
     for i in range(len(r)):
@@ -156,21 +178,6 @@ except:
     print(&quot;Error\n&quot; + traceback.format_exc())
 else:
     print(&quot;Dne&quot;)</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">aW1wb3J0IHNjaXB5IGFzIHNjCg==</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ZnJvbSBzY2lweS5mZnRwYWNrIGltcG9ydCBmZnQK</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ZnJvbSBQSUwgaW1wb3J0IEltYWdlCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ZnJvbSBtYXRwbG90bGliLmNvbG9ycyBpbXBvcnQgTG9nTm9ybQo=</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgIGdsb2JhbCBibHVyUGFyMQogICAgZ2xvYmFsIGJsdXJQYXIy</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
@@ -227,6 +234,9 @@ else:
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed Y</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed D</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
