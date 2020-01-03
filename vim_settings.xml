@@ -45,17 +45,17 @@
         <mark key="^" line="229" column="0" />
         <mark key="." line="46" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1577034083137">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1578041118411">
         <mark key="'" line="67" column="10" />
         <mark key="[" line="227" column="36" />
         <mark key="]" line="227" column="36" />
         <mark key="^" line="300" column="10" />
         <mark key="." line="227" column="36" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1577035709034">
-        <mark key="[" line="17" column="0" />
-        <mark key="]" line="17" column="0" />
-        <mark key="." line="17" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1578041134663">
+        <mark key="[" line="15" column="0" />
+        <mark key="]" line="15" column="0" />
+        <mark key="." line="15" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -104,7 +104,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>b</text>
+        <text encoding="base64">YXBzX3BvaW50ID0gWzEsIDQsIDIsIDhdCgphcHNfdmVjdG9yX3AwID0gW2Fwc19wb2ludFswXSAtIGFwc19wb2ludFsyXSwgYXBzX3BvaW50WzFdIC0gYXBzX3BvaW50WzNdXQphcHNfZGlzdGFuY2VfaG9yaXpvbnRhbCA9IGFwc19wb2ludFswXQphcHNfZGlzdGFuY2VfdmVydGljYWwgPSBhcHNfcG9pbnRbMV0KYXBzX3BoaSA9IHJvdW5kKDE4MCAvIG1hdGgucGkgKiBtYXRoLmFjb3MoYWJzKGFwc192ZWN0b3JfcDBbMV0pIC8KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWF0aC5zcXJ0KGFwc192ZWN0b3JfcDBbMF0gKiBhcHNfdmVjdG9yX3AwWzBdCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICArIGFwc192ZWN0b3JfcDBbMV0gKiBhcHNfdmVjdG9yX3AwWzFdKSksIDQpCmlmIGFwc19wb2ludFswXSA+IGFwc19wb2ludFsyXToKICAgIGFwc19waGkgKz0gOTAKZWxzZToKICAgIGFwc19waGkgPSA5MCAtIGFwc19waGkKCnByaW50KGFwc19waGkp</text>
       </register>
       <register name="-" type="4">
         <text>b</text>
@@ -113,6 +113,9 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text encoding="base64">YXBzX3BvaW50ID0gWzEsIDQsIDIsIDhdCgphcHNfdmVjdG9yX3AwID0gW2Fwc19wb2ludFswXSAtIGFwc19wb2ludFsyXSwgYXBzX3BvaW50WzFdIC0gYXBzX3BvaW50WzNdXQphcHNfZGlzdGFuY2VfaG9yaXpvbnRhbCA9IGFwc19wb2ludFswXQphcHNfZGlzdGFuY2VfdmVydGljYWwgPSBhcHNfcG9pbnRbMV0KYXBzX3BoaSA9IHJvdW5kKDE4MCAvIG1hdGgucGkgKiBtYXRoLmFjb3MoYWJzKGFwc192ZWN0b3JfcDBbMV0pIC8KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbWF0aC5zcXJ0KGFwc192ZWN0b3JfcDBbMF0gKiBhcHNfdmVjdG9yX3AwWzBdCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICArIGFwc192ZWN0b3JfcDBbMV0gKiBhcHNfdmVjdG9yX3AwWzFdKSksIDQpCmlmIGFwc19wb2ludFswXSA+IGFwc19wb2ludFsyXToKICAgIGFwc19waGkgKz0gOTAKZWxzZToKICAgIGFwc19waGkgPSA5MCAtIGFwc19waGkKCnByaW50KGFwc19waGkp</text>
+      </register>
+      <register name="2" type="4">
         <text>if sType == &quot;R1&quot;:
         defName = [&quot;Sensor_A12-&quot;, &quot;_Pos-&quot;, &quot;_Scanning-&quot;]
         nX = 4
@@ -220,37 +223,33 @@
         else:
             con = 2</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">YXBzX3ZlY3Rvcl9wMCA9IFsxLCA0LCAwLCA4XQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text encoding="base64">YXBzX3BvaW50ID0gWzAuMCwgMC4wLCAwLjAsIDAuMF0Kd2l0aCBvcGVuKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxjb250cm9sLnR4dCIsICdyJykgXAogICAgICAgIGFzIGFwc19maWxlOgogICAgYXBzX2EgPSAwCiAgICBhcHNfYiA9IDAKICAgIHdoaWxlIGFwc19hIDwgMTA6CiAgICAgICAgYXBzX3QwID0gYXBzX2ZpbGUucmVhZCgxKQogICAgICAgIGlmIGFwc190MCA9PSAiKyIgb3IgYXBzX3QwID09ICItIjoKICAgICAgICAgICAgYXBzX2MgPSAwCiAgICAgICAgICAgIGlmIGFwc190MCA9PSAiLSI6CiAgICAgICAgICAgICAgICBhcHNfdCA9ICItIgogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgYXBzX3QgPSAiIgogICAgICAgICAgICB3aGlsZSBhcHNfYyA8IDEwOgogICAgICAgICAgICAgICAgYXBzX3QxID0gYXBzX2ZpbGUucmVhZCgxKQogICAgICAgICAgICAgICAgaWYgYXBzX3QxID09ICIiIG9yIGFwc190MSA9PSAiXG4iIG9yIGFwc190MSA9PSAiICIgb3IgYXBzX3QxID09ICJcdCI6CiAgICAgICAgICAgICAgICAgICAgYXBzX2MgPSAxMAogICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICBhcHNfdCArPSBhcHNfdDEKICAgICAgICAgICAgICAgIGFwc19jICs9IDEKICAgICAgICAgICAgYXBzX3BvaW50W2Fwc19iXSA9IGZsb2F0KGFwc190KQogICAgICAgICAgICBhcHNfYiArPSAxCiAgICAgICAgYXBzX2EgKz0gMQogICAgYXBzX2ZpbGUuY2xvc2UoKQpwcmludChhcHNfcG9pbnQp</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIGFwc192ZWN0b3JfcDkwID0gW2Fwc192ZWN0b3JfcDBbMV0sIC0xICogYXBzX3ZlY3Rvcl9wMFswXV0K</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>abs(aps_vector_p0[0] * aps_vector_q0[0] +
                                                         aps_vector_p0[1] * aps_vector_q0[1]) /
                                                     (math.sqrt(aps_vector_p0[0] ** 2 + aps_vector_p0[1] ** 2) *
                                                      math.sqrt(aps_vector_q0[0] ** 2 + aps_vector_q0[1] ** 2)))</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>abs(aps_vector_p90[0] * aps_point[27] + aps_vector_p90[1] * aps_point[28]
                                               - (aps_vector_p90[0] * aps_point[0] + aps_vector_p90[1] * aps_point[1])
                                               ) / math.sqrt(aps_vector_p90[0] ** 2 + aps_vector_p90[1] ** 2)</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>abs(aps_vector_q90[0] * aps_point[27] + aps_vector_q90[1] * aps_point[28]
                                             - (aps_vector_q90[0] * aps_point[0] + aps_vector_q90[1] * aps_point[1])
                                             ) / math.sqrt(aps_vector_q90[0] ** 2 + aps_vector_q90[1] ** 2)</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGFwc192ZWN0b3JfcTAgPSBbYXBzX3BvaW50WzE1XSAtIGFwc19wb2ludFsxOF0sIGFwc19wb2ludFsxNl0gLSBhcHNfcG9pbnRbMTldXQogICAgICAgICAgICAgICAgYXBzX3ZlY3Rvcl9xOTAgPSBbYXBzX3ZlY3Rvcl9xMFsxXSwgLTEgKiBhcHNfdmVjdG9yX3EwWzBdXQ==</text>
-      </register>
       <register name="9" type="4">
-        <text>, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                             0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGFwc192ZWN0b3JfcTAgPSBbYXBzX3BvaW50WzE1XSAtIGFwc19wb2ludFsxOF0sIGFwc19wb2ludFsxNl0gLSBhcHNfcG9pbnRbMTldXQogICAgICAgICAgICAgICAgYXBzX3ZlY3Rvcl9xOTAgPSBbYXBzX3ZlY3Rvcl9xMFsxXSwgLTEgKiBhcHNfdmVjdG9yX3EwWzBdXQ==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
