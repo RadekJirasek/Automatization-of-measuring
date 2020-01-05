@@ -66,10 +66,10 @@
         <mark key="]" line="16" column="0" />
         <mark key="." line="16" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578248737239">
-        <mark key="[" line="30" column="16" />
-        <mark key="]" line="30" column="16" />
-        <mark key="." line="30" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578249816425">
+        <mark key="[" line="38" column="23" />
+        <mark key="]" line="38" column="23" />
+        <mark key="." line="38" column="23" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
@@ -124,10 +124,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>self</text>
+        <text />
       </register>
       <register name="-" type="4">
-        <text>self</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
