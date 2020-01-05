@@ -3,8 +3,14 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="/code.py" timestamp="1578248773655">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="/Python Console" timestamp="1574951432710">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/vector/vector.py" timestamp="1578248436590">
+        <mark key="[" line="9" column="41" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1573056600375">
         <mark key="i" line="47" column="30" />
@@ -60,11 +66,19 @@
         <mark key="]" line="16" column="0" />
         <mark key="." line="16" column="0" />
       </file>
+      <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578248737239">
+        <mark key="[" line="30" column="16" />
+        <mark key="]" line="30" column="16" />
+        <mark key="." line="30" column="16" />
+      </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1566918323377">
         <mark key="[" line="26" column="0" />
         <mark key="]" line="295" column="64" />
         <mark key="^" line="295" column="64" />
         <mark key="." line="295" column="64" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
+        <mark key="[" line="10" column="57" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
@@ -110,10 +124,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text />
+        <text>self</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>self</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
