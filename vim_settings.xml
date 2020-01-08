@@ -83,11 +83,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1578473017899">
-        <mark key="[" line="187" column="4" />
-        <mark key="]" line="187" column="4" />
-        <mark key="^" line="61" column="16" />
-        <mark key="." line="187" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1578478263964">
+        <mark key="[" line="164" column="0" />
+        <mark key="]" line="168" column="6" />
+        <mark key="^" line="168" column="6" />
+        <mark key="." line="168" column="6" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -123,52 +123,46 @@
       <jump line="67" column="10" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text />
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDEyOgo=</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>last_image_number</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
-        <text>list_of_files = glob.glob('C:\\Users\\Uzivatel\\Desktop\\*')
-latest_file = max(list_of_files, key=os.path.getctime)
-print(latest_file)</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDEyOgo=</text>
       </register>
-      <register name="2" type="4">
-        <text>len(os.path.join(measurePath + sType[NumberOfSensor] +
-                                                      &quot;\\&quot; + nameSensor[NumberOfSensor], finished_images))</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZVtjX251bV0gPSBnZXRfdHh0X2RhdGEoMykK</text>
       </register>
-      <register name="3" type="4">
-        <text>Calculating number of finished steps of scanning routine has failed.&quot;)
-        e</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBsYXN0X2ltYWdlX251bWJlciA9IGltYWdlX251bWJlcgo=</text>
       </register>
-      <register name="4" type="4">
-        <text>for finished_images in os.listdir(measurePath + sType[NumberOfSensor] + &quot;\\&quot;
-                                                                                                              + nameSensor[Number</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgbGFzdF9pbWFnZV9udW1iZXIgKz0gMgo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">bGlzdF9vZl9maWxlcyA9IGdsb2IuZ2xvYignL3BhdGgvdG8vZm9sZGVyLyonKQo=</text>
+        <text encoding="base64">ICAgICAgICBmID0gMAo=</text>
       </register>
-      <register name="6" type="4">
-        <text>for (dirpath, dirnames, filenames) in os.walk(&quot;C:\\Users\\Uzivatel\\Desktop&quot;):
-    latest_file = max(filenames, key=os.path.getctime)
-    print(latest_file)</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpbWFnZV9udW1iZXIgKz0gZgo=</text>
       </register>
       <register name="7" type="4">
-        <text>measurePath + sType[NumberOfSensor] + &quot;\\&quot;
-                                  + nameSensor[NumberOfSensor]</text>
+        <text>except OSError:
+                        con += 2
+                        soloImg = Image.open(path + sType + &quot;\\&quot; + nameSensor
+                                             + &quot;\\&quot; + str(defName[0] + sType + defName[1])
+                                             + str((x * y * nX * (int(m / nX))
+                                                    + x * n * nX + x * (m % int(nX)) + o - z) * 2 + con) + &quot;-1.BMP&quot;)</text>
       </register>
-      <register name="8" type="4">
-        <text>try:
-    a = Image.open(&quot;C:\\Users\\Uzivatel\\Desktop\\bobek.png&quot;)
-except:
-    print(&quot;Not found!&quot;)</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIGUgPSBbXQo=</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">CiAgICBpZiBub3QgaWZfZmluZF9lcnJvcigpOgogICAgICAgIHBhZy5jbGljayhQb3NpdGlvbi5yZXNldEFuZ2xlKQogICAgICAgICN3YWl0KHNsZWVwX3VudGlsPSJyZXNldEFuZ2xlT24ucG5nIik=</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICBlID0gWzBdKmNfeSozIAo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
