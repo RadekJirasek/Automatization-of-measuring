@@ -83,11 +83,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1578481998776">
-        <mark key="[" line="198" column="0" />
-        <mark key="]" line="198" column="0" />
-        <mark key="^" line="168" column="6" />
-        <mark key="." line="198" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1578489901294">
+        <mark key="[" line="248" column="0" />
+        <mark key="]" line="248" column="0" />
+        <mark key="^" line="167" column="6" />
+        <mark key="." line="248" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -136,33 +136,33 @@
         <text encoding="base64">ICAgICAgICAgICAgZiArPSAyCg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDEyOgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgZiArPSAyCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZVtjX251bV0gPSBnZXRfdHh0X2RhdGEoMykK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIGNfdmFyID09IDEyOgo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBsYXN0X2ltYWdlX251bWJlciA9IGltYWdlX251bWJlcgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZVtjX251bV0gPSBnZXRfdHh0X2RhdGEoMykK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgbGFzdF9pbWFnZV9udW1iZXIgKz0gMgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBsYXN0X2ltYWdlX251bWJlciA9IGltYWdlX251bWJlcgo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBmID0gMAo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgbGFzdF9pbWFnZV9udW1iZXIgKz0gMgo=</text>
       </register>
       <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBmID0gMAo=</text>
+      </register>
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpbWFnZV9udW1iZXIgKz0gZgo=</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>except OSError:
                         con += 2
                         soloImg = Image.open(path + sType + &quot;\\&quot; + nameSensor
                                              + &quot;\\&quot; + str(defName[0] + sType + defName[1])
                                              + str((x * y * nX * (int(m / nX))
                                                     + x * n * nX + x * (m % int(nX)) + o - z) * 2 + con) + &quot;-1.BMP&quot;)</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIGUgPSBbXQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
