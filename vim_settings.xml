@@ -83,11 +83,11 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1578494267452">
-        <mark key="[" line="246" column="0" />
-        <mark key="]" line="246" column="0" />
-        <mark key="^" line="167" column="6" />
-        <mark key="." line="246" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579100018634">
+        <mark key="[" line="236" column="47" />
+        <mark key="]" line="241" column="60" />
+        <mark key="^" line="241" column="60" />
+        <mark key="." line="241" column="60" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -123,11 +123,11 @@
       <jump line="67" column="10" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">bVNlbnNvciA9IFsxLCAxLCAxLCAxLCAxLCAxLCAxLCAxLCAxXSAgIyBBcnJheSBvZiB2YXJpYWJsZXMgZm9yIG1lYXN1cmVtZW50IG9mIHNlbnNvcnMgKG1lYXN1cmVtZW50ICgxKSBvciBub3QgKDApKS4K</text>
+      <register name="&quot;" type="4">
+        <text>Calculation</text>
       </register>
       <register name="-" type="4">
-        <text>NumberOfSensor</text>
+        <text>Calculation</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
