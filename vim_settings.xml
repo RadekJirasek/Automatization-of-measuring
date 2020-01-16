@@ -19,13 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579170520726">
-        <mark key="e" line="548" column="28" />
-        <mark key="[" line="438" column="24" />
-        <mark key="m" line="198" column="23" />
-        <mark key="]" line="451" column="18" />
-        <mark key="^" line="451" column="18" />
-        <mark key="." line="451" column="18" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579172507581">
+        <mark key="e" line="569" column="28" />
+        <mark key="[" line="485" column="4" />
+        <mark key="m" line="189" column="23" />
+        <mark key="]" line="485" column="4" />
+        <mark key="^" line="430" column="0" />
+        <mark key="." line="485" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -39,27 +39,27 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579170616321">
-        <mark key="e" line="990" column="16" />
-        <mark key="'" line="821" column="12" />
-        <mark key="i" line="892" column="44" />
-        <mark key="[" line="294" column="17" />
-        <mark key="]" line="634" column="22" />
-        <mark key="^" line="634" column="22" />
-        <mark key="." line="634" column="22" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579173214193">
+        <mark key="e" line="989" column="16" />
+        <mark key="'" line="820" column="12" />
+        <mark key="i" line="891" column="44" />
+        <mark key="[" line="527" column="48" />
+        <mark key="]" line="430" column="45" />
+        <mark key="^" line="430" column="45" />
+        <mark key="." line="430" column="45" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579170691074">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579172728360">
         <mark key="[" line="211" column="0" />
         <mark key="]" line="211" column="0" />
         <mark key="^" line="229" column="0" />
         <mark key="." line="211" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579101183048">
-        <mark key="'" line="69" column="10" />
-        <mark key="[" line="125" column="0" />
-        <mark key="]" line="125" column="0" />
-        <mark key="^" line="302" column="10" />
-        <mark key="." line="125" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579172905623">
+        <mark key="'" line="71" column="10" />
+        <mark key="[" line="127" column="0" />
+        <mark key="]" line="127" column="0" />
+        <mark key="^" line="304" column="10" />
+        <mark key="." line="127" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579167318016">
         <mark key="[" line="16" column="0" />
@@ -130,64 +130,42 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc2xvZ0ZpbGVvclBvcwogICAgICAgIGdsb2JhbCA=</text>
+        <text>sensorPos[NumberOfSensor] == 1</text>
       </register>
       <register name="-" type="4">
-        <text>s</text>
+        <text>sensorPos[NumberOfSensor] == 1</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxmaXJzdF90aW1lX21cPg==</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc2xvZ0ZpbGVvclBvcwogICAgICAgIGdsb2JhbCA=</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="2" type="4">
-        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                             &quot;| Number of finished steps of measurement routine has been calculated. → count = &quot;
-                             + str(finished_steps))</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="3" type="4">
-        <text>def a(st):
-    if st != &quot;&quot;:
-        print(st[:])
-    else:
-        print(st[1])
-        print(st[3])
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="4" type="4">
+        <text>temp_repeat_measure = bool(sensorPos[NumberOfSensor])
 
-
-a()</text>
-      </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGZpcnN0X3RpbWVfbSArPSAxCg==</text>
+    return temp_repeat_measure</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBpbWFnZV9udW1iZXIgPSAwCg==</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIG9yIHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbM10sIGdyYXlzY2FsZT1UcnVlKToK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="7" type="4">
-        <text>measurePath = &quot;C:\\Partrtn\\&quot;  # Path to folder with everything about measuring (routines, measured date).
-programPath = &quot;C:\\Program Files\\MetrologyAndScanning\\&quot;  # Path to folder with program data
-logFile = programPath + &quot;logs\\&quot; \
-          + datetime.datetime.now().strftime(&quot;%y_%m_%d_%H_%M&quot;) + &quot;.txt&quot;  # Path to log file.
-NumberOfSensor = 0  # Actual number of measured sensor.
-sType = [&quot;R0&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;]  # Array of variables for types of sensors.
-nameSensor = [&quot;A12EC-W032&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;]  # Array of variables for names of sensors.
-pSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for APS of sensors (APS on (1) or off (0)).
-
-arg_js = programPath + &quot;join_images_script.exe 1 &quot; + measurePath \
-         + &quot; &quot; + sType[NumberOfSensor] + &quot; &quot; + nameSensor[NumberOfSensor] \
-         + &quot; &quot; + str(NumberOfSensor) + &quot; &quot; + str(pSensor[NumberOfSensor]) \
-         + &quot; &quot; + programPath.split(&quot; &quot;)[0] + &quot; &quot; + programPath.split(&quot; &quot;)[1] \
-         + &quot; &quot; + &quot;logs&quot; + logFile.split(&quot;logs&quot;)[1]
-print(arg_js)</text>
+      <register name="7" type="2">
+        <text encoding="base64">c2Vuc29yUG9zID0gWzAsIDAsIDBdCgo=</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IFwKICAgICAgICAgICAgICAgIG9yIHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbMl0sIGdyYXlzY2FsZT1UcnVlKSBcCiAgICAgICAgICAgICAgICBvciBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcIiArIHNsZWVwX3VudGlsWzNdLCBncmF5c2NhbGU9VHJ1ZQ==</text>
+      <register name="8" type="2">
+        <text encoding="base64">bG9nZkZpbGUgPSAiIgo=</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">IFwKICAgICAgICAgICAgICAgIG9yIHBhZy5sb2NhdGVDZW50ZXJPblNjcmVlbihwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbMV0sIGdyYXlzY2FsZT1UcnVlKSBcCiAgICAgICAgICAgICAgICBvciBwYWcubG9jYXRlQ2VudGVyT25TY3JlZW4ocHJvZ3JhbVBhdGggKyAic2NyZWVuc1xcIiArIHNsZWVwX3VudGlsWzJdLCBncmF5c2NhbGU9VHJ1ZSkgXAogICAgICAgICAgICAgICAgb3IgcGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXCIgKyBzbGVlcF91bnRpbFszXSwgZ3JheXNjYWxlPVRydWUp</text>
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc2xvZ0ZpbGVvclBvcwogICAgICAgIGdsb2JhbCA=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
