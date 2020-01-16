@@ -19,14 +19,14 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579182313745">
-        <mark key="e" line="580" column="28" />
-        <mark key="'" line="505" column="32" />
-        <mark key="[" line="505" column="44" />
-        <mark key="m" line="189" column="23" />
-        <mark key="]" line="505" column="44" />
-        <mark key="^" line="430" column="0" />
-        <mark key="." line="505" column="44" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579183834897">
+        <mark key="e" line="584" column="28" />
+        <mark key="'" line="509" column="32" />
+        <mark key="[" line="566" column="4" />
+        <mark key="m" line="193" column="23" />
+        <mark key="]" line="566" column="4" />
+        <mark key="^" line="434" column="0" />
+        <mark key="." line="566" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -40,14 +40,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579182094060">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579184551372">
         <mark key="e" line="989" column="16" />
         <mark key="'" line="820" column="12" />
         <mark key="i" line="891" column="44" />
-        <mark key="[" line="94" column="66" />
-        <mark key="]" line="94" column="66" />
+        <mark key="[" line="67" column="0" />
+        <mark key="]" line="67" column="0" />
         <mark key="^" line="430" column="45" />
-        <mark key="." line="94" column="66" />
+        <mark key="." line="67" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579172728360">
         <mark key="[" line="211" column="0" />
@@ -132,42 +132,42 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>0</text>
+        <text>wait(sleep_until=&quot;quitStep.png&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>0</text>
+        <text>wait(sleep_until=&quot;quitStep.png&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxmaXJzdF90aW1lX21cPg==</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgZWxpZiBwcm9jZXNzX3R5cGUgPT0gIlNjYW5uaW5nIjoKICAgICAgICAgICAgICAgICAgICAgICAgRXJyb3JJZC5zdGFydFNjYW5uaW5nW051bWJlck9mU2Vuc29yXSA9IDI=</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoNSkK</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICBlbGlmIHByb2Nlc3NfdHlwZSA9PSAiU2Nhbm5pbmciOgogICAgICAgICAgICAgICAgICAgIEVycm9ySWQuc3RhcnRTY2FubmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAy</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDUpCg==</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIHByb2Nlc3NfdHlwZSA9PSAiU2Nhbm5pbmciOgogICAgICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0U2Nhbm5pbmdbTnVtYmVyT2ZTZW5zb3JdID0gMg==</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgZWxpZiBwcm9jZXNzX3R5cGUgPT0gIlNjYW5uaW5nIjoKICAgICAgICAgICAgICAgICAgICAgICAgRXJyb3JJZC5zdGFydFNjYW5uaW5nW051bWJlck9mU2Vuc29yXSA9IDI=</text>
       </register>
       <register name="4" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBlbGlmIHByb2Nlc3NfdHlwZSA9PSAiU2Nhbm5pbmciOgogICAgICAgICAgICAgICAgICAgIEVycm9ySWQuc3RhcnRTY2FubmluZ1tOdW1iZXJPZlNlbnNvcl0gPSAy</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBlbGlmIHByb2Nlc3NfdHlwZSA9PSAiU2Nhbm5pbmciOgogICAgICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0U2Nhbm5pbmdbTnVtYmVyT2ZTZW5zb3JdID0gMg==</text>
+      </register>
+      <register name="6" type="4">
         <text>elif process_type == &quot;Scanning&quot;:
                     ErrorId.startScanning[NumberOfSensor] = 2</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgICAgICAgICBlcnJvciA9IDIKICAgICAgICAgICAgICAgICAgICBFcnJvcklkLm1vdmVTY3JlZW5zW051bWJlck9mU2Vuc29yXSA9IDIKICAgICAgICAgICAgICAgICAgICBzYXZlX2xvZygiXG4iICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiV5LSVtLSVkICVIOiVNOiVTIikgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ8IE1vdmUgb2Ygc2NyZWVucyBoYXMgZmFpbGVkXG4iICsgdHJhY2ViYWNrLmZvcm1hdF9leGMoKSk=</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBjb250aW51ZQo=</text>
       </register>
-      <register name="7" type="4">
+      <register name="9" type="4">
         <text>logFile = &quot;logs\\&quot; + datetime.datetime.now().strftime(&quot;%y_%m_%d_%H_%M&quot;) + &quot;.txt&quot;
 print(logFile[4:])</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
