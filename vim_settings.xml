@@ -39,14 +39,11 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579173214193">
-        <mark key="e" line="989" column="16" />
-        <mark key="'" line="820" column="12" />
-        <mark key="i" line="891" column="44" />
-        <mark key="[" line="527" column="48" />
-        <mark key="]" line="430" column="45" />
-        <mark key="^" line="430" column="45" />
-        <mark key="." line="430" column="45" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579179731063">
+        <mark key="e" line="995" column="16" />
+        <mark key="'" line="826" column="12" />
+        <mark key="i" line="897" column="44" />
+        <mark key="^" line="436" column="45" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579172728360">
         <mark key="[" line="211" column="0" />
@@ -61,10 +58,10 @@
         <mark key="^" line="304" column="10" />
         <mark key="." line="127" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579167318016">
-        <mark key="[" line="16" column="0" />
-        <mark key="]" line="16" column="0" />
-        <mark key="." line="16" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579179554896">
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="." line="17" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -130,7 +127,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>sensorPos[NumberOfSensor] == 1</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgICAgICAgICBlcnJvciA9IDIKICAgICAgICAgICAgICAgICAgICBFcnJvcklkLm1vdmVTY3JlZW5zW051bWJlck9mU2Vuc29yXSA9IDIKICAgICAgICAgICAgICAgICAgICBzYXZlX2xvZygiXG4iICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiV5LSVtLSVkICVIOiVNOiVTIikgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ8IE1vdmUgb2Ygc2NyZWVucyBoYXMgZmFpbGVkXG4iICsgdHJhY2ViYWNrLmZvcm1hdF9leGMoKSk=</text>
       </register>
       <register name="-" type="4">
         <text>sensorPos[NumberOfSensor] == 1</text>
@@ -138,19 +135,18 @@
       <register name="/" type="4">
         <text encoding="base64">XDxmaXJzdF90aW1lX21cPg==</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      <register name="1" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgICAgICAgICBlcnJvciA9IDIKICAgICAgICAgICAgICAgICAgICBFcnJvcklkLm1vdmVTY3JlZW5zW051bWJlck9mU2Vuc29yXSA9IDIKICAgICAgICAgICAgICAgICAgICBzYXZlX2xvZygiXG4iICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiV5LSVtLSVkICVIOiVNOiVTIikgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICJ8IE1vdmUgb2Ygc2NyZWVucyBoYXMgZmFpbGVkXG4iICsgdHJhY2ViYWNrLmZvcm1hdF9leGMoKSk=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBjb250aW51ZQo=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      <register name="3" type="4">
+        <text>logFile = &quot;logs\\&quot; + datetime.datetime.now().strftime(&quot;%y_%m_%d_%H_%M&quot;) + &quot;.txt&quot;
+print(logFile[4:])</text>
       </register>
-      <register name="4" type="4">
-        <text>temp_repeat_measure = bool(sensorPos[NumberOfSensor])
-
-    return temp_repeat_measure</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name="5" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
@@ -158,14 +154,16 @@
       <register name="6" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">c2Vuc29yUG9zID0gWzAsIDAsIDBdCgo=</text>
+      <register name="7" type="4">
+        <text>temp_repeat_measure = bool(sensorPos[NumberOfSensor])
+
+    return temp_repeat_measure</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">bG9nZkZpbGUgPSAiIgo=</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgc2Vuc2xvZ0ZpbGVvclBvcwogICAgICAgIGdsb2JhbCA=</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
