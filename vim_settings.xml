@@ -19,9 +19,9 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579432549638">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579785014390">
         <mark key="'" line="533" column="32" />
-        <mark key="[" line="585" column="0" />
+        <mark key="[" line="490" column="10" />
         <mark key="m" line="203" column="23" />
         <mark key="]" line="585" column="0" />
         <mark key="^" line="586" column="0" />
@@ -39,14 +39,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579784057827">
-        <mark key="e" line="1052" column="16" />
-        <mark key="'" line="699" column="46" />
-        <mark key="i" line="954" column="44" />
-        <mark key="[" line="14" column="36" />
-        <mark key="]" line="14" column="36" />
-        <mark key="^" line="923" column="23" />
-        <mark key="." line="14" column="36" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579784656118">
+        <mark key="e" line="1054" column="16" />
+        <mark key="'" line="701" column="46" />
+        <mark key="i" line="956" column="44" />
+        <mark key="[" line="20" column="0" />
+        <mark key="]" line="20" column="0" />
+        <mark key="." line="20" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579172728360">
         <mark key="[" line="211" column="0" />
@@ -83,7 +82,7 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579202526431">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579785176492">
         <mark key="[" line="58" column="0" />
         <mark key="]" line="58" column="0" />
         <mark key="^" line="257" column="31" />
@@ -131,8 +130,8 @@
       <jump line="655" column="46" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>touchBoundary</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIHBhZy5kb3VibGVDbGljayhpbmNyZWFzZV90cmVhc2hvbGQpCg==</text>
       </register>
       <register name="-" type="4">
         <text>touchBoundary</text>
@@ -140,25 +139,28 @@
       <register name="/" type="4">
         <text encoding="base64">XDxmaXJzdF90aW1lX21cPg==</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHBhZy5kb3VibGVDbGljayhpbmNyZWFzZV90cmVhc2hvbGQpCg==</text>
+      </register>
+      <register name="2" type="4">
         <text>if pag.locateCenterOnScreen(Img.touchBoundary, grayscale=True):
                 Position.touchBoundary = pag.locateCenterOnScreen(Img.touchBoundary, grayscale=True)
             else:
                 Position.touchBoundary = [0, 0]
             Position.autoIllumination = pag.locateCenterOnScreen(Img.autoIllumination, grayscale=True)</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">IHRyeToKICAgICAgICAgICAgb3MucmVtb3ZlKG1lYXN1cmVQYXRoICsgIlJvdXRpbmVzXFwiICsgc3RyKG51bWJlcl9vZl9zZW5zb3IgKyAxKSArICJfcmlnaHQuUlROIikKICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgcGFzcw==</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxob3Zuby50eHQiKQo=</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>except OSError:
     print(traceback.format_exc())
 print(&quot;done&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>delFinishedSteps = 10
 file = &quot;Sensor_A12-R0_Scanning-6-1.BMP&quot;
 file_name = &quot;-&quot;.join(file.split('-')[:2]) + &quot;-&quot; \
@@ -167,14 +169,14 @@ file_name = &quot;-&quot;.join(file.split('-')[:2]) + &quot;-&quot; \
 
 print(file_name)</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgIyBtb3puYSBuZWRhdmF0IHRyeSBhIGV4Y2VwdCAtIGFsZXNwb24gbmUgdiByYW1jaSBlcnJvciBzeXN0ZW11Cg==</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>wait function (locate on screen)&quot;
                      &quot; of 'resetRoutine.png'</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>def save_position(number_of_sensor=0):
     pag.click(Position.centroid)
     time.sleep(1)
@@ -207,9 +209,6 @@ print(file_name)</text>
         pag.typewrite([&quot;enter&quot;])
         if if_find_error():
             pass</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICBwYXNz</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
