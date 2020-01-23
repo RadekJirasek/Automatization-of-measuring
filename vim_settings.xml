@@ -39,13 +39,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579789356824">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579791057198">
         <mark key="e" line="1054" column="16" />
         <mark key="'" line="868" column="12" />
         <mark key="i" line="956" column="44" />
         <mark key="[" line="20" column="0" />
-        <mark key="]" line="20" column="0" />
-        <mark key="." line="20" column="0" />
+        <mark key="]" line="896" column="36" />
+        <mark key="." line="896" column="36" />
+        <mark key="^" line="896" column="36" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579172728360">
         <mark key="[" line="211" column="0" />
@@ -60,12 +61,7 @@
         <mark key="^" line="307" column="10" />
         <mark key="." line="352" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579786359127">
-        <mark key="[" line="15" column="0" />
-        <mark key="]" line="15" column="0" />
-        <mark key="." line="15" column="0" />
-        <mark key="^" line="15" column="14" />
-      </file>
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579791207186" />
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
         <mark key="]" line="38" column="23" />
@@ -83,11 +79,10 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1574151790608">
         <mark key="[" line="291" column="39" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579788792158">
-        <mark key="[" line="265" column="25" />
-        <mark key="]" line="264" column="25" />
-        <mark key="^" line="264" column="25" />
-        <mark key="." line="264" column="25" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
+        <mark key="[" line="263" column="26" />
+        <mark key="]" line="263" column="26" />
+        <mark key="." line="263" column="26" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -133,7 +128,9 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>int</text>
+        <text>pen(&quot;C:\\Users\\Admin\\Desktop\\testPrint.txt&quot;, 'w') as f3:
+                        f3.write(&quot;\n&quot;)
+                        f3.close()</text>
       </register>
       <register name="-" type="4">
         <text>int</text>
@@ -142,37 +139,37 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbnVtYmVyX29mX2ltYWdlcwogICAgICAgICAgICAgICAgcmV0dXJuIFRydWU=</text>
+        <text>pen(&quot;C:\\Users\\Admin\\Desktop\\testPrint.txt&quot;, 'w') as f3:
+                        f3.write(&quot;\n&quot;)
+                        f3.close()</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgaWYgbnVtYmVyX29mX2ltYWdlcwogICAgICAgICAgICAgICAgcmV0dXJuIFRydWU=</text>
+      </register>
+      <register name="3" type="4">
         <text encoding="base64">CmEgPSBbIlNlciJdCgpmb3IgaSBpbiBhOgogICAgaWYgaSAhPSAiIjoKICAgICAgICBwcmludChpKQ==</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICJiZWVuIGZvdW5kISIK</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGluY3JlYXNlQ2VudHJvaWRQYXJhbXMucG5nIiksICJTY3JlZW4gJ2luY3JlYXNlQ2VudHJvaWRQYXJhbXMnIGhhcyBub3QiIFwK</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgIHBhZy5kb3VibGVDbGljayhpbmNyZWFzZV90cmVhc2hvbGQpCg==</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>if pag.locateCenterOnScreen(Img.touchBoundary, grayscale=True):
                 Position.touchBoundary = pag.locateCenterOnScreen(Img.touchBoundary, grayscale=True)
             else:
                 Position.touchBoundary = [0, 0]
             Position.autoIllumination = pag.locateCenterOnScreen(Img.autoIllumination, grayscale=True)</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text encoding="base64">IHRyeToKICAgICAgICAgICAgb3MucmVtb3ZlKG1lYXN1cmVQYXRoICsgIlJvdXRpbmVzXFwiICsgc3RyKG51bWJlcl9vZl9zZW5zb3IgKyAxKSArICJfcmlnaHQuUlROIikKICAgICAgICBleGNlcHQgT1NFcnJvcjoKICAgICAgICAgICAgcGFzcw==</text>
       </register>
-      <register name="8" type="2">
+      <register name="9" type="2">
         <text encoding="base64">b3MucmVtb3ZlKCJDOlxcVXNlcnNcXFV6aXZhdGVsXFxEZXNrdG9wXFxob3Zuby50eHQiKQo=</text>
-      </register>
-      <register name="9" type="4">
-        <text>except OSError:
-    print(traceback.format_exc())
-print(&quot;done&quot;)</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
