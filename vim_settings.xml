@@ -39,7 +39,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579798076426">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579854223373">
         <mark key="e" line="1054" column="16" />
         <mark key="'" line="868" column="12" />
         <mark key="i" line="956" column="44" />
@@ -80,11 +80,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579805535577">
-        <mark key="[" line="287" column="32" />
-        <mark key="]" line="287" column="32" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579854623672">
+        <mark key="[" line="312" column="4" />
+        <mark key="]" line="312" column="4" />
         <mark key="^" line="337" column="15" />
-        <mark key="." line="287" column="32" />
+        <mark key="." line="312" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
         <mark key="[" line="263" column="26" />
@@ -134,11 +134,11 @@
       <jump line="868" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjID09IDQ6Cg==</text>
+      <register name="&quot;" type="4">
+        <text>NumberOfSensor</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">d3JpdGUg</text>
+        <text>NumberOfSensor</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
