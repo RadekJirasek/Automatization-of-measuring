@@ -75,11 +75,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579893402390">
-        <mark key="[" line="268" column="33" />
-        <mark key="]" line="268" column="33" />
-        <mark key="^" line="353" column="15" />
-        <mark key="." line="268" column="33" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579901100027">
+        <mark key="[" line="250" column="8" />
+        <mark key="]" line="249" column="8" />
+        <mark key="^" line="249" column="8" />
+        <mark key="." line="249" column="8" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
@@ -131,8 +131,8 @@
       <jump line="44" column="70" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>RIGHT</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgyKQo=</text>
       </register>
       <register name="-" type="4">
         <text>RIGHT</text>
@@ -140,27 +140,30 @@
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgZnJhbWVEMS5wYWNrKHNpZGU9TEVGVCkKICAgICAgICAgICAgZnJhbWVEMy5wYWNrKCkKICAgICAgICAgICAgZnJhbWVEMi5wYWNrKHNpZGU9UklHSFQp</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgyKQo=</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgaWYgbW0zZF9vbigpOgogICAgICAgICAgICAgICAgICAgICAgICBwYWcuY2xpY2socGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5jcm9zcywgZ3JheXNjYWxlPVRydWUpKQ==</text>
+        <text encoding="base64">ICAgICAgICAgICAgZnJhbWVEMS5wYWNrKHNpZGU9TEVGVCkKICAgICAgICAgICAgZnJhbWVEMy5wYWNrKCkKICAgICAgICAgICAgZnJhbWVEMi5wYWNrKHNpZGU9UklHSFQp</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgaWYgbW0zZF9vbigpOgogICAgICAgICAgICAgICAgICAgICAgICBwYWcuY2xpY2socGFnLmxvY2F0ZUNlbnRlck9uU2NyZWVuKEltZy5jcm9zcywgZ3JheXNjYWxlPVRydWUpKQ==</text>
+      </register>
+      <register name="4" type="4">
         <text>else:
                     time.sleep(1)</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgc2xlZXAgPSBzbGVlcF91bnRpbAo=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>time.sleep(0.2)
     # mozna taky sleep_until</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CnByb2dyYW1QYXRoID0gIkM6XFxVc2Vyc1xcUHJvZ3JhbSBGaWxlc1xcTWV0cm9sb2d5QW5kU2Nhbm5pbmdcXCIKc2xlZXBfdW50aWwgPSBbIm1tM2RPbi5wbmciLCAiIiwgIiIsICIiXQpwcmludChwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbMF0p</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>path = &quot;C:\\Users\\Admin\\Desktop&quot;
 text = &quot;&quot;
 
@@ -180,9 +183,6 @@ with open(path + &quot;\\waitTest.txt&quot;, 'w') as f:
             else:
                 text += &quot; NO&quot;
     f.write(text)</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
       </register>
       <register name="9" type="2">
         <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
