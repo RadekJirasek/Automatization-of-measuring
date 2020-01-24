@@ -39,7 +39,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579857228793">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579859836835">
         <mark key="e" line="1054" column="16" />
         <mark key="'" line="868" column="12" />
         <mark key="i" line="956" column="44" />
@@ -48,13 +48,13 @@
         <mark key="." line="1031" column="54" />
         <mark key="^" line="1031" column="54" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579848838466">
-        <mark key="[" line="119" column="0" />
-        <mark key="]" line="119" column="0" />
-        <mark key="^" line="257" column="0" />
-        <mark key="." line="119" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579859894874">
+        <mark key="[" line="344" column="38" />
+        <mark key="]" line="343" column="0" />
+        <mark key="^" line="343" column="0" />
+        <mark key="." line="343" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579858460537">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579859312782">
         <mark key="'" line="77" column="10" />
         <mark key="[" line="253" column="35" />
         <mark key="]" line="48" column="103" />
@@ -135,8 +135,8 @@
       <jump line="868" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+      <register name="&quot;" type="4">
+        <text>NumberOfSensor</text>
       </register>
       <register name="-" type="4">
         <text>NumberOfSensor</text>
