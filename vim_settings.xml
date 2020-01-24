@@ -19,13 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579881753167">
-        <mark key="'" line="543" column="32" />
-        <mark key="[" line="500" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579884133007">
+        <mark key="'" line="529" column="32" />
+        <mark key="[" line="451" column="23" />
         <mark key="m" line="203" column="23" />
-        <mark key="]" line="500" column="0" />
-        <mark key="^" line="501" column="82" />
-        <mark key="." line="500" column="0" />
+        <mark key="]" line="450" column="34" />
+        <mark key="." line="450" column="34" />
+        <mark key="^" line="450" column="34" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -39,7 +39,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579880895568">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579884058421">
         <mark key="e" line="1056" column="16" />
         <mark key="'" line="43" column="70" />
         <mark key="i" line="958" column="44" />
@@ -61,11 +61,8 @@
         <mark key="^" line="48" column="103" />
         <mark key="." line="48" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579878209696">
-        <mark key="[" line="45" column="0" />
-        <mark key="]" line="45" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579884045247">
         <mark key="^" line="14" column="26" />
-        <mark key="." line="45" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -137,41 +134,61 @@
       <jump line="44" column="70" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHJvbyA9IDAK</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">CnByb2dyYW1QYXRoID0gIkM6XFxVc2Vyc1xcUHJvZ3JhbSBGaWxlc1xcTWV0cm9sb2d5QW5kU2Nhbm5pbmdcXCIKc2xlZXBfdW50aWwgPSBbIm1tM2RPbi5wbmciLCAiIiwgIiIsICIiXQpwcmludChwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbMF0p</text>
       </register>
       <register name="-" type="4">
-        <text>number_of_sensor</text>
+        <text>roo</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHJvbyA9IDAK</text>
+      <register name="1" type="4">
+        <text encoding="base64">CnByb2dyYW1QYXRoID0gIkM6XFxVc2Vyc1xcUHJvZ3JhbSBGaWxlc1xcTWV0cm9sb2d5QW5kU2Nhbm5pbmdcXCIKc2xlZXBfdW50aWwgPSBbIm1tM2RPbi5wbmciLCAiIiwgIiIsICIiXQpwcmludChwcm9ncmFtUGF0aCArICJzY3JlZW5zXFwiICsgc2xlZXBfdW50aWxbMF0p</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2xlZXAgPSBzbGVlcF91bnRpbAo=</text>
+      <register name="2" type="4">
+        <text>path = &quot;C:\\Users\\Admin\\Desktop&quot;
+text = &quot;&quot;
+
+time.sleep(3)
+
+with open(path + &quot;\\waitTest.txt&quot;, 'r') as f:
+    text += f.read()
+    f.close()
+with open(path + &quot;\\waitTest.txt&quot;, 'w') as f:
+    text += &quot;\n&quot;
+    files = os.listdir(path)
+    for file in files:
+        if file.endswith(&quot;.png&quot;):
+            text += file
+            if pag.locateCenterOnScreen(path + &quot;\\&quot; + file):
+                text += &quot; YES&quot;
+            else:
+                text += &quot; NO&quot;
+    f.write(text)</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgyKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgwLjUpCg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      <register name="7" type="4">
+        <text>or pag.locateOnScreen(programPath + &quot;screens\\&quot; + sleep_until[1], grayscale=True) \
+                or pag.locateOnScreen(programPath + &quot;screens\\&quot; + sleep_until[2], grayscale=True) \
+                or pag.locateOnScreen(programPath + &quot;screens\\&quot; + sleep_until[3], grayscale=True)</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+        <text encoding="base64">ICAgICAgICByb28gKz0gMQo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+        <text encoding="base64">ICAgICAgICByb28gKz0gMQogICAgICAgIHdpdGggb3BlbigiQzpcXFVzZXJzXFxBZG1pblxcRGVza3RvcFxcV2FpdFRlc3RpbmcudHh0IiwgJ3InKSBhcyBmcm86Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
