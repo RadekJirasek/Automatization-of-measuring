@@ -19,13 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579877464814">
-        <mark key="'" line="532" column="32" />
-        <mark key="[" line="4" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579881753167">
+        <mark key="'" line="543" column="32" />
+        <mark key="[" line="500" column="0" />
         <mark key="m" line="203" column="23" />
-        <mark key="]" line="4" column="0" />
-        <mark key="^" line="345" column="22" />
-        <mark key="." line="4" column="0" />
+        <mark key="]" line="500" column="0" />
+        <mark key="^" line="501" column="82" />
+        <mark key="." line="500" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -39,16 +39,16 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579878728048">
-        <mark key="e" line="1059" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579880895568">
+        <mark key="e" line="1056" column="16" />
         <mark key="'" line="43" column="70" />
-        <mark key="i" line="961" column="44" />
-        <mark key="[" line="194" column="74" />
-        <mark key="]" line="194" column="23" />
-        <mark key="." line="194" column="23" />
-        <mark key="^" line="194" column="23" />
+        <mark key="i" line="958" column="44" />
+        <mark key="[" line="151" column="0" />
+        <mark key="]" line="151" column="0" />
+        <mark key="." line="151" column="0" />
+        <mark key="^" line="192" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579863560618">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579880574918">
         <mark key="[" line="246" column="0" />
         <mark key="]" line="246" column="0" />
         <mark key="^" line="341" column="0" />
@@ -138,7 +138,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">IiIiCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHJvbyA9IDAK</text>
       </register>
       <register name="-" type="4">
         <text>number_of_sensor</text>
@@ -147,42 +147,31 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">IiIiCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHJvbyA9IDAK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">Z2xvYmFsIHNlbnNvclBvcwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgc2xlZXAgPSBzbGVlcF91bnRpbAo=</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">CiAgICAgICAgaWYgaWZfcmVwZWF0X21lYXN1cmUoTnVtYmVyT2ZTZW5zb3IpOgogICAgICAgICAgICBlcnJvciA9IDIKICAgICAgICAgICAgc2V0X3Byb2Nlc3NfZXJyb3IoMSk=</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgyKQo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">dGltZS5zbGVlcCgxKQo=</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">cHJpbnQocGFnLikK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBwcm9jZXNzRXJyb3IK</text>
       </register>
-      <register name="6" type="4">
-        <text>print(subprocess.check_output(&quot;xset q | grep LED&quot;, shell=True)[65])
-print(&quot;A&quot;)
-pag.keyDown('capslock')
-pag.keyUp('capslock')</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="7" type="4">
-        <text>from win32con import VK_CAPITAL
-from win32api import GetKey</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
       </register>
-      <register name="8" type="4">
-        <text>time.sleep(3)
-if pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True):
-    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
-else:
-    print(&quot;NOT FOUND&quot;)
-    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
-
-&quot;&quot;&quot;</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgY29uZmlybV9zZXR0aW5ncyA9IHBhZy5jb25maXJtKCkK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
