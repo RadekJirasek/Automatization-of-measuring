@@ -19,13 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579857040235">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579873228232">
         <mark key="'" line="532" column="32" />
         <mark key="[" line="521" column="0" />
         <mark key="m" line="203" column="23" />
-        <mark key="]" line="521" column="0" />
-        <mark key="^" line="510" column="23" />
-        <mark key="." line="521" column="0" />
+        <mark key="]" line="345" column="22" />
+        <mark key="^" line="345" column="22" />
+        <mark key="." line="345" column="22" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -39,11 +39,11 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579861597307">
-        <mark key="e" line="1059" column="16" />
-        <mark key="'" line="873" column="12" />
-        <mark key="i" line="961" column="44" />
-        <mark key="[" line="266" column="27" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579873515682">
+        <mark key="e" line="1060" column="16" />
+        <mark key="'" line="874" column="12" />
+        <mark key="i" line="962" column="44" />
+        <mark key="[" line="813" column="73" />
         <mark key="]" line="258" column="26" />
         <mark key="." line="258" column="26" />
         <mark key="^" line="258" column="26" />
@@ -61,11 +61,11 @@
         <mark key="^" line="48" column="103" />
         <mark key="." line="48" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579871876253">
-        <mark key="[" line="15" column="0" />
-        <mark key="]" line="15" column="0" />
-        <mark key="^" line="15" column="26" />
-        <mark key="." line="15" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579874399612">
+        <mark key="[" line="16" column="19" />
+        <mark key="]" line="16" column="24" />
+        <mark key="^" line="14" column="26" />
+        <mark key="." line="16" column="24" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -137,20 +137,31 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>from win32con import VK_CAPITAL
-from win32api import GetKey</text>
+        <text encoding="base64">IkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3AiIA==</text>
       </register>
       <register name="-" type="4">
-        <text>from win32con import VK_CAPITAL</text>
+        <text encoding="base64">IkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3AiIA==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">dGltZS5zbGVlcCgxKQo=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">cHJpbnQocGFnLikK</text>
+      </register>
+      <register name="3" type="4">
+        <text>print(subprocess.check_output(&quot;xset q | grep LED&quot;, shell=True)[65])
+print(&quot;A&quot;)
+pag.keyDown('capslock')
+pag.keyUp('capslock')</text>
+      </register>
+      <register name="4" type="4">
         <text>from win32con import VK_CAPITAL
 from win32api import GetKey</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text>time.sleep(3)
 if pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True):
     print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
@@ -160,31 +171,17 @@ else:
 
 &quot;&quot;&quot;</text>
       </register>
-      <register name="3" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgY29uZmlybV9zZXR0aW5ncyA9IHBhZy5jb25maXJtKCkK</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgaWYgY29uZmlybV9zZXR0aW5ncyA9PSAiY29uZmlybSI6Cg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgoK</text>
-      </register>
-      <register name="7" type="4">
-        <text>time.sleep(3)
-if pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True):
-    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
-else:
-    print(&quot;NOT FOUND&quot;)
-    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjID09IDQ6Cg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID0gTmFtZU9mU2Vuc29yLmdldCgpCg==</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgoK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
