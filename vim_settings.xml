@@ -19,13 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579798184463">
-        <mark key="'" line="534" column="32" />
-        <mark key="[" line="427" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579857040235">
+        <mark key="'" line="532" column="32" />
+        <mark key="[" line="521" column="0" />
         <mark key="m" line="203" column="23" />
-        <mark key="]" line="427" column="0" />
-        <mark key="^" line="587" column="0" />
-        <mark key="." line="427" column="0" />
+        <mark key="]" line="521" column="0" />
+        <mark key="^" line="510" column="23" />
+        <mark key="." line="521" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -39,14 +39,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579854223373">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1579857228793">
         <mark key="e" line="1054" column="16" />
         <mark key="'" line="868" column="12" />
         <mark key="i" line="956" column="44" />
-        <mark key="[" line="737" column="38" />
-        <mark key="]" line="896" column="36" />
-        <mark key="." line="896" column="36" />
-        <mark key="^" line="896" column="36" />
+        <mark key="[" line="1010" column="0" />
+        <mark key="]" line="1031" column="54" />
+        <mark key="." line="1031" column="54" />
+        <mark key="^" line="1031" column="54" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579848838466">
         <mark key="[" line="119" column="0" />
@@ -54,17 +54,17 @@
         <mark key="^" line="257" column="0" />
         <mark key="." line="119" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579850443412">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579858460537">
         <mark key="'" line="77" column="10" />
-        <mark key="[" line="222" column="0" />
+        <mark key="[" line="253" column="35" />
         <mark key="]" line="48" column="103" />
         <mark key="^" line="48" column="103" />
         <mark key="." line="48" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579791896801">
-        <mark key="[" line="17" column="22" />
-        <mark key="]" line="17" column="22" />
-        <mark key="." line="17" column="22" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579856947270">
+        <mark key="]" line="19" column="4" />
+        <mark key="^" line="19" column="4" />
+        <mark key="." line="19" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -86,6 +86,7 @@
         <mark key="^" line="337" column="15" />
         <mark key="." line="312" column="4" />
       </file>
+      <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
         <mark key="[" line="263" column="26" />
         <mark key="]" line="263" column="26" />
@@ -134,8 +135,8 @@
       <jump line="868" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>NumberOfSensor</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name="-" type="4">
         <text>NumberOfSensor</text>
@@ -144,31 +145,36 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjID09IDQ6Cg==</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID0gTmFtZU9mU2Vuc29yLmdldCgpCg==</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgoK</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckNvbXBbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQ29tcG9uZW50LmdldCgpCg==</text>
+      <register name="3" type="4">
+        <text>time.sleep(3)
+if pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True):
+    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
+else:
+    print(&quot;NOT FOUND&quot;)
+    print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvcldhZmVyW051bWJlck9mU2Vuc29yXSA9IFNlbnNvcldhZmVyLmdldCgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjID09IDQ6Cg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckJhdGNoW051bWJlck9mU2Vuc29yXSA9IFNlbnNvckJhdGNoLmdldCgpCg==</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByb2R1Y3RUeXBlW051bWJlck9mU2Vuc29yXSA9IFByb2R1Y3RUeXBlLmdldCgpCg==</text>
-      </register>
-      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID0gTmFtZU9mU2Vuc29yLmdldCgpCg==</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICAKICAgIENoZWNrUCA9IHRraW50ZXIuQ2hlY2tidXR0b24oZnJhbWVUMiwgdGV4dD0iQXV0b21hdGljIHBvc2l0aW9uIHN5c3RlbSIsIHdpZHRoPTIwLCAKICAgIAogICAgQ2hlY2tNID0gdGtpbnRlci5DaGVja2J1dHRvbihmcmFtZVQyLCB0ZXh0PSJNZWFzdXJpbmciLCB3aWR0aD0xMCwgdmFyaWFibGU9Y2hlY2tNKQogICAgCiAgICBDaGVja1MgPSB0a2ludGVyLkNoZWNrYnV0dG9uKGZyYW1lVDIsIHRleHQ9IlNjYW5uaW5nIiwgd2lkdGg9MTAsIHZhcmlhYmxlPWNoZWNrUykKICAgIA==</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckNvbXBbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQ29tcG9uZW50LmdldCgpCg==</text>
       </register>
-      <register name="9" type="4">
-        <text encoding="base64">ZnJhbWVUb3AgPSB0a2ludGVyLkZyYW1lKFNNUykKICAgIGZyYW1lRG93biA9IHRraW50ZXIuRnJhbWUoU01TKQogICAgZnJhbWVUMSA9IHRraW50ZXIuRnJhbWUoZnJhbWVUb3ApCiAgICBmcmFtZVQyID0gdGtpbnRlci5GcmFtZShmcmFtZVRvcCkKICAgIExTZW5zb3IxID0gdGtpbnRlci5MYWJlbChmcmFtZVQxLCB0ZXh0PSJOYW1lIG9mIHNlbnNvcjogIiwgaGVpZ2h0PTIsIHdpZHRoPTE4KQogICAgTmFtZU9mU2Vuc29yID0gdGtpbnRlci5FbnRyeShmcmFtZVQxLCBiZD0zLCB3aWR0aD0zMikKICAgIA==</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvcldhZmVyW051bWJlck9mU2Vuc29yXSA9IFNlbnNvcldhZmVyLmdldCgpCg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckJhdGNoW051bWJlck9mU2Vuc29yXSA9IFNlbnNvckJhdGNoLmdldCgpCg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByb2R1Y3RUeXBlW051bWJlck9mU2Vuc29yXSA9IFByb2R1Y3RUeXBlLmdldCgpCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
