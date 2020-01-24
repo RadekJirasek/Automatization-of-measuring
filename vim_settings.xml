@@ -48,11 +48,11 @@
         <mark key="." line="258" column="26" />
         <mark key="^" line="258" column="26" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579861178156">
-        <mark key="[" line="344" column="38" />
-        <mark key="]" line="343" column="0" />
-        <mark key="^" line="343" column="0" />
-        <mark key="." line="343" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1579863560618">
+        <mark key="[" line="246" column="0" />
+        <mark key="]" line="246" column="0" />
+        <mark key="^" line="341" column="0" />
+        <mark key="." line="246" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1579859312782">
         <mark key="'" line="77" column="10" />
@@ -135,8 +135,8 @@
       <jump line="868" column="12" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>Sensor_A12</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgY29uZmlybV9zZXR0aW5ncyA9IHBhZy5jb25maXJtKCkK</text>
       </register>
       <register name="-" type="4">
         <text>Sensor_A12</text>
@@ -145,12 +145,18 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgY29uZmlybV9zZXR0aW5ncyA9IHBhZy5jb25maXJtKCkK</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgaWYgY29uZmlybV9zZXR0aW5ncyA9PSAiY29uZmlybSI6Cg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgoK</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>time.sleep(3)
 if pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True):
     print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))
@@ -158,23 +164,17 @@ else:
     print(&quot;NOT FOUND&quot;)
     print(pag.locateCenterOnScreen(&quot;C:\\Users\\Uzivatel\\Desktop\\testscreen.png&quot;, grayscale=True))</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgZWxpZiBjID09IDQ6Cg==</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID0gTmFtZU9mU2Vuc29yLmdldCgpCg==</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckNvbXBbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQ29tcG9uZW50LmdldCgpCg==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvcldhZmVyW051bWJlck9mU2Vuc29yXSA9IFNlbnNvcldhZmVyLmdldCgpCg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckJhdGNoW051bWJlck9mU2Vuc29yXSA9IFNlbnNvckJhdGNoLmdldCgpCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByb2R1Y3RUeXBlW051bWJlck9mU2Vuc29yXSA9IFByb2R1Y3RUeXBlLmdldCgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvcldhZmVyW051bWJlck9mU2Vuc29yXSA9IFNlbnNvcldhZmVyLmdldCgpCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
