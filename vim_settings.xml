@@ -70,10 +70,10 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579967458425">
-        <mark key="[" line="315" column="0" />
-        <mark key="]" line="315" column="0" />
-        <mark key="." line="315" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579969334857">
+        <mark key="[" line="282" column="53" />
+        <mark key="]" line="282" column="36" />
+        <mark key="." line="282" column="36" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
@@ -126,10 +126,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgIGZyYW1lVG9wTCA9IHRraW50ZXIuRnJhbWUoZnJhbWVUb3ApCiAgICBmcmFtZVRvcFIgPSB0a2ludGVyLkZyYW1lKGZyYW1lVG9wKQ==</text>
+        <text>getattrImg</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>getattrImg</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
