@@ -75,11 +75,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579901100027">
-        <mark key="[" line="250" column="8" />
-        <mark key="]" line="249" column="8" />
-        <mark key="^" line="249" column="8" />
-        <mark key="." line="249" column="8" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1579936893095">
+        <mark key="[" line="246" column="17" />
+        <mark key="]" line="246" column="17" />
+        <mark key="^" line="372" column="0" />
+        <mark key="." line="246" column="17" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
@@ -131,11 +131,11 @@
       <jump line="44" column="70" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgdGltZS5zbGVlcCgyKQo=</text>
+      <register name="&quot;" type="4">
+        <text>deletecommand(&quot;image&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>RIGHT</text>
+        <text>deletecommand(&quot;image&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
