@@ -6,7 +6,7 @@
       <file name="/code.py" timestamp="1578471605383">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1580485389476">
+      <file name="/Python Console" timestamp="1580495263955">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vector.py" timestamp="1578248436590">
@@ -47,13 +47,13 @@
         <mark key="^" line="114" column="16" />
         <mark key="." line="114" column="16" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580488254534">
-        <mark key="[" line="383" column="0" />
-        <mark key="]" line="383" column="0" />
-        <mark key="^" line="414" column="0" />
-        <mark key="." line="383" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580495470973">
+        <mark key="[" line="243" column="8" />
+        <mark key="]" line="243" column="8" />
+        <mark key="^" line="530" column="0" />
+        <mark key="." line="243" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1580488144275">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1580495220421">
         <mark key="'" line="80" column="10" />
         <mark key="[" line="224" column="0" />
         <mark key="]" line="224" column="0" />
@@ -71,18 +71,19 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1579971260611">
-        <mark key="[" line="289" column="0" />
-        <mark key="]" line="289" column="0" />
-        <mark key="." line="289" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1580495144939">
+        <mark key="[" line="292" column="0" />
+        <mark key="]" line="292" column="0" />
+        <mark key="." line="292" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1580455702923">
-        <mark key="[" line="314" column="0" />
-        <mark key="]" line="314" column="0" />
-        <mark key="." line="314" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1580496814185">
+        <mark key="[" line="418" column="0" />
+        <mark key="]" line="418" column="0" />
+        <mark key="." line="418" column="0" />
+        <mark key="^" line="418" column="84" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
@@ -135,8 +136,8 @@
       <jump line="359" column="35" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBmaW5hbF90eHQgKz0gIlxuQ29tcG9uZW50ICIgKyBzZW5zb3JDb21wW051bWJlck9mU2Vuc29yXQo=</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgcHJvZHVjdFR5cGVbTnVtYmVyT2ZTZW5zb3JdID0gUHJvZHVjdFR5cGUuZ2V0KCkKICAgICAgICAgICAgUHJvZHVjdFR5cGUuZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgc2Vuc29yQmF0Y2hbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQmF0Y2guZ2V0KCkKICAgICAgICAgICAgU2Vuc29yQmF0Y2guZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgc2Vuc29yV2FmZXJbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yV2FmZXIuZ2V0KCkKICAgICAgICAgICAgU2Vuc29yV2FmZXIuZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgbmFtZVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBOYW1lT2ZTZW5zb3IuZ2V0KCkKICAgICAgICAgICAgTmFtZU9mU2Vuc29yLmRlbGV0ZSgwLCBFTkQpICAjIENsZWFyIHRleHRib3ggZm9yIG5ldyBuYW1lIG9mIG5leHQgc2Vuc29yLg==</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICA=</text>
@@ -144,14 +145,14 @@
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBmaW5hbF90eHQgKz0gIlxuQ29tcG9uZW50ICIgKyBzZW5zb3JDb21wW051bWJlck9mU2Vuc29yXQo=</text>
+      <register name="1" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgcHJvZHVjdFR5cGVbTnVtYmVyT2ZTZW5zb3JdID0gUHJvZHVjdFR5cGUuZ2V0KCkKICAgICAgICAgICAgUHJvZHVjdFR5cGUuZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgc2Vuc29yQmF0Y2hbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQmF0Y2guZ2V0KCkKICAgICAgICAgICAgU2Vuc29yQmF0Y2guZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgc2Vuc29yV2FmZXJbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yV2FmZXIuZ2V0KCkKICAgICAgICAgICAgU2Vuc29yV2FmZXIuZGVsZXRlKDAsIEVORCkKICAgICAgICAgICAgbmFtZVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBOYW1lT2ZTZW5zb3IuZ2V0KCkKICAgICAgICAgICAgTmFtZU9mU2Vuc29yLmRlbGV0ZSgwLCBFTkQpICAjIENsZWFyIHRleHRib3ggZm9yIG5ldyBuYW1lIG9mIG5leHQgc2Vuc29yLg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIFNlbnNvckNvbXBvbmVudCA9IHRraW50ZXIuRW50cnkoZnJhbWVUVEJCLCBiZD0zLCB3aWR0aD0zNikK</text>
+        <text encoding="base64">ICAgICAgICAgICAgTnVtYmVyT2ZTZW5zb3IgPSAwCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIExTZW5zb3JDb21wb25lbnQgPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRCQiwgdGV4dD0iU2Vuc29yIGNvbXBvbmVudDogIiwgaGVpZ2h0PTEsIHdpZHRoPTI1KQo=</text>
+        <text encoding="base64">Cgo=</text>
       </register>
       <register name="4" type="2">
         <text encoding="base64">ICAgIFNlbnNvckNvbXBvbmVudC5wYWNrKHNpZGU9UklHSFQsIGZpbGw9Qk9USCkK</text>
@@ -160,16 +161,16 @@
         <text encoding="base64">ICAgIExTZW5zb3JDb21wb25lbnQucGFjayhzaWRlPUxFRlQsIGZpbGw9Qk9USCkK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIFNlbnNvckNvbXBvbmVudC5pbnNlcnQoMCwgc2Vuc29yQ29tcFswXSkK</text>
+        <text encoding="base64">ICAgIFNlbnNvckNvbXBvbmVudCA9IHRraW50ZXIuRW50cnkoZnJhbWVUVEJCLCBiZD0zLCB3aWR0aD0zNikK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIFNlbnNvckNvbXBvbmVudC5kZWxldGUoMCwgRU5EKQo=</text>
+        <text encoding="base64">ICAgIExTZW5zb3JDb21wb25lbnQgPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRCQiwgdGV4dD0iU2Vuc29yIGNvbXBvbmVudDogIiwgaGVpZ2h0PTEsIHdpZHRoPTI1KQo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvckNvbXBbTnVtYmVyT2ZTZW5zb3JdID0gU2Vuc29yQ29tcG9uZW50LmdldCgpCg==</text>
+      <register name="8" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBDaGVja1AudmFyLmdldCgpCiAgICAgICAgICAgIG1TZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID0gQ2hlY2tNLnZhci5nZXQoKQogICAgICAgICAgICBzU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IENoZWNrUy52YXIuZ2V0KCk=</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIFNlbnNvckNvbXBvbmVudC5pbnNlcnQoMCwgc2Vuc29yQ29tcFtOdW1iZXJPZlNlbnNvcl0pCg==</text>
+      <register name="9" type="4">
+        <text encoding="base64">CiAgICAgICAgcHJvZHVjdFR5cGVbTnVtYmVyT2ZTZW5zb3JdID0gUHJvZHVjdFR5cGUuZ2V0KCkKICAgICAgICBQcm9kdWN0VHlwZS5kZWxldGUoMCwgRU5EKQogICAgICAgIHNlbnNvckJhdGNoW051bWJlck9mU2Vuc29yXSA9IFNlbnNvckJhdGNoLmdldCgpCiAgICAgICAgU2Vuc29yQmF0Y2guZGVsZXRlKDAsIEVORCkKICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQogICAgICAgIFNlbnNvcldhZmVyLmRlbGV0ZSgwLCBFTkQpCiAgICAgICAgbmFtZVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBOYW1lT2ZTZW5zb3IuZ2V0KCkKICAgICAgICBOYW1lT2ZTZW5zb3IuZGVsZXRlKDAsIEVORCkgICMgQ2xlYXIgdGV4dGJveCBmb3IgbmV3IG5hbWUgb2YgbmV4dCBzZW5zb3IuCiAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBDaGVja1AudmFyLmdldCgpCiAgICAgICAgbVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBDaGVja00udmFyLmdldCgpCiAgICAgICAgc1NlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSBDaGVja1MudmFyLmdldCgpCgogICAgICAgIE51bWJlck9mU2Vuc29yID0gTnVtYmVyT2ZTZW5zb3IgKyAxICAjIEl0IGluY3JlYXNlIG51bWJlciBvZiBzZW5zb3Iu</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
