@@ -58,8 +58,11 @@
         <mark key="^" line="49" column="103" />
         <mark key="." line="49" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1579884045247">
-        <mark key="^" line="14" column="26" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580460605853">
+        <mark key="[" line="31" column="31" />
+        <mark key="]" line="31" column="9" />
+        <mark key="." line="31" column="9" />
+        <mark key="^" line="31" column="9" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -130,42 +133,42 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
       </register>
       <register name="-" type="4">
-        <text>getattrImg</text>
+        <text encoding="base64">ICAgIHByaW50KGEuc3BsaXQoKSk=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICBmcmFtZUQxID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQyID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQzID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24p</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICBOdW1iZXJPZlNlbnNvciArPSAxCg==</text>
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">ICAgIHA5TCA9IEltYWdlVGsuUGhvdG9JbWFnZShJbWFnZS5vcGVuKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXDFMLnBuZyIpKQo=</text>
+      <register name="4" type="4">
+        <text>for data_o in data_oa:
+        if data_o 
+        data_na = data_o.</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">ICAgIGZyYW1lVG9wTCA9IHRraW50ZXIuRnJhbWUoZnJhbWVUb3ApCiAgICBmcmFtZVRvcFIgPSB0a2ludGVyLkZyYW1lKGZyYW1lVG9wKQ==</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIHByaW50KGRhdGFfcm93cykK</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgIExTZW5zb3IwbWlkZGxlID0gdGtpbnRlci5MYWJlbChmcmFtZVRvcCkK</text>
+      <register name="6" type="4">
+        <text encoding="base64">CmRlZiBhKHNsZWVwX3VudGlsKToKICAgIG51bWJlcl9vZl9pbWFnZXMgPSAwCiAgICBmb3IgaW1hZ2VzIGluIHNsZWVwX3VudGlsOgogICAgICAgIGlmIGltYWdlcyAhPSAiIjoKICAgICAgICAgICAgbnVtYmVyX29mX2ltYWdlcyArPSAxCiAgICBwcmludChudW1iZXJfb2ZfaW1hZ2VzKQoKCmRlZiBiKHNsZWVwX3VudGlsPSIiKToKICAgIGEoc2xlZXBfdW50aWwpCgoKYigiZWVyIik=</text>
       </register>
-      <register name="7" type="4">
-        <text>frameTopL.pack(side=LEFT)
-    frameTopR.pack(side=RIGHT)
-    LSensor0middle.pack(fill=BOTH)</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgTFNlbnNvcjBsZWZ0LnBhY2soc2lkZT1MRUZUKQo=</text>
+      <register name="8" type="4">
+        <text encoding="base64">CiAgICBmcmFtZUQxID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQyID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQzID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24p</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgTFNlbnNvcjBtaWRkbGUucGFjayhzaWRlPUxFRlQpCg==</text>
+        <text encoding="base64">ICAgICAgICBOdW1iZXJPZlNlbnNvciArPSAxCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
