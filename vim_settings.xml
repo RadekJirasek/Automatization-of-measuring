@@ -47,7 +47,7 @@
         <mark key="^" line="114" column="16" />
         <mark key="." line="114" column="16" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580497525351">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580507383285">
         <mark key="[" line="243" column="8" />
         <mark key="]" line="243" column="8" />
         <mark key="^" line="530" column="0" />
@@ -79,11 +79,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1580498622223">
-        <mark key="[" line="281" column="8" />
-        <mark key="]" line="281" column="8" />
-        <mark key="^" line="405" column="84" />
-        <mark key="." line="281" column="8" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1580507537506">
+        <mark key="[" line="115" column="16" />
+        <mark key="]" line="115" column="16" />
+        <mark key="^" line="375" column="84" />
+        <mark key="." line="115" column="16" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1579790074557">
@@ -137,20 +137,22 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>elif NumberOfSensor == 2:
-            LSensor3[&quot;image&quot;] = Img.p2
-        elif NumberOfSensor == 3:
-            LSensor3[&quot;image&quot;] = Img.p3
-        elif NumberOfSensor == 4:
-            LSensor3[&quot;image&quot;] = Img.p4
-        elif NumberOfSensor == 5:
-            LSensor3[&quot;image&quot;] = Img.p5
-        elif NumberOfSensor == 6:
-            LSensor3[&quot;image&quot;] = Img.p6
-        elif NumberOfSensor == 7:
-            LSensor3[&quot;image&quot;] = Img.p7
-        elif NumberOfSensor == 8:
-            LSensor3[&quot;image&quot;] = Img.p8</text>
+        <text>if NumberOfSensor == 0:
+                    LSensor3[&quot;image&quot;] = Img.p0
+                elif NumberOfSensor == 1:
+                    LSensor3[&quot;image&quot;] = Img.p1
+                elif NumberOfSensor == 2:
+                    LSensor3[&quot;image&quot;] = Img.p2
+                elif NumberOfSensor == 3:
+                    LSensor3[&quot;image&quot;] = Img.p3
+                elif NumberOfSensor == 4:
+                    LSensor3[&quot;image&quot;] = Img.p4
+                elif NumberOfSensor == 5:
+                    LSensor3[&quot;image&quot;] = Img.p5
+                elif NumberOfSensor == 6:
+                    LSensor3[&quot;image&quot;] = Img.p6
+                elif NumberOfSensor == 7:
+                    LSensor3[&quot;image&quot;] = Img.p7</text>
       </register>
       <register name="-" type="4">
         <text />
@@ -159,6 +161,42 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>if NumberOfSensor == 0:
+                    LSensor3[&quot;image&quot;] = Img.p0
+                elif NumberOfSensor == 1:
+                    LSensor3[&quot;image&quot;] = Img.p1
+                elif NumberOfSensor == 2:
+                    LSensor3[&quot;image&quot;] = Img.p2
+                elif NumberOfSensor == 3:
+                    LSensor3[&quot;image&quot;] = Img.p3
+                elif NumberOfSensor == 4:
+                    LSensor3[&quot;image&quot;] = Img.p4
+                elif NumberOfSensor == 5:
+                    LSensor3[&quot;image&quot;] = Img.p5
+                elif NumberOfSensor == 6:
+                    LSensor3[&quot;image&quot;] = Img.p6
+                elif NumberOfSensor == 7:
+                    LSensor3[&quot;image&quot;] = Img.p7</text>
+      </register>
+      <register name="2" type="4">
+        <text>f NumberOfSensor == 1:
+                    LSensor3[&quot;image&quot;] = Img.p1
+                elif NumberOfSensor == 2:
+                    LSensor3[&quot;image&quot;] = Img.p2
+                elif NumberOfSensor == 3:
+                    LSensor3[&quot;image&quot;] = Img.p3
+                elif NumberOfSensor == 4:
+                    LSensor3[&quot;image&quot;] = Img.p4
+                elif NumberOfSensor == 5:
+                    LSensor3[&quot;image&quot;] = Img.p5
+                elif NumberOfSensor == 6:
+                    LSensor3[&quot;image&quot;] = Img.p6
+                elif NumberOfSensor == 7:
+                    LSensor3[&quot;image&quot;] = Img.p7
+                elif NumberOfSensor == 8:
+                    LSensor3[&quot;image&quot;] = Img.p8</text>
+      </register>
+      <register name="3" type="4">
         <text>elif NumberOfSensor == 2:
             LSensor3[&quot;image&quot;] = Img.p2
         elif NumberOfSensor == 3:
@@ -174,19 +212,19 @@
         elif NumberOfSensor == 8:
             LSensor3[&quot;image&quot;] = Img.p8</text>
       </register>
-      <register name="2" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICBwcm9kdWN0VHlwZVtOdW1iZXJPZlNlbnNvcl0gPSBQcm9kdWN0VHlwZS5nZXQoKQo=</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICBzZW5zb3JCYXRjaFtOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JCYXRjaC5nZXQoKQo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQo=</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IE5hbWVPZlNlbnNvci5nZXQoKQo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>productType[NumberOfSensor] = ProductType.get()
             ProductType.delete(0, END)
             sensorBatch[NumberOfSensor] = SensorBatch.get()
@@ -196,14 +234,8 @@
             nameSensor[NumberOfSensor] = NameOfSensor.get()
             NameOfSensor.delete(0, END)  # Clear textbox for new name of next sensor.</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICBpZiBOdW1iZXJPZlNlbnNvciA8IDg6Cg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIE51bWJlck9mU2Vuc29yID0gTnVtYmVyT2ZTZW5zb3IgKyAxICAjIEl0IGluY3JlYXNlIG51bWJlciBvZiBzZW5zb3IuCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIExTZW5zb3IyWyJ0ZXh0Il0gPSAiICBTZW5zb3IgIiArIHN0cihOdW1iZXJPZlNlbnNvciArIDEpICAjIEVkaXQgbGFiZWwgb2YgbnVtYmVyIG9mIHNlbnNvci4K</text>
+        <text encoding="base64">ICAgICAgICBpZiBOdW1iZXJPZlNlbnNvciA8IDg6Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
