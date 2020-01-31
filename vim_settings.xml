@@ -19,10 +19,13 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1579891308639">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580471377417">
         <mark key="'" line="531" column="32" />
+        <mark key="[" line="586" column="4" />
         <mark key="m" line="204" column="23" />
+        <mark key="]" line="586" column="4" />
         <mark key="^" line="495" column="44" />
+        <mark key="." line="586" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -51,18 +54,18 @@
         <mark key="^" line="423" column="0" />
         <mark key="." line="400" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1580455795545">
-        <mark key="'" line="78" column="10" />
-        <mark key="[" line="254" column="35" />
-        <mark key="]" line="49" column="103" />
-        <mark key="^" line="49" column="103" />
-        <mark key="." line="49" column="103" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1580471129046">
+        <mark key="'" line="80" column="10" />
+        <mark key="[" line="256" column="35" />
+        <mark key="]" line="51" column="103" />
+        <mark key="^" line="51" column="103" />
+        <mark key="." line="51" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580467660998">
-        <mark key="[" line="30" column="0" />
-        <mark key="]" line="30" column="0" />
-        <mark key="^" line="30" column="12" />
-        <mark key="." line="30" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580471321193">
+        <mark key="[" line="47" column="0" />
+        <mark key="]" line="47" column="0" />
+        <mark key="^" line="37" column="12" />
+        <mark key="." line="47" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -132,41 +135,41 @@
       <jump line="44" column="70" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cHJpbnQoZCkK</text>
+      <register name="&quot;" type="4">
+        <text>d =</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IDA=</text>
+        <text>d =</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cHJpbnQoZCkK</text>
+        <text encoding="base64">ICAgIG91dHB1dF8gPSAiIgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIGEgKz0gZGF0YV9maWxlLnJlYWQoKQo=</text>
+        <text encoding="base64">ZmluYWxfdHh0ID0gIiIK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChjKQo=</text>
+        <text encoding="base64">ICAgICAgICBpZiBsZW4oc3RyKHhbZ10pKSA+IDY6Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoYykK</text>
+        <text encoding="base64">ICAgICAgICBwcmludChjKQo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludCgiYSIpCg==</text>
+        <text encoding="base64">CiAgICBmaW5hbF9maWxlICs9IHN0cgoKCiIiIgo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoYykK</text>
+      <register name="6" type="4">
+        <text encoding="base64">CnByaW50KHgpCnByaW50KHkpCnByaW50KHop</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIGUgPSBsZW4oYSkK</text>
+      <register name="7" type="4">
+        <text encoding="base64">IiIiCmRhdGFfcm93cyA9IDAKCndpdGggb3BlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxccGxhbmFyaXR5LnR4dCIsICdyJykgYXMgZGF0YV9maWxlX3I6CiAgICBkYXRhX29hID0gZGF0YV9maWxlX3IucmVhZCgpCiAgICBkYXRhX3Jvd3MgKz0gZGF0YV9vYS5jb3VudCgiWCIpCiAgICBpZiBkYXRhX29hLmNvdW50KCJYIikgIT0gZGF0YV9vYS5jb3VudCgiWSIpIFwKICAgICAgICAgICAgb3IgZGF0YV9vYS5jb3VudCgiWCIpICE9IGRhdGFfb2EuY291bnQoIloiKSBcCiAgICAgICAgICAgIG9yIGRhdGFfb2EuY291bnQoIlkiKSAhPSBkYXRhX29hLmNvdW50KCJaIik6CiAgICAgICAgcHJpbnQoIkVSUk9SIikKICAgIGRhdGFfZmlsZV9yLmNsb3NlKCkKCmRhdGFfbmEgPSBbWyIiXSozXSooZGF0YV9yb3dzICsgMikKCndpdGggb3BlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxccGxhbmFyaXR5LnR4dCIsICdyJykgYXMgZGF0YV9maWxlX3I6CiAgICBkYXRhX2kgPSAwCiAgICBkYXRhX2lpID0gMAogICAgZGF0YV9jaGFyID0gMAogICAgd2hpbGUgZGF0YV9jaGFyIDwgNjAqZGF0YV9yb3dzOgogICAgICAgIGRhdGFfbyA9IGRhdGFfZmlsZV9yLnJlYWQoMSkKICAgICAgICBpZiBkYXRhX28gPT0gIlxuIiBvciBkYXRhX28gPT0gIiMiOgogICAgICAgICAgICBkYXRhX2kgKz0gMQogICAgICAgICAgICBkYXRhX2lpID0gMAogICAgICAgIGVsaWYgZGF0YV9vID09ICJZIiBvciBkYXRhX28gPT0gIloiOgogICAgICAgICAgICBkYXRhX2lpICs9IDEKICAgICAgICBlbGlmIGRhdGFfbyAhPSAiICIgYW5kIGRhdGFfbyAhPSAiXHQiIGFuZCBkYXRhX28gIT0gIlgiOgogICAgICAgICAgICBwcmludChkYXRhX2kpCiAgICAgICAgICAgIHByaW50KGRhdGFfaWkpCiAgICAgICAgICAgIHByaW50KCJcbiIpCiAgICAgICAgICAgIGRhdGFfbmFbZGF0YV9pXVtkYXRhX2lpXSArPSBkYXRhX28KICAgICAgICBkYXRhX2NoYXIgKz0gMQoKcHJpbnQoZGF0YV9uYSk=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIHByaW50KGUpCg==</text>
+        <text encoding="base64">cHJpbnQoZCkK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludCgiYSIpCg==</text>
+        <text encoding="base64">ICAgIGEgKz0gZGF0YV9maWxlLnJlYWQoKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
