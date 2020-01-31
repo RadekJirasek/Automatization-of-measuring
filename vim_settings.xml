@@ -58,11 +58,11 @@
         <mark key="^" line="49" column="103" />
         <mark key="." line="49" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580460605853">
-        <mark key="[" line="31" column="31" />
-        <mark key="]" line="31" column="9" />
-        <mark key="." line="31" column="9" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580462008315">
+        <mark key="[" line="36" column="0" />
+        <mark key="]" line="36" column="0" />
         <mark key="^" line="31" column="9" />
+        <mark key="." line="36" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -133,7 +133,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICAgIHByaW50KGEuc3BsaXQoKSk=</text>
@@ -142,33 +142,33 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+        <text encoding="base64">ICAgIHdoaWxlIGRhdGFfaSA8IGRhdGFfcm93czoK</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgIiIiCg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgIiIiCg==</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
       </register>
-      <register name="4" type="4">
+      <register name="7" type="2">
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+      </register>
+      <register name="9" type="4">
         <text>for data_o in data_oa:
         if data_o 
         data_na = data_o.</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgIHByaW50KGRhdGFfcm93cykK</text>
-      </register>
-      <register name="6" type="4">
-        <text encoding="base64">CmRlZiBhKHNsZWVwX3VudGlsKToKICAgIG51bWJlcl9vZl9pbWFnZXMgPSAwCiAgICBmb3IgaW1hZ2VzIGluIHNsZWVwX3VudGlsOgogICAgICAgIGlmIGltYWdlcyAhPSAiIjoKICAgICAgICAgICAgbnVtYmVyX29mX2ltYWdlcyArPSAxCiAgICBwcmludChudW1iZXJfb2ZfaW1hZ2VzKQoKCmRlZiBiKHNsZWVwX3VudGlsPSIiKToKICAgIGEoc2xlZXBfdW50aWwpCgoKYigiZWVyIik=</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICBmcmFtZUQxID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQyID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24pCiAgICBmcmFtZUQzID0gdGtpbnRlci5GcmFtZShmcmFtZURvd24p</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBOdW1iZXJPZlNlbnNvciArPSAxCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
