@@ -58,11 +58,11 @@
         <mark key="^" line="49" column="103" />
         <mark key="." line="49" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580462633417">
-        <mark key="[" line="39" column="0" />
-        <mark key="]" line="39" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580463367423">
+        <mark key="[" line="38" column="0" />
+        <mark key="]" line="38" column="0" />
         <mark key="^" line="31" column="9" />
-        <mark key="." line="39" column="0" />
+        <mark key="." line="38" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -133,7 +133,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4xKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">ICAgIHByaW50KGEuc3BsaXQoKSk=</text>
@@ -142,31 +142,32 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4xKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">cHJpbnQoZGF0YV9uYSkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGRhdGFfbmEpCg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGRhdGFfbmEpCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIHdoaWxlIGRhdGFfaSA8IGRhdGFfcm93czoK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBkYXRhX25hCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgIiIiCg==</text>
+        <text encoding="base64">cHJpbnQoZGF0YV9uYSkK</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgIiIiCg==</text>
+      <register name="6" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KGRhdGFfaSkKICAgICAgICAgICAgICAgIHByaW50KGRhdGFfaWkpCiAgICAgICAgICAgICAgICBwcmludChkYXRhX24pCiAgICAgICAgICAgICAgICBwcmludCgiXG4iKQ==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgcHJpbnQoZGF0YV9uKQo=</text>
+      <register name="7" type="4">
+        <text>print(data_na[0][:])
+print(data_na[:][0])</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMC4xKQo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGEgPSBkYXRhX29hLnNwbGl0KCJcbiIpCg==</text>
+        <text encoding="base64">cHJpbnQoZGF0YV9uYSkK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
