@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580591036625">
-        <mark key="'" line="452" column="34" />
-        <mark key="[" line="191" column="0" />
-        <mark key="]" line="191" column="0" />
-        <mark key="^" line="594" column="59" />
-        <mark key="." line="191" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580592920115">
+        <mark key="'" line="457" column="34" />
+        <mark key="[" line="199" column="44" />
+        <mark key="]" line="199" column="44" />
+        <mark key="^" line="599" column="59" />
+        <mark key="." line="199" column="44" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -38,14 +38,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580585144357">
-        <mark key="e" line="1023" column="16" />
-        <mark key="'" line="357" column="35" />
-        <mark key="i" line="926" column="44" />
-        <mark key="[" line="58" column="0" />
-        <mark key="]" line="58" column="0" />
-        <mark key="^" line="410" column="88" />
-        <mark key="." line="58" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580593383725">
+        <mark key="e" line="1014" column="16" />
+        <mark key="'" line="358" column="35" />
+        <mark key="i" line="917" column="44" />
+        <mark key="[" line="309" column="67" />
+        <mark key="]" line="309" column="67" />
+        <mark key="^" line="411" column="88" />
+        <mark key="." line="309" column="67" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580508831370">
         <mark key="[" line="77" column="17" />
@@ -85,6 +85,7 @@
         <mark key="." line="580" column="0" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/PyInstaller/loader/pyimod03_importers.py" timestamp="1579858042798" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1580591477719" />
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
       </file>
@@ -131,65 +132,43 @@
       <jump line="455" column="34" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIG5vdCBpZl9maW5kX2Vycm9yKCk6Cg==</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IGF0IHN0YXJ0dXA=</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IChBMTJFQywgZXRjLi4uKS4=</text>
+        <text encoding="base64">IGF0IHN0YXJ0dXA=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIG5vdCBpZl9maW5kX2Vycm9yKCk6Cg==</text>
+      <register name="1" type="4">
+        <text>Warning: Last file in the folder is not a image (.BMP) - &quot;
+                 &quot;probably no images has been taken or screens has been lost in other images.</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
+      <register name="2" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
+      <register name="3" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
       </register>
       <register name="4" type="4">
-        <text>planarity_x = None
-planarity_y = None
-planarity_z = None
-
-
-def a():
-    global planarity_x, planarity_y, planarity_z
-    planarity_x, planarity_y, planarity_z = np.loadtxt(
-        &quot;C:\\Users\\Uzivatel\\Desktop\\planarity.txt&quot;,
-        skiprows=1,
-        unpack=True
-    )
-
-
-a()
-print(planarity_y)</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">Cgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBkZWwoYXQpCg==</text>
+      <register name="6" type="4">
+        <text>if if_find_error():
+                            raise WaitError(&quot;Error has been occurred in 'default' function.&quot;)</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIG5vdCBpZl9maW5kX2Vycm9yKCk6Cg==</text>
       </register>
-      <register name="8" type="4">
-        <text>def a(b=None):
-    if not b:
-        print(&quot;None&quot;)
-    elif b == &quot;&quot;:
-        print(&quot;b&quot;)
-    else:
-        print(&quot;...&quot;)
-
-
-a([&quot;&quot;, &quot;&quot;])</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMSkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
