@@ -19,7 +19,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580584961576">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580589283562">
         <mark key="'" line="455" column="34" />
         <mark key="[" line="458" column="18" />
         <mark key="]" line="458" column="18" />
@@ -60,11 +60,11 @@
         <mark key="^" line="52" column="103" />
         <mark key="." line="224" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580584923951">
-        <mark key="[" line="37" column="108" />
-        <mark key="]" line="37" column="108" />
-        <mark key="^" line="55" column="12" />
-        <mark key="." line="37" column="108" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580589271850">
+        <mark key="[" line="17" column="0" />
+        <mark key="]" line="17" column="0" />
+        <mark key="^" line="40" column="12" />
+        <mark key="." line="17" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -132,7 +132,22 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">Cgo=</text>
+        <text>planarity_x = None
+planarity_y = None
+planarity_z = None
+
+
+def a():
+    global planarity_x, planarity_y, planarity_z
+    planarity_x, planarity_y, planarity_z = np.loadtxt(
+        &quot;C:\\Users\\Uzivatel\\Desktop\\planarity.txt&quot;,
+        skiprows=1,
+        unpack=True
+    )
+
+
+a()
+print(planarity_y)</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IChBMTJFQywgZXRjLi4uKS4=</text>
@@ -141,15 +156,33 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>planarity_x = None
+planarity_y = None
+planarity_z = None
+
+
+def a():
+    global planarity_x, planarity_y, planarity_z
+    planarity_x, planarity_y, planarity_z = np.loadtxt(
+        &quot;C:\\Users\\Uzivatel\\Desktop\\planarity.txt&quot;,
+        skiprows=1,
+        unpack=True
+    )
+
+
+a()
+print(planarity_y)</text>
+      </register>
+      <register name="2" type="4">
         <text encoding="base64">Cgo=</text>
       </register>
-      <register name="2" type="2">
+      <register name="3" type="2">
         <text encoding="base64">ICAgICAgICBkZWwoYXQpCg==</text>
       </register>
-      <register name="3" type="2">
+      <register name="4" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBlcnJvcgo=</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>def a(b=None):
     if not b:
         print(&quot;None&quot;)
@@ -161,20 +194,17 @@
 
 a([&quot;&quot;, &quot;&quot;])</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHRpbWUuc2xlZXAoMSkK</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIHRpbWUuc2xlZXAoMC4xKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpICAjIGRlbD8gcG9kbGUgdG9obyB6ZGEgdG8gY28gamUgbml6ZQo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIE5hbWVPZlNlbnNvci5pbnNlcnQoMCwgZE5hbWVTZW5zb3JbMF0pCg==</text>
+        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
