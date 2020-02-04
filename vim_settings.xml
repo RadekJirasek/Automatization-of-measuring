@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580813090742">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1580814164018">
         <mark key="'" line="457" column="34" />
-        <mark key="[" line="199" column="44" />
-        <mark key="]" line="199" column="44" />
+        <mark key="[" line="491" column="0" />
+        <mark key="]" line="491" column="0" />
         <mark key="^" line="599" column="59" />
-        <mark key="." line="199" column="44" />
+        <mark key="." line="491" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -38,7 +38,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580813052982">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580814174963">
         <mark key="e" line="1014" column="16" />
         <mark key="'" line="358" column="35" />
         <mark key="i" line="917" column="44" />
@@ -60,11 +60,12 @@
         <mark key="^" line="52" column="103" />
         <mark key="." line="224" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580589271850">
-        <mark key="[" line="17" column="0" />
-        <mark key="]" line="17" column="0" />
-        <mark key="^" line="40" column="12" />
-        <mark key="." line="17" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580814336175">
+        <mark key="e" line="41" column="0" />
+        <mark key="[" line="42" column="0" />
+        <mark key="]" line="42" column="0" />
+        <mark key="^" line="21" column="1" />
+        <mark key="." line="42" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -133,42 +134,42 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">IGF0IHN0YXJ0dXA=</text>
+        <text>print(sensorPos)</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IGF0IHN0YXJ0dXA=</text>
+        <text>print(sensorPos)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">cHJpbnQoZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiV5XyVtXyVkXyVIXyVNXyVTIikpCg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+      </register>
+      <register name="4" type="4">
         <text>Warning: Last file in the folder is not a image (.BMP) - &quot;
                  &quot;probably no images has been taken or screens has been lost in other images.</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
-      </register>
-      <register name="3" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
-      </register>
-      <register name="4" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
-      </register>
       <register name="5" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
       </register>
       <register name="6" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIGlmX2ZpbmRfZXJyb3IoKToKICAgICAgICAgICAgICAgICAgICByYWlzZSBXYWl0RXJyb3IoIkVycm9yIGhhcyBiZWVuIG9jY3VycmVkIGluICdkZWZhdWx0JyBmdW5jdGlvbi4iKQ==</text>
+      </register>
+      <register name="7" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
+      </register>
+      <register name="8" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9maW5kX2Vycm9yKCk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHJhaXNlIFdhaXRFcnJvcigiRXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgaW4gJ2RlZmF1bHQnIGZ1bmN0aW9uLiIp</text>
+      </register>
+      <register name="9" type="4">
         <text>if if_find_error():
                             raise WaitError(&quot;Error has been occurred in 'default' function.&quot;)</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIG5vdCBpZl9maW5kX2Vycm9yKCk6Cg==</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgbm90IGlmX2ZpbmRfZXJyb3IoKToK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
