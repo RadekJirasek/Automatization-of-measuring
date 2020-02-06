@@ -38,14 +38,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580972611824">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1580978732757">
         <mark key="e" line="1007" column="16" />
         <mark key="'" line="358" column="35" />
         <mark key="i" line="910" column="44" />
         <mark key="[" line="985" column="39" />
-        <mark key="]" line="985" column="39" />
-        <mark key="^" line="715" column="30" />
-        <mark key="." line="985" column="39" />
+        <mark key="]" line="593" column="36" />
+        <mark key="^" line="593" column="36" />
+        <mark key="." line="593" column="36" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580836562924">
         <mark key="[" line="77" column="17" />
