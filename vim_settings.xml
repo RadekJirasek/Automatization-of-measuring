@@ -57,12 +57,10 @@
         <mark key="'" line="76" column="10" />
         <mark key="^" line="52" column="103" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580822126447">
-        <mark key="e" line="42" column="0" />
-        <mark key="[" line="47" column="0" />
-        <mark key="]" line="47" column="0" />
-        <mark key="^" line="21" column="1" />
-        <mark key="." line="47" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1580993763356">
+        <mark key="[" line="18" column="0" />
+        <mark key="]" line="18" column="0" />
+        <mark key="." line="18" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -132,7 +130,38 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>with</text>
+        <text>NumberOfSensor = 5
+sensorPos = [0, 0, 0, 0, 1, 1, 1, 0, 0]
+
+
+def measure():
+    set_repeat_measure(NumberOfSensor)
+
+
+def if_repeat_measure(number_of_sensor):
+
+    if sensorPos[number_of_sensor] == 0:
+        return True
+    else:
+        return False
+
+
+def set_repeat_measure(number_of_sensor, value=0):
+    global sensorPos
+
+    sensorPos[number_of_sensor] = value
+
+
+def do():
+    global NumberOfSensor
+
+    measure()
+    if if_repeat_measure(NumberOfSensor):
+        print(&quot;Laser error&quot;)
+
+
+do()
+print(sensorPos)</text>
       </register>
       <register name="-" type="4">
         <text>with</text>
@@ -141,29 +170,60 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CmNsYXNzIFpBeGlzRXJyb3IoRXhjZXB0aW9uKToKICAgIHBhc3M=</text>
+        <text>NumberOfSensor = 5
+sensorPos = [0, 0, 0, 0, 1, 1, 1, 0, 0]
+
+
+def measure():
+    set_repeat_measure(NumberOfSensor)
+
+
+def if_repeat_measure(number_of_sensor):
+
+    if sensorPos[number_of_sensor] == 0:
+        return True
+    else:
+        return False
+
+
+def set_repeat_measure(number_of_sensor, value=0):
+    global sensorPos
+
+    sensorPos[number_of_sensor] = value
+
+
+def do():
+    global NumberOfSensor
+
+    measure()
+    if if_repeat_measure(NumberOfSensor):
+        print(&quot;Laser error&quot;)
+
+
+do()
+print(sensorPos)</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgIGV4Y2VwdCBaQXhpc0Vycm9yOgogICAgICAgIHBhZy5hbGVydCgiTWVzdXJlTWluZCAzRCBjYW4ndCBzZXQgb3JpZ2luIG9mIFogYXhpcyBmb3IgY29udHJvbCBwb3NpdGlvbiBzeXN0ZW0gb2Ygc2Vuc29ycy4iLAogICAgICAgICAgICAgICAgICAiRVJST1IiLCByb290PVNNUyk=</text>
+        <text encoding="base64">CmNsYXNzIFpBeGlzRXJyb3IoRXhjZXB0aW9uKToKICAgIHBhc3M=</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">ICAgIGdsb2JhbCBzVHlwZQogICAgZ2xvYmFsIG5hbWVTZW5zb3I=</text>
+        <text encoding="base64">ICAgIGV4Y2VwdCBaQXhpc0Vycm9yOgogICAgICAgIHBhZy5hbGVydCgiTWVzdXJlTWluZCAzRCBjYW4ndCBzZXQgb3JpZ2luIG9mIFogYXhpcyBmb3IgY29udHJvbCBwb3NpdGlvbiBzeXN0ZW0gb2Ygc2Vuc29ycy4iLAogICAgICAgICAgICAgICAgICAiRVJST1IiLCByb290PVNNUyk=</text>
       </register>
       <register name="4" type="4">
+        <text encoding="base64">ICAgIGdsb2JhbCBzVHlwZQogICAgZ2xvYmFsIG5hbWVTZW5zb3I=</text>
+      </register>
+      <register name="5" type="4">
         <text>do()
 print(sensorPos)</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgIGVsaWYgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdID09ICJCIjoKICAgICAgICBpZiBtU2Vuc29yW051bWJlck9mU2Vuc29yXToKICAgICAgICAgICAgbGltaXRbMF0gKz0gTGltaXRTaXplLkJbMF0KICAgICAgICAgICAgbGltaXRbMV0gKz0gTGltaXRTaXplLkJbMV0KICAgICAgICBpZiBzU2Vuc29yW051bWJlck9mU2Vuc29yXToKICAgICAgICAgICAgbGltaXRbMF0gKz0gTGltaXRTaXplLkJbMl0KICAgICAgICAgICAgbGltaXRbMV0gKz0gTGltaXRTaXplLkJbM10=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIEVycm9ySWQuc3RhcnRNZWFzdXJpbmdbTnVtYmVyT2ZTZW5zb3JdICE9IDI6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEVycm9ySWQuc3RhcnRNZWFzdXJpbmdbTnVtYmVyT2ZTZW5zb3JdID0gMQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzYXZlX2xvZygiXG4iICsgZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiV5LSVtLSVkICVIOiVNOiVTIikgKwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAifCBNZWFzdXJlbWVudCBvZiB0aGUgc2Vuc29yIGhhcyBiZWVuIHN0YXJ0ZWQiKQ==</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
-      </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBOdW1iZXJPZlNlbnNvcgo=</text>
       </register>
       <register name="9" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3MK</text>
