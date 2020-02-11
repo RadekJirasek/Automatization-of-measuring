@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1581425440030">
-        <mark key="'" line="485" column="29" />
-        <mark key="[" line="150" column="29" />
-        <mark key="]" line="150" column="29" />
-        <mark key="^" line="142" column="13" />
-        <mark key="." line="150" column="29" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1581428432683">
+        <mark key="'" line="497" column="29" />
+        <mark key="[" line="99" column="12" />
+        <mark key="]" line="99" column="12" />
+        <mark key="^" line="43" column="39" />
+        <mark key="." line="99" column="12" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1573055169842">
         <mark key="[" line="593" column="0" />
@@ -38,7 +38,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1581015074767">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1581428548494">
         <mark key="e" line="1021" column="16" />
         <mark key="'" line="358" column="35" />
         <mark key="i" line="924" column="44" />
@@ -130,10 +130,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>time.sleep(10)</text>
+        <text>wait(sleep_until=&quot;filenameOn.png&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>time.sleep(10)</text>
+        <text>wait(sleep_until=&quot;filenameOn.png&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
