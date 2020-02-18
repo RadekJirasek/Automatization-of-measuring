@@ -38,14 +38,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582017535037">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582019860744">
         <mark key="e" line="1037" column="16" />
         <mark key="'" line="364" column="35" />
-        <mark key="i" line="940" column="44" />
-        <mark key="[" line="17" column="0" />
-        <mark key="]" line="17" column="0" />
-        <mark key="^" line="768" column="22" />
-        <mark key="." line="17" column="0" />
+        <mark key="i" line="939" column="44" />
+        <mark key="[" line="918" column="22" />
+        <mark key="]" line="918" column="22" />
+        <mark key="^" line="918" column="22" />
+        <mark key="." line="918" column="22" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580979612615">
         <mark key="[" line="77" column="17" />
@@ -131,7 +131,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="-" type="4">
         <text>to</text>
@@ -140,72 +140,36 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ic3lzdGVtLnBuZyIpCg==</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>Error has been occurred. Possible reasons of the problem are invalid or&quot;
                          &quot; unknown name or attribute of identifier (variable, function, etc...).</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>if control_wait:
             wait(sleep_until=&quot;altnOn.png&quot;)
         else:</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGFsdG5Pbi5wbmciKSwgIlNjcmVlbiAnYWx0bk9uJyBoYXMgbm90IGJlZW4gZm91bmQhIgo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text>if control_wait:
                 wait(sleep_until=&quot;altnOn.png&quot;)
             else:</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9yZXBlYXRfbWVhc3VyZShOdW1iZXJPZlNlbnNvcik6Cg==</text>
-      </register>
-      <register name="8" type="4">
-        <text>url = 'https://10.26.210.119/values.xml'
-respond = urllib.request.urlopen(url).read()
-tree = ET.fromstring(respond)
-print(respond)
-print(tree)
-time.sleep(10)</text>
-      </register>
       <register name="9" type="4">
-        <text>NumberOfSensor = 5
-sensorPos = [0, 0, 0, 0, 1, 1, 1, 0, 0]
-
-
-def measure():
-    set_repeat_measure(NumberOfSensor)
-
-
-def if_repeat_measure(number_of_sensor):
-
-    if sensorPos[number_of_sensor] == 0:
-        return True
-    else:
-        return False
-
-
-def set_repeat_measure(number_of_sensor, value=0):
-    global sensorPos
-
-    sensorPos[number_of_sensor] = value
-
-
-def do():
-    global NumberOfSensor
-
-    measure()
-    if if_repeat_measure(NumberOfSensor):
-        print(&quot;Laser error&quot;)
-
-
-do()
-print(sensorPos)</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9yZXBlYXRfbWVhc3VyZShOdW1iZXJPZlNlbnNvcik6Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
