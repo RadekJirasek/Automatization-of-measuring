@@ -46,7 +46,7 @@
         <mark key="^" line="36" column="14" />
         <mark key="." line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1582032995662">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1582039473301">
         <mark key="[" line="397" column="31" />
         <mark key="]" line="397" column="31" />
         <mark key="^" line="597" column="0" />
@@ -59,10 +59,10 @@
         <mark key="^" line="54" column="103" />
         <mark key="." line="373" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582032835647">
-        <mark key="[" line="38" column="6" />
-        <mark key="]" line="38" column="6" />
-        <mark key="." line="38" column="6" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582039003395">
+        <mark key="[" line="55" column="6" />
+        <mark key="]" line="55" column="6" />
+        <mark key="." line="55" column="6" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -230,6 +230,9 @@ b = pag.prompt(&quot;Insert humidity [%]:&quot;, &quot;Humidity in the laborator
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed D</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed N</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
