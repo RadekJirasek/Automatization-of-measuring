@@ -38,14 +38,14 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582023789239">
-        <mark key="e" line="1039" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582024392244">
+        <mark key="e" line="1038" column="16" />
         <mark key="'" line="364" column="35" />
-        <mark key="i" line="941" column="44" />
-        <mark key="[" line="1072" column="23" />
-        <mark key="]" line="909" column="90" />
-        <mark key="^" line="909" column="90" />
-        <mark key="." line="909" column="90" />
+        <mark key="i" line="940" column="44" />
+        <mark key="[" line="1004" column="49" />
+        <mark key="]" line="804" column="0" />
+        <mark key="^" line="908" column="90" />
+        <mark key="." line="804" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580979612615">
         <mark key="[" line="77" column="17" />
@@ -131,8 +131,8 @@
       <jump line="502" column="18" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>if_repeat_measure</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3NpdGlvbgo=</text>
       </register>
       <register name="-" type="4">
         <text>if_repeat_measure</text>
@@ -141,36 +141,36 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3NpdGlvbgo=</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="4" type="2">
+        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ic3lzdGVtLnBuZyIpCg==</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text>Error has been occurred. Possible reasons of the problem are invalid or&quot;
                          &quot; unknown name or attribute of identifier (variable, function, etc...).</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text>if control_wait:
             wait(sleep_until=&quot;altnOn.png&quot;)
         else:</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGFsdG5Pbi5wbmciKSwgIlNjcmVlbiAnYWx0bk9uJyBoYXMgbm90IGJlZW4gZm91bmQhIgo=</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>if control_wait:
                 wait(sleep_until=&quot;altnOn.png&quot;)
             else:</text>
-      </register>
-      <register name="9" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBpZiBpZl9yZXBlYXRfbWVhc3VyZShOdW1iZXJPZlNlbnNvcik6Cg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
