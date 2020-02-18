@@ -19,9 +19,9 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1582030168934">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1582033218647">
         <mark key="'" line="503" column="18" />
-        <mark key="[" line="503" column="14" />
+        <mark key="[" line="604" column="28" />
         <mark key="]" line="478" column="25" />
         <mark key="^" line="478" column="25" />
         <mark key="." line="478" column="25" />
@@ -38,23 +38,30 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582029690123">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582032007138">
         <mark key="e" line="1036" column="16" />
         <mark key="i" line="938" column="44" />
-        <mark key="^" line="906" column="90" />
+        <mark key="]" line="36" column="14" />
+        <mark key="^" line="36" column="14" />
+        <mark key="." line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1580979612615">
-        <mark key="[" line="77" column="17" />
-        <mark key="]" line="77" column="17" />
-        <mark key="^" line="575" column="0" />
-        <mark key="." line="77" column="17" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1582032995662">
+        <mark key="[" line="397" column="31" />
+        <mark key="]" line="397" column="31" />
+        <mark key="^" line="597" column="0" />
+        <mark key="." line="397" column="31" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1582029645889">
-        <mark key="'" line="77" column="10" />
-        <mark key="[" line="60" column="119" />
-        <mark key="]" line="371" column="0" />
-        <mark key="^" line="52" column="103" />
-        <mark key="." line="371" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1582031135701">
+        <mark key="'" line="79" column="10" />
+        <mark key="[" line="62" column="119" />
+        <mark key="]" line="373" column="0" />
+        <mark key="^" line="54" column="103" />
+        <mark key="." line="373" column="0" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582032835647">
+        <mark key="[" line="38" column="6" />
+        <mark key="]" line="38" column="6" />
+        <mark key="." line="38" column="6" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -123,43 +130,44 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>00</text>
+        <text>You must insert temperature or humidity only with numbers, +, - or .</text>
       </register>
       <register name="-" type="4">
-        <text>00</text>
+        <text>You must insert temperature or humidity only with numbers, +, - or .</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>a = pag.prompt(&quot;Insert temperature [C°]:&quot;, &quot;Temperature in the laboratory&quot;, default=&quot;21&quot;)
+b = pag.prompt(&quot;Insert humidity [%]:&quot;, &quot;Humidity in the laboratory&quot;, default=&quot;50&quot;)</text>
+      </register>
+      <register name="2" type="4">
         <text encoding="base64">ICAgICAgICAgICAgaWYgbWFudWFsbHk6CiAgICAgICAgICAgICAgICBzZXRfcmVwZWF0X21lYXN1cmUoMSk=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3NpdGlvbgo=</text>
-      </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
+        <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3NpdGlvbgo=</text>
       </register>
       <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name="6" type="2">
+        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+      </register>
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgd2FpdChzbGVlcF91bnRpbD0ic3lzdGVtLnBuZyIpCg==</text>
       </register>
-      <register name="7" type="4">
+      <register name="8" type="4">
         <text>Error has been occurred. Possible reasons of the problem are invalid or&quot;
                          &quot; unknown name or attribute of identifier (variable, function, etc...).</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>if control_wait:
             wait(sleep_until=&quot;altnOn.png&quot;)
         else:</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGFsdG5Pbi5wbmciKSwgIlNjcmVlbiAnYWx0bk9uJyBoYXMgbm90IGJlZW4gZm91bmQhIgo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
