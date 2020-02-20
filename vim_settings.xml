@@ -59,11 +59,11 @@
         <mark key="^" line="54" column="103" />
         <mark key="." line="373" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582206194248">
-        <mark key="[" line="31" column="0" />
-        <mark key="]" line="31" column="0" />
-        <mark key="^" line="39" column="27" />
-        <mark key="." line="31" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582207699376">
+        <mark key="[" line="53" column="0" />
+        <mark key="]" line="53" column="0" />
+        <mark key="^" line="40" column="27" />
+        <mark key="." line="53" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -135,41 +135,42 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIGlmIGEgPT0gMDoK</text>
+        <text encoding="base64">ICAgIHByaW50KCJcbiIpCg==</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>10000:</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIGlmIGEgPT0gMDoK</text>
+        <text encoding="base64">ICAgIHByaW50KCJcbiIpCg==</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CiAgICBlbHNlOgogICAgICAgIGkgPSAw</text>
+        <text>result = int(num2)/int(num1) 
+print(result)</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">dGVtcGVyYXR1cmUgPSAwCmh1bWlkaXR5ID0gMAoKCmRlZiBhKCk6CiAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgIGdsb2JhbCBodW1pZGl0eQogICAgdHJ5OgogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSkKICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgaW5zZXJ0IHRlbXBlcmF0dXJlIG9yIGh1bWlkaXR5IG9ubHkgd2l0aCBudW1iZXJzLCArLCAtIG9yIC4iLCAiVmFsdWUgZXJyb3IiKQogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSk=</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGlmIGEgPT0gMDoK</text>
       </register>
       <register name="4" type="4">
+        <text encoding="base64">CiAgICBlbHNlOgogICAgICAgIGkgPSAw</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">dGVtcGVyYXR1cmUgPSAwCmh1bWlkaXR5ID0gMAoKCmRlZiBhKCk6CiAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgIGdsb2JhbCBodW1pZGl0eQogICAgdHJ5OgogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSkKICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgaW5zZXJ0IHRlbXBlcmF0dXJlIG9yIGh1bWlkaXR5IG9ubHkgd2l0aCBudW1iZXJzLCArLCAtIG9yIC4iLCAiVmFsdWUgZXJyb3IiKQogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSk=</text>
+      </register>
+      <register name="6" type="4">
         <text>a = pag.prompt(&quot;Insert temperature [C°]:&quot;, &quot;Temperature in the laboratory&quot;, default=&quot;21&quot;)
 b = pag.prompt(&quot;Insert humidity [%]:&quot;, &quot;Humidity in the laboratory&quot;, default=&quot;50&quot;)</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">ICAgICAgICAgICAgaWYgbWFudWFsbHk6CiAgICAgICAgICAgICAgICBzZXRfcmVwZWF0X21lYXN1cmUoMSk=</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCBzZW5zb3JQb3NpdGlvbgo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGluY3JlYXNlX3RocmVhc2hvbGQgPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgaWYgZXJyb3IgPT0gMDoK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
