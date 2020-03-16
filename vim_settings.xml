@@ -38,17 +38,18 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1582753062950">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1584375413764">
         <mark key="e" line="1052" column="16" />
         <mark key="i" line="954" column="44" />
+        <mark key="[" line="362" column="30" />
         <mark key="^" line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584371075606">
-        <mark key="[" line="718" column="4" />
-        <mark key="]" line="718" column="4" />
-        <mark key="." line="718" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584375966381">
+        <mark key="[" line="664" column="52" />
+        <mark key="]" line="666" column="0" />
+        <mark key="." line="666" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584368975990">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584375254466">
         <mark key="'" line="79" column="10" />
         <mark key="[" line="315" column="73" />
         <mark key="]" line="374" column="0" />
@@ -133,25 +134,22 @@
       <jump line="502" column="18" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>if sType[0] == &quot;&quot;:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    elif sType[0] == &quot;E&quot;:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   empty&quot;, relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    else:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   &quot; + str(sType[0]), relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    # Conditionals for insert title on menu.</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text>pSensor[NumberOfSensor] = 0</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
+      </register>
+      <register name="3" type="4">
         <text>if sType[0] == &quot;&quot;:
         TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
                                       bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
@@ -163,7 +161,7 @@
                                       bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
     # Conditionals for insert title on menu.</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>CheckP[&quot;state&quot;] = &quot;active&quot;
         CheckM[&quot;state&quot;] = &quot;active&quot;
         CheckS[&quot;state&quot;] = &quot;active&quot;
@@ -172,10 +170,10 @@
         SensorWafer[&quot;state&quot;] = &quot;normal&quot;
         NameOfSensor[&quot;state&quot;] = &quot;normal&quot;</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICAgIGlmIHNUeXBlWzBdID09ICIiOgogICAgICAgIFR5cGVNZW51ID0gdGtpbnRlci5NZW51YnV0dG9uKFNNUywgdGV4dD0iU2VsZWN0IHR5cGUgb2Ygc2Vuc29yIiwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICAgICAgCiAgICBlbGlmIHNUeXBlWzBdID09ICJFIjoKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICBlbXB0eSIsIHJlbGllZj1TVU5LRU4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmc9ImxpZ2h0IGdyYXkiLCBhY3RpdmViYWNrZ3JvdW5kPSJncmF5IiwgYWN0aXZlZm9yZWdyb3VuZD0id2hpdGUiKQogICAgZWxzZToKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICAiICsgc3RyKHNUeXBlWzBdKSwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICA=</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>CheckP[&quot;state&quot;] = &quot;disabled&quot;
         CheckM[&quot;state&quot;] = &quot;disabled&quot;
         CheckS[&quot;state&quot;] = &quot;disabled&quot;
@@ -184,20 +182,14 @@
         SensorWafer[&quot;state&quot;] = &quot;disabled&quot;
         NameOfSensor[&quot;state&quot;] = &quot;disabled&quot;</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiIjoK</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBDaGVja1BbInN0YXRlIl0gPSAiYWN0aXZlIgo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICBDaGVja1AuZGVzZWxlY3QoKQo=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBDaGVja1Auc2VsZWN0KCkK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBMU2Vuc29yQmF0Y2ggPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRUQiwgdGV4dD0iU2Vuc29yIGJhdGNoOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
+        <text encoding="base64">ICAgICAgICBDaGVja1AuZGVzZWxlY3QoKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
