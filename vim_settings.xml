@@ -43,18 +43,18 @@
         <mark key="i" line="954" column="44" />
         <mark key="^" line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1582039473301">
-        <mark key="[" line="397" column="31" />
-        <mark key="]" line="397" column="31" />
-        <mark key="^" line="597" column="0" />
-        <mark key="." line="397" column="31" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584367901583">
+        <mark key="[" line="48" column="27" />
+        <mark key="]" line="48" column="27" />
+        <mark key="^" line="41" column="29" />
+        <mark key="." line="48" column="27" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1582034282031">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584368975990">
         <mark key="'" line="79" column="10" />
-        <mark key="[" line="62" column="119" />
-        <mark key="]" line="373" column="0" />
+        <mark key="[" line="315" column="73" />
+        <mark key="]" line="374" column="0" />
         <mark key="^" line="54" column="103" />
-        <mark key="." line="373" column="0" />
+        <mark key="." line="374" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582229908207">
         <mark key="[" line="47" column="0" />
@@ -67,18 +67,18 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1580495144939">
-        <mark key="[" line="292" column="0" />
-        <mark key="]" line="292" column="0" />
-        <mark key="." line="292" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584369025067">
+        <mark key="[" line="281" column="73" />
+        <mark key="]" line="297" column="0" />
+        <mark key="." line="297" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1580508822556">
-        <mark key="[" line="580" column="0" />
-        <mark key="]" line="580" column="0" />
-        <mark key="." line="580" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584369240319">
+        <mark key="[" line="169" column="43" />
+        <mark key="]" line="169" column="43" />
+        <mark key="." line="169" column="43" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -132,41 +132,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHNhdmVfbG9nKCJTVEFSVCBNRUFTVVJJTkc6ICIgKyBkYXRldGltZS5kYXRldGltZS5ub3coKS5zdHJmdGltZSgiJXktJW0tJWQgJUg6JU06JVMiKQogICAgICAgICAgICAgICAgICAgICArICJcbkZyZWUgZGF0YSBzaXplIG9uIERJU0s6ICIgKyBzdHIobWVtb3J5KCJESVNLIikpCiAgICAgICAgICAgICAgICAgICAgICsgIiBHQlxuX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iLCBUcnVlKQ==</text>
+        <text>active</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text>active</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgIHNhdmVfbG9nKCJTVEFSVCBNRUFTVVJJTkc6ICIgKyBkYXRldGltZS5kYXRldGltZS5ub3coKS5zdHJmdGltZSgiJXktJW0tJWQgJUg6JU06JVMiKQogICAgICAgICAgICAgICAgICAgICArICJcbkZyZWUgZGF0YSBzaXplIG9uIERJU0s6ICIgKyBzdHIobWVtb3J5KCJESVNLIikpCiAgICAgICAgICAgICAgICAgICAgICsgIiBHQlxuX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iLCBUcnVlKQ==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBDaGVja1BbInN0YXRlIl0gPSAiYWN0aXZlIgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">cHJpbnQobnVtMSkK</text>
+        <text encoding="base64">ICAgICAgICBDaGVja1AuZGVzZWxlY3QoKQo=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">cHJpbnQobnVtMikK</text>
+        <text encoding="base64">ICAgICAgICBDaGVja1Auc2VsZWN0KCkK</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIHByaW50KHJlc3QpCg==</text>
+        <text encoding="base64">ICAgICAgICBMU2Vuc29yQmF0Y2ggPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRUQiwgdGV4dD0iU2Vuc29yIGJhdGNoOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIHByaW50KCJcbiIpCg==</text>
+        <text encoding="base64">ICAgICAgICBMU2Vuc29yV2FmZXIgPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRCVCwgdGV4dD0iU2Vuc29yIHdhZmVyOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
       </register>
-      <register name="6" type="4">
-        <text>result = int(num2)/int(num1) 
-print(result)</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICBMU2Vuc29yU2VyaWFsID0gdGtpbnRlci5MYWJlbChmcmFtZVRCVFQsIHRleHQ9IlNlcmlhbCBudW1iZXI6ICIsIGhlaWdodD0xLCB3aWR0aD0yMSkK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIGlmIGEgPT0gMDoK</text>
+        <text encoding="base64">ICAgICAgICBwU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IENoZWNrUC52YXIuZ2V0KCkK</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICBlbHNlOgogICAgICAgIGkgPSAw</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICBDaGVja1AuCg==</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">dGVtcGVyYXR1cmUgPSAwCmh1bWlkaXR5ID0gMAoKCmRlZiBhKCk6CiAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgIGdsb2JhbCBodW1pZGl0eQogICAgdHJ5OgogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSkKICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgaW5zZXJ0IHRlbXBlcmF0dXJlIG9yIGh1bWlkaXR5IG9ubHkgd2l0aCBudW1iZXJzLCArLCAtIG9yIC4iLCAiVmFsdWUgZXJyb3IiKQogICAgICAgIHRlbXBlcmF0dXJlID0gZmxvYXQocGFnLnByb21wdCgiSW5zZXJ0IHRlbXBlcmF0dXJlIFuwQ106IgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICJUZW1wZXJhdHVyZSBpbiB0aGUgbGFib3JhdG9yeSIsIGRlZmF1bHQ9IjIxIikpCiAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLCAiSHVtaWRpdHkgaW4gdGhlIGxhYm9yYXRvcnkiLCBkZWZhdWx0PSI1MCIpKQogICAgICAgIGlmIDAgPiBodW1pZGl0eSBvciBodW1pZGl0eSA+IDEwMDoKICAgICAgICAgICAgcGFnLmFsZXJ0KCJIdW1pZGl0eSBjYW4gYmUgb25seSBiZXR3ZWVuIDAlIGFuZCAxMDAlIiwgIlZhbHVlIGVycm9yIikKICAgICAgICAgICAgaHVtaWRpdHkgPSBmbG9hdChwYWcucHJvbXB0KCJJbnNlcnQgaHVtaWRpdHkgWyVdOiIKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICwgIkh1bWlkaXR5IGluIHRoZSBsYWJvcmF0b3J5IiwgZGVmYXVsdD0iNTAiKSk=</text>
+        <text encoding="base64">CiAgICAgICAgICAgIHNhdmVfbG9nKCJTVEFSVCBNRUFTVVJJTkc6ICIgKyBkYXRldGltZS5kYXRldGltZS5ub3coKS5zdHJmdGltZSgiJXktJW0tJWQgJUg6JU06JVMiKQogICAgICAgICAgICAgICAgICAgICArICJcbkZyZWUgZGF0YSBzaXplIG9uIERJU0s6ICIgKyBzdHIobWVtb3J5KCJESVNLIikpCiAgICAgICAgICAgICAgICAgICAgICsgIiBHQlxuX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18iLCBUcnVlKQ==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
