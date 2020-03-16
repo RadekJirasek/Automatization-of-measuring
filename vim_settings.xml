@@ -43,11 +43,10 @@
         <mark key="i" line="954" column="44" />
         <mark key="^" line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584367901583">
-        <mark key="[" line="48" column="27" />
-        <mark key="]" line="48" column="27" />
-        <mark key="^" line="41" column="29" />
-        <mark key="." line="48" column="27" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584371075606">
+        <mark key="[" line="718" column="4" />
+        <mark key="]" line="718" column="4" />
+        <mark key="." line="718" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584368975990">
         <mark key="'" line="79" column="10" />
@@ -75,7 +74,7 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584370298165">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584371021608">
         <mark key="[" line="22" column="8" />
         <mark key="]" line="22" column="8" />
         <mark key="." line="22" column="8" />
@@ -95,6 +94,9 @@
         <mark key="[" line="41" column="0" />
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
+      </file>
+      <file name="/Clipboard.txt" timestamp="1584371145685">
+        <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Temp/Rar$DIa15056.36208/vector.py" timestamp="1578245473674">
         <mark key="[" line="11" column="5" />
@@ -132,13 +134,16 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>CheckP[&quot;state&quot;] = &quot;active&quot;
-        CheckM[&quot;state&quot;] = &quot;active&quot;
-        CheckS[&quot;state&quot;] = &quot;active&quot;
-        ProductType[&quot;state&quot;] = &quot;normal&quot;
-        SensorBatch[&quot;state&quot;] = &quot;normal&quot;
-        SensorWafer[&quot;state&quot;] = &quot;normal&quot;
-        NameOfSensor[&quot;state&quot;] = &quot;normal&quot;</text>
+        <text>if sType[0] == &quot;&quot;:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    elif sType[0] == &quot;E&quot;:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   empty&quot;, relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    else:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   &quot; + str(sType[0]), relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    # Conditionals for insert title on menu.</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">IA==</text>
@@ -147,6 +152,18 @@
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text>if sType[0] == &quot;&quot;:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    elif sType[0] == &quot;E&quot;:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   empty&quot;, relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    else:
+        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   &quot; + str(sType[0]), relief=SUNKEN,
+                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
+    # Conditionals for insert title on menu.</text>
+      </register>
+      <register name="2" type="4">
         <text>CheckP[&quot;state&quot;] = &quot;active&quot;
         CheckM[&quot;state&quot;] = &quot;active&quot;
         CheckS[&quot;state&quot;] = &quot;active&quot;
@@ -155,10 +172,10 @@
         SensorWafer[&quot;state&quot;] = &quot;normal&quot;
         NameOfSensor[&quot;state&quot;] = &quot;normal&quot;</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">ICAgIGlmIHNUeXBlWzBdID09ICIiOgogICAgICAgIFR5cGVNZW51ID0gdGtpbnRlci5NZW51YnV0dG9uKFNNUywgdGV4dD0iU2VsZWN0IHR5cGUgb2Ygc2Vuc29yIiwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICAgICAgCiAgICBlbGlmIHNUeXBlWzBdID09ICJFIjoKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICBlbXB0eSIsIHJlbGllZj1TVU5LRU4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmc9ImxpZ2h0IGdyYXkiLCBhY3RpdmViYWNrZ3JvdW5kPSJncmF5IiwgYWN0aXZlZm9yZWdyb3VuZD0id2hpdGUiKQogICAgZWxzZToKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICAiICsgc3RyKHNUeXBlWzBdKSwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICA=</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>CheckP[&quot;state&quot;] = &quot;disabled&quot;
         CheckM[&quot;state&quot;] = &quot;disabled&quot;
         CheckS[&quot;state&quot;] = &quot;disabled&quot;
@@ -167,23 +184,20 @@
         SensorWafer[&quot;state&quot;] = &quot;disabled&quot;
         NameOfSensor[&quot;state&quot;] = &quot;disabled&quot;</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiIjoK</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBDaGVja1BbInN0YXRlIl0gPSAiYWN0aXZlIgo=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICBDaGVja1AuZGVzZWxlY3QoKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBDaGVja1Auc2VsZWN0KCkK</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBMU2Vuc29yQmF0Y2ggPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRUQiwgdGV4dD0iU2Vuc29yIGJhdGNoOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBMU2Vuc29yV2FmZXIgPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRCVCwgdGV4dD0iU2Vuc29yIHdhZmVyOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
+        <text encoding="base64">ICAgICAgICBMU2Vuc29yQmF0Y2ggPSB0a2ludGVyLkxhYmVsKGZyYW1lVFRUQiwgdGV4dD0iU2Vuc29yIGJhdGNoOiAiLCBoZWlnaHQ9MSwgd2lkdGg9MjApCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
