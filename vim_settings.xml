@@ -26,11 +26,11 @@
         <mark key="^" line="485" column="25" />
         <mark key="." line="485" column="25" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584392563849">
-        <mark key="[" line="570" column="0" />
-        <mark key="]" line="570" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584395471353">
+        <mark key="[" line="571" column="10" />
+        <mark key="]" line="571" column="10" />
         <mark key="^" line="595" column="14" />
-        <mark key="." line="570" column="0" />
+        <mark key="." line="571" column="10" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568373492589">
         <mark key="[" line="100" column="14" />
@@ -56,18 +56,17 @@
         <mark key="^" line="54" column="103" />
         <mark key="." line="374" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1582229908207">
-        <mark key="[" line="47" column="0" />
-        <mark key="]" line="47" column="0" />
-        <mark key="^" line="40" column="27" />
-        <mark key="." line="47" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584394308425">
+        <mark key="[" line="40" column="0" />
+        <mark key="]" line="40" column="0" />
+        <mark key="." line="40" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584392806818">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584395549517">
         <mark key="[" line="33" column="14" />
         <mark key="]" line="33" column="14" />
         <mark key="." line="33" column="14" />
@@ -75,10 +74,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584392718289">
-        <mark key="[" line="548" column="78" />
-        <mark key="]" line="548" column="78" />
-        <mark key="." line="548" column="78" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584395727619">
+        <mark key="'" line="546" column="27" />
+        <mark key="[" line="376" column="0" />
+        <mark key="]" line="376" column="0" />
+        <mark key="." line="376" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -132,31 +132,44 @@
       <jump line="455" column="34" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="485" column="29" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="502" column="18" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
+      <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>None</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
       </register>
       <register name="-" type="4">
-        <text>None</text>
+        <text>temperature</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gMzAK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">YygpCg==</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">YigpCg==</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgIGdsb2JhbCB0ZW1wZXJhdHVyZQo=</text>
       </register>
-      <register name="2" type="4">
+      <register name="6" type="4">
         <text>if sType[NumberOfSensor] == &quot;B&quot;:
                 CheckP.deselect()</text>
       </register>
-      <register name="3" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
       </register>
-      <register name="4" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
       </register>
-      <register name="5" type="4">
+      <register name="9" type="4">
         <text>if sType[0] == &quot;&quot;:
         TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
                                       bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
@@ -167,30 +180,6 @@
         TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   &quot; + str(sType[0]), relief=SUNKEN,
                                       bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
     # Conditionals for insert title on menu.</text>
-      </register>
-      <register name="6" type="4">
-        <text>CheckP[&quot;state&quot;] = &quot;active&quot;
-        CheckM[&quot;state&quot;] = &quot;active&quot;
-        CheckS[&quot;state&quot;] = &quot;active&quot;
-        ProductType[&quot;state&quot;] = &quot;normal&quot;
-        SensorBatch[&quot;state&quot;] = &quot;normal&quot;
-        SensorWafer[&quot;state&quot;] = &quot;normal&quot;
-        NameOfSensor[&quot;state&quot;] = &quot;normal&quot;</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgIGlmIHNUeXBlWzBdID09ICIiOgogICAgICAgIFR5cGVNZW51ID0gdGtpbnRlci5NZW51YnV0dG9uKFNNUywgdGV4dD0iU2VsZWN0IHR5cGUgb2Ygc2Vuc29yIiwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICAgICAgCiAgICBlbGlmIHNUeXBlWzBdID09ICJFIjoKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICBlbXB0eSIsIHJlbGllZj1TVU5LRU4sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmc9ImxpZ2h0IGdyYXkiLCBhY3RpdmViYWNrZ3JvdW5kPSJncmF5IiwgYWN0aXZlZm9yZWdyb3VuZD0id2hpdGUiKQogICAgZWxzZToKICAgICAgICBUeXBlTWVudSA9IHRraW50ZXIuTWVudWJ1dHRvbihTTVMsIHRleHQ9IlNlbGVjdCB0eXBlIG9mIHNlbnNvciAgIC0gICAiICsgc3RyKHNUeXBlWzBdKSwgcmVsaWVmPVNVTktFTiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiZz0ibGlnaHQgZ3JheSIsIGFjdGl2ZWJhY2tncm91bmQ9ImdyYXkiLCBhY3RpdmVmb3JlZ3JvdW5kPSJ3aGl0ZSIpCiAgICA=</text>
-      </register>
-      <register name="8" type="4">
-        <text>CheckP[&quot;state&quot;] = &quot;disabled&quot;
-        CheckM[&quot;state&quot;] = &quot;disabled&quot;
-        CheckS[&quot;state&quot;] = &quot;disabled&quot;
-        ProductType[&quot;state&quot;] = &quot;disabled&quot;
-        SensorBatch[&quot;state&quot;] = &quot;disabled&quot;
-        SensorWafer[&quot;state&quot;] = &quot;disabled&quot;
-        NameOfSensor[&quot;state&quot;] = &quot;disabled&quot;</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiIjoK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
