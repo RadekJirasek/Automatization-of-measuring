@@ -56,10 +56,10 @@
         <mark key="^" line="54" column="103" />
         <mark key="." line="374" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584470872565">
-        <mark key="[" line="23" column="10" />
-        <mark key="]" line="23" column="10" />
-        <mark key="." line="23" column="10" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584479950449">
+        <mark key="[" line="30" column="10" />
+        <mark key="]" line="34" column="0" />
+        <mark key="." line="34" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -136,26 +136,29 @@
       <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>nodeName</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">cHJpbnQocm9vdCkK</text>
       </register>
       <register name="-" type="4">
-        <text>nodeName</text>
+        <text>firstChild.tagName)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">cHJpbnQocm9vdCkK</text>
+      </register>
+      <register name="2" type="4">
         <text>respond = urllib.request.urlopen(url).read()
 tree = ET.fromstring(respond)
 print(respond)
 print(tree)</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>etree.ElementTree as ET
 import urllib.request</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>a = 20
 
 
@@ -172,23 +175,20 @@ def c():
 b()
 c()</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHRlbXBlcmF0dXJlKQo=</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXAgPSAwLjAK</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gdGVtcAo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gMzAK</text>
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
