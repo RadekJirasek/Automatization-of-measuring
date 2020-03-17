@@ -44,22 +44,22 @@
         <mark key="[" line="362" column="30" />
         <mark key="^" line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584375966381">
-        <mark key="[" line="669" column="52" />
-        <mark key="]" line="671" column="0" />
-        <mark key="." line="671" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584482337191">
+        <mark key="[" line="545" column="22" />
+        <mark key="]" line="545" column="22" />
+        <mark key="." line="545" column="22" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584392788284">
-        <mark key="'" line="79" column="10" />
-        <mark key="[" line="315" column="73" />
-        <mark key="]" line="374" column="0" />
-        <mark key="^" line="54" column="103" />
-        <mark key="." line="374" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584481873316">
+        <mark key="'" line="82" column="10" />
+        <mark key="[" line="78" column="4" />
+        <mark key="]" line="77" column="4" />
+        <mark key="^" line="77" column="4" />
+        <mark key="." line="77" column="4" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584479950449">
-        <mark key="[" line="30" column="10" />
-        <mark key="]" line="34" column="0" />
-        <mark key="." line="34" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584481068422">
+        <mark key="[" line="35" column="16" />
+        <mark key="]" line="35" column="16" />
+        <mark key="." line="35" column="16" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -75,11 +75,11 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584470338117">
-        <mark key="'" line="545" column="27" />
-        <mark key="[" line="561" column="20" />
-        <mark key="]" line="561" column="20" />
-        <mark key="." line="561" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584482299914">
+        <mark key="'" line="553" column="27" />
+        <mark key="[" line="545" column="0" />
+        <mark key="]" line="545" column="0" />
+        <mark key="." line="545" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -97,7 +97,7 @@
         <mark key="]" line="41" column="0" />
         <mark key="." line="41" column="0" />
       </file>
-      <file name="/Clipboard.txt" timestamp="1584371145685">
+      <file name="/Clipboard.txt" timestamp="1584482358207">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Temp/Rar$DIa15056.36208/vector.py" timestamp="1578245473674">
@@ -136,29 +136,46 @@
       <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">cHJpbnQocm9vdCkK</text>
+      <register name="&quot;" type="4">
+        <text>ValueError</text>
       </register>
       <register name="-" type="4">
-        <text>firstChild.tagName)</text>
+        <text>ValueError</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">cHJpbnQocm9vdCkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IK</text>
       </register>
       <register name="2" type="4">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">aGVhZGVycyA9IHsnVXNlci1BZ2VudCc6ICdNb3ppbGxhJ30K</text>
+      </register>
+      <register name="4" type="4">
+        <text>import urllib
+import shutil</text>
+      </register>
+      <register name="5" type="4">
+        <text>#doc = xml.dom.minidom.parse(url)
+#print(doc.getElementsByTagName(&quot;heading&quot;))</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">cHJpbnQocm9vdCkK</text>
+      </register>
+      <register name="7" type="4">
         <text>respond = urllib.request.urlopen(url).read()
 tree = ET.fromstring(respond)
 print(respond)
 print(tree)</text>
       </register>
-      <register name="3" type="4">
+      <register name="8" type="4">
         <text>etree.ElementTree as ET
 import urllib.request</text>
       </register>
-      <register name="4" type="4">
+      <register name="9" type="4">
         <text>a = 20
 
 
@@ -174,21 +191,6 @@ def c():
 
 b()
 c()</text>
-      </register>
-      <register name="5" type="4">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
-      </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHRlbXBlcmF0dXJlKQo=</text>
-      </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXAgPSAwLjAK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gdGVtcAo=</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
