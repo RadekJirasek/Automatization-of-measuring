@@ -56,29 +56,30 @@
         <mark key="^" line="54" column="103" />
         <mark key="." line="374" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584394308425">
-        <mark key="[" line="40" column="0" />
-        <mark key="]" line="40" column="0" />
-        <mark key="." line="40" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584470872565">
+        <mark key="[" line="23" column="10" />
+        <mark key="]" line="23" column="10" />
+        <mark key="." line="23" column="10" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584395549517">
-        <mark key="[" line="33" column="14" />
-        <mark key="]" line="33" column="14" />
-        <mark key="." line="33" column="14" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584470130848">
+        <mark key="[" line="70" column="4" />
+        <mark key="]" line="69" column="4" />
+        <mark key="^" line="69" column="4" />
+        <mark key="." line="69" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584395727619">
-        <mark key="'" line="546" column="27" />
-        <mark key="[" line="376" column="0" />
-        <mark key="]" line="376" column="0" />
-        <mark key="." line="376" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584470338117">
+        <mark key="'" line="545" column="27" />
+        <mark key="[" line="561" column="20" />
+        <mark key="]" line="561" column="20" />
+        <mark key="." line="561" column="20" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -135,51 +136,59 @@
       <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
+      <register name="&quot;" type="4">
+        <text>nodeName</text>
       </register>
       <register name="-" type="4">
-        <text>temperature</text>
+        <text>nodeName</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDx3YWl0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
+      <register name="1" type="4">
+        <text>respond = urllib.request.urlopen(url).read()
+tree = ET.fromstring(respond)
+print(respond)
+print(tree)</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gMzAK</text>
+      <register name="2" type="4">
+        <text>etree.ElementTree as ET
+import urllib.request</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">YygpCg==</text>
+      <register name="3" type="4">
+        <text>a = 20
+
+
+def b():
+    global a
+    a = float(pag.prompt(&quot;Insert temperature [°C]:&quot;,
+                         &quot;Temperature in the laboratory&quot;, default=str(a)))
+
+
+def c():
+    print(a)
+
+
+b()
+c()</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">YigpCg==</text>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGdsb2JhbCB0ZW1wZXJhdHVyZQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHRlbXBlcmF0dXJlKQo=</text>
       </register>
-      <register name="6" type="4">
-        <text>if sType[NumberOfSensor] == &quot;B&quot;:
-                CheckP.deselect()</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXAgPSAwLjAK</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gdGVtcAo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcFNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPSAwCg==</text>
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUK</text>
       </register>
-      <register name="9" type="4">
-        <text>if sType[0] == &quot;&quot;:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor&quot;, relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    elif sType[0] == &quot;E&quot;:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   empty&quot;, relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    else:
-        TypeMenu = tkinter.Menubutton(SMS, text=&quot;Select type of sensor   -   &quot; + str(sType[0]), relief=SUNKEN,
-                                      bg=&quot;light gray&quot;, activebackground=&quot;gray&quot;, activeforeground=&quot;white&quot;)
-    # Conditionals for insert title on menu.</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHRlbXBlcmF0dXJlID0gMzAK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
