@@ -12,9 +12,9 @@
       <file name="$USER_HOME$/PycharmProjects/vector/vector.py" timestamp="1578248436590">
         <mark key="[" line="9" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1579943951341">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1584524933138">
         <mark key="i" line="47" column="30" />
-        <mark key="[" line="387" column="24" />
+        <mark key="[" line="451" column="0" />
         <mark key="]" line="42" column="8" />
         <mark key="^" line="42" column="28" />
         <mark key="." line="42" column="8" />
@@ -49,37 +49,28 @@
         <mark key="]" line="545" column="22" />
         <mark key="." line="545" column="22" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584481873316">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584523329047">
         <mark key="'" line="82" column="10" />
         <mark key="[" line="78" column="4" />
         <mark key="]" line="77" column="4" />
         <mark key="^" line="77" column="4" />
         <mark key="." line="77" column="4" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584483015473">
-        <mark key="[" line="35" column="16" />
-        <mark key="]" line="35" column="16" />
-        <mark key="." line="35" column="16" />
-      </file>
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1584524613598" />
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584470130848">
-        <mark key="[" line="70" column="4" />
-        <mark key="]" line="69" column="4" />
-        <mark key="^" line="69" column="4" />
-        <mark key="." line="69" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584525374379">
+        <mark key="^" line="76" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584482299914">
-        <mark key="'" line="553" column="27" />
-        <mark key="[" line="545" column="0" />
-        <mark key="]" line="545" column="0" />
-        <mark key="." line="545" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584525368071">
+        <mark key="'" line="545" column="30" />
+        <mark key="^" line="545" column="15" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -134,72 +125,63 @@
       <jump line="485" column="29" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="502" column="18" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
+      <jump line="545" column="30" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>ValueError</text>
+        <text encoding="base64">ICAgIHByaW50KExhYlBhci5EYXRhYmFzZVBhdGgpCiAgICBwcmludChMYWJQYXIuVGVtcE51bSkKICAgIHByaW50KExhYlBhci5IdW1OdW0p</text>
       </register>
       <register name="-" type="4">
-        <text>ValueError</text>
+        <text>https://10.26.210.119/values.xml&quot;</text>
       </register>
       <register name="/" type="4">
-        <text encoding="base64">XDx3YWl0XD4=</text>
+        <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IK</text>
+      <register name="1" type="4">
+        <text encoding="base64">ICAgIHByaW50KExhYlBhci5EYXRhYmFzZVBhdGgpCiAgICBwcmludChMYWJQYXIuVGVtcE51bSkKICAgIHByaW50KExhYlBhci5IdW1OdW0p</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KExhYlBhci5EYXRhYmFzZVBhdGgpCiAgICAgICAgICAgICAgICBwcmludChMYWJQYXIuVGVtcE51bSkKICAgICAgICAgICAgICAgIHByaW50KExhYlBhci5IdW1OdW0p</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">aGVhZGVycyA9IHsnVXNlci1BZ2VudCc6ICdNb3ppbGxhJ30K</text>
+      <register name="3" type="4">
+        <text>#with open(path, 'r') as f:
+#    print(f.read())
+
+#print(&quot;\n&quot;*2)</text>
       </register>
-      <register name="4" type="4">
-        <text>import urllib
-import shutil</text>
+      <register name="4" type="2">
+        <text encoding="base64">cHJpbnQocm9vdC50ZXh0KQo=</text>
       </register>
       <register name="5" type="4">
-        <text>#doc = xml.dom.minidom.parse(url)
-#print(doc.getElementsByTagName(&quot;heading&quot;))</text>
+        <text>tree = ET.parse(path)
+root = tree.getroot()
+for elem in root:
+    # print(elem.text)
+    for subelem in elem:
+        if subelem.text == &quot;T_1&quot;:
+            print(subelem)</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">cHJpbnQocm9vdCkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IK</text>
       </register>
       <register name="7" type="4">
-        <text>respond = urllib.request.urlopen(url).read()
-tree = ET.fromstring(respond)
-print(respond)
-print(tree)</text>
+        <text encoding="base64">ICAgICAgICBnbG9iYWwgdGVtcGVyYXR1cmUKICAgICAgICBnbG9iYWwgaHVtaWRpdHk=</text>
       </register>
-      <register name="8" type="4">
-        <text>etree.ElementTree as ET
-import urllib.request</text>
+      <register name="8" type="2">
+        <text encoding="base64">aGVhZGVycyA9IHsnVXNlci1BZ2VudCc6ICdNb3ppbGxhJ30K</text>
       </register>
       <register name="9" type="4">
-        <text>a = 20
-
-
-def b():
-    global a
-    a = float(pag.prompt(&quot;Insert temperature [°C]:&quot;,
-                         &quot;Temperature in the laboratory&quot;, default=str(a)))
-
-
-def c():
-    print(a)
-
-
-b()
-c()</text>
+        <text>import urllib
+import shutil</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
       </register>
     </registers>
     <search>
-      <last-search encoding="base64">XDx3YWl0XD4=</last-search>
+      <last-search encoding="base64">XDxyZXF1ZXN0XD4=</last-search>
       <last-offset />
-      <last-pattern encoding="base64">XDx3YWl0XD4=</last-pattern>
+      <last-pattern encoding="base64">XDxyZXF1ZXN0XD4=</last-pattern>
       <last-dir>-1</last-dir>
       <show-last>false</show-last>
     </search>
@@ -208,6 +190,7 @@ c()</text>
         <entry encoding="base64">XDxpbWdcPg==</entry>
         <entry encoding="base64">XDxmaXJzdF90aW1lX21cPg==</entry>
         <entry encoding="base64">XDx3YWl0XD4=</entry>
+        <entry encoding="base64">XDxyZXF1ZXN0XD4=</entry>
       </history-search>
       <history-cmd>
         <entry>w</entry>
