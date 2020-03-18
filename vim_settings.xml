@@ -12,25 +12,25 @@
       <file name="$USER_HOME$/PycharmProjects/vector/vector.py" timestamp="1578248436590">
         <mark key="[" line="9" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1584529268146">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" timestamp="1584544860828">
         <mark key="i" line="47" column="30" />
-        <mark key="[" line="456" column="18" />
-        <mark key="]" line="456" column="18" />
+        <mark key="[" line="461" column="64" />
+        <mark key="]" line="461" column="64" />
         <mark key="^" line="42" column="28" />
-        <mark key="." line="456" column="18" />
+        <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1584392774204">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1584545441052">
         <mark key="'" line="510" column="18" />
-        <mark key="[" line="389" column="43" />
-        <mark key="]" line="485" column="25" />
-        <mark key="^" line="485" column="25" />
-        <mark key="." line="485" column="25" />
+        <mark key="[" line="642" column="50" />
+        <mark key="]" line="642" column="50" />
+        <mark key="^" line="577" column="43" />
+        <mark key="." line="642" column="50" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584395471353">
-        <mark key="[" line="571" column="10" />
-        <mark key="]" line="571" column="10" />
-        <mark key="^" line="595" column="14" />
-        <mark key="." line="571" column="10" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
+        <mark key="[" line="926" column="0" />
+        <mark key="]" line="926" column="0" />
+        <mark key="^" line="592" column="14" />
+        <mark key="." line="926" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/laser_analysis/laser_analysis.py" timestamp="1568373492589">
         <mark key="[" line="100" column="14" />
@@ -38,41 +38,36 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1584375413764">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1584544994287">
         <mark key="e" line="1052" column="16" />
         <mark key="i" line="954" column="44" />
         <mark key="[" line="362" column="30" />
         <mark key="^" line="36" column="14" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584482337191">
-        <mark key="[" line="545" column="22" />
-        <mark key="]" line="545" column="22" />
-        <mark key="." line="545" column="22" />
-      </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584523329047">
-        <mark key="'" line="82" column="10" />
-        <mark key="[" line="78" column="4" />
-        <mark key="]" line="77" column="4" />
-        <mark key="^" line="77" column="4" />
-        <mark key="." line="77" column="4" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1584545137644" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1584545554041">
+        <mark key="'" line="89" column="10" />
+        <mark key="[" line="86" column="0" />
+        <mark key="]" line="86" column="0" />
+        <mark key="." line="86" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584525374379">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584542973696">
         <mark key="^" line="76" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584528452737">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1584544974428">
         <mark key="'" line="545" column="30" />
-        <mark key="[" line="557" column="62" />
-        <mark key="]" line="557" column="62" />
+        <mark key="[" line="563" column="41" />
+        <mark key="]" line="563" column="41" />
         <mark key="^" line="545" column="15" />
-        <mark key="." line="557" column="62" />
+        <mark key="." line="563" column="41" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
         <mark key="[" line="253" column="37" />
@@ -131,49 +126,41 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">PiAw</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">PiAw</text>
+        <text>'wb'</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">CnRyeToKICAgIHJhaXNlIFZhbHVlRXJyb3IKZXhjZXB0OgogICAgcHJpbnQodHJhY2ViYWNrLmZvcm1hdF9leGMoKS5jb3VudCgiVmFsdWVFcnJvciIpKQ==</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KHRyYWNlYmFjay5mb3JtYXRfZXhjKCkpCg==</text>
+      <register name="2" type="4">
+        <text>Data refresh from database (temperature, humidity) has been failed.&quot;
+                         &quot;\n Previous data will be used.\n&quot; + traceback.format_exc())</text>
       </register>
       <register name="3" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBidXR0b25zPVsnT0snLCAnY2xvc2UnXSk=</text>
+        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsg</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">ICAgIHByaW50KExhYlBhci5EYXRhYmFzZVBhdGgpCiAgICBwcmludChMYWJQYXIuVGVtcE51bSkKICAgIHByaW50KExhYlBhci5IdW1OdW0p</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIHBhdGggPSAiQzovL1VzZXJzLy9Veml2YXRlbC8vRGVza3RvcC8vdmFsdWVzLnhtbCIK</text>
       </register>
-      <register name="5" type="4">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHByaW50KExhYlBhci5EYXRhYmFzZVBhdGgpCiAgICAgICAgICAgICAgICBwcmludChMYWJQYXIuVGVtcE51bSkKICAgICAgICAgICAgICAgIHByaW50KExhYlBhci5IdW1OdW0p</text>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIGlmIExhYlBhci5BdXRvbWF0aWM6Cg==</text>
       </register>
-      <register name="6" type="4">
-        <text>#with open(path, 'r') as f:
-#    print(f.read())
-
-#print(&quot;\n&quot;*2)</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgIGlmIExhYlBhci5BdXRvbWF0aWM6Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">cHJpbnQocm9vdC50ZXh0KQo=</text>
+        <text encoding="base64">ICAgICAgICBwYXRoID0gIkM6Ly9Vc2Vycy8vVXppdmF0ZWwvL0Rlc2t0b3AvL3ZhbHVlcy54bWwiCg==</text>
       </register>
       <register name="8" type="4">
-        <text>tree = ET.parse(path)
-root = tree.getroot()
-for elem in root:
-    # print(elem.text)
-    for subelem in elem:
-        if subelem.text == &quot;T_1&quot;:
-            print(subelem)</text>
+        <text encoding="base64">ICAgICIiIgo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IK</text>
+        <text encoding="base64">ICAgICIiIgo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
