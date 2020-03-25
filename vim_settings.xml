@@ -122,6 +122,7 @@
       <jump line="502" column="18" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" />
       <jump line="547" column="27" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
       <jump line="545" column="30" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" />
+      <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
@@ -224,6 +225,9 @@
       </shortcut-conflict>
       <shortcut-conflict owner="vim">
         <text>ctrl pressed N</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed T</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
