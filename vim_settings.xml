@@ -55,11 +55,10 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1588234279032">
-        <mark key="[" line="20" column="4" />
-        <mark key="]" line="24" column="7" />
-        <mark key="." line="24" column="7" />
-        <mark key="^" line="24" column="7" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1588440403048">
+        <mark key="[" line="42" column="0" />
+        <mark key="]" line="42" column="0" />
+        <mark key="." line="42" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584542973696">
         <mark key="^" line="76" column="4" />
@@ -144,29 +143,29 @@
         <text encoding="base64">IiIiCg==</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CmEgPSAwCmZvciBpIGluIHJhbmdlKDEwMCwgMTAwMCk6CiAgICBpZiBpICUgNSA9PSAwOgogICAgICAgIGEgKz0gMQogICAgcHJpbnQoaSkKCnByaW50KGEpCgoiIiI=</text>
+        <text encoding="base64">YSA9IDEKYiA9IDAKYyA9IDIwKioyMAp3aGlsZSBhKmEgPCBjOgogICAgaWYgYyAlIGEqYSA9PSAwOgogICAgICAgIGIgKz0gMQogICAgICAgIHByaW50KGIpCiAgICBhICs9IDEKcHJpbnQoYiArICIgZW5kIikKCiIiIg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIGkgKz0gMQo=</text>
+        <text encoding="base64">IiIiCg==</text>
       </register>
       <register name="4" type="4">
+        <text encoding="base64">CmEgPSAwCmZvciBpIGluIHJhbmdlKDEwMCwgMTAwMCk6CiAgICBpZiBpICUgNSA9PSAwOgogICAgICAgIGEgKz0gMQogICAgcHJpbnQoaSkKCnByaW50KGEpCgoiIiI=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgIGkgKz0gMQo=</text>
+      </register>
+      <register name="6" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text>Data refresh from database (temperature, humidity) has been failed.&quot;
                          &quot;\n Previous data will be used.\n&quot; + traceback.format_exc())</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsg</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgIHBhdGggPSAiQzovL1VzZXJzLy9Veml2YXRlbC8vRGVza3RvcC8vdmFsdWVzLnhtbCIK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgIGlmIExhYlBhci5BdXRvbWF0aWM6Cg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIGlmIExhYlBhci5BdXRvbWF0aWM6Cg==</text>
+        <text encoding="base64">ICAgIHBhdGggPSAiQzovL1VzZXJzLy9Veml2YXRlbC8vRGVza3RvcC8vdmFsdWVzLnhtbCIK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
