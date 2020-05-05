@@ -73,10 +73,10 @@
         <mark key="^" line="545" column="15" />
         <mark key="." line="563" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1588711957678">
-        <mark key="[" line="268" column="53" />
-        <mark key="]" line="268" column="53" />
-        <mark key="." line="268" column="53" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1588716995500">
+        <mark key="[" line="247" column="20" />
+        <mark key="]" line="247" column="20" />
+        <mark key="." line="247" column="20" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -133,10 +133,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAg</text>
+        <text>test_print</text>
       </register>
       <register name="-" type="4">
-        <text />
+        <text>test_print</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
