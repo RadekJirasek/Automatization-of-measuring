@@ -6,7 +6,7 @@
       <file name="/code.py" timestamp="1578471605383">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="/Python Console" timestamp="1580495263955">
+      <file name="/Python Console" timestamp="1588702646450">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vector.py" timestamp="1578248436590">
@@ -73,8 +73,10 @@
         <mark key="^" line="545" column="15" />
         <mark key="." line="563" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1582040805072">
-        <mark key="[" line="253" column="37" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1588704982070">
+        <mark key="[" line="85" column="0" />
+        <mark key="]" line="85" column="0" />
+        <mark key="." line="85" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -131,7 +133,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">IiIiCg==</text>
+        <text encoding="base64">ICAgICAgICBwcmludChjX3kpCg==</text>
       </register>
       <register name="-" type="4">
         <text />
@@ -140,32 +142,31 @@
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">IiIiCg==</text>
+        <text encoding="base64">ICAgICAgICBwcmludChjX3kpCg==</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">YSA9IDEKYiA9IDAKYyA9IDIwKioyMAp3aGlsZSBhKmEgPCBjOgogICAgaWYgYyAlIGEqYSA9PSAwOgogICAgICAgIGIgKz0gMQogICAgICAgIHByaW50KGIpCiAgICBhICs9IDEKcHJpbnQoYiArICIgZW5kIikKCiIiIg==</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoZGVmTmFtZSkK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">IiIiCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoblgpCg==</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">CmEgPSAwCmZvciBpIGluIHJhbmdlKDEwMCwgMTAwMCk6CiAgICBpZiBpICUgNSA9PSAwOgogICAgICAgIGEgKz0gMQogICAgcHJpbnQoaSkKCnByaW50KGEpCgoiIiI=</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoblkpCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGkgKz0gMQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoeCkK</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoeSkK</text>
       </register>
-      <register name="7" type="4">
-        <text>Data refresh from database (temperature, humidity) has been failed.&quot;
-                         &quot;\n Previous data will be used.\n&quot; + traceback.format_exc())</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoY29uKQo=</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">IlVuZXhwZWN0ZWQgZXJyb3IgaGFzIGJlZW4gb2NjdXJyZWQgYmVmb3JlIG9yIGFmdGVyIG1lYXN1cmluZzoiICsgMyoiXG4iCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICsg</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoYSkK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgIHBhdGggPSAiQzovL1VzZXJzLy9Veml2YXRlbC8vRGVza3RvcC8vdmFsdWVzLnhtbCIK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoYikK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
