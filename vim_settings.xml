@@ -79,10 +79,10 @@
         <mark key="^" line="545" column="15" />
         <mark key="." line="563" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1589203398361">
-        <mark key="[" line="122" column="38" />
-        <mark key="]" line="122" column="38" />
-        <mark key="." line="122" column="38" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1589204623397">
+        <mark key="[" line="246" column="0" />
+        <mark key="]" line="246" column="0" />
+        <mark key="." line="246" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -138,41 +138,41 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>zmenit</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIHkgKiBuWCAqIChpbnQobSAvIG5YKSkpCiAgICAgICAgICAgICAgICAgICAgaW1hZ2VfbnVtYmVyICs9IHggKiBuICogblggICMgQWRkZWQgYWxsIGZ1bGwgc2Nhbm5lZCBsaW5lcyBvZiBzZW5zb3IgdW5kZXIgc2Nhbm5lZCB0aWxlcwo=</text>
       </register>
       <register name="-" type="4">
-        <text>zmenit</text>
+        <text>print</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBjb21wbGV0ZUxvZ1BhdGggPSBwcm9ncmFtUGF0aDEgKyAiICIgKyBwcm9ncmFtUGF0aDIgKyBsb2dGaWxlICAjICBtZXplcnUgZG8gc3RyaW5ndQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIHkgKiBuWCAqIChpbnQobSAvIG5YKSkpCiAgICAgICAgICAgICAgICAgICAgaW1hZ2VfbnVtYmVyICs9IHggKiBuICogblggICMgQWRkZWQgYWxsIGZ1bGwgc2Nhbm5lZCBsaW5lcyBvZiBzZW5zb3IgdW5kZXIgc2Nhbm5lZCB0aWxlcwo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">Zm9yIG4gaW4gcmFuZ2UoODM4LCA3MDcpOgo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIG4gKiBuWCkK</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAg</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIChtICUgblgpKQo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBwcmludCh6KQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQobykK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChjX3kpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeikK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoZGVmTmFtZSkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoY29uKQo=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoblgpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQocHJlX2ltYWdlX251bWJlcikK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoblkpCg==</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKGltYWdlX251bWJlcikgKyAiLCAgICIgKyBzdHIoZm9jdXMpKQo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgcHJpbnQoeCkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICB0ZXN0X3ByaW50KGZvY3VzKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
