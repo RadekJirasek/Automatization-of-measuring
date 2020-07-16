@@ -78,10 +78,10 @@
         <mark key="^" line="545" column="15" />
         <mark key="." line="563" column="41" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1594887726373">
-        <mark key="[" line="20" column="13" />
-        <mark key="]" line="272" column="20" />
-        <mark key="." line="272" column="20" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1594890274201">
+        <mark key="[" line="283" column="0" />
+        <mark key="]" line="283" column="0" />
+        <mark key="." line="283" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -138,7 +138,7 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IE5hbWVPZlNlbnNvci5nZXQoKQo=</text>
+        <text encoding="base64">Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Owo=</text>
       </register>
       <register name="-" type="4">
         <text>print</text>
@@ -147,23 +147,19 @@
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IE5hbWVPZlNlbnNvci5nZXQoKQo=</text>
+        <text encoding="base64">Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Owo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQo=</text>
+        <text encoding="base64">ICAgICAgICBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IE5hbWVPZlNlbnNvci5nZXQoKQo=</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQo=</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICBzZW5zb3JCYXRjaFtOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JCYXRjaC5nZXQoKQo=</text>
       </register>
-      <register name="4" type="4">
-        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
-                        fff.write(str(image_number + focus))
-                        fff.close()</text>
-      </register>
       <register name="5" type="4">
-        <text>#print(con)
-                    #print(pre_image_number)
-                    with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
+        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
                         fff.write(str(image_number + focus))
                         fff.close()</text>
       </register>
@@ -174,14 +170,18 @@
                         fff.write(str(image_number + focus))
                         fff.close()</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKGltYWdlX251bWJlcikgKyAiLCAgICIgKyBzdHIoZm9jdXMpKQo=</text>
+      <register name="7" type="4">
+        <text>#print(con)
+                    #print(pre_image_number)
+                    with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
+                        fff.write(str(image_number + focus))
+                        fff.close()</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIHkgKiBuWCAqIChpbnQobSAvIG5YKSkpCiAgICAgICAgICAgICAgICAgICAgaW1hZ2VfbnVtYmVyICs9IHggKiBuICogblggICMgQWRkZWQgYWxsIGZ1bGwgc2Nhbm5lZCBsaW5lcyBvZiBzZW5zb3IgdW5kZXIgc2Nhbm5lZCB0aWxlcwo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoc3RyKGltYWdlX251bWJlcikgKyAiLCAgICIgKyBzdHIoZm9jdXMpKQo=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIG4gKiBuWCkK</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAjcHJpbnQoeCAqIHkgKiBuWCAqIChpbnQobSAvIG5YKSkpCiAgICAgICAgICAgICAgICAgICAgaW1hZ2VfbnVtYmVyICs9IHggKiBuICogblggICMgQWRkZWQgYWxsIGZ1bGwgc2Nhbm5lZCBsaW5lcyBvZiBzZW5zb3IgdW5kZXIgc2Nhbm5lZCB0aWxlcwo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
