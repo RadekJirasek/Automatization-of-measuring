@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595001366212">
-        <mark key="'" line="513" column="18" />
-        <mark key="[" line="345" column="15" />
-        <mark key="]" line="400" column="56" />
-        <mark key="^" line="400" column="56" />
-        <mark key="." line="400" column="56" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595592761626">
+        <mark key="'" line="520" column="18" />
+        <mark key="[" line="210" column="15" />
+        <mark key="]" line="210" column="15" />
+        <mark key="^" line="407" column="56" />
+        <mark key="." line="210" column="15" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -38,7 +38,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595001853032">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595592420894">
         <mark key="e" line="1052" column="16" />
         <mark key="i" line="954" column="44" />
         <mark key="[" line="752" column="0" />
@@ -49,7 +49,7 @@
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1589213123268">
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1594998528564">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1595591712436">
         <mark key="'" line="89" column="10" />
         <mark key="[" line="86" column="0" />
         <mark key="]" line="86" column="0" />
@@ -137,11 +137,11 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Owo=</text>
+      <register name="&quot;" type="4">
+        <text>.click(pag.locateCenterOnScreen(programPath + &quot;screens\\folderOn.png&quot;))</text>
       </register>
       <register name="-" type="4">
-        <text>print</text>
+        <text>.click(pag.locateCenterOnScreen(programPath + &quot;screens\\folderOn.png&quot;))</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
