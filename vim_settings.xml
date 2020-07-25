@@ -19,7 +19,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595681488993">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595686914863">
         <mark key="'" line="523" column="18" />
         <mark key="[" line="358" column="3" />
         <mark key="]" line="210" column="80" />
@@ -50,7 +50,7 @@
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1595681743675">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1595686776751">
         <mark key="'" line="89" column="10" />
         <mark key="[" line="86" column="0" />
         <mark key="]" line="86" column="0" />
@@ -61,18 +61,23 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1584542973696">
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1595686838332">
+        <mark key="[" line="28" column="21" />
+        <mark key="]" line="28" column="21" />
+        <mark key="." line="28" column="21" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1595687041948">
+        <mark key="[" line="273" column="0" />
+        <mark key="]" line="273" column="0" />
         <mark key="^" line="76" column="4" />
+        <mark key="." line="273" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1595669286156">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1595687097922">
         <mark key="'" line="545" column="30" />
-        <mark key="[" line="563" column="41" />
-        <mark key="]" line="563" column="41" />
         <mark key="^" line="545" column="15" />
-        <mark key="." line="563" column="41" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1595598551573">
         <mark key="[" line="283" column="0" />
@@ -134,44 +139,44 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CndpdGggb3BlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxcdGVzdC50eHQiLCAncicpIGFzIGY6CiAgICBMaW1pdFNpemUuUjFbM10gPSAw</text>
+        <text encoding="base64">ICAgICAgICBwcmludChMaW1pdFNpemUuUjBbMl0p</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAgIHByaW50KHRlbXBfbGltaXQp</text>
+        <text encoding="base64">ICAgICAgICBwcmludChMaW1pdFNpemUuUjBbMl0p</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">CndpdGggb3BlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxcdGVzdC50eHQiLCAncicpIGFzIGY6CiAgICBMaW1pdFNpemUuUjFbM10gPSAw</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHByaW50KExpbWl0U2l6ZS5SMCkK</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgIGlmIHdpdGhfbG9nOgogICAgICAgIHNhdmVfbG9nKCJcbiIgKyBkYXRldGltZS5kYXRldGltZS5ub3coKS5zdHJmdGltZSgiJXktJW0tJWQgJUg6JU06JVMiKSArCiAgICAgICAgICAgICAgICAgInwgQWN0dWFsIGxpbWl0IHNpemUgaXMgIiArIHN0cih0ZW1wX2xpbWl0KSk=</text>
+        <text encoding="base64">CndpdGggb3BlbigiQzpcXFVzZXJzXFxVeml2YXRlbFxcRGVza3RvcFxcdGVzdC50eHQiLCAncicpIGFzIGY6CiAgICBMaW1pdFNpemUuUjFbM10gPSAw</text>
       </register>
       <register name="3" type="4">
+        <text encoding="base64">ICAgIGlmIHdpdGhfbG9nOgogICAgICAgIHNhdmVfbG9nKCJcbiIgKyBkYXRldGltZS5kYXRldGltZS5ub3coKS5zdHJmdGltZSgiJXktJW0tJWQgJUg6JU06JVMiKSArCiAgICAgICAgICAgICAgICAgInwgQWN0dWFsIGxpbWl0IHNpemUgaXMgIiArIHN0cih0ZW1wX2xpbWl0KSk=</text>
+      </register>
+      <register name="4" type="4">
         <text>sType = [&quot;R0&quot;, &quot;B&quot;]
 Product = [&quot;ATLAS18EC&quot;, &quot;ATLAS18&quot;]
 
 if sType[1] == &quot;B&quot; and &quot;EC&quot; in Product[1]:
     pag.alert(&quot;incorect combinaciton&quot;)</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICsgc3RyKExpbWl0U2l6ZS5SMCkgKyAiLCAiCiAgICAgICAgICAgICAgICAgICAgICsgc3RyKHNUeXBlKSArICIsIiArIHN0cihzU2Vuc29yKSArICIsICIgKyBzdHIobVNlbnNvcik=</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgIHRpbWUuc2xlZXAoMC4xKQogICAgcGFnLmhvdGtleSgiZjQiKQ==</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Owo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSA9IE5hbWVPZlNlbnNvci5nZXQoKQo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQo=</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICBzZW5zb3JCYXRjaFtOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JCYXRjaC5nZXQoKQo=</text>
+        <text encoding="base64">ICAgICAgICBzZW5zb3JXYWZlcltOdW1iZXJPZlNlbnNvcl0gPSBTZW5zb3JXYWZlci5nZXQoKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
