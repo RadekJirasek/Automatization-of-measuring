@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595848498229">
-        <mark key="'" line="523" column="18" />
-        <mark key="[" line="408" column="0" />
-        <mark key="]" line="408" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595852715708">
+        <mark key="'" line="520" column="18" />
+        <mark key="[" line="407" column="0" />
+        <mark key="]" line="407" column="0" />
         <mark key="^" line="210" column="80" />
-        <mark key="." line="408" column="0" />
+        <mark key="." line="407" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -38,13 +38,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595850576792">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595857745926">
         <mark key="e" line="1060" column="16" />
         <mark key="i" line="962" column="44" />
-        <mark key="[" line="828" column="0" />
-        <mark key="]" line="828" column="0" />
+        <mark key="[" line="773" column="0" />
+        <mark key="]" line="773" column="0" />
         <mark key="^" line="816" column="27" />
-        <mark key="." line="828" column="0" />
+        <mark key="." line="773" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
         <mark key="[" line="235" column="68" />
@@ -58,11 +58,11 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1595851032202">
-        <mark key="[" line="40" column="0" />
-        <mark key="]" line="40" column="0" />
-        <mark key="^" line="47" column="16" />
-        <mark key="." line="40" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1595853645475">
+        <mark key="[" line="24" column="42" />
+        <mark key="]" line="24" column="42" />
+        <mark key="^" line="20" column="0" />
+        <mark key="." line="24" column="42" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1595687041948">
         <mark key="[" line="273" column="0" />
@@ -137,41 +137,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICAgIHByaW50KHByb2dyYW1QYXRoKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNhdmVfbG9nKHN0YXRpY21ldGhvZC5tcm8oKQo=</text>
       </register>
       <register name="-" type="4">
-        <text>measurePath</text>
+        <text>JS_cmd_test</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICAgIHByaW50KHByb2dyYW1QYXRoKQo=</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgIHNhdmVfbG9nKHN0YXRpY21ldGhvZC5tcm8oKQo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHN0cihzZW5zb3JzX3NpemUpICsgIlxuIikK</text>
+        <text encoding="base64">ICAgICAgICBmLndyaXRlKCJGaXJzdCBEb25lIikK</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKHNlbnNvcl9udW1iZXIpICsgIi50eHQiLCAndycpIGFzIGZfc2l6ZTI6CiAgICAgICAgZl9zaXplMi53cml0ZShzdHIodGVtcF9saW1pdCkpCiAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHNlbnNvcnNfc2l6ZSArICJcbiIpICNkZWwK</text>
+        <text encoding="base64">ICAgIHByaW50KHByb2dyYW1QYXRoKQo=</text>
       </register>
       <register name="5" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHN0cihzZW5zb3JzX3NpemUpICsgIlxuIikK</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHNlbnNvcnNfc2l6ZSArICJcbiIpICNkZWwK</text>
+      </register>
+      <register name="8" type="2">
         <text encoding="base64">ICAgIGlmIHdpdGhfbG9nOgo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CiAgICBpZiB3aXRoX2xvZzoKICAgICAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKE51bWJlck9mU2Vuc29yKSArICIudHh0IiwgJ3cnKSBhcyBmX3NpemUyOgogICAgICAgICAgICBmX3NpemUyLndyaXRlKHN0cihzVHlwZSkgKyAiXG4iICsgc3RyKG1TZW5zb3IpICsgIlxuIiArIHN0cihzU2Vuc29yKSArICJcbiIgKyBzdHIoTGltaXRTaXplLlIxKSkKICAgICAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">ICAgIHdpdGggb3BlbigiQzpcXFVzZXJzXFxBZG1pblxcRGVza3RvcFxcZGF0YVNpemVfcHJpbWFyeVRlc3QudHh0IiwgJ3cnKSBhcyBmX3NpemU6CiAgICAgICAgZl9zaXplLndyaXRlKHN0cihMaW1pdFNpemUuUjEpKQogICAgICAgIGZfc2l6ZS5jbG9zZSgp</text>
-      </register>
-      <register name="8" type="4">
-        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                 &quot;| Actual limit size is &quot; + str(temp_limit))</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIHByaW50KGFyZ19qcykK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
