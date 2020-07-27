@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595842008341">
-        <mark key="'" line="520" column="18" />
-        <mark key="[" line="407" column="0" />
-        <mark key="]" line="407" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595842733153">
+        <mark key="'" line="524" column="18" />
+        <mark key="[" line="410" column="30" />
+        <mark key="]" line="410" column="30" />
         <mark key="^" line="210" column="80" />
-        <mark key="." line="407" column="0" />
+        <mark key="." line="410" column="30" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -38,7 +38,7 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595836440624">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595842565269">
         <mark key="e" line="1059" column="16" />
         <mark key="i" line="961" column="44" />
         <mark key="[" line="826" column="67" />
@@ -137,10 +137,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">CiAgICBpZiB3aXRoX2xvZzoKICAgICAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKE51bWJlck9mU2Vuc29yKSArICIudHh0IiwgJ3cnKSBhcyBmX3NpemUyOgogICAgICAgICAgICBmX3NpemUyLndyaXRlKHN0cihzVHlwZSkgKyAiXG4iICsgc3RyKG1TZW5zb3IpICsgIlxuIiArIHN0cihzU2Vuc29yKSArICJcbiIgKyBzdHIoTGltaXRTaXplLlIxKSkKICAgICAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
+        <text>sType) + &quot;\n&quot; + str(mS</text>
       </register>
       <register name="-" type="4">
-        <text>call</text>
+        <text>sType) + &quot;\n&quot; + str(mS</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
