@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595842733153">
-        <mark key="'" line="524" column="18" />
-        <mark key="[" line="410" column="30" />
-        <mark key="]" line="410" column="30" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1595845453591">
+        <mark key="'" line="523" column="18" />
+        <mark key="[" line="408" column="0" />
+        <mark key="]" line="408" column="0" />
         <mark key="^" line="210" column="80" />
-        <mark key="." line="410" column="30" />
+        <mark key="." line="408" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -38,15 +38,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595842565269">
-        <mark key="e" line="1059" column="16" />
-        <mark key="i" line="961" column="44" />
-        <mark key="[" line="826" column="67" />
-        <mark key="]" line="826" column="67" />
-        <mark key="^" line="242" column="29" />
-        <mark key="." line="826" column="67" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1595844892527">
+        <mark key="e" line="1060" column="16" />
+        <mark key="i" line="962" column="44" />
+        <mark key="[" line="808" column="0" />
+        <mark key="^" line="816" column="27" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595671219250">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
@@ -136,45 +134,42 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>sType) + &quot;\n&quot; + str(mS</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="-" type="4">
-        <text>sType) + &quot;\n&quot; + str(mS</text>
+        <text>dNameSensor</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHNlbnNvcnNfc2l6ZSArICJcbiIpICNkZWwK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGlmIHdpdGhfbG9nOgo=</text>
+      </register>
+      <register name="4" type="4">
         <text encoding="base64">CiAgICBpZiB3aXRoX2xvZzoKICAgICAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKE51bWJlck9mU2Vuc29yKSArICIudHh0IiwgJ3cnKSBhcyBmX3NpemUyOgogICAgICAgICAgICBmX3NpemUyLndyaXRlKHN0cihzVHlwZSkgKyAiXG4iICsgc3RyKG1TZW5zb3IpICsgIlxuIiArIHN0cihzU2Vuc29yKSArICJcbiIgKyBzdHIoTGltaXRTaXplLlIxKSkKICAgICAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
       </register>
-      <register name="2" type="4">
+      <register name="5" type="4">
         <text encoding="base64">ICAgIHdpdGggb3BlbigiQzpcXFVzZXJzXFxBZG1pblxcRGVza3RvcFxcZGF0YVNpemVfcHJpbWFyeVRlc3QudHh0IiwgJ3cnKSBhcyBmX3NpemU6CiAgICAgICAgZl9zaXplLndyaXRlKHN0cihMaW1pdFNpemUuUjEpKQogICAgICAgIGZfc2l6ZS5jbG9zZSgp</text>
       </register>
-      <register name="3" type="4">
+      <register name="6" type="4">
         <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
                  &quot;| Actual limit size is &quot; + str(temp_limit))</text>
       </register>
-      <register name="4" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIHByaW50KGFyZ19qcykK</text>
       </register>
-      <register name="5" type="2">
+      <register name="8" type="2">
         <text encoding="base64">c1R5cGUgPSBbIlNOXzIwIiwgIiIsICIiLCAiIiwgIiIsICIiLCAiIiwgIiIsICIiXSAgIyBBcnJheSBvZiB2YXJpYWJsZXMgZm9yIHR5cGVzIG9mIHNlbnNvcnMuCg==</text>
       </register>
-      <register name="6" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CmRlZmF1bHRSZXBldGl0aW9uID0gMCAgIyBOdW1iZXIgb2YgcmVwZXRpdGlvbiBzb2x2aW5nIG9mIG9uZSBwcm9ibGVtIGluIGEgcm93LgplcnJvciA9IDAgICMgVmFyaWFibGUgb2YgZXJyb3Igc3lzdGVtIChpZiBlcnJvciA9IDAsIGV2ZXJ5dGhpbmcgaXMgb2s7IGVycm9yID0gMSwgcHJvYmxlbSBpcyBpbiBzdGFydCBzZWdtZW50OwojIGVycm9yID0gMiwgcHJvYmxlbSBpcyBwcm9jZXNzIGxvb3AuKQpwcm9jZXNzRXJyb3IgPSAwICAjIFZhcmlhYmxlIGZvciB0ZW1wb3JhcnkgZXJyb3Igb2YgcHJvY2Vzc2luZyAoMCA9IGFsbCBpcyBvaywgMSA9IHByb2JsZW0pLg==</text>
-      </register>
-      <register name="7" type="4">
-        <text>error = 2
-    ErrorId.startJoinScreens[NumberOfSensor] = 2
-    save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-             &quot;| Joining of screens has failed at startup\n&quot; + traceback.format_exc())</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">Ck51bWJlck9mU2Vuc29yID0gMCAgIyBBY3R1YWwgbnVtYmVyIG9mIG1lYXN1cmVkIHNlbnNvci4Kc1R5cGUgPSBbIiIsICIiLCAiUjEiLCAiIiwgIiIsICIiLCAiIiwgIiIsICIiXSAgIyBBcnJheSBvZiB2YXJpYWJsZXMgZm9yIHR5cGVzIG9mIHNlbnNvcnMuCm1TZW5zb3IgPSBbMSwgMSwgMSwgMSwgMSwgMSwgMSwgMSwgMV0gICMgQXJyYXkgb2YgdmFyaWFibGVzIGZvciBtZWFzdXJlbWVudCBvZiBzZW5zb3JzIChtZWFzdXJlbWVudCAoMSkgb3Igbm90ICgwKSkuCnNTZW5zb3IgPSBbMSwgMSwgMSwgMSwgMSwgMSwgMSwgMSwgMV0gICMgQXJyYXkgb2YgdmFyaWFibGVzIGZvciBzY2FubmluZyBvZiBzZW5zb3JzIChzY2FubmluZyAoMSkgb3Igbm90ICgwKSkuCgoKY2xhc3MgTGltaXRTaXplOgogICAgUjAgPSBbMCwgMCwgMCwgMF0KICAgIFIxID0gWzQwMDAsIDUwMDAsIDEwMCwgMjAwXQogICAgUjIgPSBbMCwgMCwgMCwgMF0KICAgIFIzID0gWzAsIDAsIDAsIDBdCiAgICBSNCA9IFswLCAwLCAwLCAwXQogICAgUjUgPSBbMCwgMCwgMCwgMF0KICAgIEIgPSBbMCwgMCwgMCwgMF0KCgpkZWYgbGltaXRfc2l6ZSgpOgogICAgdGVtcF9saW1pdCA9IFswLCAwXQoKICAgIGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiUjAiOgogICAgICAgIGlmIG1TZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID09IDE6CiAgICAgICAgICAgIHRlbXBfbGltaXRbMF0gKz0gTGltaXRTaXplLlIwWzBdCiAgICAgICAgICAgIHRlbXBfbGltaXRbMV0gKz0gTGltaXRTaXplLlIwWzFdCiAgICAgICAgaWYgc1NlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuUjBbMl0KICAgICAgICAgICAgdGVtcF9saW1pdFsxXSArPSBMaW1pdFNpemUuUjBbM10KICAgIGVsaWYgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdID09ICJSMSI6CiAgICAgICAgaWYgbVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuUjFbMF0KICAgICAgICAgICAgdGVtcF9saW1pdFsxXSArPSBMaW1pdFNpemUuUjFbMV0KICAgICAgICBpZiBzU2Vuc29yW051bWJlck9mU2Vuc29yXSA9PSAxOgogICAgICAgICAgICB0ZW1wX2xpbWl0WzBdICs9IExpbWl0U2l6ZS5SMVsyXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5SMVszXQogICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIlIyIjoKICAgICAgICBpZiBtU2Vuc29yW051bWJlck9mU2Vuc29yXSA9PSAxOgogICAgICAgICAgICB0ZW1wX2xpbWl0WzBdICs9IExpbWl0U2l6ZS5SMlswXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5SMlsxXQogICAgICAgIGlmIHNTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID09IDE6CiAgICAgICAgICAgIHRlbXBfbGltaXRbMF0gKz0gTGltaXRTaXplLlIyWzJdCiAgICAgICAgICAgIHRlbXBfbGltaXRbMV0gKz0gTGltaXRTaXplLlIyWzNdCiAgICBlbGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiUjMiOgogICAgICAgIGlmIG1TZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID09IDE6CiAgICAgICAgICAgIHRlbXBfbGltaXRbMF0gKz0gTGltaXRTaXplLlIzWzBdCiAgICAgICAgICAgIHRlbXBfbGltaXRbMV0gKz0gTGltaXRTaXplLlIzWzFdCiAgICAgICAgaWYgc1NlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuUjNbMl0KICAgICAgICAgICAgdGVtcF9saW1pdFsxXSArPSBMaW1pdFNpemUuUjNbM10KICAgIGVsaWYgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdID09ICJSNCI6CiAgICAgICAgaWYgbVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuUjRbMF0KICAgICAgICAgICAgdGVtcF9saW1pdFsxXSArPSBMaW1pdFNpemUuUjRbMV0KICAgICAgICBpZiBzU2Vuc29yW051bWJlck9mU2Vuc29yXSA9PSAxOgogICAgICAgICAgICB0ZW1wX2xpbWl0WzBdICs9IExpbWl0U2l6ZS5SNFsyXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5SNFszXQogICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIlI1IjoKICAgICAgICBpZiBtU2Vuc29yW051bWJlck9mU2Vuc29yXSA9PSAxOgogICAgICAgICAgICB0ZW1wX2xpbWl0WzBdICs9IExpbWl0U2l6ZS5SNVswXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5SNVsxXQogICAgICAgIGlmIHNTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdID09IDE6CiAgICAgICAgICAgIHRlbXBfbGltaXRbMF0gKz0gTGltaXRTaXplLlI1WzJdCiAgICAgICAgICAgIHRlbXBfbGltaXRbMV0gKz0gTGltaXRTaXplLlI1WzNdCiAgICBlbGlmIHNUeXBlW051bWJlck9mU2Vuc29yXSA9PSAiQiI6CiAgICAgICAgaWYgbVNlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuQlswXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5CWzFdCiAgICAgICAgaWYgc1NlbnNvcltOdW1iZXJPZlNlbnNvcl0gPT0gMToKICAgICAgICAgICAgdGVtcF9saW1pdFswXSArPSBMaW1pdFNpemUuQlsyXQogICAgICAgICAgICB0ZW1wX2xpbWl0WzFdICs9IExpbWl0U2l6ZS5CWzNdCgogICAgcmV0dXJuIHRlbXBfbGltaXQKCgpwcmludChOdW1iZXJPZlNlbnNvcikKZm9yIE51bWJlck9mU2Vuc29yIGluIHJhbmdlKDAsIDMpOgogICAgcHJpbnQobGltaXRfc2l6ZSgpKQ==</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIHByaW50KExpbWl0U2l6ZS5SMCkK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
