@@ -19,7 +19,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1597404303859">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1597405817331">
         <mark key="'" line="523" column="18" />
         <mark key="[" line="107" column="34" />
         <mark key="]" line="410" column="0" />
@@ -38,12 +38,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1597403024899">
-        <mark key="e" line="1062" column="16" />
-        <mark key="i" line="964" column="44" />
-        <mark key="[" line="750" column="61" />
-        <mark key="]" line="750" column="61" />
-        <mark key="." line="750" column="61" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1597405873333">
+        <mark key="e" line="1060" column="16" />
+        <mark key="i" line="962" column="44" />
+        <mark key="[" line="751" column="17" />
+        <mark key="]" line="751" column="18" />
+        <mark key="." line="751" column="18" />
+        <mark key="^" line="192" column="43" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
         <mark key="[" line="235" column="68" />
@@ -73,10 +74,10 @@
         <mark key="'" line="545" column="30" />
         <mark key="^" line="545" column="15" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1597404147573">
-        <mark key="[" line="316" column="71" />
-        <mark key="]" line="79" column="71" />
-        <mark key="." line="79" column="71" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1597405991139">
+        <mark key="[" line="272" column="20" />
+        <mark key="]" line="272" column="20" />
+        <mark key="." line="272" column="20" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -133,40 +134,45 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>logFile</text>
+        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
+                        fff.write(str(image_number + focus))
+                        fff.close()</text>
       </register>
       <register name="-" type="4">
-        <text>logFile</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZ2xvYmFsIGxvZ0ZpbGUK</text>
+      <register name="1" type="4">
+        <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
+                        fff.write(str(image_number + focus))
+                        fff.close()</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">ICAgIGFyZ19qcyA9IHByb2dyYW1QYXRoICsgImpvaW5faW1hZ2VzX3NjcmlwdC5leGUgMSAiICsgbWVhc3VyZVBhdGggXAogICAgICAgICAgICAgKyAiICIgKyBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gKyAiICIgKyBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSBcCiAgICAgICAgICAgICArICIgIiArIHN0cihOdW1iZXJPZlNlbnNvcikgKyAiICIgKyBzdHIocFNlbnNvcltOdW1iZXJPZlNlbnNvcl0pIFwKICAgICAgICAgICAgICsgIiAiICsgcHJvZ3JhbVBhdGggKyAiICIgKyBsb2dGaWxlICsgIiAiICsgIjAi</text>
+        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
+                                 &quot;| &quot; + arg_js)</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZ2xvYmFsIGxvZ0ZpbGUK</text>
+      </register>
+      <register name="4" type="4">
+        <text encoding="base64">ICAgIGFyZ19qcyA9IHByb2dyYW1QYXRoICsgImpvaW5faW1hZ2VzX3NjcmlwdC5leGUgMSAiICsgbWVhc3VyZVBhdGggXAogICAgICAgICAgICAgKyAiICIgKyBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gKyAiICIgKyBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSBcCiAgICAgICAgICAgICArICIgIiArIHN0cihOdW1iZXJPZlNlbnNvcikgKyAiICIgKyBzdHIocFNlbnNvcltOdW1iZXJPZlNlbnNvcl0pIFwKICAgICAgICAgICAgICsgIiAiICsgcHJvZ3JhbVBhdGggKyAiICIgKyBsb2dGaWxlICsgIiAiICsgIjAi</text>
+      </register>
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHNhdmVfbG9nKHN0YXRpY21ldGhvZC5tcm8oKQo=</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICBmLndyaXRlKCJGaXJzdCBEb25lIikK</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKHNlbnNvcl9udW1iZXIpICsgIi50eHQiLCAndycpIGFzIGZfc2l6ZTI6CiAgICAgICAgZl9zaXplMi53cml0ZShzdHIodGVtcF9saW1pdCkpCiAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgIHByaW50KHByb2dyYW1QYXRoKQo=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHN0cihzZW5zb3JzX3NpemUpICsgIlxuIikK</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">Cg==</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHNlbnNvcnNfc2l6ZSArICJcbiIpICNkZWwK</text>
+        <text encoding="base64">ICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIHN0cihzZW5zb3JzX3NpemUpICsgIlxuIikK</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
