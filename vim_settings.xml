@@ -38,12 +38,9 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598177276697">
-        <mark key="e" line="1079" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598179743795">
+        <mark key="e" line="1078" column="16" />
         <mark key="i" line="962" column="44" />
-        <mark key="[" line="1000" column="36" />
-        <mark key="]" line="1000" column="36" />
-        <mark key="." line="1000" column="36" />
         <mark key="^" line="192" column="43" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
@@ -134,43 +131,43 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>nominal</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBhcHNfcG9pbnRbMF0gPiBhcHNfcG9pbnRbMl06CiAgICAgICAgICAgICAgICAgICAgYXBzX3BoaSArPSA5MAogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBhcHNfcGhpID0gOTAgLSBhcHNfcGhp</text>
       </register>
       <register name="-" type="4">
-        <text>nominal</text>
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBhcHNfcG9pbnRbMF0gPiBhcHNfcG9pbnRbMl06CiAgICAgICAgICAgICAgICAgICAgYXBzX3BoaSArPSA5MAogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBhcHNfcGhpID0gOTAgLSBhcHNfcGhp</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
                         fff.write(str(image_number + focus))
                         fff.close()</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
                                  &quot;| &quot; + arg_js)</text>
       </register>
-      <register name="4" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICAgICAgZ2xvYmFsIGxvZ0ZpbGUK</text>
       </register>
-      <register name="5" type="4">
+      <register name="6" type="4">
         <text encoding="base64">ICAgIGFyZ19qcyA9IHByb2dyYW1QYXRoICsgImpvaW5faW1hZ2VzX3NjcmlwdC5leGUgMSAiICsgbWVhc3VyZVBhdGggXAogICAgICAgICAgICAgKyAiICIgKyBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gKyAiICIgKyBuYW1lU2Vuc29yW051bWJlck9mU2Vuc29yXSBcCiAgICAgICAgICAgICArICIgIiArIHN0cihOdW1iZXJPZlNlbnNvcikgKyAiICIgKyBzdHIocFNlbnNvcltOdW1iZXJPZlNlbnNvcl0pIFwKICAgICAgICAgICAgICsgIiAiICsgcHJvZ3JhbVBhdGggKyAiICIgKyBsb2dGaWxlICsgIiAiICsgIjAi</text>
       </register>
-      <register name="6" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHNhdmVfbG9nKHN0YXRpY21ldGhvZC5tcm8oKQo=</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBmLndyaXRlKCJGaXJzdCBEb25lIikK</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text encoding="base64">CiAgICB3aXRoIG9wZW4oIkM6XFxVc2Vyc1xcQWRtaW5cXERlc2t0b3BcXGRhdGFTaXplX3Rlc3QiICsgc3RyKHNlbnNvcl9udW1iZXIpICsgIi50eHQiLCAndycpIGFzIGZfc2l6ZTI6CiAgICAgICAgZl9zaXplMi53cml0ZShzdHIodGVtcF9saW1pdCkpCiAgICAgICAgZl9zaXplMi5jbG9zZSgp</text>
-      </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgIHByaW50KHByb2dyYW1QYXRoKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
