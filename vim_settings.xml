@@ -38,12 +38,12 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598114398572">
-        <mark key="e" line="1063" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598177276697">
+        <mark key="e" line="1079" column="16" />
         <mark key="i" line="962" column="44" />
-        <mark key="[" line="968" column="25" />
-        <mark key="]" line="751" column="18" />
-        <mark key="." line="751" column="18" />
+        <mark key="[" line="1000" column="36" />
+        <mark key="]" line="1000" column="36" />
+        <mark key="." line="1000" column="36" />
         <mark key="^" line="192" column="43" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
@@ -133,11 +133,11 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="&quot;" type="4">
+        <text>nominal</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">IA==</text>
+        <text>nominal</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
