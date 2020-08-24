@@ -19,11 +19,11 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598280975008">
-        <mark key="'" line="525" column="18" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598291550822">
+        <mark key="'" line="528" column="18" />
         <mark key="[" line="26" column="4" />
         <mark key="]" line="26" column="4" />
-        <mark key="^" line="205" column="77" />
+        <mark key="^" line="208" column="77" />
         <mark key="." line="26" column="4" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
@@ -38,15 +38,15 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598280540528">
-        <mark key="e" line="1091" column="16" />
-        <mark key="i" line="972" column="44" />
-        <mark key="[" line="832" column="15" />
-        <mark key="]" line="249" column="6" />
-        <mark key="^" line="249" column="6" />
-        <mark key="." line="249" column="6" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598291620541">
+        <mark key="e" line="1087" column="16" />
+        <mark key="i" line="968" column="44" />
+        <mark key="[" line="833" column="12" />
+        <mark key="]" line="259" column="34" />
+        <mark key="^" line="259" column="34" />
+        <mark key="." line="259" column="34" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598290717551">
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
@@ -138,11 +138,11 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
+      <register name="&quot;" type="4">
+        <text encoding="base64">IA==</text>
       </register>
       <register name="-" type="4">
-        <text>measurePath +  + &quot;_left.RTN&quot;</text>
+        <text encoding="base64">IA==</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
