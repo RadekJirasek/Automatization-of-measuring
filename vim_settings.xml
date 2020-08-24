@@ -19,8 +19,8 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598278529431">
-        <mark key="'" line="520" column="18" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598280975008">
+        <mark key="'" line="525" column="18" />
         <mark key="[" line="26" column="4" />
         <mark key="]" line="26" column="4" />
         <mark key="^" line="205" column="77" />
@@ -38,17 +38,23 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598279702601">
-        <mark key="e" line="1082" column="16" />
-        <mark key="i" line="963" column="44" />
-        <mark key="^" line="237" column="19" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598280540528">
+        <mark key="e" line="1091" column="16" />
+        <mark key="i" line="972" column="44" />
+        <mark key="[" line="832" column="15" />
+        <mark key="]" line="249" column="6" />
+        <mark key="^" line="249" column="6" />
+        <mark key="." line="249" column="6" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1595843084525">
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1595841985837">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598280347915">
         <mark key="'" line="89" column="10" />
+        <mark key="[" line="406" column="0" />
+        <mark key="]" line="406" column="0" />
+        <mark key="." line="406" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -131,8 +137,8 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>measurePath +  + &quot;_left.RTN&quot;</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
       </register>
       <register name="-" type="4">
         <text>measurePath +  + &quot;_left.RTN&quot;</text>
@@ -141,40 +147,39 @@
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="2">
+        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
+      </register>
+      <register name="2" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvclBvc2l0aW9uW051bWJlck9mU2Vuc29yXSA9IDEK</text>
       </register>
-      <register name="2" type="4">
+      <register name="3" type="4">
         <text encoding="base64">aWYgY29udHJvbF93YWl0OgogICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJmaWxlbmFtZU9uLnBuZyIpCiAgICAgICAgZWxzZToKICAgICAgICAgICAg</text>
       </register>
-      <register name="3" type="4">
+      <register name="4" type="4">
         <text>if control_wait:
                 wait(sleep_until=&quot;filenameOn.png&quot;)
             else:</text>
       </register>
-      <register name="4" type="4">
+      <register name="5" type="4">
         <text>if if_find_error():
             save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
                      &quot;| Has been detected that result of previous line of&quot;
                      &quot; code was unsuccessful - wait function (locate on screen)&quot;
                      &quot; of 'folderOn.png'.&quot;)</text>
       </register>
-      <register name="5" type="2">
+      <register name="6" type="2">
         <text encoding="base64">amplZWUuLnNzc21tZQo=</text>
       </register>
-      <register name="6" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBhcHNfcG9pbnRbMF0gPiBhcHNfcG9pbnRbMl06CiAgICAgICAgICAgICAgICAgICAgYXBzX3BoaSArPSA5MAogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBhcHNfcGhpID0gOTAgLSBhcHNfcGhp</text>
       </register>
-      <register name="7" type="2">
+      <register name="8" type="2">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="8" type="4">
+      <register name="9" type="4">
         <text>with open(&quot;C:\\Users\\Admin\\Desktop\\fff.txt&quot;, 'w') as fff:
                         fff.write(str(image_number + focus))
                         fff.close()</text>
-      </register>
-      <register name="9" type="4">
-        <text>save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                                 &quot;| &quot; + arg_js)</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
