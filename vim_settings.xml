@@ -50,12 +50,11 @@
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598520662868">
-        <mark key="'" line="92" column="10" />
-        <mark key="[" line="335" column="14" />
-        <mark key="]" line="335" column="14" />
-        <mark key="." line="335" column="14" />
-        <mark key="^" line="335" column="14" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598553117335">
+        <mark key="'" line="90" column="10" />
+        <mark key="[" line="283" column="8" />
+        <mark key="]" line="283" column="8" />
+        <mark key="." line="283" column="8" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -141,46 +140,46 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>time.sleep(0.5)</text>
+        <text>measurePath</text>
       </register>
       <register name="-" type="4">
-        <text>time.sleep(0.5)</text>
+        <text>measurePath</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="2">
+      <register name="1" type="4">
+        <text encoding="base64">ICAgIGNsb3VkTmFtZUIgPSAiIgogICAgY2xvdWRQYXNzd29yZEIgPSAiIg==</text>
+      </register>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICBMYWJQYXIuQ2xvdWRQYXNzd29yZCA9IGNsb3VkUGFzc3dvcmRC</text>
+      </register>
+      <register name="3" type="4">
+        <text>LabPar.CloudPath = cloudPathB
+    LabPar.CloudName = cloudNameB</text>
+      </register>
+      <register name="4" type="4">
+        <text>elif c == 26:
+                cloudPathB += b
+            elif c == 27:
+                cloudNameB += b
+            elif c == 28:
+                cloudPasswordB += b</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">ICAgIENMb3VkUGF0aCA9ICIiCiAgICBDbG91ZE5hbWUgPSAiIgogICAgQ2xvdWRQYXNzd29yZCA9ICIi</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpCg==</text>
       </register>
-      <register name="2" type="2">
+      <register name="7" type="2">
         <text encoding="base64">cGFnLgo=</text>
       </register>
-      <register name="3" type="2">
+      <register name="8" type="2">
         <text encoding="base64">cHJpbnQoYS5yZXBsYWNlKCJQcm9ncmFtRmlsZXMiLCAiUHJvZ3JhbSBGaWxlcyIpKQo=</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
-      </register>
-      <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgIHNlbnNvclBvc2l0aW9uW051bWJlck9mU2Vuc29yXSA9IDEK</text>
-      </register>
-      <register name="6" type="4">
-        <text encoding="base64">aWYgY29udHJvbF93YWl0OgogICAgICAgICAgICB3YWl0KHNsZWVwX3VudGlsPSJmaWxlbmFtZU9uLnBuZyIpCiAgICAgICAgZWxzZToKICAgICAgICAgICAg</text>
-      </register>
-      <register name="7" type="4">
-        <text>if control_wait:
-                wait(sleep_until=&quot;filenameOn.png&quot;)
-            else:</text>
-      </register>
-      <register name="8" type="4">
-        <text>if if_find_error():
-            save_log(&quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;) +
-                     &quot;| Has been detected that result of previous line of&quot;
-                     &quot; code was unsuccessful - wait function (locate on screen)&quot;
-                     &quot; of 'folderOn.png'.&quot;)</text>
-      </register>
       <register name="9" type="2">
-        <text encoding="base64">amplZWUuLnNzc21tZQo=</text>
+        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
