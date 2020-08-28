@@ -50,11 +50,11 @@
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598553117335">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598614458926">
         <mark key="'" line="90" column="10" />
-        <mark key="[" line="283" column="8" />
-        <mark key="]" line="283" column="8" />
-        <mark key="." line="283" column="8" />
+        <mark key="[" line="284" column="30" />
+        <mark key="]" line="284" column="30" />
+        <mark key="." line="284" column="30" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -140,10 +140,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>measurePath</text>
+        <text>.replace(&quot;NetworkShortcuts&quot;, &quot;Network Shortcuts&quot;)</text>
       </register>
       <register name="-" type="4">
-        <text>measurePath</text>
+        <text>.replace(&quot;NetworkShortcuts&quot;, &quot;Network Shortcuts&quot;)</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
