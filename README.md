@@ -4,14 +4,16 @@ __Specifications:__
 * Python 3.6.4 
 * Libraries:
   * os
+  * numpy
+  * subprocess
   * time
   * math
+  * glob
   * datetime
   * shutil
   * pyautogui
   * time
   * tkinter
-  * subprocess
   * traceback
   * PIL
   

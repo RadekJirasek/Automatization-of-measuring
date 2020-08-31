@@ -2,14 +2,20 @@
 
 import os
 # Bookmark for using operating system.
+import numpy as np
+# Bookmark for working with arrays
 from shutil import disk_usage, move, rmtree
 # Bookmark for work with files etc...
+from shutil import Error as shutilError
+# Bokmark for error handling of shutil error.
 import subprocess
 # Bookmark for calling programs etc...
 import time
 # Time bookmark.
 import math
 # Bookmark for mathematics operations.
+from glob import glob
+# Bookmark for finding items in the folder.
 import datetime
 # Bookmark detecting actual time.
 import pyautogui as pag
@@ -22,10 +28,14 @@ import tkinter
 # Bookmark creating GUI.
 from PIL import Image, ImageTk
 # Bookmark working with images.
-from psutil import virtual_memory
-# Bookmark able to find out free RAM size.
+from psutil import virtual_memory, process_iter
+# Bookmark able to find out free RAM size and running programs.
+import xml.etree.ElementTree as ET
+# Bookmark for working with .xml files.
+from requests import get as rq_get
+# Bookmark for downloading files from database
 
-
+pag.FAILSAFE = False
 SMS = tkinter.Tk()
 # ↑ Declaration tkinter object.
 
@@ -33,23 +43,28 @@ SMS = tkinter.Tk()
 measurePath = "C:\\Partrtn\\"  # Path to folder with everything about measuring (routines, measured date).
 programPath = "C:\\Program Files\\MetrologyAndScanning\\"  # Path to folder with program data
 logFile = ""  # Path to log file.
-max_sleep_time = 10.0  # Maximum number of seconds which program awaits.
+firstProcess = True  # Variable for indication of first run (True - first, false - other).
+institute = "PRG"  # Institute where sensors are testing.
+delFinishedSteps = 0  # Number of steps deleted in last repeated measuring due laser error.
+maxSleepTime = 10.0  # Maximum number of seconds which program awaits.
 NumberOfSensor = 0  # Actual number of measured sensor.
-error = 0  # Variable of error system (if error = 0, everything ok; error = 1, problem is in start segment;
+defaultRepetition = 0  # Number of repetition solving of one problem in a row.
+error = 0  # Variable of error system (if error = 0, everything is ok; error = 1, problem is in start segment;
 # error = 2, problem is process loop.)
+processError = 0  # Variable for temporary error of processing (0 = all is ok, 1 = problem).
 sType = ["", "", "", "", "", "", "", "", ""]  # Array of variables for types of sensors.
+productType = ["", "", "", "", "", "", "", "", ""]  # Array of variables for type of prodution type (A12EC, etc...).
+sensorBatch = ["", "", "", "", "", "", "", "", ""]  # Array of variables for batch of sensor.
+sensorWafer = ["", "", "", "", "", "", "", "", ""]  # Array of variables for wafer of sensor.
 nameSensor = ["", "", "", "", "", "", "", "", ""]  # Array of variables for names of sensors.
 dNameSensor = ["", "", "", "", "", "", "", "", ""]  # Array of variables for default names of sensors.
 mSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for measurement of sensors (measurement (1) or not (0)).
 sSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for scanning of sensors (scanning (1) or not (0)).
 pSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for APS of sensors (APS on (1) or off (0)).
-sensorPos = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # Array of variables for right or bad position of sensors (ok(1) or bad(0)).
+sensorPos = 1  # Array of variables for right or bad position of sensors (ok(1) or bad(0)).
+sensorPosition = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # Array of variables for right or bad position of sensors.
 holderType = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for type of holder holding sensors
 # (1 for R0, R1, R2 and 2 for R3, R4, R5).
-
-
-class ZAxisError(Exception):
-    pass
 
 
 class WaitError(Exception):
@@ -62,8 +77,17 @@ class ErrorDuringProcessing(Exception):
 # ↑ Declaring own exceptions.
 
 
+class LabPar:
+    DatabasePath = "https://10.26.210.119/values.xml"
+    TempNum = "c1"
+    HumNum = "c2"
+    Temperature = 21.0  # Temperature in the laboratory
+    Humidity = 40.0  # Humidity in the laboratory
+    Automatic = True
+
+
 class LimitDistance:
-    Phi = 0.0  # Limit of automatic position system (APS) of sensor for angle phi.
+    Phi = [0.0, 0.0]  # Limit of automatic position system (APS) of sensor for angle phi.
     RightD = [0.0, 0.0]  # Limit of distance between corner of sensor and vertical edge of holder in APS.
     BottomD = [0.0, 0.0]  # Limit of distance between corner of sensor and horizontal edge of holder in APS.
 
@@ -103,15 +127,19 @@ class Position:
     stop = [200, 950]
     resetSystem = [0, 0]
     resetRoutine = [680, 100]
-    resetAngle = [50, 950]
-    resetX = [0, 0]
-    resetY = [0, 0]
-    resetZ = [0, 0]
-    desktop = [1915, 1050]
+    resetAngle = [45, 945]
+    resetX = [32, 820]
+    resetY = [32, 860]
+    resetZ = [32, 900]
     cross = [1000, 200]
-    cmd = [100, 200]
     mm3d = [340, 1050]
-    save = [[1450, 800]]
+    save = [1450, 800]
+    deleteSteps = [750, 140]
+    saveRoutine = [780, 100]
+    centroid = [665, 705]
+    touchBoundary = [0, 0]
+    autoIllumination = [690, 840]
+    quitStep = [915, 505]
 # ↑ Positions of objects.
 
 
@@ -135,6 +163,9 @@ with open(programPath + "config.txt", 'r') as f:
     sR4B = ["", "", "", ""]
     sR5B = ["", "", "", ""]
     sBB = ["", "", "", ""]
+    database_path_B = ""
+    database_temp_tag = ""
+    database_hum_tag = ""
     # ↑ Declaring local variables.
     v1 = ["", "", "", "", "", "", "", "", ""]
     v2 = [1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -172,7 +203,7 @@ with open(programPath + "config.txt", 'r') as f:
             return v4
         # Return variable that was been called.
 
-    while a < 1000:
+    while a < 4000:
         b = f.read(1)  # Reading text one by one character.
         if b == " " or b == "\n":  # Deleting gabs and new line characters.
             continue
@@ -197,37 +228,49 @@ with open(programPath + "config.txt", 'r') as f:
             elif c == 3:
                 sType = info_from_txt(1)
             elif c == 4:
-                dNameSensor = info_from_txt(1)
+                productType = info_from_txt(1)
             elif c == 5:
-                mSensor = info_from_txt(2)
+                sensorBatch = info_from_txt(1)
             elif c == 6:
-                sSensor = info_from_txt(2)
+                sensorWafer = info_from_txt(1)
             elif c == 7:
-                pSensor = info_from_txt(2)
+                dNameSensor = info_from_txt(1)
             elif c == 8:
-                holderType = info_from_txt(2)
+                mSensor = info_from_txt(2)
             elif c == 9:
-                sR0B = info_from_txt(4)
+                sSensor = info_from_txt(2)
             elif c == 10:
-                sR1B = info_from_txt(4)
+                pSensor = info_from_txt(2)
             elif c == 11:
-                sR2B = info_from_txt(4)
+                holderType = info_from_txt(2)
             elif c == 12:
-                sR3B = info_from_txt(4)
+                sR0B = info_from_txt(4)
             elif c == 13:
-                sR4B = info_from_txt(4)
+                sR1B = info_from_txt(4)
             elif c == 14:
-                sR5B = info_from_txt(4)
+                sR2B = info_from_txt(4)
             elif c == 15:
-                sBB = info_from_txt(4)
+                sR3B = info_from_txt(4)
             elif c == 16:
-                rPhiB += b
+                sR4B = info_from_txt(4)
             elif c == 17:
-                rD1B = info_from_txt(3)
+                sR5B = info_from_txt(4)
             elif c == 18:
-                rD2B = info_from_txt(3)
+                sBB = info_from_txt(4)
             elif c == 19:
+                rPhiB = info_from_txt(3)
+            elif c == 20:
+                rD1B = info_from_txt(3)
+            elif c == 21:
+                rD2B = info_from_txt(3)
+            elif c == 22:
                 max_sleep_timeB += b
+            elif c == 23:
+                database_path_B += b
+            elif c == 24:
+                database_temp_tag += b
+            elif c == 25:
+                database_hum_tag += b
             # ↑ Different options of saving data according to sequence (variable 'c').
 
         a += 1
@@ -263,12 +306,19 @@ with open(programPath + "config.txt", 'r') as f:
     LimitSize.B[1] = int(sBB[1])
     LimitSize.B[2] = int(sBB[2])
     LimitSize.B[3] = int(sBB[3])
-    LimitSize.Phi = float(rPhiB)
+    LimitDistance.Phi[0] = float(rPhiB[0])
+    LimitDistance.Phi[1] = float(rPhiB[1])
     LimitDistance.RightD[0] = float(rD1B[0])
     LimitDistance.RightD[1] = float(rD1B[1])
     LimitDistance.BottomD[0] = float(rD2B[0])
     LimitDistance.BottomD[1] = float(rD2B[1])
-    max_sleep_time = float(max_sleep_timeB)
+    maxSleepTime = float(max_sleep_timeB)
+    if database_path_B != "":
+        LabPar.DatabasePath = database_path_B
+    if database_temp_tag != "":
+        LabPar.TempNum = database_temp_tag
+    if database_hum_tag != "":
+        LabPar.HumNum = database_hum_tag
     # ↑ Converting string to correct data type.
 
     f.close()
@@ -283,6 +333,13 @@ class Img:
     R5 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R5_.png"))
     B = ImageTk.PhotoImage(Image.open(programPath + "screens\\B_.png"))
     E = ImageTk.PhotoImage(Image.open(programPath + "screens\\E.png"))
+    R0L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R0L.png"))
+    R1L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1L.png"))
+    R2L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2L.png"))
+    R3L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R3L.png"))
+    R4L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R4L.png"))
+    R5L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R5L.png"))
+    BL = ImageTk.PhotoImage(Image.open(programPath + "screens\\BL.png"))
     p0 = ImageTk.PhotoImage(Image.open(programPath + "screens\\0.png"))
     p1 = ImageTk.PhotoImage(Image.open(programPath + "screens\\1.png"))
     p2 = ImageTk.PhotoImage(Image.open(programPath + "screens\\2.png"))
@@ -292,13 +349,26 @@ class Img:
     p6 = ImageTk.PhotoImage(Image.open(programPath + "screens\\6.png"))
     p7 = ImageTk.PhotoImage(Image.open(programPath + "screens\\7.png"))
     p8 = ImageTk.PhotoImage(Image.open(programPath + "screens\\8.png"))
-    desktopOn = Image.open(programPath + "screens\\desktopOn.png")
+    p0L = ImageTk.PhotoImage(Image.open(programPath + "screens\\0L.png"))
+    p1L = ImageTk.PhotoImage(Image.open(programPath + "screens\\1L.png"))
+    p2L = ImageTk.PhotoImage(Image.open(programPath + "screens\\2L.png"))
+    p3L = ImageTk.PhotoImage(Image.open(programPath + "screens\\3L.png"))
+    p4L = ImageTk.PhotoImage(Image.open(programPath + "screens\\4L.png"))
+    p5L = ImageTk.PhotoImage(Image.open(programPath + "screens\\5L.png"))
+    p6L = ImageTk.PhotoImage(Image.open(programPath + "screens\\6L.png"))
+    p7L = ImageTk.PhotoImage(Image.open(programPath + "screens\\7L.png"))
+    p8L = ImageTk.PhotoImage(Image.open(programPath + "screens\\8L.png"))
     mm3dOn = Image.open(programPath + "screens\\mm3dOn.png")
+    mm3dOn2 = Image.open(programPath + "screens\\mm3dOn2.png")
+    mm3dOn3 = Image.open(programPath + "screens\\mm3dOn3.png")
+    mm3dOn4 = Image.open(programPath + "screens\\mm3dOn4.png")
     folderOn = Image.open(programPath + "screens\\folderOn.png")
     stopOn = Image.open(programPath + "screens\\StopOn.png")
     resetSystem = Image.open(programPath + "screens\\resetSystem.png")
     cross = Image.open(programPath + "screens\\crossOn.png")
     error = Image.open(programPath + "screens\\error.png")
+    laserError1 = Image.open(programPath + "screens\\laserError1.png")
+    laserError2 = Image.open(programPath + "screens\\laserError2.png")
     end_s = Image.open(programPath + "screens\\end_s.png")
     end_w = Image.open(programPath + "screens\\end_w.png")
     mm3d = Image.open(programPath + "screens\\mm3d.png")
@@ -308,9 +378,15 @@ class Img:
     resetZ = Image.open(programPath + "screens\\resetZ.png")
     resetAngle = Image.open(programPath + "screens\\resetAngle.png")
     start = Image.open(programPath + "screens\\start.png")
+    saveRoutine = Image.open(programPath + "screens\\saveRoutine.png")
+    deleteSteps = Image.open(programPath + "screens\\deleteSteps.png")
     open = Image.open(programPath + "screens\\open.png")
     file = Image.open(programPath + "screens\\file.png")
     system = Image.open(programPath + "screens\\system.png")
+    centroid = Image.open(programPath + "screens\\centroid.png")
+    touchBoundary = Image.open(programPath + "screens\\touchBoundary.png")
+    autoIllumination = Image.open(programPath + "screens\\autoIllumination.png")
+    quitStep = Image.open(programPath + "screens\\quitStep.png")
 # ↑ Declaration of paths for images.
 
 
@@ -321,12 +397,12 @@ assert os.path.exists(programPath + "screens\\resetXOn.png"), "Screen 'resetXOn'
 assert os.path.exists(programPath + "screens\\resetYOn.png"), "Screen 'resetYOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetZOn.png"), "Screen 'resetZOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetAngleOn.png"), "Screen 'resetAngleOn' has not been found!"
-assert os.path.exists(programPath + "screens\\altnOn.png"), "Screen 'altnOn' has not been found!"
 assert os.path.exists(programPath + "screens\\filenameOn.png"), "Screen 'filenameOn' has not been found!"
 assert os.path.exists(programPath + "screens\\mm3dOn.png"), "Screen 'mm3dOn' has not been found!"
 assert os.path.exists(programPath + "screens\\startRoutineOn.png"), "Screen 'startRoutineOn' has not been found!"
 assert os.path.exists(programPath + "screens\\desktopOn.png"), "Screen 'desktopOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetRoutineOn.png"), "Screen 'resetRoutineOn' has not been found!"
+assert os.path.exists(programPath + "screens\\deleteStepsOn.png"), "Screen 'deleteStepsOn' has not been found!"
 timeNow = datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
 try:
     os.mkdir("C:\\Users\\Admin\\Desktop\\InitializeTesting_" + timeNow), \
