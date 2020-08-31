@@ -19,12 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598883598318">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598885602294">
         <mark key="'" line="538" column="18" />
-        <mark key="[" line="579" column="31" />
-        <mark key="]" line="579" column="31" />
+        <mark key="[" line="667" column="24" />
+        <mark key="]" line="667" column="24" />
         <mark key="^" line="61" column="21" />
-        <mark key="." line="579" column="31" />
+        <mark key="." line="667" column="24" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -38,13 +38,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598884453161">
-        <mark key="e" line="1132" column="16" />
-        <mark key="i" line="1013" column="44" />
-        <mark key="[" line="1145" column="35" />
-        <mark key="]" line="785" column="16" />
-        <mark key="^" line="785" column="16" />
-        <mark key="." line="785" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598884960203">
+        <mark key="e" line="1133" column="16" />
+        <mark key="i" line="1014" column="44" />
+        <mark key="[" line="1146" column="35" />
+        <mark key="]" line="591" column="18" />
+        <mark key="^" line="591" column="18" />
+        <mark key="." line="591" column="18" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598868533990">
         <mark key="[" line="235" column="68" />
@@ -61,11 +61,11 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1598864887849">
-        <mark key="[" line="50" column="17" />
-        <mark key="]" line="50" column="17" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1598885548819">
+        <mark key="[" line="49" column="0" />
+        <mark key="]" line="49" column="0" />
         <mark key="^" line="20" column="0" />
-        <mark key="." line="50" column="17" />
+        <mark key="." line="49" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1595687041948">
         <mark key="[" line="273" column="0" />
@@ -148,41 +148,43 @@
       <jump line="458" column="0" filename="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Functions.py" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMgo=</text>
+      <register name="&quot;" type="4">
+        <text>path = &quot;C:\\Partrtn\\&quot;
+print(memory(path[0:2]))</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">Sm9pbmluZyBvZiBzY3JlZW5zIGhhcyBiZWVuIHN1Y2Nlc3NmdWxseSBjb21wbGV0ZWQg</text>
+        <text>Serial number</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMgo=</text>
+      <register name="1" type="4">
+        <text>path = &quot;C:\\Partrtn\\&quot;
+print(memory(path[0:2]))</text>
       </register>
       <register name="2" type="2">
+        <text encoding="base64">ICAgICAgICBmaW5hbF90eHQgPSAiTWFudWZhY3R1cmU6IEhhbWFtYXRzdSIK</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMgo=</text>
+      </register>
+      <register name="4" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMQo=</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text encoding="base64">CiAgICBpZiBvcy5wYXRoLmV4aXN0cyhwcm9ncmFtUGF0aDEgKyAiICIgKyBwcm9ncmFtUGF0aDIgKyAiSlNfb2tfIgogICAgICAgICAgICAgICAgICAgICAgKyBzdHIoTnVtYmVyT2ZTZW5zb3IpICsgIi50eHQiKToKICAgICAgICBvcy5yZW1vdmUocHJvZ3JhbVBhdGgxICsgIiAiICsgcHJvZ3JhbVBhdGgyICsgIkpTX29rXyIgKyBzdHIoTnVtYmVyT2ZTZW5zb3IpICsgIi50eHQiKQ==</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text encoding="base64">CiAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAifCBDb3B5IG9mIGRhdGEgdG8gY2xvdWQgaGFzIGZhaWxlZCBhdCBzdGFydHVwXG4iICsgdHJhY2ViYWNrLmZvcm1hdF9leGMoKSk=</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAifCBDb3B5IG9mIGRhdGEgdG8gY2xvdWQgb2YgdGhlICIgKyBzdHIoTnVtYmVyT2ZTZW5zb3IgKyAxKSArICIuIGhhcyBiZWVuIHN1Y2Nlc3NmdWxseSBzdGFydGVkIik=</text>
       </register>
-      <register name="6" type="2">
+      <register name="8" type="2">
         <text encoding="base64">ICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMQo=</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgZXJyb3IgPSAyCiAgICAgICAgRXJyb3JJZC5zdGFydEpvaW5TY3JlZW5zW051bWJlck9mU2Vuc29yXSA9IDI=</text>
-      </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBjb250aW51ZQo=</text>
-      </register>
       <register name="9" type="4">
-        <text encoding="base64">ICAgIGVsc2U6CiAgICAgICAgd2l0aCBvcGVuKGNvbXBsZXRlTG9nUGF0aCwgJ3cnKSBhcyBmOgogICAgICAgICAgICBsb2cgKz0gIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpCiAgICAgICAgICAgIGxvZyArPSAifCBKb2luaW5nIG9mIHNjcmVlbnMgaGFzIGZhaWxlZCAoIiArIHN0cihOdW1iZXJPZlNlbnNvciArIDEpICsgIi4gc2Vuc29yKS4gIiBcCiAgICAgICAgICAgICAgICAgICArICItIE1heWJlIG5vdCBmb3VuZCBzY3JlZW5zLlxuIiArIHRyYWNlYmFjay5mb3JtYXRfZXhjKCkKICAgICAgICAgICAgZi53cml0ZShsb2cpCiAgICAgICAgICAgIGYuY2xvc2UoKSA=</text>
+        <text encoding="base64">CiAgICAgICAgZXJyb3IgPSAyCiAgICAgICAgRXJyb3JJZC5zdGFydEpvaW5TY3JlZW5zW051bWJlck9mU2Vuc29yXSA9IDI=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
