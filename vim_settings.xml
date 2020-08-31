@@ -38,23 +38,23 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598878276671">
-        <mark key="e" line="1129" column="16" />
-        <mark key="i" line="1010" column="44" />
-        <mark key="[" line="745" column="58" />
-        <mark key="]" line="745" column="58" />
-        <mark key="^" line="376" column="31" />
-        <mark key="." line="745" column="58" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598878818549">
+        <mark key="e" line="1130" column="16" />
+        <mark key="i" line="1011" column="44" />
+        <mark key="[" line="788" column="76" />
+        <mark key="]" line="788" column="76" />
+        <mark key="^" line="788" column="70" />
+        <mark key="." line="788" column="76" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598868533990">
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598868667909">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598880430726">
         <mark key="'" line="90" column="10" />
-        <mark key="[" line="284" column="30" />
-        <mark key="]" line="284" column="30" />
-        <mark key="." line="284" column="30" />
+        <mark key="[" line="286" column="30" />
+        <mark key="]" line="286" column="30" />
+        <mark key="." line="286" column="30" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/vector/vectorlib.py" timestamp="1578323181650">
         <mark key="[" line="16" column="14" />
@@ -80,7 +80,12 @@
         <mark key="'" line="545" column="30" />
         <mark key="^" line="545" column="15" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1598878041390">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/backup_script.py" timestamp="1598880126624">
+        <mark key="[" line="67" column="41" />
+        <mark key="]" line="67" column="41" />
+        <mark key="." line="67" column="41" />
+      </file>
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1598879947583">
         <mark key="[" line="8" column="25" />
         <mark key="]" line="297" column="0" />
         <mark key="." line="297" column="0" />
@@ -101,7 +106,7 @@
       <file name="/Clipboard.txt" timestamp="1584482358207">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/venv/backup_script.py" timestamp="1598877972765">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/venv/backup_script.py" timestamp="1598878899453">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/AppData/Local/Temp/Rar$DIa15056.36208/vector.py" timestamp="1578245473674">
@@ -143,43 +148,43 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>\\</text>
+        <text>DISK</text>
       </register>
       <register name="-" type="4">
-        <text>\\</text>
+        <text>DISK</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
-      <register name="1" type="4">
+      <register name="1" type="2">
+        <text encoding="base64">dHJ5Ogo=</text>
+      </register>
+      <register name="2" type="4">
+        <text>+ sType[NumberOfSensor] + &quot;\\&quot; \
+                             + nameSensor[NumberOfSensor] +</text>
+      </register>
+      <register name="3" type="4">
         <text>Too little free memory on local &quot; + programPath[0:2] + &quot; disk. Program will wait until&quot;
                              + &quot; sending data to backup cloud will end&quot;</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgTnVtYmVyT2ZTZW5zb3IgPSB0ZW1wX251bW1iZXJfb2Zfc2Vuc29y</text>
       </register>
-      <register name="3" type="2">
+      <register name="5" type="2">
         <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
       </register>
-      <register name="4" type="4">
+      <register name="6" type="4">
         <text>temp_nummber_of_sensor = NumberOfSensor
                     NumberOfSensor = 0</text>
       </register>
-      <register name="5" type="4">
+      <register name="7" type="4">
         <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBtZW1vcnkocHJvZ3JhbVBhdGhbMDoyXSkgPCAocm91bmQodGhpc19zZW5zb3JfZGF0YV9zaXplIC8gKDIgKiogMzApLCAzKSk6CiAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAifCBUb28gbGl0dGxlIGZyZWUgbWVtb3J5IG9uIGxvY2FsICIgKyBwcm9ncmFtUGF0aFswOjJdICsgIiBkaXNrIGZvciBzZW5zb3IgIiAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICArIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdICsgIiwgdHlwZTogIiArIHNUeXBlW051bWJlck9mU2Vuc29yXSkgCiAgICAgICAgICAgICAgICAgICAgY29udGludWU=</text>
       </register>
-      <register name="6" type="4">
+      <register name="8" type="4">
         <text encoding="base64">XAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
-      </register>
-      <register name="8" type="4">
-        <text encoding="base64">TnVtYmVyT2ZTZW5zb3IgPSAwCiAgICAgICAgICAgIGxhcmdlc3Rfc2Vuc29yX3NpemUgPSAwCiAgICAgICAgICAgIGZvciBOdW1iZXJPZlNlbnNvciBpbiByYW5nZSgwLCA5KToKICAgICAgICAgICAgICAgIGlmIGxpbWl0X3NpemUoTnVtYmVyT2ZTZW5zb3IpWzFdID4gbGFyZ2VzdF9zZW5zb3Jfc2l6ZToKICAgICAgICAgICAgICAgICAgICBsYXJnZXN0X3NlbnNvcl9zaXplID0gbGltaXRfc2l6ZShOdW1iZXJPZlNlbnNvcilbMV0=</text>
-      </register>
       <register name="9" type="4">
-        <text>Program will wait until sending data&quot;
-                                                                            &quot; to backup cloud will end&quot;</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
