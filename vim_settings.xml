@@ -19,7 +19,7 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598864755312">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1598866041511">
         <mark key="'" line="530" column="18" />
         <mark key="[" line="571" column="31" />
         <mark key="]" line="571" column="31" />
@@ -38,19 +38,19 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598864763624">
-        <mark key="e" line="1088" column="16" />
-        <mark key="i" line="969" column="44" />
-        <mark key="[" line="817" column="31" />
-        <mark key="]" line="249" column="21" />
-        <mark key="^" line="249" column="21" />
-        <mark key="." line="249" column="21" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1598869572704">
+        <mark key="e" line="1128" column="16" />
+        <mark key="i" line="1009" column="44" />
+        <mark key="[" line="376" column="32" />
+        <mark key="]" line="376" column="32" />
+        <mark key="^" line="376" column="31" />
+        <mark key="." line="376" column="32" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598290717551">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598868533990">
         <mark key="[" line="235" column="68" />
         <mark key="^" line="67" column="20" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598861006761">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598868667909">
         <mark key="'" line="90" column="10" />
         <mark key="[" line="284" column="30" />
         <mark key="]" line="284" column="30" />
@@ -80,10 +80,10 @@
         <mark key="'" line="545" column="30" />
         <mark key="^" line="545" column="15" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1598531485487">
-        <mark key="[" line="296" column="0" />
-        <mark key="]" line="296" column="0" />
-        <mark key="." line="296" column="0" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/join_images_script.py" timestamp="1598869116350">
+        <mark key="[" line="8" column="25" />
+        <mark key="]" line="297" column="0" />
+        <mark key="." line="297" column="0" />
       </file>
       <file name="D:/Downloads/surface3d_demo2.py" timestamp="1568327217769">
         <mark key="[" line="24" column="11" />
@@ -140,46 +140,44 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>[0:2]</text>
+        <text>Too little free memory on local &quot; + programPath[0:2] + &quot; disk. Program will wait until&quot;
+                             + &quot; sending data to backup cloud will end&quot;</text>
       </register>
       <register name="-" type="4">
-        <text>[0:2]</text>
+        <text />
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgIGNsb3VkTmFtZUIgPSAiIgogICAgY2xvdWRQYXNzd29yZEIgPSAiIg==</text>
+        <text>Too little free memory on local &quot; + programPath[0:2] + &quot; disk. Program will wait until&quot;
+                             + &quot; sending data to backup cloud will end&quot;</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CiAgICBMYWJQYXIuQ2xvdWRQYXNzd29yZCA9IGNsb3VkUGFzc3dvcmRC</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgTnVtYmVyT2ZTZW5zb3IgPSB0ZW1wX251bW1iZXJfb2Zfc2Vuc29y</text>
       </register>
-      <register name="3" type="4">
-        <text>LabPar.CloudPath = cloudPathB
-    LabPar.CloudName = cloudNameB</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBOdW1iZXJPZlNlbnNvciA9IDAK</text>
       </register>
       <register name="4" type="4">
-        <text>elif c == 26:
-                cloudPathB += b
-            elif c == 27:
-                cloudNameB += b
-            elif c == 28:
-                cloudPasswordB += b</text>
+        <text>temp_nummber_of_sensor = NumberOfSensor
+                    NumberOfSensor = 0</text>
       </register>
       <register name="5" type="4">
-        <text encoding="base64">ICAgIENMb3VkUGF0aCA9ICIiCiAgICBDbG91ZE5hbWUgPSAiIgogICAgQ2xvdWRQYXNzd29yZCA9ICIi</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICBpZiBtZW1vcnkocHJvZ3JhbVBhdGhbMDoyXSkgPCAocm91bmQodGhpc19zZW5zb3JfZGF0YV9zaXplIC8gKDIgKiogMzApLCAzKSk6CiAgICAgICAgICAgICAgICAgICAgc2F2ZV9sb2coIlxuIiArIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIleS0lbS0lZCAlSDolTTolUyIpICsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAifCBUb28gbGl0dGxlIGZyZWUgbWVtb3J5IG9uIGxvY2FsICIgKyBwcm9ncmFtUGF0aFswOjJdICsgIiBkaXNrIGZvciBzZW5zb3IgIiAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICArIG5hbWVTZW5zb3JbTnVtYmVyT2ZTZW5zb3JdICsgIiwgdHlwZTogIiArIHNUeXBlW051bWJlck9mU2Vuc29yXSkgCiAgICAgICAgICAgICAgICAgICAgY29udGludWU=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICB0aW1lLnNsZWVwKDEpCg==</text>
+      <register name="6" type="4">
+        <text encoding="base64">XAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">cGFnLgo=</text>
+      <register name="7" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">cHJpbnQoYS5yZXBsYWNlKCJQcm9ncmFtRmlsZXMiLCAiUHJvZ3JhbSBGaWxlcyIpKQo=</text>
+      <register name="8" type="4">
+        <text encoding="base64">TnVtYmVyT2ZTZW5zb3IgPSAwCiAgICAgICAgICAgIGxhcmdlc3Rfc2Vuc29yX3NpemUgPSAwCiAgICAgICAgICAgIGZvciBOdW1iZXJPZlNlbnNvciBpbiByYW5nZSgwLCA5KToKICAgICAgICAgICAgICAgIGlmIGxpbWl0X3NpemUoTnVtYmVyT2ZTZW5zb3IpWzFdID4gbGFyZ2VzdF9zZW5zb3Jfc2l6ZToKICAgICAgICAgICAgICAgICAgICBsYXJnZXN0X3NlbnNvcl9zaXplID0gbGltaXRfc2l6ZShOdW1iZXJPZlNlbnNvcilbMV0=</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">YXNzZXJ0IG9zLnBhdGguZXhpc3RzKHByb2dyYW1QYXRoICsgInNjcmVlbnNcXGxhbmd1YWdlLnBuZyIpLCAiU2NyZWVuICdsYW5ndWFnZScgaGFzIG5vdCBiZWVuIGZvdW5kISIgCg==</text>
+      <register name="9" type="4">
+        <text>Program will wait until sending data&quot;
+                                                                            &quot; to backup cloud will end&quot;</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
