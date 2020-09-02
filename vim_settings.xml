@@ -43,8 +43,11 @@
         <mark key="^" line="1278" column="34" />
         <mark key="." line="1278" column="34" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1598993596474">
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1599047538605">
+        <mark key="[" line="258" column="40" />
+        <mark key="]" line="258" column="40" />
         <mark key="^" line="67" column="20" />
+        <mark key="." line="258" column="40" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Initialize.py" timestamp="1598988494064">
         <mark key="'" line="97" column="10" />
@@ -72,12 +75,12 @@
       <file name="$USER_HOME$/PycharmProjects/vector/install.py" timestamp="1578245715539">
         <mark key="[" line="10" column="57" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1598993530622">
-        <mark key="'" line="553" column="30" />
-        <mark key="[" line="598" column="0" />
-        <mark key="]" line="598" column="16" />
-        <mark key="^" line="513" column="32" />
-        <mark key="." line="598" column="16" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_GUI.py" timestamp="1599047315499">
+        <mark key="'" line="560" column="30" />
+        <mark key="[" line="615" column="75" />
+        <mark key="]" line="613" column="77" />
+        <mark key="^" line="384" column="66" />
+        <mark key="." line="613" column="77" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/backup_script.py" timestamp="1598890764039">
         <mark key="[" line="95" column="18" />
@@ -148,41 +151,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBTZW5zb3JSdW5OdW1iZXIuZ2V0KCkuaXNkaWdpdCgpOgogICAgICAgICAgICBwcmludChTZW5zb3JSdW5OdW1iZXIuZ2V0KCkp</text>
+        <text encoding="base64">bmFtZSA=</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">ICAgICAgICA=</text>
+        <text encoding="base64">bmFtZSA=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="4">
-        <text encoding="base64">ICAgICAgICBpZiBTZW5zb3JSdW5OdW1iZXIuZ2V0KCkuaXNkaWdpdCgpOgogICAgICAgICAgICBwcmludChTZW5zb3JSdW5OdW1iZXIuZ2V0KCkp</text>
+        <text encoding="base64">CiAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6CiAgICAgICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgY2hvaWNlIHR5cGUgb2Ygc2Vuc29yISIsICJNZXNzYWdlIik=</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChTZW5zb3JSdW5OdW1iZXIuZ2V0KCkpCg==</text>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6CiAgICAgICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgY2hvaWNlIHR5cGUgb2Ygc2Vuc29yISIsICJNZXNzYWdlIik=</text>
       </register>
-      <register name="3" type="2">
-        <text encoding="base64">ICAgICAgICBwcmludChTZW5zb3JSdW5OdW1iZXIuZ2V0KCkpCiAgICAgICAgZ2xvYmFsIE51bWJlck9mU2Vuc29yCg==</text>
+      <register name="3" type="4">
+        <text encoding="base64">CiAgICAgICAgICAgIGVsaWYgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdID09ICIiOgogICAgICAgICAgICAgICAgcGFnLmFsZXJ0KCJZb3UgbXVzdCBjaG9pY2UgdHlwZSBvZiBzZW5zb3IhIiwgIk1lc3NhZ2UiKQ==</text>
       </register>
       <register name="4" type="4">
-        <text encoding="base64">CiAgICAgICAgZWxzZToKICAgICAgICAgICAgZmluYWxfdHh0ICs9ICJcbiBObyBkYXRhIGFib3V0IHBsYW5hcml0eSBvZiB0aGUgc2Vuc29yLiI=</text>
+        <text encoding="base64">CiAgICAgICAgICAgIGVsaWYgc1R5cGVbTnVtYmVyT2ZTZW5zb3JdID09ICIiOgogICAgICAgICAgICAgICAgcGFnLmFsZXJ0KCJZb3UgbXVzdCBjaG9pY2UgdHlwZSBvZiBzZW5zb3IhIiwgIk1lc3NhZ2UiKQ==</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">cHJpbnQoZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkuc3RyZnRpbWUoIiVkICViICV5IikpCg==</text>
+      <register name="5" type="4">
+        <text encoding="base64">CiAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6CiAgICAgICAgICAgIHBhZy5hbGVydCgiWW91IG11c3QgY2hvaWNlIHR5cGUgb2Ygc2Vuc29yISIsICJNZXNzYWdlIik=</text>
       </register>
       <register name="6" type="4">
-        <text encoding="base64">aWYgRXJyb3JJZC5jb21wbGV0ZU1lYXN1cmluZ1tudW1iZXJfb2Zfc2Vuc29yXSA9PSAxIGFuZCBzU2Vuc29yW251bWJlcl9vZl9zZW5zb3JdID09IDE6CiAgICAgICAgICAgIGZpbmFsX3R4dCArPSAiTWV0cm9sb2d5ICYgU2Nhbm5pbmciCiAgICAgICAgZWxpZiBFcnJvcklkLmNvbXBsZXRlTWVhc3VyaW5nW251bWJlcl9vZl9zZW5zb3JdID09IDE6CiAgICAgICAgICAgIGZpbmFsX3R4dCArPSAiTWV0cm9sb2d5IgogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGZpbmFsX3R4dCArPSAiU2Nhbm5pbmci</text>
+        <text encoding="base64">CiAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6IllvdSBtdXN0IGNob2ljZSB0eXBlIG9mIHNlbnNvciEiLCAiTWVzc2FnZSIpCiAgICAgICAgICAgIHBhZy5hbGVydCg=</text>
       </register>
       <register name="7" type="4">
-        <text>path = &quot;C:\\Partrtn\\&quot;
-print(memory(path[0:2]))</text>
+        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6CiAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIllvdSBtdXN0IGNob2ljZSB0eXBlIG9mIHNlbnNvciEiLCAiTWVzc2FnZSIp</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBmaW5hbF90eHQgPSAiTWFudWZhY3R1cmU6IEhhbWFtYXRzdSIK</text>
+      <register name="8" type="4">
+        <text encoding="base64">ICAgICAgICAgICAgZWxpZiBzVHlwZVtOdW1iZXJPZlNlbnNvcl0gPT0gIiI6CiAgICAgICAgICAgICAgICBwYWcuYWxlcnQoIllvdSBtdXN0IGNob2ljZSB0eXBlIG9mIHNlbnNvciEiLCAiTWVzc2FnZSIp</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICBFcnJvcklkLnN0YXJ0Sm9pblNjcmVlbnNbTnVtYmVyT2ZTZW5zb3JdID0gMgo=</text>
+      <register name="9" type="4">
+        <text encoding="base64">ICAgICAgICBpZiBTZW5zb3JSdW5OdW1iZXIuZ2V0KCkuaXNkaWdpdCgpOgogICAgICAgICAgICBwcmludChTZW5zb3JSdW5OdW1iZXIuZ2V0KCkp</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
