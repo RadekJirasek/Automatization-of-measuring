@@ -19,9 +19,12 @@
         <mark key="^" line="42" column="28" />
         <mark key="." line="461" column="64" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1599136392658">
-        <mark key="'" line="542" column="18" />
-        <mark key="^" line="690" column="40" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Functions.py" timestamp="1599138997417">
+        <mark key="'" line="549" column="18" />
+        <mark key="[" line="247" column="0" />
+        <mark key="]" line="249" column="0" />
+        <mark key="^" line="249" column="0" />
+        <mark key="." line="249" column="0" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Process.py" timestamp="1584544639567">
         <mark key="[" line="926" column="0" />
@@ -35,13 +38,13 @@
         <mark key="^" line="99" column="13" />
         <mark key="." line="99" column="13" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1599136297032">
-        <mark key="e" line="1142" column="16" />
-        <mark key="i" line="1023" column="44" />
-        <mark key="[" line="746" column="60" />
-        <mark key="]" line="746" column="60" />
-        <mark key="^" line="1285" column="34" />
-        <mark key="." line="746" column="60" />
+      <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_Process.py" timestamp="1599138840161">
+        <mark key="e" line="1100" column="16" />
+        <mark key="i" line="981" column="44" />
+        <mark key="[" line="891" column="11" />
+        <mark key="]" line="58" column="16" />
+        <mark key="^" line="58" column="16" />
+        <mark key="." line="58" column="16" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement/SMS_GUI.py" timestamp="1599055095460">
         <mark key="[" line="985" column="0" />
@@ -60,11 +63,11 @@
         <mark key="]" line="38" column="23" />
         <mark key="." line="38" column="23" />
       </file>
-      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1599134901030">
-        <mark key="[" line="37" column="29" />
-        <mark key="]" line="37" column="29" />
-        <mark key="^" line="20" column="0" />
-        <mark key="." line="37" column="29" />
+      <file name="$USER_HOME$/PycharmProjects/TextEditTest/TextEditTest.py" timestamp="1599138930915">
+        <mark key="[" line="44" column="10" />
+        <mark key="]" line="44" column="10" />
+        <mark key="^" line="44" column="12" />
+        <mark key="." line="44" column="10" />
       </file>
       <file name="$USER_HOME$/PycharmProjects/SenzorMeassurement - Noteboke/SMS_Initialize.py" timestamp="1599049889821">
         <mark key="[" line="49" column="101" />
@@ -149,19 +152,44 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>backup_script</text>
+        <text encoding="base64">CgpkZWY=</text>
       </register>
       <register name="-" type="4">
-        <text>backup_script</text>
+        <text>&quot;not found&quot;</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">XDxyZXF1ZXN0XD4=</text>
       </register>
       <register name="1" type="4">
+        <text encoding="base64">CgpkZWY=</text>
+      </register>
+      <register name="2" type="4">
+        <text>args = [sys.argv[0].replace(&quot;TextEditTest.py&quot;, &quot;&quot;)]
+print(args)
+
+NumberOfSensor = 1
+toPath = &quot;\\\\191.11.1.2\\Metrology\\&quot;
+programPath = &quot;C:\\Users\\Uzivatel\\Desktop\\&quot;
+completeLogPath = &quot;C:\\Users\\Uzivatel\\Desktop\\log.txt&quot;
+
+
+with open(completeLogPath, 'r') as f_read:
+    log = f_read.read()
+    f_read.close()
+with open(completeLogPath, 'w') as f_write:
+    log += &quot;\n&quot; + datetime.datetime.now().strftime(&quot;%y-%m-%d %H:%M:%S&quot;)
+    log += &quot;| Copy of data to cloud of the &quot; + str(NumberOfSensor + 1)
+    log += &quot;. sensor has been successfully completed.\n\t\t   Folder path: &quot; + toPath
+    f_write.write(log)
+    f_write.close()
+with open(programPath + &quot;BS_ok_&quot; + str(NumberOfSensor) + &quot;.txt&quot;, 'w') as f:
+    f.close()</text>
+      </register>
+      <register name="3" type="4">
         <text>args = [sys.argv[0]]
 print(args)</text>
       </register>
-      <register name="2" type="4">
+      <register name="4" type="4">
         <text>def memory(memory_type):
     free_size = 0
     if memory_type == &quot;RAM&quot;:
@@ -171,28 +199,22 @@ print(args)</text>
 
     return round(free_size, 3)</text>
       </register>
-      <register name="3" type="4">
+      <register name="5" type="4">
         <text>while True:
     if datetime.datetime.now().minute % 10 == 1:
         print(&quot;control&quot;)</text>
       </register>
-      <register name="4" type="2">
+      <register name="6" type="2">
         <text encoding="base64">ICAgIFNlbnNvclJ1bk51bWJlci5pbnNlcnQoMCwgcnVuTnVtYmVyW051bWJlck9mU2Vuc29yXSkK</text>
       </register>
-      <register name="5" type="2">
+      <register name="7" type="2">
         <text encoding="base64">ICAgIFNlbnNvclJ1bk51bWJlci5pbnNlcnQoMCwgcnVuTnVtYmVyW051bWJlck9mU2Vuc29yXSkK</text>
-      </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG8=</text>
-      </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name="8" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG8=</text>
       </register>
       <register name="9" type="4">
-        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg</text>
+        <text encoding="base64">CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA==</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
