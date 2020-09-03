@@ -17,9 +17,9 @@ def save_position(number_of_sensor=0):
     time.sleep(0.5)
     if pag.locateCenterOnScreen(Img.mm3dOn, grayscale=True) \
             or pag.locateCenterOnScreen(Img.mm3dOn2, grayscale=True):
-        increase_threashold = pag.size()[0] / 3.148, pag.size()[1] / 1.2
+        increase_threashold = pag.size()[0] / 3.162, pag.size()[1] / 1.215
     else:
-        increase_threashold = pag.size()[0] / 3.148, pag.size()[1] / 1.213
+        increase_threashold = pag.size()[0] / 3.162, pag.size()[1] / 1.205
     pag.moveTo(increase_threashold)
     pag.dragRel(0.001, 0.001, 5, button='left')
 
@@ -30,12 +30,7 @@ def save_position(number_of_sensor=0):
         pag.typewrite(["enter"])
         time.sleep(2)
         pag.click(Position.saveRoutine)
-        wait(sleep_until="folderOn.png")
-        if if_find_error():
-            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                     "| Has been detected that result of previous line of"
-                     " code was unsuccessful - wait function (locate on screen)"
-                     " of 'folderOn.png'.")
+        time.sleep(4)
     if not if_find_error():
         search_file()
         if if_find_error():
@@ -49,7 +44,7 @@ def save_position(number_of_sensor=0):
             # Probably file not exist yet.
             pass
 
-        save_file(measurePath + "Routines", str(number_of_sensor + 1) + "_left", False)
+        save_file(measurePath + "Routines", str(number_of_sensor + 1) + "_left", saving=True)
         if if_find_error():
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                      "| Has been detected that result of previous line of"
@@ -61,7 +56,7 @@ def save_position(number_of_sensor=0):
 
 def prepare_process(process_type, manually_on):
 
-    start_routine(str(NumberOfSensor + 1) + "_left.RTN", False)
+    start_routine(str(NumberOfSensor + 1) + "_left.RTN")
     if if_find_error():
         if process_type == "Measurement":
             ErrorId.startMeasuring[NumberOfSensor] = 2
@@ -71,7 +66,7 @@ def prepare_process(process_type, manually_on):
                  "| " + process_type + " of the sensor has failed at startup "
                  "(during start of position routine).")
     else:
-        time.sleep(3)
+        time.sleep(5)
         wait(False)
         if if_find_error():
             if process_type == "Measurement":
@@ -107,7 +102,7 @@ def prepare_process(process_type, manually_on):
                            " (during resetting the origins of axis).")
     if process_type == "Measurement" and manually_on:
         if not if_find_error():
-            start_routine(str(NumberOfSensor + 1) + "_right.RTN", False)
+            start_routine(str(NumberOfSensor + 1) + "_right.RTN")
             if if_find_error():
                 if process_type == "Measurement":
                     ErrorId.startMeasuring[NumberOfSensor] = 2
@@ -115,7 +110,7 @@ def prepare_process(process_type, manually_on):
                          "| " + process_type + " of the sensor has failed at startup "
                          "(during start of angle routine).")
             else:
-                time.sleep(3)
+                time.sleep(5)
                 wait(False)
                 if if_find_error():
                     if process_type == "Measurement":
@@ -240,31 +235,32 @@ def repeat_measurement(process_type, manually_on):
                      "| " + process_type + " of the sensor has failed (during file search).")
     if not if_find_error():
         pag.typewrite(measurePath + "Routines")  # Search place in pc.
-        wait(sleep_until="f4On.png")
+        time.sleep(1)
     if not if_find_error():
         pag.typewrite(["enter"])
         time.sleep(0.1)
         pag.typewrite(["enter"])
-        wait(sleep_until="ctrlaOn.png")
+        time.sleep(0.5)
         pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
         if if_find_error():
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "| Opening of " + process_type + " routine has failed (writing folder path).")
     if not if_find_error():
+        time.sleep(0.2)
         pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
         time.sleep(1)
     if not if_find_error():
         if process_type == "Measurement" and not manually_on:
-            pag.typewrite(productType[NumberOfSensor] + "_" + sType[NumberOfSensor]
+            pag.typewrite("ATLASITK_" + sType[NumberOfSensor]
                           + "_Measuring.RTN")  # Write name of routine.
         elif process_type == "Measurement" and manually_on:
-            pag.typewrite(productType[NumberOfSensor] + "_" + sType[NumberOfSensor]
+            pag.typewrite("ATLASITK_" + sType[NumberOfSensor]
                           + "_Measuring-Manually.RTN")  # Write name of routine.
         elif process_type == "Scanning":
-            pag.typewrite(productType[NumberOfSensor] + "_" + sType[NumberOfSensor]
+            pag.typewrite("ATLASITK_" + sType[NumberOfSensor]
                           + "_Scanning.RTN")  # Write name of routine.
-        wait(sleep_until="filenameOn.png")
+        time.sleep(1)
         if if_find_error():
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "| Opening of " + process_type + " routine has failed (writing name of sensor).")
@@ -279,7 +275,7 @@ def repeat_measurement(process_type, manually_on):
                      + "| Opening of " + process_type + " routine has failed (switching to mm3d).")
 
     if not if_find_error() and finished_steps != 0:
-        time.sleep(1)
+        time.sleep(5)
         pag.click(Position.deleteSteps)
         wait(sleep_until="deleteStepsOn.png")
         if not if_find_error():
@@ -298,7 +294,7 @@ def repeat_measurement(process_type, manually_on):
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "| Deleting finished steps of " + process_type + " routine has failed.")
     if not if_find_error():
-        time.sleep(2)
+        time.sleep(5)
         pag.click(Position.start)  # Start routine.
         wait(sleep_until="startRoutineOn.png")
 
@@ -359,8 +355,33 @@ def process(manually=False):
             elif not manually and pSensor[NumberOfSensor] == 0:
                 continue
 
+            this_sensor_data_size = limit_size(NumberOfSensor)[1]
+            if memory(programPath[0:2]) < (round(this_sensor_data_size / (2 ** 30), 3)):
+                if wait_end_process("backup_script.exe") or wait_end_process("join_images_script.exe"):
+                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                             "| Too little free memory on local " + programPath[0:2] + " disk. Program will wait until"
+                             + " previous process will be end and ask user to free up memory.")
+                    while wait_end_process("join_images_script.exe"):
+                        time.sleep(5)
+                    while wait_end_process("backup_script.exe"):
+                        time.sleep(5)
+                memory_alert = pag.alert("There are too little memory on local " + programPath[0:2]
+                                         + "disk. Please, free up disk space", "MEMORY ALERT",
+                                         button=['Start measuring without scanning', 'Done - memory is free up'],
+                                         timeout=60*60*1000)
+                if memory_alert != 'Done - memory is free up':
+                    for temp_nummber_of_sensor in range(NumberOfSensor, 9):
+                        sSensor[temp_nummber_of_sensor] = 0
+                    error = 2
+                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                             "| The request has not been made. Program continue in measurement "
+                             "without scanning processes")
+
             delFinishedSteps = 0
             set_process_error()
+
+            control_language()
+            # ↑ Switch to eng keyboard if it doesn't.
 
             save_log(2 * "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                      "|SENSOR| Number: " + str(NumberOfSensor + 1) + " | Name: " +
@@ -426,10 +447,10 @@ def process(manually=False):
 
                         if not if_find_error():
                             if manually:
-                                start_routine(productType[NumberOfSensor] + "_" + sType[NumberOfSensor]
+                                start_routine("ATLASITK_" + sType[NumberOfSensor]
                                               + "_Measuring-Manually.RTN")
                             else:
-                                start_routine(productType[NumberOfSensor] + "_" + sType[NumberOfSensor]
+                                start_routine("ATLASITK_" + sType[NumberOfSensor]
                                               + "_Measuring.RTN")
                             if if_find_error():
                                 ErrorId.startMeasuring[NumberOfSensor] = 2
@@ -527,6 +548,8 @@ def process(manually=False):
                 if ErrorId.completeMeasuring[NumberOfSensor] == 1:
                     try:
                         edit_output(0, NumberOfSensor)
+                        edit_output(1, NumberOfSensor)
+                        edit_output(2, NumberOfSensor)
                         if os.path.exists(measurePath + sType[NumberOfSensor] + "\\"
                                           + nameSensor[NumberOfSensor] + "\\planarity.txt"):
                             os.rename(measurePath + sType[NumberOfSensor] + "\\"
@@ -555,7 +578,7 @@ def process(manually=False):
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                                  + "| Edit of measured data has failed. Program has probably problem "
                                  "with memory.\nFree date size on RAM: " + str(memory("RAM"))
-                                 + " MB\nFree data size on DISK: " + str(memory("DISK"))
+                                 + " MB\nFree data size on DISK: " + str(memory(programPath[0:2]))
                                  + " GB\n" + traceback.format_exc())
 
                     else:
@@ -568,6 +591,7 @@ def process(manually=False):
                 set_process_error()
 
             if sSensor[NumberOfSensor] == 1:
+                """
                 if ErrorId.completeMeasuring[NumberOfSensor] != 1:
                     try:
                         edit_output(1, NumberOfSensor)
@@ -583,7 +607,7 @@ def process(manually=False):
                             ErrorId.editOutput[NumberOfSensor] = 1
                             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                      "| Creating of header file has been successfully completed")
-
+                """
                 try:
                     files = os.listdir(measurePath)
                     for file in files:
@@ -625,7 +649,7 @@ def process(manually=False):
                         prepare_process("Scanning", manually)
 
                         if ErrorId.startScanning[NumberOfSensor] == 0:
-                            start_routine(productType[NumberOfSensor] + "_" + sType[NumberOfSensor] + "_Scanning.RTN")
+                            start_routine("ATLASITK_" + sType[NumberOfSensor] + "_Scanning.RTN")
                             if if_find_error():
                                 ErrorId.startScanning[NumberOfSensor] = 2
                                 save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
@@ -697,10 +721,12 @@ def process(manually=False):
                                      " - wait function (locate on screen) of 'mm3dOn.png'.")
 
                 if ErrorId.startScanning[NumberOfSensor] == 1:
+                    no_image = True
                     try:
                         files = os.listdir(measurePath)
                         for file in files:
                             if file.endswith(".BMP"):
+                                no_image = False
                                 file_name = "-".join(file.split('-')[:1]) + "-" \
                                             + str(delFinishedSteps + int(file.split('-')[len(file.split('-')) - 2])) \
                                             + "-1.BMP"
@@ -715,14 +741,19 @@ def process(manually=False):
                         continue
 
                     else:
-                        ErrorId.moveScreens[NumberOfSensor] = 1
-                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                                 "| Move of screens has been successfully completed")
+                        if no_image:
+                            ErrorId.moveScreens[NumberOfSensor] = 2
+                            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                     "| Move of screens has failed. No images in the folder: " + measurePath)
+                        else:
+                            ErrorId.moveScreens[NumberOfSensor] = 1
+                            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                     "| Move of screens has been successfully completed")
 
                 limit = limit_size(NumberOfSensor)
                 test_size = 0
                 try:
-                    test_size = check_size(measurePath + "\\" + sType[NumberOfSensor] + "\\"
+                    test_size = check_size(measurePath + sType[NumberOfSensor] + "\\"
                                            + nameSensor[NumberOfSensor])
 
                 except OSError:
@@ -745,11 +776,11 @@ def process(manually=False):
 
                 if not if_find_error():
                     try:
-                        arg_js = programPath + "join_images_script.exe 1 " + measurePath \
+                        arg_js = programPath + "join_images_script.exe 1 " + measurePath + " " + cloudPath\
                                  + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
                                  + " " + str(NumberOfSensor) + " " + str(pSensor[NumberOfSensor]) \
-                                 + " " + programPath + " " + logFile + " " + "0"
-                        subprocess.Popen(arg_js)
+                                 + " " + programPath + " " + save_log(return_log_file=True) + " " + "0"
+                        Popen(arg_js)
 
                     except OSError:
                         error = 2
@@ -762,6 +793,22 @@ def process(manually=False):
                         ErrorId.startJoinScreens[NumberOfSensor] = 1
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                  "| Joining of screens has been successfully started")
+            else:
+                if ErrorId.editOutput[NumberOfSensor] == 1:
+                    try:
+                        arg_bs = programPath + "backup_script.exe 1 " + measurePath + " " + cloudPath \
+                                 + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
+                                 + " " + save_log(return_log_file=True) + " " + str(NumberOfSensor)
+                        Popen(arg_bs)
+                    except OSError:
+                        error = 2
+                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                 "| Copy of data to cloud has failed at startup\n" + traceback.format_exc())
+                        continue
+
+                    else:
+                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                 "| Copy of data to cloud has been successfully started")
             firstProcess = False
 
         except WaitError:
@@ -816,15 +863,18 @@ def start():
                         or nameSensor[NumberOfSensor] == "":
                     continue
                 sensors_size += limit_size(NumberOfSensor)[1]
-            assert memory("DISK") > \
+            assert memory(cloudPath) > \
                 (round(sensors_size / (2 ** 30), 3)), "There is too little of memory on disk\n" \
                                                       "Required: " + str(round(sensors_size / (2 ** 30), 3)) \
-                                                      + " GB, but is: " + str(memory("DISK")) + " GB"
+                                                      + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
+            assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
+                "There is too little of memory on local " + programPath[0:2] + "disk\nRequired: " \
+                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(programPath[0:2])) + " GB"
 
             save_log("START MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-                     + "\nFree data size on DISK: " + str(memory("DISK"))
+                     + "\nFree data size on DISK: " + str(memory(cloudPath))
                      + " GB\n___________________________________", True)
 
             time.sleep(1)
@@ -833,53 +883,13 @@ def start():
                 time.sleep(0.5)
                 mouse_2 = pag.position()
             # ↑ It declare more time for user to move down hand from mouse.
+            control_language()
+            # ↑ Switch to eng keyboard if it doesn't.
 
             NumberOfSensor = 0
             set_process_error()
 
-            Position.mm3d = pag.locateCenterOnScreen(Img.mm3d, grayscale=True)
-            # ↑ Overwrite position of MM3D icon.
-            pag.click(Position.mm3d)
-            wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
-            if if_find_error():
-                raise WaitError("Not located 'mm3dOn.png'")
-            Position.file = pag.locateCenterOnScreen(Img.file, grayscale=True)
-            Position.system = pag.locateCenterOnScreen(Img.system, grayscale=True)
-            Position.resetRoutine = pag.locateCenterOnScreen(Img.resetRoutine, grayscale=True)
-            Position.resetX = pag.locateCenterOnScreen(Img.resetX, grayscale=True)
-            Position.resetY = pag.locateCenterOnScreen(Img.resetY, grayscale=True)
-            Position.resetZ = pag.locateCenterOnScreen(Img.resetZ, grayscale=True)
-            Position.resetAngle = pag.locateCenterOnScreen(Img.resetAngle, grayscale=True)
-            Position.start = pag.locateCenterOnScreen(Img.start, grayscale=True)
-            Position.saveRoutine = pag.locateCenterOnScreen(Img.saveRoutine, grayscale=True)
-            Position.deleteSteps = pag.locateCenterOnScreen(Img.deleteSteps, grayscale=True)
-            Position.centroid = pag.locateCenterOnScreen(Img.centroid, grayscale=True)
-            pag.click(Position.centroid)
-            time.sleep(1)
-            pag.click(pag.size()[0] / 5.5, pag.size()[1] / 4)
-            wait(sleep_until="quitStep.png")
-            if if_find_error():
-                raise WaitError("Not located 'quitStep.png'")
-            Position.quitStep = pag.locateCenterOnScreen(Img.quitStep, grayscale=True)
-            pag.click(Position.quitStep)
-            time.sleep(1)
-            pag.click(Position.file)
-            wait(sleep_until="open.png")
-            if if_find_error():
-                raise WaitError("Not located 'open.png'")
-            Position.open = pag.locateCenterOnScreen(Img.open, grayscale=True)
-            pag.moveTo(Position.system)
-            wait(sleep_until="resetSystem.png")
-            if if_find_error():
-                raise WaitError("Not located 'resetSystem.png'")
-            Position.resetSystem = pag.locateCenterOnScreen(Img.resetSystem, grayscale=True)
-            pag.click(Position.system)
-
-            if not mm3d_on():
-                pag.click(Position.mm3d)
-                wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
-            if if_find_error():
-                raise WaitError("Not located 'mm3dOn.png'")
+            find_objects()
 
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                      "| Objects on screen has been successfully found")
@@ -896,20 +906,23 @@ def start():
                 sensors_size += limit_size(NumberOfSensor)[1]
                 # ↑ Calculation of size
 
+                if os.path.exists(programPath + "BS_ok_"
+                                  + str(NumberOfSensor) + ".txt"):
+                    os.remove(programPath + "BS_ok_" + str(NumberOfSensor) + ".txt")
                 if os.path.exists(programPath + "JS_ok_"
                                   + str(NumberOfSensor) + ".txt"):
                     os.remove(programPath + "JS_ok_" + str(NumberOfSensor) + ".txt")
                 # ↑ Deleting of old js path files (created by manual joining of screens).
 
-            assert memory("DISK") > \
+            assert memory(cloudPath) > \
                 (round(sensors_size / (2 ** 30), 3)), "There is too little of memory on disk\n" \
                                                       "Required: " + str(round(sensors_size / (2 ** 30), 3)) \
-                                                      + " GB, but is: " + str(memory("DISK")) + " GB"
+                                                      + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
 
             save_log("\n\nNEW START OF MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-                     + "\nFree data size on DISK: " + str(memory("DISK"))
+                     + "\nFree data size on DISK: " + str(memory(cloudPath))
                      + " GB\n_________________________________________")
 
         error = 0
@@ -931,7 +944,7 @@ def start():
                     nameSensor[NumberOfSensor] == "" or sensorPosition[NumberOfSensor] == 1\
                     or pSensor[NumberOfSensor] == 0:
                 continue
-            start_routine(productType[NumberOfSensor] + "_Position-" + str(NumberOfSensor + 1) + ".RTN")
+            start_routine("ATLASITK_Position-" + str(NumberOfSensor + 1) + ".RTN")
             if if_find_error():
                 raise WaitError("Error has been occurred in 'start_routine' function (specifically position routine).")
             wait(False)
@@ -948,7 +961,13 @@ def start():
                 reset_origins()
                 if if_find_error():
                     raise WaitError("Error has been occurred in 'reset_origins' function.")
-                start_routine(productType[NumberOfSensor] + "_" + sType[NumberOfSensor] + "_Control.RTN")
+
+                try:
+                    os.remove(programPath + "Control position system\\control.txt")
+                except OSError:
+                    # Probably file not exist yet.
+                    pass
+                start_routine("ATLASITK_" + sType[NumberOfSensor] + "_Control.RTN")
                 if if_find_error():
                     raise WaitError("Error has been occurred in 'start_routine' function "
                                     "(specifically control routine).")
@@ -963,16 +982,18 @@ def start():
                     if if_find_error():
                         raise WaitError("Error has been occurred in 'save_file' function.")
                     wait(False)
+                    if if_find_error():
+                        error = 1
 
             if not if_find_error():
-                sensorPosition[NumberOfSensor] = 1
-                aps_point = [0.0, 0.0, 0.0, 0.0]
+                aps_nominal_points = [0.0, 0.0, 0.0, 0.0]
+                aps_actual_points = [0.0, 0.0, 0.0, 0.0]
                 with open(programPath + "Control position system\\control.txt", 'r') \
                         as aps_file:
                     aps_a = 0
                     aps_b = 0
                     aps_m = ""
-                    while aps_a < 10:
+                    while aps_a < 100:
                         aps_t0 = aps_file.read(1)
                         if aps_t0 == "+" or aps_t0 == "-" or aps_m == "-":
                             aps_c = 0
@@ -980,41 +1001,60 @@ def start():
                                 aps_t = "-"
                             else:
                                 aps_t = "" + aps_m
-                            while aps_c < 10:
+                            while aps_c < 20:
                                 aps_t1 = aps_file.read(1)
                                 if aps_t1 == "" or aps_t1 == "\n" or aps_t1 == " " or aps_t1 == "\t"\
                                         or aps_t1 == "+":
-                                    aps_c = 10
+                                    aps_c = 20
                                     continue
                                 elif aps_t1 == "-":
-                                    aps_c = 10
+                                    aps_c = 20
                                     aps_m = "-"
                                     continue
                                 else:
                                     aps_m = ""
                                 aps_t += aps_t1
                                 aps_c += 1
-                            aps_point[aps_b] = float(aps_t)
+                            if aps_b < 4:
+                                aps_nominal_points[aps_b] = float(aps_t)
+                            else:
+                                aps_actual_points[aps_b - 4] = float(aps_t)
                             aps_b += 1
                         aps_a += 1
                     aps_file.close()
 
-                aps_vector_p0 = [aps_point[0] - aps_point[2], aps_point[1] - aps_point[3]]
-                aps_distance_horizontal = aps_point[0]
-                aps_distance_vertical = aps_point[1]
-                aps_phi = round(180 / math.pi * math.acos(abs(aps_vector_p0[1]) /
-                                                          math.sqrt(aps_vector_p0[0] * aps_vector_p0[0]
-                                                                    + aps_vector_p0[1] * aps_vector_p0[1])), 4)
-                if aps_point[0] > aps_point[2]:
-                    aps_phi += 90
-                else:
-                    aps_phi = 90 - aps_phi
+                aps_nominal_vector = [aps_nominal_points[2] - aps_nominal_points[0],
+                                      aps_nominal_points[3] - aps_nominal_points[1]]
+                aps_actual_vector = [aps_actual_points[2] - aps_actual_points[0],
+                                     aps_actual_points[3] - aps_actual_points[1]]
+                aps_nominal_angle = round(180 / math.pi * math.acos(abs(aps_nominal_vector[1]) /
+                                                                    math.sqrt(aps_nominal_vector[0]
+                                                                              * aps_nominal_vector[0]
+                                                                              + aps_nominal_vector[1]
+                                                                              * aps_nominal_vector[1])),
+                                          4)
+                if aps_nominal_points[2] > aps_nominal_points[0]:
+                    aps_nominal_angle = 180 - aps_nominal_angle
+                aps_actual_angle = round(180 / math.pi * math.acos(abs(aps_actual_vector[1]) /
+                                                                   math.sqrt(aps_actual_vector[0]
+                                                                             * aps_actual_vector[0]
+                                                                             + aps_actual_vector[1]
+                                                                             * aps_actual_vector[1])),
+                                         4)
+                if aps_actual_points[2] > aps_actual_points[0]:
+                    aps_actual_angle = 180 - aps_actual_angle
 
-                if not (LimitDistance.Phi[0] < aps_phi < LimitDistance.Phi[1]) \
+                aps_distance_horizontal = aps_actual_points[2] - aps_nominal_points[2]
+                aps_distance_vertical = aps_actual_points[3] - aps_nominal_points[3]
+                aps_angle = aps_actual_angle - aps_nominal_angle
+
+                if not (LimitDistance.Phi[0] < aps_angle < LimitDistance.Phi[1]) \
                         or not(LimitDistance.RightD[0] < aps_distance_horizontal < LimitDistance.RightD[1]) \
                         or not(LimitDistance.BottomD[0] < aps_distance_vertical < LimitDistance.BottomD[1]):
                     sensorPosition[NumberOfSensor] = 0
                     error = 1
+                else:
+                    sensorPosition[NumberOfSensor] = 1
 
                 os.rename(programPath + "Control position system\\control.txt",
                           programPath + "Control position system\\"
@@ -1058,7 +1098,9 @@ def start():
         if error != 1:
 
             while wait_end_process("join_images_script.exe"):
-                time.sleep(15)
+                time.sleep(10)
+            while wait_end_process("backup_script.exe"):
+                time.sleep(5)
 
             NumberOfSensor = 0
             for NumberOfSensor in range(0, 9):
@@ -1069,11 +1111,19 @@ def start():
                         os.remove(programPath + "JS_ok_" + str(NumberOfSensor) + ".txt")
                     else:
                         ErrorId.completeJoinScreens[NumberOfSensor] = 2
+                if (sSensor[NumberOfSensor] == 0 and ErrorId.editOutput[NumberOfSensor] == 1) \
+                        or (sSensor[NumberOfSensor] == 1 and ErrorId.completeJoinScreens[NumberOfSensor] == 1):
+                    if os.path.exists(programPath + "BS_ok_"
+                                      + str(NumberOfSensor) + ".txt"):
+                        ErrorId.copyToCloud[NumberOfSensor] = 1
+                        os.remove(programPath + "BS_ok_" + str(NumberOfSensor) + ".txt")
+                    else:
+                        ErrorId.copyToCloud[NumberOfSensor] = 2
 
             protocol()
             save_log("\n___________________________________\nEND OF MEASURING: "
                      + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-                     + "\nFree data size on DISK: " + str(memory("DISK")) + " GB")
+                     + "\nFree data size on DISK: " + str(memory(cloudPath)) + " GB")
 
         set_process_error()
 
@@ -1203,7 +1253,7 @@ def start():
         if control_string(traceback.format_exc())[0] <= 15 or control_string(traceback.format_exc())[1] <= 1200:
             pag.alert("Error has been occurred before or after measuring:\n\nPossible reason of the "
                       "error is problem with memory.\nFree date size on RAM: " + str(memory("RAM"))
-                      + " MB\nFree data size on DISK: " + str(memory("DISK")) + " GB"
+                      + " MB\nFree data size on DISK: " + str(memory(programPath[0:2])) + " GB"
                       + 3 * "\n" + traceback.format_exc(), "ERROR", root=SMS)
         else:
             with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
@@ -1211,7 +1261,7 @@ def start():
                 error_file.write("Error has been occurred before or after measuring:\n\nPossible reason of the "
                                  "error is problem with memory.\nFree date size on RAM: "
                                  + str(memory("RAM")) + " MB\nFree data size on DISK: "
-                                 + str(memory("DISK")) + " GB" + 3 * "\n" + traceback.format_exc())
+                                 + str(memory(programPath[0:2])) + " GB" + 3 * "\n" + traceback.format_exc())
                 error_file.close()
             pag.alert("Error is too long.\n\nIt will be in text file on desktop.", "ERROR", root=SMS)
 

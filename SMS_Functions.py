@@ -19,15 +19,15 @@ def open_routine():
     wait(sleep_until="open.png")
     if not if_find_error():
         pag.click(Position.open)  # Open routine.
-        wait(sleep_until="folderOn.png")
+        time.sleep(2)
 
 
 def search_file():
     pag.hotkey("f4")  # Mark searching textbox.
-    wait(sleep_until="f4On.png")
+    time.sleep(1)
     if not if_find_error():
         pag.hotkey("ctrl", "a")  # Select all text in searching box for transcription.
-        wait(sleep_until="ctrlaOn.png")
+        time.sleep(1)
 # ↑ For saving file of measuring.
 
 
@@ -43,13 +43,13 @@ def reset_origins():
     # ↑ Reset origin of mm3d for start measuring new sensor. Click to three buttons.
 
 
-def start_routine(routine, control_wait=True):
+def start_routine(routine):
     open_routine()
     if not if_find_error():
         search_file()
     if not if_find_error():
         pag.typewrite(measurePath + "Routines")  # Search place in pc.
-        wait(sleep_until="f4On.png")
+        time.sleep(1)
     if not if_find_error():
         time.sleep(0.2)
         pag.typewrite(["enter"])
@@ -59,45 +59,47 @@ def start_routine(routine, control_wait=True):
         pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
     if not if_find_error():
+        time.sleep(0.2)
         pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
         time.sleep(1)
     if not if_find_error():
         pag.typewrite(routine)  # Write name of routine.
-        if control_wait:
-            wait(sleep_until="filenameOn.png")
-        else:
-            time.sleep(1)
+        time.sleep(1)
     if not if_find_error():
         pag.typewrite(["enter"])
         wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
     if not if_find_error():
-        time.sleep(1)
+        time.sleep(5)
         pag.click(Position.start)  # Start routine.
         wait(sleep_until="startRoutineOn.png")
     if not if_find_error():
         pag.typewrite(["enter"])  # Confirming start.
 
 
-def save_file(save_path, save_name="", control_wait=True):
+def save_file(save_path, save_name="", saving=False):
     pag.typewrite(save_path)  # Search sensor folder.
-    wait(sleep_until="f4On.png")
+    time.sleep(1)
     if not if_find_error():
         pag.typewrite(["enter"])
         time.sleep(0.1)
         pag.typewrite(["enter"])
-        wait(sleep_until="ctrlaOn.png")
+        time.sleep(0.5)
         pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
     if not if_find_error() and save_name != "":
         if not if_find_error():
+            if saving:
+                file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
+                if file_name:
+                    pag.click(file_name[0] + 100, file_name[1])
+                    time.sleep(0.2)
+                    pag.hotkey("ctrl", "a")
+            time.sleep(0.5)
             pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
             time.sleep(1)
         if not if_find_error():
             pag.typewrite(save_name)  # Write name of routine.
-            if control_wait:
-                wait(sleep_until="filenameOn.png")
-            else:
-                time.sleep(1)
+            time.sleep(1)
     if not if_find_error():
         pag.click(Position.save)  # Save file.
         wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
@@ -105,20 +107,23 @@ def save_file(save_path, save_name="", control_wait=True):
         pag.moveTo(900, 0)  # Move cursor from 'save' button.
 
 
-def save_log(text, first_run=False):
+def save_log(text="", first_run=False, return_log_file=False):
     log = ""
     global logFile
-    if not first_run:
-        with open(programPath + logFile, 'r') as log_file:
-            log = log_file.read()
-            log_file.close()
+    if return_log_file:
+        return logFile
     else:
-        logFile = "logs\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M") + ".txt"
-    # If not first write to log file, read already exist text and save to 'log'.
-    with open(programPath + logFile, 'w') as log_file:
-        log_file.write(log + text)
-        log_file.close()
-    # Write data from argument 'text' of function and variable 'log' to file.
+        if not first_run:
+            with open(programPath + logFile, 'r') as log_file:
+                log = log_file.read()
+                log_file.close()
+        else:
+            logFile = "logs\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M") + ".txt"
+        # If not first write to log file, read already exist text and save to 'log'.
+        with open(programPath + logFile, 'w') as log_file:
+            log_file.write(log + text)
+            log_file.close()
+        # Write data from argument 'text' of function and variable 'log' to file.
 # Function writing information to a log file.
 
 
@@ -155,6 +160,9 @@ def default():
 
     if not if_find_error():
         proces_var = True
+
+    control_language()
+    # ↑ Switch to eng keyboard if it doesn't.
 
     if defaultRepetition < 3:
         defaultRepetition = defaultRepetition + 1
@@ -208,14 +216,22 @@ def default():
             pag.typewrite(["enter"])
         elif pag.locateCenterOnScreen(programPath + "screens\\folderOn.png") \
                 or pag.locateCenterOnScreen(programPath + "screens\\f4On.png") \
-                or pag.locateCenterOnScreen(programPath + "screens\\ctrlaOn.png"):
+                or pag.locateCenterOnScreen(programPath + "screens\\ctrlaOn.png")\
+                or pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png"):
             pag.click()
+            time.sleep(0.1)
+            pag.typewrite("esc")
             time.sleep(0.1)
             pag.typewrite("esc")
             if mm3d_on():
                 pag.click(Position.mm3d)
                 wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
         else:
+            time.sleep(0.1)
+            pag.typewrite("esc")
+            time.sleep(0.2)
+            pag.typewrite("esc")
+            time.sleep(0.2)
             pag.click(Position.mm3d)
             wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
 
@@ -229,6 +245,52 @@ def default():
                         "The program has failed to solve the problem even three times in a row.")
 
 # ↑ Set computer to default (know) position - mm3d program.
+
+
+def find_objects():
+    Position.mm3d = pag.locateCenterOnScreen(Img.mm3d, grayscale=True)
+    # ↑ Overwrite position of MM3D icon.
+    pag.click(Position.mm3d)
+    wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
+    if if_find_error():
+        raise WaitError("Not located 'mm3dOn.png'")
+    Position.file = pag.locateCenterOnScreen(Img.file, grayscale=True)
+    Position.system = pag.locateCenterOnScreen(Img.system, grayscale=True)
+    Position.resetRoutine = pag.locateCenterOnScreen(Img.resetRoutine, grayscale=True)
+    Position.resetX = pag.locateCenterOnScreen(Img.resetX, grayscale=True)
+    Position.resetY = pag.locateCenterOnScreen(Img.resetY, grayscale=True)
+    Position.resetZ = pag.locateCenterOnScreen(Img.resetZ, grayscale=True)
+    Position.resetAngle = pag.locateCenterOnScreen(Img.resetAngle, grayscale=True)
+    Position.start = pag.locateCenterOnScreen(Img.start, grayscale=True)
+    Position.saveRoutine = pag.locateCenterOnScreen(Img.saveRoutine, grayscale=True)
+    Position.deleteSteps = pag.locateCenterOnScreen(Img.deleteSteps, grayscale=True)
+    Position.centroid = pag.locateCenterOnScreen(Img.centroid, grayscale=True)
+    pag.click(Position.centroid)
+    time.sleep(1)
+    pag.click(pag.size()[0] / 5.5, pag.size()[1] / 4)
+    wait(sleep_until="quitStep.png")
+    if if_find_error():
+        raise WaitError("Not located 'quitStep.png'")
+    Position.quitStep = pag.locateCenterOnScreen(Img.quitStep, grayscale=True)
+    pag.click(Position.quitStep)
+    time.sleep(1)
+    pag.click(Position.file)
+    wait(sleep_until="open.png")
+    if if_find_error():
+        raise WaitError("Not located 'open.png'")
+    Position.open = pag.locateCenterOnScreen(Img.open, grayscale=True)
+    pag.moveTo(Position.system)
+    wait(sleep_until="resetSystem.png")
+    if if_find_error():
+        raise WaitError("Not located 'resetSystem.png'")
+    Position.resetSystem = pag.locateCenterOnScreen(Img.resetSystem, grayscale=True)
+    pag.click(Position.system)
+
+    if not mm3d_on():
+        pag.click(Position.mm3d)
+        wait(sleep_until=["mm3dOn.png", "mm3dOn2.png", "mm3dOn3.png", "mm3dOn4.png"])
+    if if_find_error():
+        raise WaitError("Not located 'mm3dOn.png'")
 
 
 def protocol_loop(line):
@@ -301,6 +363,13 @@ def protocol_loop(line):
                     string += "O"
                 else:
                     string += "X"
+            if line == 10:
+                if ErrorId.copyToCloud[protocol_c] == 0:
+                    string += "-"
+                elif ErrorId.copyToCloud[protocol_c] == 1:
+                    string += "O"
+                else:
+                    string += "X"
 
         elif protocol_b == 6 and line == 1:
             string += "."
@@ -337,6 +406,7 @@ def protocol():
         temp_write += "\nMove screens       ||" + protocol_loop(7)
         temp_write += "\nJoin screens       ||" + protocol_loop(8)
         temp_write += "\nData size test     ||" + protocol_loop(9)
+        temp_write += "\nCopy data to cloud ||" + protocol_loop(10)
 
         protocol_file.write(temp_write)
         protocol_file.close()
@@ -457,7 +527,9 @@ def wait_previous(sleep_until):
 
 def wait_measure(saving=True):
     global error
-
+    if datetime.datetime.now().minute % 10 == 0 and datetime.datetime.now().second < 10:
+        if not mm3d_on():
+            pag.click(Position.mm3d)
     if pag.locateCenterOnScreen(Img.error, grayscale=True):
         if pag.locateCenterOnScreen(Img.laserError1, grayscale=True) \
                 or pag.locateCenterOnScreen(Img.laserError2, grayscale=True):
@@ -558,8 +630,8 @@ def memory(memory_type):
     free_size = 0
     if memory_type == "RAM":
         free_size = virtual_memory()[4] / (2**20)
-    elif memory_type == "DISK":
-        free_size = disk_usage(measurePath[0:2])[2] / (2**30)
+    else:
+        free_size = disk_usage(memory_type)[2] / (2**30)
 
     return round(free_size, 3)
 
@@ -570,6 +642,17 @@ def wait_end_process(program_name):
             return True
     return False
 # ↑ Program will wait until end of process.
+
+
+def control_language():
+    if not pag.locateCenterOnScreen(Img.language, grayscale=True):
+        pag.hotkey("alt", "shift")
+        time.sleep(2)
+        if not pag.locateCenterOnScreen(Img.language, grayscale=True):
+            pag.hotkey("alt", "shift")
+            time.sleep(2)
+            if not pag.locateCenterOnScreen(Img.language, grayscale=True):
+                pag.hotkey("alt", "shift")
 
 
 def control_string(string):
@@ -603,10 +686,10 @@ def check_database():
 
 
 def edit_output(data_type, number_of_sensor):
-    planarity_x = None
-    planarity_y = None
-    planarity_z = None
-    if not data_type:
+    global planarityX
+    global planarityY
+    global planarityZ
+    if data_type == 0:
         output_file = ""
         with open(measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor]
                   + "\\planarity.txt", 'r') as data_file:
@@ -625,22 +708,39 @@ def edit_output(data_type, number_of_sensor):
             data_file.write(output_file)
             data_file.close()
 
-        planarity_x, planarity_y, planarity_z = np.loadtxt(
+        planarityX, planarityY, planarityZ = np.loadtxt(
             measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor] + "\\planarity.txt",
             skiprows=1,
             unpack=True
         )
-
+    main_name_file = ""
+    if data_type == 0:
+        main_name_file = "_Bow_"
+    if data_type == 1:
+        main_name_file = "_MAINThickness_"
+    if data_type == 2:
+        main_name_file = "_PRIVATE_"
     with open(measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor]
-              + "\\planarity.txt", 'w') as final_file:
-        final_txt = "Manufacture: Hamamatsu"
-        final_txt += "\nType: " + productType[number_of_sensor]
+              + "\\" + sensorBatch[number_of_sensor] + "-" + sensorWafer[number_of_sensor] +
+              main_name_file + "0"*(3 - len(str(runNumber[NumberOfSensor]))) + str(runNumber[NumberOfSensor])
+              + ".dat", 'w') as final_file:
+        final_txt = "Type: " + productType[number_of_sensor]
         final_txt += "\nBatch: " + sensorBatch[number_of_sensor]
         final_txt += "\nWafer: " + sensorWafer[number_of_sensor]
-        final_txt += "\nSerial number: " + nameSensor[number_of_sensor]
-        final_txt += "\nDate: " + datetime.datetime.now().strftime("%d %m %y")
+        final_txt += "\nComponent: " + nameSensor[number_of_sensor]
+        final_txt += "\nDate: " + datetime.datetime.now().strftime("%d %b %y")
         final_txt += "\nTime: " + datetime.datetime.now().strftime("%H:%M:%S")
-        if LabPar.Automatic:
+        final_txt += "\nInstitute: " + institute
+        if data_type == 0:
+            final_txt += "\nTestType: ATLAS18_SHAPE_METROLOGY_V" + version
+        if data_type == 1:
+            final_txt += "\nTestType: ATLAS18_MIAN_THICKNESS_V" + version
+        if data_type == 2:
+            final_txt += "\nTestType: ATLAS18_BOTH_PRIVATE_V" + version
+        final_txt += "\nCMM: OGP SmartScope CNC 500"
+        final_txt += "\nProbe: TTL Laser"
+        final_txt += "\nRunNumber: " + str(runNumber[number_of_sensor])
+        if LabPar.Automatic and data_type == 0:
             try:
                 check_database()
             except:
@@ -651,38 +751,29 @@ def edit_output(data_type, number_of_sensor):
                 save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                          "| Data have been successfully refreshed from database.\n\t\t   Temperature: "
                          + str(LabPar.Temperature) + " °C, Humidity: " + str(LabPar.Humidity) + " %")
-        final_txt += "\nTemperature: " + str(LabPar.Temperature) + " °C"
-        final_txt += "\nHumidity: " + str(LabPar.Humidity) + " %"
-        final_txt += "\nInstitute: " + institute
-        final_txt += "\nTest type: "
-        if ErrorId.completeMeasuring[number_of_sensor] == 1 and sSensor[number_of_sensor] == 1:
-            final_txt += "Metrology & Scanning"
-        elif ErrorId.completeMeasuring[number_of_sensor] == 1:
-            final_txt += "Metrology"
-        else:
-            final_txt += "Scanning"
-        final_txt += "\nEquipment: OGP SmartScope CNC 500\n"
+        final_txt += "\nTemperature: " + str(LabPar.Temperature)
+        final_txt += "\nHumidity: " + str(LabPar.Humidity)
+        final_txt += "\nComments: " + comments[number_of_sensor]
 
-        if not data_type:
-            planarity_bow = round(max(planarity_z) - min(planarity_z), 4)
-            planarity_thickness = round(min(planarity_z), 4)
-            final_txt += "\nBow (mm): " + str(planarity_bow)
-            final_txt += "\nThickness (mm): " + str(planarity_thickness)
-            final_txt += "\nx (mm)\t\t\ty (mm)\t\t\tz (mm)\t\t\tz-fit (mm)\n"
+        if data_type == 1 or data_type == 2:
+            planarity_thickness = round(min(planarityZ), 4) * 10**3
+            final_txt += "\nAvThickness: " + str(planarity_thickness)
+        if data_type == 2:
+            planarity_bow = round(max(planarityZ) - min(planarityZ), 4) * 10**3
+            final_txt += "\nBow: " + str(planarity_bow)
+        if data_type == 0 or data_type == 2:
             ouput_row = 0
-            while ouput_row < len(planarity_x):
-                final_txt += str(round(planarity_x[ouput_row], 4))
-                final_txt += "0"*(7 - len(str(round(planarity_x[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarity_y[ouput_row], 4))
-                final_txt += "0"*(7 - len(str(round(planarity_y[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarity_z[ouput_row], 4))
-                final_txt += "0"*(6 - len(str(round(planarity_z[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarity_z[ouput_row], 4))
-                final_txt += "0"*(6 - len(str(round(planarity_z[ouput_row], 4)))) + "\n"
+            final_txt += "\nX [mm]\t\t\tY [mm]\t\t\tZ [mm]\t\t\tZ_bow [mm]\n"
+            while ouput_row < len(planarityX):
+                final_txt += str(round(planarityX[ouput_row], 4))
+                final_txt += "0"*(7 - len(str(round(planarityX[ouput_row], 4)))) + "  \t\t"
+                final_txt += str(round(planarityY[ouput_row], 4))
+                final_txt += "0"*(7 - len(str(round(planarityY[ouput_row], 4)))) + "  \t\t"
+                final_txt += str(round(planarityZ[ouput_row], 4))
+                final_txt += "0"*(6 - len(str(round(planarityZ[ouput_row], 4)))) + "  \t\t"
+                final_txt += str(round(planarityZ[ouput_row], 4))
+                final_txt += "0"*(6 - len(str(round(planarityZ[ouput_row], 4)))) + "\n"
                 ouput_row += 1
-
-        else:
-            final_txt += "\n No data about planarity of the sensor."
 
         final_file.write(final_txt)
 # ↑ Function will edit output (text file) of measuring to better readable file for computer.

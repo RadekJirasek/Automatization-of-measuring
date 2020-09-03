@@ -8,7 +8,7 @@ from shutil import disk_usage, move, rmtree
 # Bookmark for work with files etc...
 from shutil import Error as shutilError
 # Bokmark for error handling of shutil error.
-import subprocess
+from subprocess import Popen
 # Bookmark for calling programs etc...
 import time
 # Time bookmark.
@@ -40,11 +40,13 @@ SMS = tkinter.Tk()
 # ↑ Declaration tkinter object.
 
 
-measurePath = "C:\\Partrtn\\"  # Path to folder with everything about measuring (routines, measured date).
+measurePath = "C:\\Partrtn\\"  # Path to folder with routines and temporary measured data of senzors.
+cloudPath = "C:\\Partrtn\\"  # Path to folder where are saving all measured data.
 programPath = "C:\\Program Files\\MetrologyAndScanning\\"  # Path to folder with program data
 logFile = ""  # Path to log file.
 firstProcess = True  # Variable for indication of first run (True - first, false - other).
-institute = "PRG"  # Institute where sensors are testing.
+institute = "FZU"  # Institute where sensors are testing.
+version = "1"  # Version of measuring programs
 delFinishedSteps = 0  # Number of steps deleted in last repeated measuring due laser error.
 maxSleepTime = 10.0  # Maximum number of seconds which program awaits.
 NumberOfSensor = 0  # Actual number of measured sensor.
@@ -58,6 +60,8 @@ sensorBatch = ["", "", "", "", "", "", "", "", ""]  # Array of variables for bat
 sensorWafer = ["", "", "", "", "", "", "", "", ""]  # Array of variables for wafer of sensor.
 nameSensor = ["", "", "", "", "", "", "", "", ""]  # Array of variables for names of sensors.
 dNameSensor = ["", "", "", "", "", "", "", "", ""]  # Array of variables for default names of sensors.
+comments = ["", "", "", "", "", "", "", "", ""]  # Array of bonus comments to actual sensors.
+runNumber = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of run numbers of measuring of actual sensors.
 mSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for measurement of sensors (measurement (1) or not (0)).
 sSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for scanning of sensors (scanning (1) or not (0)).
 pSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for APS of sensors (APS on (1) or off (0)).
@@ -65,6 +69,10 @@ sensorPos = 1  # Array of variables for right or bad position of sensors (ok(1) 
 sensorPosition = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # Array of variables for right or bad position of sensors.
 holderType = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for type of holder holding sensors
 # (1 for R0, R1, R2 and 2 for R3, R4, R5).
+planarityX = None
+planarityY = None
+planarityZ = None
+# ↑ Variables for data of measurement
 
 
 class WaitError(Exception):
@@ -116,6 +124,7 @@ class ErrorId:
     startJoinScreens = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     completeJoinScreens = [0, 0, 0, 0, 0, 0, 0, 0, 0]
     dataSizeTest = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    copyToCloud = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 # ↑ Class of arrays for error system.
 
 
@@ -151,7 +160,10 @@ with open(programPath + "config.txt", 'r') as f:
     d = False
     e = 0
     measurePathB = ""
+    cloudPathB = ""
     programPathB = ""
+    instituteB = ""
+    versionB = ""
     rPhiB = ""
     max_sleep_timeB = ""
     rD1B = ["", ""]
@@ -166,6 +178,7 @@ with open(programPath + "config.txt", 'r') as f:
     database_path_B = ""
     database_temp_tag = ""
     database_hum_tag = ""
+
     # ↑ Declaring local variables.
     v1 = ["", "", "", "", "", "", "", "", ""]
     v2 = [1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -224,60 +237,78 @@ with open(programPath + "config.txt", 'r') as f:
             if c == 1:
                 measurePathB += b
             elif c == 2:
-                programPathB += b
+                cloudPathB += b
             elif c == 3:
-                sType = info_from_txt(1)
+                programPathB += b
             elif c == 4:
-                productType = info_from_txt(1)
+                instituteB += b
             elif c == 5:
-                sensorBatch = info_from_txt(1)
+                versionB += b
             elif c == 6:
-                sensorWafer = info_from_txt(1)
+                sType = info_from_txt(1)
             elif c == 7:
-                dNameSensor = info_from_txt(1)
+                productType = info_from_txt(1)
             elif c == 8:
-                mSensor = info_from_txt(2)
+                sensorBatch = info_from_txt(1)
             elif c == 9:
-                sSensor = info_from_txt(2)
+                sensorWafer = info_from_txt(1)
             elif c == 10:
-                pSensor = info_from_txt(2)
+                dNameSensor = info_from_txt(1)
             elif c == 11:
-                holderType = info_from_txt(2)
+                mSensor = info_from_txt(2)
             elif c == 12:
-                sR0B = info_from_txt(4)
+                sSensor = info_from_txt(2)
             elif c == 13:
-                sR1B = info_from_txt(4)
+                pSensor = info_from_txt(2)
             elif c == 14:
-                sR2B = info_from_txt(4)
+                holderType = info_from_txt(2)
             elif c == 15:
-                sR3B = info_from_txt(4)
+                sR0B = info_from_txt(4)
             elif c == 16:
-                sR4B = info_from_txt(4)
+                sR1B = info_from_txt(4)
             elif c == 17:
-                sR5B = info_from_txt(4)
+                sR2B = info_from_txt(4)
             elif c == 18:
-                sBB = info_from_txt(4)
+                sR3B = info_from_txt(4)
             elif c == 19:
-                rPhiB = info_from_txt(3)
+                sR4B = info_from_txt(4)
             elif c == 20:
-                rD1B = info_from_txt(3)
+                sR5B = info_from_txt(4)
             elif c == 21:
-                rD2B = info_from_txt(3)
+                sBB = info_from_txt(4)
             elif c == 22:
-                max_sleep_timeB += b
+                rPhiB = info_from_txt(3)
             elif c == 23:
-                database_path_B += b
+                rD1B = info_from_txt(3)
             elif c == 24:
-                database_temp_tag += b
+                rD2B = info_from_txt(3)
             elif c == 25:
+                max_sleep_timeB += b
+            elif c == 26:
+                database_path_B += b
+            elif c == 27:
+                database_temp_tag += b
+            elif c == 28:
                 database_hum_tag += b
             # ↑ Different options of saving data according to sequence (variable 'c').
 
         a += 1
     if measurePathB != "":
         measurePath = measurePathB
+        if measurePath[-1] != "\\":
+            measurePath += "\\"
+    if cloudPathB != "":
+        cloudPath = cloudPathB
+        if cloudPath[-1] != "\\":
+            cloudPath += "\\"
     if programPathB != "":
         programPath = programPathB.replace("ProgramFiles", "Program Files")
+        if programPath[-1] != "\\":
+            programPath += "\\"
+    if instituteB != "":
+        institute = instituteB
+    if versionB != "":
+        version = versionB
     LimitSize.R0[0] = int(sR0B[0])
     LimitSize.R0[1] = int(sR0B[1])
     LimitSize.R0[2] = int(sR0B[2])
@@ -387,6 +418,7 @@ class Img:
     touchBoundary = Image.open(programPath + "screens\\touchBoundary.png")
     autoIllumination = Image.open(programPath + "screens\\autoIllumination.png")
     quitStep = Image.open(programPath + "screens\\quitStep.png")
+    language = Image.open(programPath + "screens\\language.png")
 # ↑ Declaration of paths for images.
 
 

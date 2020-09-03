@@ -7,8 +7,10 @@ import sys
 import datetime
 import traceback
 from os import path as pth
+from subprocess import Popen
 
 path = ""
+cloudPath = ""
 sType = ""
 nameSensor = ""
 NumberOfSensor = 0
@@ -46,8 +48,8 @@ def memory(memory_type):
     free_size = 0
     if memory_type == "RAM":
         free_size = virtual_memory()[4] / (2**20)
-    elif memory_type == "DISK":
-        free_size = disk_usage("/")[2] / (2**30)
+    else:
+        free_size = disk_usage(memory_type)[2] / (2**30)
 
     return free_size
 
@@ -56,17 +58,18 @@ try:
     try:
 
         arg = [sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5],
-               sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10]]
+               sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11]]
 
         path = sys.argv[2]
-        sType = sys.argv[3]
-        nameSensor = sys.argv[4]
-        NumberOfSensor = int(sys.argv[5])
-        pSensor = int(sys.argv[6])
-        programPath1 = sys.argv[7]
-        programPath2 = sys.argv[8]
-        logFile = sys.argv[9]
-        startArg = int(sys.argv[10])
+        cloudPath = sys.argv[3]
+        sType = sys.argv[4]
+        nameSensor = sys.argv[5]
+        NumberOfSensor = int(sys.argv[6])
+        pSensor = int(sys.argv[7])
+        programPath1 = sys.argv[8]
+        programPath2 = sys.argv[9]
+        logFile = sys.argv[10]
+        startArg = int(sys.argv[11])
         """
         path = "D:\\"
         sType = "Downloads"
@@ -271,9 +274,6 @@ try:
                     image_number += con  # Added number of origin steps.
                     #print(con)
                     #print(pre_image_number)
-                    with open("C:\\Users\\Admin\\Desktop\\fff.txt", 'w') as fff:
-                        fff.write(str(image_number + focus))
-                        fff.close()
                     while pre_image_number < image_number + focus:
                         pre_image_number += 2
                         if not pth.exists(path + sType + "\\" + nameSensor + "\\" + str(defName[0]
@@ -297,9 +297,10 @@ try:
             finalImg.paste(lineImg, (0, 480 * n))
             n += 1
 
-        m += 1
+        name = str(nY - int(m / nX)) + str(m % nX + 1)
         finalImg.save(path + sType + "\\" + nameSensor +
-                      "\\output_" + str(m) + ".BMP")
+                      "\\output_" + name + ".BMP")
+        m += 1
         print("Image " + str(m) + " has been saved!")
 
 except ArgvError:
@@ -314,7 +315,7 @@ except ArrayError:
         f.close()
     with open(completeLogPath, 'w') as f:
         log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-        log += "| Joining of screens has failed (" + str(NumberOfSensor) + ". sensor). " \
+        log += "| Joining of screens has failed (" + str(NumberOfSensor + 1) + ". sensor). " \
                + "- Program can't read variables from text file.\n" + traceback.format_exc()
         f.write(log)
         f.close()
@@ -326,14 +327,14 @@ except OSError:
     if except_con == 0:
         with open(completeLogPath, 'w') as f:
             log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-            log += "| Joining of screens has failed (" + str(NumberOfSensor) + ". sensor). "\
+            log += "| Joining of screens has failed (" + str(NumberOfSensor + 1) + ". sensor). "\
                    + "- Program can't read variables from text file.\n" + traceback.format_exc()
             f.write(log)
             f.close()
     else:
         with open(completeLogPath, 'w') as f:
             log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-            log += "| Joining of screens has failed (" + str(NumberOfSensor) + ". sensor). " \
+            log += "| Joining of screens has failed (" + str(NumberOfSensor + 1) + ". sensor). " \
                    + "- Maybe not found screens.\n" + traceback.format_exc()
             f.write(log)
             f.close()
@@ -344,9 +345,9 @@ except (MemoryError, BufferError):
         f.close()
     with open(completeLogPath, 'w') as f:
         log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-        log += "| Joining of screens has failed (" + str(NumberOfSensor) + ". sensor). "\
+        log += "| Joining of screens has failed (" + str(NumberOfSensor + 1) + ". sensor). "\
                + "- Problem with memory.\nFree date size on RAM: " + str(round(memory("RAM"), 3))\
-               + " MB\nFree data size on DISK: " + str(round(memory("DISK"), 3))\
+               + " MB\nFree data size on DISK: " + str(round(memory(programPath1[0:2]), 3))\
                + " GB\n" + traceback.format_exc()
         f.write(log)
         f.close()
@@ -363,8 +364,35 @@ else:
         f.close()
     with open(completeLogPath, 'w') as f:
         log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
-        log += "| Joining of screens has been successfully completed (" + str(NumberOfSensor) + ". sensor)"
+        log += "| Joining of screens has been successfully completed (" + str(NumberOfSensor + 1) + ". sensor)"
         f.write(log)
         f.close()
     with open(programPath1 + " " + programPath2 + "JS_ok_" + str(NumberOfSensor) + ".txt", 'w') as f:
         f.close()
+
+    try:
+        arg_bs = programPath1 + " " + programPath2 + "backup_script.exe 1 " + path + " " + cloudPath \
+                 + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
+                 + " " + logFile + " " + str(NumberOfSensor)
+        Popen(arg_bs)
+    except OSError:
+        with open(completeLogPath, 'r') as f:
+            log = f.read()
+            f.close()
+        with open(completeLogPath, 'w') as f:
+            log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+            log += "| Copy of data (" + str(NumberOfSensor + 1) + ". sensor) to cloud has failed at startup\n"
+            log += traceback.format_exc()
+            f.write(log)
+            f.close()
+
+    else:
+        with open(completeLogPath, 'r') as f:
+            log = f.read()
+            f.close()
+        with open(completeLogPath, 'w') as f:
+            log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+            log += "| Copy of data to cloud of the "
+            log += str(NumberOfSensor + 1) + ". has been successfully started"
+            f.write(log)
+            f.close()
