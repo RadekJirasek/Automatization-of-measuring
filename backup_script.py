@@ -1,9 +1,10 @@
 import sys
+import os
 import datetime
 import traceback
 from shutil import disk_usage
 from psutil import virtual_memory
-from shutil import copytree
+from shutil import copytree, copy2
 
 programPath = ""
 measurePath = ""
@@ -13,6 +14,7 @@ nameSensor = ""
 logFile = ""
 NumberOfSensor = 0
 completeLogPath = ""
+existing = False
 
 
 class ArgvError(Exception):
@@ -48,7 +50,30 @@ try:
     except:
         raise ArgvError
 
-    copytree(fromPath, toPath)
+    print("Copy of data to server has been started ...")
+
+
+    def copy_dir(src, dst, symlinks=False, ignore=None):
+        for item in os.listdir(src):
+            s = os.path.join(src, item)
+            d = os.path.join(dst, item)
+            if os.path.isdir(s):
+                copytree(s, d, symlinks, ignore)
+            else:
+                copy2(s, d)
+
+    copy_dir(fromPath, toPath)
+
+except KeyboardInterrupt:
+    with open(completeLogPath, 'r') as f:
+        log = f.read()
+        f.close()
+    with open(completeLogPath, 'w') as f:
+        log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+        log += "| Copy of data to cloud has stopped (" + str(NumberOfSensor + 1) + ". sensor). " \
+               + "- User used keyboard-interrupt.\n"
+        f.write(log)
+        f.close()
 
 except ArgvError:
     with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")

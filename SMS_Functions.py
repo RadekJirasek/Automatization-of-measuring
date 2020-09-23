@@ -23,11 +23,7 @@ def open_routine():
 
 
 def search_file():
-    pag.hotkey("f4")  # Mark searching textbox.
-    time.sleep(1)
-    if not if_find_error():
-        pag.hotkey("ctrl", "a")  # Select all text in searching box for transcription.
-        time.sleep(1)
+    pag.hotkey("alt", "d")  # Select all text in searching box for transcription.
 # ↑ For saving file of measuring.
 
 
@@ -37,6 +33,7 @@ def reset_origins():
     pag.moveRel(0, 100)
     wait(sleep_until="resetXOn.png")
     if not if_find_error():
+        time.sleep(0.5)
         pag.click(Position.resetY)
         pag.moveRel(0, 100)
         wait(sleep_until="resetYOn.png")
@@ -53,15 +50,17 @@ def start_routine(routine):
     if not if_find_error():
         time.sleep(0.2)
         pag.typewrite(["enter"])
-        time.sleep(0.2)
-        pag.typewrite(["enter"])
-        time.sleep(0.2)
-        pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
     if not if_find_error():
-        time.sleep(0.2)
-        pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
-        time.sleep(1)
+        file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
+        if file_name:
+            pag.click(file_name[0] + 100, file_name[1])
+            time.sleep(0.2)
+            pag.hotkey("ctrl", "a")
+        else:
+            time.sleep(0.3)
+            pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
+            time.sleep(0.5)
     if not if_find_error():
         pag.typewrite(routine)  # Write name of routine.
         time.sleep(1)
@@ -76,27 +75,23 @@ def start_routine(routine):
         pag.typewrite(["enter"])  # Confirming start.
 
 
-def save_file(save_path, save_name="", saving=False):
+def save_file(save_path, save_name=""):
     pag.typewrite(save_path)  # Search sensor folder.
     time.sleep(1)
     if not if_find_error():
         pag.typewrite(["enter"])
-        time.sleep(0.1)
-        pag.typewrite(["enter"])
-        time.sleep(0.5)
-        pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
     if not if_find_error() and save_name != "":
         if not if_find_error():
-            if saving:
-                file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
-                if file_name:
-                    pag.click(file_name[0] + 100, file_name[1])
-                    time.sleep(0.2)
-                    pag.hotkey("ctrl", "a")
-            time.sleep(0.5)
-            pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
-            time.sleep(1)
+            file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
+            if file_name:
+                pag.click(file_name[0] + 100, file_name[1])
+                time.sleep(0.2)
+                pag.hotkey("ctrl", "a")
+            else:
+                time.sleep(0.3)
+                pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
+                time.sleep(0.5)
         if not if_find_error():
             pag.typewrite(save_name)  # Write name of routine.
             time.sleep(1)
@@ -600,6 +595,7 @@ def after_error_reset():
     NumberOfSensor = 0
     for NumberOfSensor in range(0, 9):
         set_repeat_measure()
+        sensorPosition[NumberOfSensor] = 0
         ErrorId.createFolder[NumberOfSensor] = 0
         ErrorId.startMeasuring[NumberOfSensor] = 0
         ErrorId.completeMeasuring[NumberOfSensor] = 0
@@ -722,7 +718,7 @@ def edit_output(data_type, number_of_sensor):
         main_name_file = "_PRIVATE_"
     with open(measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor]
               + "\\" + sensorBatch[number_of_sensor] + "-" + sensorWafer[number_of_sensor] +
-              main_name_file + "0"*(3 - len(str(runNumber[NumberOfSensor]))) + str(runNumber[NumberOfSensor])
+              main_name_file + "0"*(3 - len(str(runNumber[number_of_sensor]))) + str(runNumber[number_of_sensor])
               + ".dat", 'w') as final_file:
         final_txt = "Type: " + productType[number_of_sensor]
         final_txt += "\nBatch: " + sensorBatch[number_of_sensor]
@@ -738,7 +734,8 @@ def edit_output(data_type, number_of_sensor):
         if data_type == 2:
             final_txt += "\nTestType: ATLAS18_BOTH_PRIVATE_V" + version
         final_txt += "\nCMM: OGP SmartScope CNC 500"
-        final_txt += "\nProbe: TTL Laser"
+        if data_type == 0 or data_type == 2:
+            final_txt += "\nProbe: TTL Laser"
         final_txt += "\nRunNumber: " + str(runNumber[number_of_sensor])
         if LabPar.Automatic and data_type == 0:
             try:
@@ -746,20 +743,21 @@ def edit_output(data_type, number_of_sensor):
             except:
                 save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                          "| Data refresh from database (temperature, humidity) has been failed."
-                         "\n Previous data will be used.\n" + traceback.format_exc())
+                         "\n\t\t   Previous data will be used.\n" + traceback.format_exc())
             else:
                 save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                          "| Data have been successfully refreshed from database.\n\t\t   Temperature: "
                          + str(LabPar.Temperature) + " °C, Humidity: " + str(LabPar.Humidity) + " %")
-        final_txt += "\nTemperature: " + str(LabPar.Temperature)
-        final_txt += "\nHumidity: " + str(LabPar.Humidity)
+        if data_type == 0 or data_type == 2:
+            final_txt += "\nTemperature: " + str(LabPar.Temperature)
+            final_txt += "\nHumidity: " + str(LabPar.Humidity)
         final_txt += "\nComments: " + comments[number_of_sensor]
 
         if data_type == 1 or data_type == 2:
-            planarity_thickness = round(min(planarityZ), 4) * 10**3
+            planarity_thickness = round((min(planarityZ) * 10**3), 1)
             final_txt += "\nAvThickness: " + str(planarity_thickness)
         if data_type == 2:
-            planarity_bow = round(max(planarityZ) - min(planarityZ), 4) * 10**3
+            planarity_bow = round((max(planarityZ) - min(planarityZ)) * 10**3, 1)
             final_txt += "\nBow: " + str(planarity_bow)
         if data_type == 0 or data_type == 2:
             ouput_row = 0

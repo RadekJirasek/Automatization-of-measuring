@@ -422,6 +422,8 @@ class Img:
 # ↑ Declaration of paths for images.
 
 
+assert os.path.exists(programPath + "join_images_script.exe"), "Program 'join_images_script.exe' has not been found!"
+assert os.path.exists(programPath + "backup_script.exe"), "Program 'backup_script.exe' has not been found!"
 assert os.path.exists(programPath + "screens\\folderOn.png"), "Screen 'folderOn' has not been found!"
 assert os.path.exists(programPath + "screens\\f4On.png"), "Screen 'f4On' has not been found!"
 assert os.path.exists(programPath + "screens\\ctrlaOn.png"), "Screen 'ctrlaOn' has not been found!"

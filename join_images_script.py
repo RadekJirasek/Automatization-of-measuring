@@ -22,6 +22,8 @@ log = ""
 completeLogPath = ""
 except_con = 0
 startArg = 0
+endArg = 0
+runNumber = 0
 
 
 class ArgvError(Exception):
@@ -57,8 +59,8 @@ def memory(memory_type):
 try:
     try:
 
-        arg = [sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5],
-               sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11]]
+        arg = [sys.argv[0], sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6],
+               sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11], sys.argv[12]]
 
         path = sys.argv[2]
         cloudPath = sys.argv[3]
@@ -70,6 +72,7 @@ try:
         programPath2 = sys.argv[9]
         logFile = sys.argv[10]
         startArg = int(sys.argv[11])
+        runNumber = int(sys.argv[11])
         """
         path = "D:\\"
         sType = "Downloads"
@@ -277,7 +280,8 @@ try:
                     while pre_image_number < image_number + focus:
                         pre_image_number += 2
                         if not pth.exists(path + sType + "\\" + nameSensor + "\\" + str(defName[0]
-                                          + sType + defName[1]) + str(pre_image_number) + "-1.BMP"):  # "R0" dat sType!!
+                                          + sType + defName[1]) + str(pre_image_number) + "-"
+                                          + str(runNumber) + ".BMP"):  # "R0" dat sType!!
                             focus += 2
                         if pre_image_number > 12000:
                             break
@@ -286,7 +290,8 @@ try:
                     test_print(focus)
 
                     soloImg = Image.open(path + sType + "\\" + nameSensor + "\\" + str(defName[0]
-                                         + sType + defName[1]) + str(image_number) + "-1.BMP")  # za "R0" dat sType!!
+                                         + sType + defName[1]) + str(image_number) + "-"
+                                         + str(runNumber) + ".BMP")  # za "R0" dat sType!!
 
                     pre_image_number = image_number
                     test_print("\n")
@@ -299,9 +304,22 @@ try:
 
         name = str(nY - int(m / nX)) + str(m % nX + 1)
         finalImg.save(path + sType + "\\" + nameSensor +
-                      "\\output_" + name + ".BMP")
+                      "\\output_" + name + "-" + str(runNumber) + ".BMP")
         m += 1
-        print("Image " + str(m) + " has been saved!")
+        print("Image number " + str(m) + " has been saved!")
+        endArg = m
+
+except KeyboardInterrupt:
+    with open(completeLogPath, 'r') as f:
+        log = f.read()
+        f.close()
+    with open(completeLogPath, 'w') as f:
+        log += "\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+        log += "| Copy of data to cloud has stopped (" + str(NumberOfSensor + 1) + ". sensor). " \
+               + "- User used keyboard-interrupt.\n\t\t   Saved joined images: " \
+               + str(abs(endArg-startArg)) + " (" + str(startArg + 1) + "-" + str(endArg) + ")"
+        f.write(log)
+        f.close()
 
 except ArgvError:
     with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
@@ -372,8 +390,7 @@ else:
 
     try:
         arg_bs = programPath1 + " " + programPath2 + "backup_script.exe 1 " + path + " " + cloudPath \
-                 + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
-                 + " " + logFile + " " + str(NumberOfSensor)
+                 + " " + sType + " " + nameSensor + " " + logFile + " " + str(NumberOfSensor)
         Popen(arg_bs)
     except OSError:
         with open(completeLogPath, 'r') as f:

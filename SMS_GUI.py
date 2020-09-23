@@ -7,6 +7,18 @@ try:
     # Import script with declaring all of functions those using error system and other scripts.
 
 
+    def control_run_number(control_path):
+        if os.path.exists(control_path):
+            files = os.listdir(control_path)
+            for file in files:
+                if file.endswith(str(SensorRunNumber.get()) + ".BMP") or\
+                        file.endswith(str(SensorRunNumber.get()) + ".dat"):
+                    return True
+            return False
+        else:
+            return False
+
+
     def set_active(rewrite_con):
         CheckP["state"] = "active"
         CheckM["state"] = "active"
@@ -156,6 +168,9 @@ try:
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
                 pag.alert("Value of run number must be number between 1 and 999!", "Message")
+            elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
+                                    + NameOfSensor.get() + "\\"):
+                pag.alert("This sensor has been already measured with same run number!", "Message")
             elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
                 pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
             # ↑ Conditions for actual sensor.
@@ -265,6 +280,9 @@ try:
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
                 pag.alert("Value of run number must be number between 1 and 999!", "Message")
+            elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
+                                    + NameOfSensor.get() + "\\"):
+                pag.alert("This sensor has been already measured with same run number!", "Message")
             elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
                 pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
             # ↑ Conditions for actual sensor.
@@ -476,9 +494,12 @@ try:
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
             pag.alert("You must unique serial number of sensor!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
-                                                                                or int(SensorRunNumber.get()) < 1
-                                                                                or int(SensorRunNumber.get()) > 999):
+                                                                                 or int(SensorRunNumber.get()) < 1
+                                                                                 or int(SensorRunNumber.get()) > 999):
             pag.alert("Value of run number must be number between 1 and 999!", "Message")
+        elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
+                                + NameOfSensor.get() + "\\"):
+            pag.alert("This sensor has been already measured with same run number!", "Message")
         elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.
@@ -730,9 +751,12 @@ try:
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
             pag.alert("You must unique serial number of sensor!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
-                                                                                or int(SensorRunNumber.get()) < 1
-                                                                                or int(SensorRunNumber.get()) > 999):
+                                                                                 or int(SensorRunNumber.get()) < 1
+                                                                                 or int(SensorRunNumber.get()) > 999):
             pag.alert("Value of run number must be number between 1 and 999!", "Message")
+        elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
+                                + NameOfSensor.get() + "\\"):
+            pag.alert("This sensor has been already measured with same run number!", "Message")
         elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.

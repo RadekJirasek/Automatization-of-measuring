@@ -44,7 +44,7 @@ def save_position(number_of_sensor=0):
             # Probably file not exist yet.
             pass
 
-        save_file(measurePath + "Routines", str(number_of_sensor + 1) + "_left", saving=True)
+        save_file(measurePath + "Routines", str(number_of_sensor + 1) + "_left")
         if if_find_error():
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                      "| Has been detected that result of previous line of"
@@ -188,7 +188,7 @@ def repeat_measurement(process_type, manually_on):
                         file_name = "-".join(move_image_file.split('-')[:1]) + "-" \
                                     + str(delFinishedSteps
                                           + int(move_image_file.split('-')[len(move_image_file.split('-')) - 2])) \
-                                    + "-1.BMP"
+                                    + "-" + str(runNumber) + ".BMP"
                         os.rename(measurePath + move_image_file, measurePath + sType[NumberOfSensor] + "\\"
                                   + nameSensor[NumberOfSensor] + "\\" + file_name)
 
@@ -238,18 +238,21 @@ def repeat_measurement(process_type, manually_on):
         time.sleep(1)
     if not if_find_error():
         pag.typewrite(["enter"])
-        time.sleep(0.1)
-        pag.typewrite(["enter"])
-        time.sleep(0.5)
-        pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
         if if_find_error():
             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "| Opening of " + process_type + " routine has failed (writing folder path).")
     if not if_find_error():
         time.sleep(0.2)
-        pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
-        time.sleep(1)
+        file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
+        if file_name:
+            pag.click(file_name[0] + 100, file_name[1])
+            time.sleep(0.2)
+            pag.hotkey("ctrl", "a")
+        else:
+            time.sleep(0.3)
+            pag.hotkey("alt", "n")  # Switch to textbox of 'Name file'.
+            time.sleep(0.5)
     if not if_find_error():
         if process_type == "Measurement" and not manually_on:
             pag.typewrite("ATLASITK_" + sType[NumberOfSensor]
@@ -357,24 +360,25 @@ def process(manually=False):
 
             this_sensor_data_size = limit_size(NumberOfSensor)[1]
             if memory(programPath[0:2]) < (round(this_sensor_data_size / (2 ** 30), 3)):
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Too little free memory on local " + programPath[0:2] + " disk. Program will wait until"
+                         + " previous process will be end and ask user to free up memory.")
                 if wait_end_process("backup_script.exe") or wait_end_process("join_images_script.exe"):
-                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                             "| Too little free memory on local " + programPath[0:2] + " disk. Program will wait until"
-                             + " previous process will be end and ask user to free up memory.")
                     while wait_end_process("join_images_script.exe"):
                         time.sleep(5)
                     while wait_end_process("backup_script.exe"):
                         time.sleep(5)
-                memory_alert = pag.alert("There are too little memory on local " + programPath[0:2]
-                                         + "disk. Please, free up disk space", "MEMORY ALERT",
-                                         button=['Start measuring without scanning', 'Done - memory is free up'],
-                                         timeout=60*60*1000)
+                memory_alert = pag.confirm("There are too little memory on local " + programPath[0:2]
+                                           + "disk. Please, free up disk space", "MEMORY ALERT",
+                                           buttons=['Start measuring without scanning', 'Done - memory is free up'],
+                                           timeout=60*60*1000)
                 if memory_alert != 'Done - memory is free up':
                     for temp_nummber_of_sensor in range(NumberOfSensor, 9):
                         sSensor[temp_nummber_of_sensor] = 0
                     error = 2
                     save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                             "| The request has not been made. Program continue in measurement "
+                             "| There are still too little memory on local " + programPath[0:2] +
+                             "disk. The request for free up memory has not been made. Program continue in measurement "
                              "without scanning processes")
 
             delFinishedSteps = 0
@@ -443,6 +447,10 @@ def process(manually=False):
 
                 if ErrorId.startMeasuring[NumberOfSensor] == 0:
                     try:
+                        if os.path.exists(programPath + "planarity.txt"):
+                            os.rename(measurePath + "planarity.txt", measurePath + "Trash\\planarity_backup_"
+                                      + datetime.datetime.now().strftime("%y_%m_%d_%H_%M") + ".txt")
+
                         prepare_process("Measurement", manually)
 
                         if not if_find_error():
@@ -729,7 +737,7 @@ def process(manually=False):
                                 no_image = False
                                 file_name = "-".join(file.split('-')[:1]) + "-" \
                                             + str(delFinishedSteps + int(file.split('-')[len(file.split('-')) - 2])) \
-                                            + "-1.BMP"
+                                            + "-" + str(runNumber) + ".BMP"
                                 os.rename(measurePath + file, measurePath + sType[NumberOfSensor] + "\\"
                                           + nameSensor[NumberOfSensor] + "\\" + file_name)
 
@@ -779,7 +787,8 @@ def process(manually=False):
                         arg_js = programPath + "join_images_script.exe 1 " + measurePath + " " + cloudPath\
                                  + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
                                  + " " + str(NumberOfSensor) + " " + str(pSensor[NumberOfSensor]) \
-                                 + " " + programPath + " " + save_log(return_log_file=True) + " " + "0"
+                                 + " " + programPath + " " + save_log(return_log_file=True) + " "\
+                                 + "0" + " " + str(runNumber)
                         Popen(arg_js)
 
                     except OSError:
@@ -864,16 +873,16 @@ def start():
                     continue
                 sensors_size += limit_size(NumberOfSensor)[1]
             assert memory(cloudPath) > \
-                (round(sensors_size / (2 ** 30), 3)), "There is too little of memory on disk\n" \
-                                                      "Required: " + str(round(sensors_size / (2 ** 30), 3)) \
-                                                      + " GB, but is: " + str(memory(cloudPath)) + " GB"
+                (round(2 * sensors_size / (2 ** 30), 3)), "There is too little of memory on server disk\n" \
+                                                            "Required: " + str(round(2 * sensors_size / (2 ** 30), 3))\
+                                                            + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
             assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
                 "There is too little of memory on local " + programPath[0:2] + "disk\nRequired: " \
                 + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(programPath[0:2])) + " GB"
 
-            save_log("START MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+            save_log(sys.argv[0] + "\nSTART MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
                      + " GB\n___________________________________", True)
 
@@ -915,11 +924,14 @@ def start():
                 # ↑ Deleting of old js path files (created by manual joining of screens).
 
             assert memory(cloudPath) > \
-                (round(sensors_size / (2 ** 30), 3)), "There is too little of memory on disk\n" \
-                                                      "Required: " + str(round(sensors_size / (2 ** 30), 3)) \
-                                                      + " GB, but is: " + str(memory(cloudPath)) + " GB"
+                (round(2 * sensors_size / (2 ** 30), 3)), "There is too little of memory on server disk\n" \
+                                                          "Required: " + str(round(2 * sensors_size / (2 ** 30), 3)) \
+                                                          + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
+            assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)), \
+                "There is too little of memory on local " + programPath[0:2] + "disk\nRequired: " \
+                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(programPath[0:2])) + " GB"
 
             save_log("\n\nNEW START OF MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
