@@ -303,62 +303,69 @@ def protocol_loop(line):
             if line == 1:
                 string += str(protocol_c + 1)
             if line == 2:
+                if sType[protocol_c] == "" or sType[NumberOfSensor] == "E":
+                    string += "-"
+                elif sensorPosition[protocol_c] == 1:
+                    string += "O"
+                else:
+                    string += "X"
+            if line == 3:
                 if ErrorId.createFolder[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.createFolder[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 3:
+            if line == 4:
                 if ErrorId.completeMeasuring[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeMeasuring[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 4:
+            if line == 5:
                 if ErrorId.editOutput[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.editOutput[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 5:
+            if line == 6:
                 if ErrorId.moveTrash[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.moveTrash[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 6:
+            if line == 7:
                 if ErrorId.completeScanning[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeScanning[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 7:
+            if line == 8:
                 if ErrorId.moveScreens[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.moveScreens[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 8:
+            if line == 9:
                 if ErrorId.completeJoinScreens[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeJoinScreens[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 9:
+            if line == 10:
                 if ErrorId.dataSizeTest[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.dataSizeTest[protocol_c] == 1:
                     string += "O"
                 else:
                     string += "X"
-            if line == 10:
+            if line == 11:
                 if ErrorId.copyToCloud[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.copyToCloud[protocol_c] == 1:
@@ -393,15 +400,16 @@ def protocol():
         temp_write += "\nSENSOR:            ||" + protocol_loop(1)
         temp_write += "\n______________________________________________________" \
                       "________________________________________________________"
-        temp_write += "\nCreate a folder    ||" + protocol_loop(2)
-        temp_write += "\nMeasuring          ||" + protocol_loop(3)
-        temp_write += "\nData transcription ||" + protocol_loop(4)
-        temp_write += "\nMove trash         ||" + protocol_loop(5)
-        temp_write += "\nScanning           ||" + protocol_loop(6)
-        temp_write += "\nMove screens       ||" + protocol_loop(7)
-        temp_write += "\nJoin screens       ||" + protocol_loop(8)
-        temp_write += "\nData size test     ||" + protocol_loop(9)
-        temp_write += "\nCopy data to cloud ||" + protocol_loop(10)
+        temp_write += "\nControl sensor     ||" + protocol_loop(2)
+        temp_write += "\nCreate a folder    ||" + protocol_loop(3)
+        temp_write += "\nMeasuring          ||" + protocol_loop(4)
+        temp_write += "\nData transcription ||" + protocol_loop(5)
+        temp_write += "\nMove trash         ||" + protocol_loop(6)
+        temp_write += "\nScanning           ||" + protocol_loop(7)
+        temp_write += "\nMove screens       ||" + protocol_loop(8)
+        temp_write += "\nJoin screens       ||" + protocol_loop(9)
+        temp_write += "\nData size test     ||" + protocol_loop(10)
+        temp_write += "\nCopy data to cloud ||" + protocol_loop(11)
 
         protocol_file.write(temp_write)
         protocol_file.close()
@@ -730,7 +738,7 @@ def edit_output(data_type, number_of_sensor):
         if data_type == 0:
             final_txt += "\nTestType: ATLAS18_SHAPE_METROLOGY_V" + version
         if data_type == 1:
-            final_txt += "\nTestType: ATLAS18_MIAN_THICKNESS_V" + version
+            final_txt += "\nTestType: ATLAS18_MAIN_THICKNESS_V" + version
         if data_type == 2:
             final_txt += "\nTestType: ATLAS18_BOTH_PRIVATE_V" + version
         final_txt += "\nCMM: OGP SmartScope CNC 500"
@@ -761,7 +769,7 @@ def edit_output(data_type, number_of_sensor):
             final_txt += "\nBow: " + str(planarity_bow)
         if data_type == 0 or data_type == 2:
             ouput_row = 0
-            final_txt += "\nX [mm]\t\t\tY [mm]\t\t\tZ [mm]\t\t\tZ_bow [mm]\n"
+            final_txt += "\nX[mm]\t\t\tY[mm]\t\t\tZ[mm]\t\t\tZ_bow[mm]\n"
             while ouput_row < len(planarityX):
                 final_txt += str(round(planarityX[ouput_row], 4))
                 final_txt += "0"*(7 - len(str(round(planarityX[ouput_row], 4)))) + "  \t\t"

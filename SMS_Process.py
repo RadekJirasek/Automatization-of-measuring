@@ -188,7 +188,7 @@ def repeat_measurement(process_type, manually_on):
                         file_name = "-".join(move_image_file.split('-')[:1]) + "-" \
                                     + str(delFinishedSteps
                                           + int(move_image_file.split('-')[len(move_image_file.split('-')) - 2])) \
-                                    + "-" + str(runNumber) + ".BMP"
+                                    + "-" + str(runNumber[NumberOfSensor]) + ".BMP"
                         os.rename(measurePath + move_image_file, measurePath + sType[NumberOfSensor] + "\\"
                                   + nameSensor[NumberOfSensor] + "\\" + file_name)
 
@@ -350,6 +350,9 @@ def process(manually=False):
         try:
             if sType[NumberOfSensor] == "" or sType[NumberOfSensor] == "E" \
                     or nameSensor[NumberOfSensor] == "":
+                continue
+
+            if sSensor[NumberOfSensor] == 0 and mSensor[NumberOfSensor] == 0:
                 continue
 
             if manually and pSensor[NumberOfSensor] == 1:
@@ -737,7 +740,7 @@ def process(manually=False):
                                 no_image = False
                                 file_name = "-".join(file.split('-')[:1]) + "-" \
                                             + str(delFinishedSteps + int(file.split('-')[len(file.split('-')) - 2])) \
-                                            + "-" + str(runNumber) + ".BMP"
+                                            + "-" + str(runNumber[NumberOfSensor]) + ".BMP"
                                 os.rename(measurePath + file, measurePath + sType[NumberOfSensor] + "\\"
                                           + nameSensor[NumberOfSensor] + "\\" + file_name)
 
@@ -788,7 +791,7 @@ def process(manually=False):
                                  + " " + sType[NumberOfSensor] + " " + nameSensor[NumberOfSensor] \
                                  + " " + str(NumberOfSensor) + " " + str(pSensor[NumberOfSensor]) \
                                  + " " + programPath + " " + save_log(return_log_file=True) + " "\
-                                 + "0" + " " + str(runNumber)
+                                 + "0" + " " + str(runNumber[NumberOfSensor])
                         Popen(arg_js)
 
                     except OSError:
@@ -874,8 +877,8 @@ def start():
                 sensors_size += limit_size(NumberOfSensor)[1]
             assert memory(cloudPath) > \
                 (round(2 * sensors_size / (2 ** 30), 3)), "There is too little of memory on server disk\n" \
-                                                            "Required: " + str(round(2 * sensors_size / (2 ** 30), 3))\
-                                                            + " GB, but is: " + str(memory(cloudPath)) + " GB"
+                                                          "Required: " + str(round(2 * sensors_size / (2 ** 30), 3))\
+                                                          + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
             assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
@@ -1083,15 +1086,17 @@ def start():
 
                 reset_mm3d()
                 time.sleep(1)
-                save_position(NumberOfSensor)
-                if not if_find_error():
-                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                             "| Position of the " + str(NumberOfSensor + 1) + ". sensor has been successfully saved.")
-                else:
-                    sensorPosition[NumberOfSensor] = 0
-                    error = 1
-                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                             "| Position of the " + str(NumberOfSensor + 1) + ". sensor has not been saved.")
+                if sSensor[NumberOfSensor] == 1 or mSensor[NumberOfSensor] == 1:
+                    save_position(NumberOfSensor)
+                    if not if_find_error():
+                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                 "| Position of the " + str(NumberOfSensor + 1)
+                                 + ". sensor has been successfully saved.")
+                    else:
+                        sensorPosition[NumberOfSensor] = 0
+                        error = 1
+                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                 "| Position of the " + str(NumberOfSensor + 1) + ". sensor has not been saved.")
 
             set_process_error()
             reset_mm3d()

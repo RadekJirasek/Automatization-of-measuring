@@ -72,7 +72,7 @@ try:
         programPath2 = sys.argv[9]
         logFile = sys.argv[10]
         startArg = int(sys.argv[11])
-        runNumber = int(sys.argv[11])
+        runNumber = int(sys.argv[12])
         """
         path = "D:\\"
         sType = "Downloads"

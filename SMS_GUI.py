@@ -159,7 +159,7 @@ try:
     def previous_sensor():
         global NumberOfSensor
         if NumberOfSensor > 0:
-            if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+            if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
@@ -176,6 +176,10 @@ try:
             # ↑ Conditions for actual sensor.
 
             elif sType[NumberOfSensor] != "":
+                if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+                        and sType[NumberOfSensor] != "E":
+                    pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
+
                 productType[NumberOfSensor] = ProductType.get()
                 ProductType.delete(0, END)
                 sensorBatch[NumberOfSensor] = SensorBatch.get()
@@ -271,7 +275,7 @@ try:
     def next_sensor():
         global NumberOfSensor
         if NumberOfSensor < 8:
-            if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+            if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
@@ -288,6 +292,9 @@ try:
             # ↑ Conditions for actual sensor.
 
             elif sType[NumberOfSensor] != "":
+                if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+                        and sType[NumberOfSensor] != "E":
+                    pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
                 productType[NumberOfSensor] = ProductType.get()
                 ProductType.delete(0, END)
                 sensorBatch[NumberOfSensor] = SensorBatch.get()
@@ -488,7 +495,7 @@ try:
 
     def confirm():
         global NumberOfSensor
-        if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+        if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                 and sType[NumberOfSensor] != "E":
             pag.alert("You must choice at least one possibility!", "Message")
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
@@ -504,6 +511,9 @@ try:
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.
         else:
+            if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+                    and sType[NumberOfSensor] != "E":
+                pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
 
             productType[NumberOfSensor] = ProductType.get()
             ProductType.delete(0, END)
@@ -743,7 +753,7 @@ try:
     def pre_start():
         global NumberOfSensor
 
-        if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+        if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                 and sType[NumberOfSensor] != "E":
             pag.alert("You must choice at least one possibility!", "Message")
         elif sType[NumberOfSensor] == "":
@@ -761,6 +771,10 @@ try:
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.
         else:
+            if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
+                    and sType[NumberOfSensor] != "E":
+                pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
+
             productType[NumberOfSensor] = ProductType.get()
             ProductType.delete(0, END)
             sensorBatch[NumberOfSensor] = SensorBatch.get()
