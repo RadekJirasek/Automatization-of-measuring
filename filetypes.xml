@@ -1,8 +1,11 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="trubB" type="PLAIN_TEXT" />
       <mapping pattern="data1" type="PLAIN_TEXT" />
+      <mapping pattern="trubC" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern="trubA" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
