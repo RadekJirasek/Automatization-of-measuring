@@ -6,6 +6,71 @@ try:
     from SMS_Process import*
     # Import script with declaring all of functions those using error system and other scripts.
 
+    """
+    def on_closing():
+        close_confirm = pag.confirm("Do you really want to quit program and stop all measurement processes?",
+                                    "Quit alert",
+                                    buttons=['Close', 'Continue'], timeout=30*1000)
+        if close_confirm == 'Close':
+            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                     "| Program has been closed by operator.")
+            SMS.destroy()
+    """
+
+    def control_database():
+        try:
+            LabPar.Automatic = True
+            check_database()
+
+            database_confirm = pag.confirm("Temperature: " + str(LabPar.Temperature) + " °C\nHumidity: "
+                                           + str(LabPar.Humidity) + " %", "Confirm following data from "
+                                                                          "database!",
+                                           buttons=['Confirm', 'Set manually'], timeout=5*60*1000)
+            if database_confirm == 'Set manually':
+                raise ValueError
+
+        except:
+            LabPar.Automatic = False
+            if traceback.format_exc().count("ValueError") == 0:
+                pag.alert("Program can't find out values of temperature and humidity in the lab automatically."
+                          "\n\nPLEASE, INSERT IT MANUALLY\n\n"
+                          "More info is in file on desktop.", "Import data error")
+                with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
+                          + "_error.txt", "w") as error_file:
+                    error_file.write(traceback.format_exc())
+                    error_file.close()
+
+            try:
+                LabPar.Temperature = float(pag.prompt("Insert temperature [°C]:",
+                                                      "Temperature in the laboratory",
+                                                      default=str(LabPar.Temperature)))
+                LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
+                                                   "Humidity in the laboratory", default=str(LabPar.Humidity)))
+                if 0 > LabPar.Humidity or LabPar.Humidity > 100:
+                    pag.alert("Humidity can be only between 0% and 100%", "Value error")
+                    LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
+                                                       "Humidity in the laboratory",
+                                                       default=str(LabPar.Humidity)))
+            except ValueError:
+                pag.alert("You must insert temperature or humidity only with numbers, +, - or .", "Value error")
+                LabPar.Temperature = float(pag.prompt("Insert temperature [°C]:",
+                                                      "Temperature in the laboratory",
+                                                      default=str(LabPar.Temperature)))
+                LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
+                                                   "Humidity in the laboratory", default=str(LabPar.Humidity)))
+                if 0 > LabPar.Humidity or LabPar.Humidity > 100:
+                    pag.alert("Humidity can be only between 0% and 100%", "Value error")
+                    LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
+                                                       "Humidity in the laboratory",
+                                                       default=str(LabPar.Humidity)))
+            except TypeError:
+                pass
+
+
+    def change_run_number(run_number):
+        SensorRunNumber.delete(0, END)
+        SensorRunNumber.insert(0, run_number)
+
 
     def control_run_number(control_path):
         if os.path.exists(control_path):
@@ -16,6 +81,25 @@ try:
                     return True
             return False
         else:
+            return False
+
+
+    def control_type():
+        if holderType[NumberOfSensor] == 1:
+            if sType[NumberOfSensor] == "R0" or sType[NumberOfSensor] == "R1" or sType[NumberOfSensor] == "R2" \
+                    or sType[NumberOfSensor] == "B" or sType[NumberOfSensor] == "E":
+                return True
+            else:
+                return False
+        elif holderType[NumberOfSensor] == 2:
+            if sType[NumberOfSensor] == "R3" or sType[NumberOfSensor] == "R4" or sType[NumberOfSensor] == "R5" \
+                    or sType[NumberOfSensor] == "B" or sType[NumberOfSensor] == "E":
+                return True
+            else:
+                return False
+        else:
+            pag.alert("Bad char format in the config file - Holder type\n"
+                      "Please, correct it and restart program", "ERROR")
             return False
 
 
@@ -42,7 +126,67 @@ try:
             else:
                 NameOfSensor.insert(0, nameSensor[NumberOfSensor])
             SensorComments.insert(0, comments[NumberOfSensor])
-            SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+            change_run_number(runNumber[NumberOfSensor])
+
+
+    def edit_metrology():
+        productType[NumberOfSensor] = ProductType.get()
+        sensorBatch[NumberOfSensor] = SensorBatch.get()
+        sensorWafer[NumberOfSensor] = SensorWafer.get()
+        nameSensor[NumberOfSensor] = NameOfSensor.get()
+        comments[NumberOfSensor] = SensorComments.get()
+        runNumber[NumberOfSensor] = SensorRunNumber.get()
+        pSensor[NumberOfSensor] = CheckP.var.get()
+        mSensor[NumberOfSensor] = CheckM.var.get()
+        sSensor[NumberOfSensor] = CheckS.var.get()
+
+        if os.path.exists(measurePath + sType[NumberOfSensor] + "\\"
+                          + nameSensor[NumberOfSensor] + "\\planarity.txt"):
+            try:
+                if firstProcess:
+                    control_database()
+                    save_log(sys.argv[0] + "\nSTART EDITING FILES: "
+                             + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+                             + "\nFree data size on DISK: " + str(memory(cloudPath))
+                             + " GB\n___________________________________", True)
+                edit_output(0, NumberOfSensor)
+                edit_output(1, NumberOfSensor)
+                edit_output(2, NumberOfSensor)
+                if os.path.exists(measurePath + sType[NumberOfSensor] + "\\"
+                                  + nameSensor[NumberOfSensor] + "\\planarity.txt"):
+                    os.rename(measurePath + sType[NumberOfSensor] + "\\"
+                              + nameSensor[NumberOfSensor] + "\\planarity.txt", measurePath
+                              + sType[NumberOfSensor] + "\\" + nameSensor[NumberOfSensor]
+                              + "\\planarity_" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M") + ".txt")
+            except OSError:
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Edit of measured data and creating of header file have failed. "
+                         "Program has probably problem with file. (Can't find, not permission, etc...)"
+                         "\n" + traceback.format_exc())
+
+            except ValueError:
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Edit of measured data and creating of header file have failed. "
+                         "Program has probably problem with data in file. (maybe too much of points)"
+                         "\n" + traceback.format_exc())
+
+            except (MemoryError, BufferError):
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+                         + "| Edit of measured data has failed. Program has probably problem "
+                           "with memory.\nFree date size on RAM: " + str(memory("RAM"))
+                         + " MB\nFree data size on DISK: " + str(memory(measurePath[0:2]))
+                         + " GB\n" + traceback.format_exc())
+            else:
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Edit of measured data and creating of header file have "
+                         "been successfully completed")
+        else:
+            pag.alert("In folder:\n" + measurePath + sType[NumberOfSensor] + "\\"
+                      + nameSensor[NumberOfSensor] + "\nmissing planarity file, "
+                                                     "program can not convert data without this file"
+                                                     "\n\t1.) If there is file with name planarity_\"date\""
+                                                     ".txt rename to planarity.txt).\n\t2.) or remeasure data",
+                      "Missing file")
 
 
     def r0_select():
@@ -130,7 +274,7 @@ try:
             else:
                 NameOfSensor.insert(0, nameSensor[NumberOfSensor])
             SensorComments.insert(0, comments[NumberOfSensor])
-            SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+            change_run_number(runNumber[NumberOfSensor])
 
 
     def e_select():
@@ -170,7 +314,12 @@ try:
                 pag.alert("Value of run number must be number between 1 and 999!", "Message")
             elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
                                     + NameOfSensor.get() + "\\"):
-                pag.alert("This sensor has been already measured with same run number!", "Message")
+                pag.alert("This sensor has been already measured, even with same run number!", "Message")
+            elif control_run_number(measurePath + sType[NumberOfSensor] + "\\"
+                                    + NameOfSensor.get() + "\\"):
+                pag.alert("This sensor has been already measured, even with same run number!", "Message")
+            elif not control_type():
+                pag.alert("There is set incorrect combination of holder and sensor types in the config file!", "Alert")
             elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
                 pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
             # ↑ Conditions for actual sensor.
@@ -180,19 +329,20 @@ try:
                         and sType[NumberOfSensor] != "E":
                     pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
 
-                productType[NumberOfSensor] = ProductType.get()
-                ProductType.delete(0, END)
-                sensorBatch[NumberOfSensor] = SensorBatch.get()
-                SensorBatch.delete(0, END)
-                sensorWafer[NumberOfSensor] = SensorWafer.get()
-                SensorWafer.delete(0, END)
-                nameSensor[NumberOfSensor] = NameOfSensor.get()
-                NameOfSensor.delete(0, END)
-                comments[NumberOfSensor] = SensorComments.get()
-                SensorComments.delete(0, END)
-                runNumber[NumberOfSensor] = SensorRunNumber.get()
-                SensorRunNumber.delete(0, END)
-                # ↑ Clear textbox for new data of next sensor.
+                if sType[NumberOfSensor] != "E":
+                    productType[NumberOfSensor] = ProductType.get()
+                    ProductType.delete(0, END)
+                    sensorBatch[NumberOfSensor] = SensorBatch.get()
+                    SensorBatch.delete(0, END)
+                    sensorWafer[NumberOfSensor] = SensorWafer.get()
+                    SensorWafer.delete(0, END)
+                    nameSensor[NumberOfSensor] = NameOfSensor.get()
+                    NameOfSensor.delete(0, END)
+                    comments[NumberOfSensor] = SensorComments.get()
+                    SensorComments.delete(0, END)
+                    runNumber[NumberOfSensor] = SensorRunNumber.get()
+                    SensorRunNumber.delete(0, END)
+                    # ↑ Clear textbox for new data of next sensor.
                 pSensor[NumberOfSensor] = CheckP.var.get()
                 if sType[NumberOfSensor] == "B":
                     pSensor[NumberOfSensor] = 0
@@ -215,6 +365,7 @@ try:
                     TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
                 TypeMenu.menu.add_command(command=b_select, image=Img.B)
                 TypeMenu.menu.add_command(command=e_select, image=Img.E)
+                TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
                 # ↑ Set buttons in menu.
 
                 if sType[NumberOfSensor] == "E":
@@ -249,7 +400,7 @@ try:
                 SensorWafer.insert(0, sensorWafer[NumberOfSensor])
                 NameOfSensor.insert(0, nameSensor[NumberOfSensor])
                 SensorComments.insert(0, comments[NumberOfSensor])
-                SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+                change_run_number(runNumber[NumberOfSensor])
                 if mSensor[NumberOfSensor] == 1:
                     CheckM.select()
                 else:
@@ -279,14 +430,19 @@ try:
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-                pag.alert("You must unique serial number of sensor!", "Message")
+                pag.alert("You must write unique serial number of sensor!", "Message")
             elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and \
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
                 pag.alert("Value of run number must be number between 1 and 999!", "Message")
             elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
                                     + NameOfSensor.get() + "\\"):
-                pag.alert("This sensor has been already measured with same run number!", "Message")
+                pag.alert("This sensor has been already measured, even with same run number!", "Message")
+            elif control_run_number(measurePath + sType[NumberOfSensor] + "\\"
+                                    + NameOfSensor.get() + "\\"):
+                pag.alert("This sensor has been already measured, even with same run number!", "Message")
+            elif not control_type():
+                pag.alert("There is set incorrect combination of holder and sensor types in the config file!", "Alert")
             elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
                 pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
             # ↑ Conditions for actual sensor.
@@ -295,19 +451,21 @@ try:
                 if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
                         and sType[NumberOfSensor] != "E":
                     pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
-                productType[NumberOfSensor] = ProductType.get()
-                ProductType.delete(0, END)
-                sensorBatch[NumberOfSensor] = SensorBatch.get()
-                SensorBatch.delete(0, END)
-                sensorWafer[NumberOfSensor] = SensorWafer.get()
-                SensorWafer.delete(0, END)
-                nameSensor[NumberOfSensor] = NameOfSensor.get()
-                NameOfSensor.delete(0, END)
-                comments[NumberOfSensor] = SensorComments.get()
-                SensorComments.delete(0, END)
-                runNumber[NumberOfSensor] = SensorRunNumber.get()
-                SensorRunNumber.delete(0, END)
-                # ↑ Clear textbox for new data of next sensor.
+
+                if sType[NumberOfSensor] != "E":
+                    productType[NumberOfSensor] = ProductType.get()
+                    ProductType.delete(0, END)
+                    sensorBatch[NumberOfSensor] = SensorBatch.get()
+                    SensorBatch.delete(0, END)
+                    sensorWafer[NumberOfSensor] = SensorWafer.get()
+                    SensorWafer.delete(0, END)
+                    nameSensor[NumberOfSensor] = NameOfSensor.get()
+                    NameOfSensor.delete(0, END)
+                    comments[NumberOfSensor] = SensorComments.get()
+                    SensorComments.delete(0, END)
+                    runNumber[NumberOfSensor] = SensorRunNumber.get()
+                    SensorRunNumber.delete(0, END)
+                    # ↑ Clear textbox for new data of next sensor.
                 pSensor[NumberOfSensor] = CheckP.var.get()
                 if sType[NumberOfSensor] == "B":
                     pSensor[NumberOfSensor] = 0
@@ -330,6 +488,7 @@ try:
                     TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
                 TypeMenu.menu.add_command(command=b_select, image=Img.B)
                 TypeMenu.menu.add_command(command=e_select, image=Img.E)
+                TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
                 # ↑ Set buttons in menu.
 
                 if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
@@ -370,7 +529,7 @@ try:
                 else:
                     NameOfSensor.insert(0, nameSensor[NumberOfSensor])
                 SensorComments.insert(0, comments[NumberOfSensor])
-                SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+                change_run_number(runNumber[NumberOfSensor])
                 # ↑ Write label of menu according to type of sensor.
 
                 if mSensor[NumberOfSensor] == 1:
@@ -426,6 +585,7 @@ try:
             TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
         TypeMenu.menu.add_command(command=b_select, image=Img.B)
         TypeMenu.menu.add_command(command=e_select, image=Img.E)
+        TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
         # ↑ Set buttons in menu.
 
         if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
@@ -473,7 +633,7 @@ try:
         else:
             NameOfSensor.insert(0, nameSensor[NumberOfSensor])
         SensorComments.insert(0, comments[NumberOfSensor])
-        SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+        change_run_number(runNumber[NumberOfSensor])
         # ↑ Write label of menu according to type of sensor.
 
         if mSensor[NumberOfSensor] == 1:
@@ -506,7 +666,10 @@ try:
             pag.alert("Value of run number must be number between 1 and 999!", "Message")
         elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
                                 + NameOfSensor.get() + "\\"):
-            pag.alert("This sensor has been already measured with same run number!", "Message")
+            pag.alert("This sensor has been already measured, even with same run number!", "Message")
+        elif control_run_number(measurePath + sType[NumberOfSensor] + "\\"
+                                + NameOfSensor.get() + "\\"):
+            pag.alert("This sensor has been already measured, even with same run number!", "Message")
         elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.
@@ -594,7 +757,7 @@ try:
                 else:
                     NameOfSensor.insert(0, nameSensor[NumberOfSensor])
                 SensorComments.insert(0, comments[NumberOfSensor])
-                SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+                change_run_number(runNumber[NumberOfSensor])
                 # ↑ Write label of menu according to type of sensor.
 
                 if mSensor[NumberOfSensor] == 1:
@@ -639,6 +802,7 @@ try:
                     TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
                 TypeMenu.menu.add_command(command=b_select, image=Img.B)
                 TypeMenu.menu.add_command(command=e_select, image=Img.E)
+                TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
                 # ↑ Set buttons in menu.
 
                 if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
@@ -680,7 +844,7 @@ try:
                 else:
                     NameOfSensor.insert(0, nameSensor[NumberOfSensor])
                 SensorComments.insert(0, comments[NumberOfSensor])
-                SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+                change_run_number(runNumber[NumberOfSensor])
                 # ↑ Write label of menu according to type of sensor.
 
                 if mSensor[NumberOfSensor] == 1:
@@ -699,53 +863,7 @@ try:
                     CheckP.deselect()
                 # ↑ Selecting or deselecting of checkbox buttons.
 
-                try:
-                    LabPar.Automatic = True
-                    check_database()
-
-                    database_confirm = pag.confirm("Temperature: " + str(LabPar.Temperature) + " °C\nHumidity: "
-                                                   + str(LabPar.Humidity) + " %", "Confirm following data from "
-                                                                                  "database!",
-                                                   buttons=['Confirm', 'Set manually'], timeout=5*60*1000)
-                    if database_confirm == 'Set manually':
-                        raise ValueError
-
-                except:
-                    LabPar.Automatic = False
-                    if traceback.format_exc().count("ValueError") == 0:
-                        pag.alert("Program can't find out values of temperature and humidity in the lab automatically."
-                                  "\n\nPLEASE, INSERT IT MANUALLY\n\n"
-                                  "More info is in file on desktop.", "Import data error")
-                        with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
-                                  + "_error.txt", "w") as error_file:
-                            error_file.write(traceback.format_exc())
-                            error_file.close()
-
-                    try:
-                        LabPar.Temperature = float(pag.prompt("Insert temperature [°C]:",
-                                                              "Temperature in the laboratory",
-                                                              default=str(LabPar.Temperature)))
-                        LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
-                                                           "Humidity in the laboratory", default=str(LabPar.Humidity)))
-                        if 0 > LabPar.Humidity or LabPar.Humidity > 100:
-                            pag.alert("Humidity can be only between 0% and 100%", "Value error")
-                            LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
-                                                               "Humidity in the laboratory",
-                                                               default=str(LabPar.Humidity)))
-                    except ValueError:
-                        pag.alert("You must insert temperature or humidity only with numbers, +, - or .", "Value error")
-                        LabPar.Temperature = float(pag.prompt("Insert temperature [°C]:",
-                                                              "Temperature in the laboratory",
-                                                              default=str(LabPar.Temperature)))
-                        LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
-                                                           "Humidity in the laboratory", default=str(LabPar.Humidity)))
-                        if 0 > LabPar.Humidity or LabPar.Humidity > 100:
-                            pag.alert("Humidity can be only between 0% and 100%", "Value error")
-                            LabPar.Humidity = float(pag.prompt("Insert humidity [%]:",
-                                                               "Humidity in the laboratory",
-                                                               default=str(LabPar.Humidity)))
-                    except TypeError:
-                        pass
+                control_database()
 
                 start()  # Start program.
 
@@ -766,7 +884,12 @@ try:
             pag.alert("Value of run number must be number between 1 and 999!", "Message")
         elif control_run_number(cloudPath + sType[NumberOfSensor] + "\\"
                                 + NameOfSensor.get() + "\\"):
-            pag.alert("This sensor has been already measured with same run number!", "Message")
+            pag.alert("This sensor has been already measured, even with same run number!", "Message")
+        elif control_run_number(measurePath + sType[NumberOfSensor] + "\\"
+                                + NameOfSensor.get() + "\\"):
+            pag.alert("This sensor has been already measured, even with same run number!", "Message")
+        elif not control_type():
+            pag.alert("There is set incorrect combination of holder and sensor types in the config file!", "Alert")
         elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
         # ↑ Conditions for actual sensor.
@@ -821,6 +944,7 @@ try:
                     TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
                 TypeMenu.menu.add_command(command=b_select, image=Img.B)
                 TypeMenu.menu.add_command(command=e_select, image=Img.E)
+                TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
                 # ↑ Set buttons in menu.
 
                 if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
@@ -861,7 +985,7 @@ try:
                 else:
                     NameOfSensor.insert(0, nameSensor[NumberOfSensor])
                 SensorComments.insert(0, comments[NumberOfSensor])
-                SensorRunNumber.insert(0, runNumber[NumberOfSensor])
+                change_run_number(runNumber[NumberOfSensor])
                 # ↑ Write label of menu according to type of sensor.
 
                 if mSensor[NumberOfSensor] == 1:
@@ -1004,6 +1128,7 @@ try:
         TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
     TypeMenu.menu.add_command(command=b_select, image=Img.B)
     TypeMenu.menu.add_command(command=e_select, image=Img.E)
+    TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
     # Insert images to submenu.
 
     if mSensor[0] == 1:
@@ -1020,7 +1145,8 @@ try:
     SensorBatch.insert(0, sensorBatch[0])
     SensorWafer.insert(0, sensorWafer[0])
     NameOfSensor.insert(0, dNameSensor[0])
-    SensorComments.insert(0, comments[NumberOfSensor])
+    SensorComments.insert(0, comments[0])
+    change_run_number(runNumber[0])
     # Write default name of first sensor to textbox.
 
     TypeMenu.pack(side=TOP, fill=BOTH)
@@ -1080,9 +1206,10 @@ try:
     try:
         SMS.iconbitmap(programPath + "screens\\SensorMeasurement.ico")
     except TclError:
-        pass
+        pass  # It doesn't matter, if program can't import icon.
     # ↑ Set options of GUI.
 
+    # SMS.protocol("WM_DELETE_WINDOW", on_closing)
     SMS.mainloop()
     # ↑ Loop of GUI. It maintains window opened.
 

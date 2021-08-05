@@ -31,12 +31,12 @@ def reset_origins():
     time.sleep(3)
     pag.click(Position.resetX)
     pag.moveRel(0, 100)
-    wait(sleep_until="resetXOn.png")
+    wait(sleep_until=["resetXOn+.png", "resetXOn-.png"])
     if not if_find_error():
         time.sleep(0.5)
         pag.click(Position.resetY)
         pag.moveRel(0, 100)
-        wait(sleep_until="resetYOn.png")
+        wait(sleep_until=["resetYOn+.png", "resetYOn-.png"])
     # ↑ Reset origin of mm3d for start measuring new sensor. Click to three buttons.
 
 
@@ -163,9 +163,14 @@ def default():
         defaultRepetition = defaultRepetition + 1
         pag.screenshot(programPath + "Error Screenshots\\"
                        + datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S") + ".png")
+
         time.sleep(0.5)
+        error_icon = pag.locateCenterOnScreen(Img.error, grayscale=True)
+        if error_icon:
+            pag.click(error_icon)
 
         if if_repeat_measure() and defaultRepetition < 2:
+
             pag.typewrite(["enter"])
             time.sleep(1)
 
@@ -303,7 +308,7 @@ def protocol_loop(line):
             if line == 1:
                 string += str(protocol_c + 1)
             if line == 2:
-                if sType[protocol_c] == "" or sType[NumberOfSensor] == "E":
+                if sType[protocol_c] == "" or sType[protocol_c] == "E" or pSensor[protocol_c] == 0:
                     string += "-"
                 elif sensorPosition[protocol_c] == 1:
                     string += "O"
@@ -317,7 +322,7 @@ def protocol_loop(line):
                 else:
                     string += "X"
             if line == 4:
-                if ErrorId.completeMeasuring[protocol_c] == 0:
+                if ErrorId.completeMeasuring[protocol_c] == 0 and ErrorId.startMeasuring[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeMeasuring[protocol_c] == 1:
                     string += "O"
@@ -338,7 +343,7 @@ def protocol_loop(line):
                 else:
                     string += "X"
             if line == 7:
-                if ErrorId.completeScanning[protocol_c] == 0:
+                if ErrorId.completeScanning[protocol_c] == 0 and ErrorId.startScanning[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeScanning[protocol_c] == 1:
                     string += "O"
@@ -352,7 +357,7 @@ def protocol_loop(line):
                 else:
                     string += "X"
             if line == 9:
-                if ErrorId.completeJoinScreens[protocol_c] == 0:
+                if ErrorId.completeJoinScreens[protocol_c] == 0 and ErrorId.startJoinScreens[protocol_c] == 0:
                     string += "-"
                 elif ErrorId.completeJoinScreens[protocol_c] == 1:
                     string += "O"
@@ -414,6 +419,18 @@ def protocol():
         protocol_file.write(temp_write)
         protocol_file.close()
 # ↑ Generating protocol text file.
+
+
+def control_multi_runs(control_path):
+    if os.path.exists(control_path):
+        files = os.listdir(control_path)
+        for file in files:
+            if (not file.endswith(str(runNumber[NumberOfSensor]) + ".BMP") and file.endswith(".BMP")) or\
+                    (not file.endswith(str(runNumber[NumberOfSensor]) + ".dat") and file.endswith(".dat")):
+                return True
+        return False
+    else:
+        return False
 
 
 def check_size(source):
@@ -518,7 +535,6 @@ def wait_previous(sleep_until):
             return True
 
     elif number_of_images == 4:
-
         if pag.locateCenterOnScreen(programPath + "screens\\" + sleep_until[0])\
                 or pag.locateCenterOnScreen(programPath + "screens\\" + sleep_until[1]) \
                 or pag.locateCenterOnScreen(programPath + "screens\\" + sleep_until[2]) \
@@ -615,6 +631,7 @@ def after_error_reset():
         ErrorId.startJoinScreens[NumberOfSensor] = 0
         ErrorId.completeJoinScreens[NumberOfSensor] = 0
         ErrorId.dataSizeTest[NumberOfSensor] = 0
+        ErrorId.copyToCloud[NumberOfSensor] = 0
     NumberOfSensor = 0
 
 
@@ -724,15 +741,17 @@ def edit_output(data_type, number_of_sensor):
         main_name_file = "_MAINThickness_"
     if data_type == 2:
         main_name_file = "_PRIVATE_"
+    name_file = sensorBatch[number_of_sensor] + "-W" + sensorWafer[number_of_sensor] +\
+        main_name_file + "0"*(3 - len(str(runNumber[number_of_sensor]))) + str(runNumber[number_of_sensor])\
+        + ".dat"
     with open(measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor]
-              + "\\" + sensorBatch[number_of_sensor] + "-" + sensorWafer[number_of_sensor] +
-              main_name_file + "0"*(3 - len(str(runNumber[number_of_sensor]))) + str(runNumber[number_of_sensor])
-              + ".dat", 'w') as final_file:
-        final_txt = "Type: " + productType[number_of_sensor]
+              + "\\" + name_file, 'w') as final_file:
+        final_txt = name_file
+        final_txt += "\nType: " + productType[number_of_sensor]
         final_txt += "\nBatch: " + sensorBatch[number_of_sensor]
         final_txt += "\nWafer: " + sensorWafer[number_of_sensor]
         final_txt += "\nComponent: " + nameSensor[number_of_sensor]
-        final_txt += "\nDate: " + datetime.datetime.now().strftime("%d %b %y")
+        final_txt += "\nDate: " + datetime.datetime.now().strftime("%d %b %Y")
         final_txt += "\nTime: " + datetime.datetime.now().strftime("%H:%M:%S")
         final_txt += "\nInstitute: " + institute
         if data_type == 0:
@@ -741,7 +760,10 @@ def edit_output(data_type, number_of_sensor):
             final_txt += "\nTestType: ATLAS18_MAIN_THICKNESS_V" + version
         if data_type == 2:
             final_txt += "\nTestType: ATLAS18_BOTH_PRIVATE_V" + version
-        final_txt += "\nCMM: OGP SmartScope CNC 500"
+        if data_type == 0:
+            final_txt += "\nCMM: OGP SmartScope CNC 500"
+        if data_type == 1 or data_type == 2:
+            final_txt += "\nInstrument: OGP SmartScope CNC 500"
         if data_type == 0 or data_type == 2:
             final_txt += "\nProbe: TTL Laser"
         final_txt += "\nRunNumber: " + str(runNumber[number_of_sensor])
@@ -763,22 +785,18 @@ def edit_output(data_type, number_of_sensor):
 
         if data_type == 1 or data_type == 2:
             planarity_thickness = round((min(planarityZ) * 10**3), 1)
-            final_txt += "\nAvThickness: " + str(planarity_thickness)
+            final_txt += "\nAvThickness: " + str(planarity_thickness) + "\n"
         if data_type == 2:
             planarity_bow = round((max(planarityZ) - min(planarityZ)) * 10**3, 1)
             final_txt += "\nBow: " + str(planarity_bow)
         if data_type == 0 or data_type == 2:
             ouput_row = 0
-            final_txt += "\nX[mm]\t\t\tY[mm]\t\t\tZ[mm]\t\t\tZ_bow[mm]\n"
+            final_txt += "\nX[mm]\tY[mm]\tZ[mm]\tZ_bow[mm]\n"
             while ouput_row < len(planarityX):
-                final_txt += str(round(planarityX[ouput_row], 4))
-                final_txt += "0"*(7 - len(str(round(planarityX[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarityY[ouput_row], 4))
-                final_txt += "0"*(7 - len(str(round(planarityY[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarityZ[ouput_row], 4))
-                final_txt += "0"*(6 - len(str(round(planarityZ[ouput_row], 4)))) + "  \t\t"
-                final_txt += str(round(planarityZ[ouput_row], 4))
-                final_txt += "0"*(6 - len(str(round(planarityZ[ouput_row], 4)))) + "\n"
+                final_txt += "{:010.4f}".format(planarityX[ouput_row]) + "\t"
+                final_txt += "{:010.4f}".format(planarityY[ouput_row]) + "\t"
+                final_txt += "{:010.4f}".format(planarityZ[ouput_row]) + "\t"
+                final_txt += "{:010.4f}".format(planarityZ[ouput_row]) + "\n"
                 ouput_row += 1
 
         final_file.write(final_txt)

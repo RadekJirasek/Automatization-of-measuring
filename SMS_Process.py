@@ -344,6 +344,7 @@ def process(manually=False):
     global delFinishedSteps
     global NumberOfSensor
     global firstProcess
+    global defaultRepetition
     global error
 
     for NumberOfSensor in range(0, 9):
@@ -362,16 +363,16 @@ def process(manually=False):
                 continue
 
             this_sensor_data_size = limit_size(NumberOfSensor)[1]
-            if memory(programPath[0:2]) < (round(this_sensor_data_size / (2 ** 30), 3)):
+            if memory(measurePath[0:2]) < (round(this_sensor_data_size / (2 ** 30), 3)):
                 save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                         "| Too little free memory on local " + programPath[0:2] + " disk. Program will wait until"
+                         "| Too little free memory on local " + measurePath[0:2] + " disk. Program will wait until"
                          + " previous process will be end and ask user to free up memory.")
                 if wait_end_process("backup_script.exe") or wait_end_process("join_images_script.exe"):
                     while wait_end_process("join_images_script.exe"):
                         time.sleep(5)
                     while wait_end_process("backup_script.exe"):
                         time.sleep(5)
-                memory_alert = pag.confirm("There are too little memory on local " + programPath[0:2]
+                memory_alert = pag.confirm("There are too little memory on local " + measurePath[0:2]
                                            + "disk. Please, free up disk space", "MEMORY ALERT",
                                            buttons=['Start measuring without scanning', 'Done - memory is free up'],
                                            timeout=60*60*1000)
@@ -380,12 +381,14 @@ def process(manually=False):
                         sSensor[temp_nummber_of_sensor] = 0
                     error = 2
                     save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                             "| There are still too little memory on local " + programPath[0:2] +
+                             "| There are still too little memory on local " + measurePath[0:2] +
                              "disk. The request for free up memory has not been made. Program continue in measurement "
                              "without scanning processes")
 
             delFinishedSteps = 0
+            defaultRepetition = 0
             set_process_error()
+            set_repeat_measure(1)
 
             control_language()
             # ↑ Switch to eng keyboard if it doesn't.
@@ -450,7 +453,7 @@ def process(manually=False):
 
                 if ErrorId.startMeasuring[NumberOfSensor] == 0:
                     try:
-                        if os.path.exists(programPath + "planarity.txt"):
+                        if os.path.exists(measurePath + "planarity.txt"):
                             os.rename(measurePath + "planarity.txt", measurePath + "Trash\\planarity_backup_"
                                       + datetime.datetime.now().strftime("%y_%m_%d_%H_%M") + ".txt")
 
@@ -490,12 +493,13 @@ def process(manually=False):
                         set_repeat_measure(1)
                         repeat_measurement("Measurement", manually)
                         if not if_find_error():
-                            wait(False)  # Wait to complete measuring.
+                            wait()  # Wait to saving measuring.
                             after_laser_error()
 
                     if if_repeat_measure():
                         error = 2
                         set_process_error(1)
+                        set_repeat_measure(1)
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                  "| Measurement: repetition of process has failed because "
                                  "(solvable) error has been occurred two times in a row.")
@@ -534,11 +538,26 @@ def process(manually=False):
                                         after_laser_error()
 
                                 if if_repeat_measure():
+                                    set_repeat_measure(1)
+                                    repeat_measurement("Measurement", manually)
+                                    if not if_find_error():
+                                        wait(False)  # Wait to complete measuring.
+                                        after_laser_error()
+
+                                if if_repeat_measure():
+                                    set_repeat_measure(1)
+                                    repeat_measurement("Measurement", manually)
+                                    if not if_find_error():
+                                        wait(False)  # Wait to complete measuring.
+                                        after_laser_error()
+
+                                if if_repeat_measure():
                                     error = 2
                                     set_process_error(1)
+                                    set_repeat_measure(1)
                                     save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                              "| Measurement: repetition of process has failed because "
-                                             "(solvable) error has been occurred three times in a row.")
+                                             "(solvable) error has been occurred five times in a row.")
                                 if if_find_error():
                                     ErrorId.completeMeasuring[NumberOfSensor] = 2
                                     save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
@@ -580,7 +599,7 @@ def process(manually=False):
                         ErrorId.editOutput[NumberOfSensor] = 2
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                  "| Edit of measured data and creating of header file have failed. "
-                                 "Program has probably problem data in file. (maybe too much of points)"
+                                 "Program has probably problem with data in file. (maybe too much of points)"
                                  "\n" + traceback.format_exc())
 
                     except (MemoryError, BufferError):
@@ -589,7 +608,7 @@ def process(manually=False):
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                                  + "| Edit of measured data has failed. Program has probably problem "
                                  "with memory.\nFree date size on RAM: " + str(memory("RAM"))
-                                 + " MB\nFree data size on DISK: " + str(memory(programPath[0:2]))
+                                 + " MB\nFree data size on DISK: " + str(memory(measurePath[0:2]))
                                  + " GB\n" + traceback.format_exc())
 
                     else:
@@ -707,15 +726,58 @@ def process(manually=False):
                             after_laser_error()
 
                     if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
+                        set_repeat_measure(1)
+                        repeat_measurement("Scanning", manually)
+                        if not if_find_error():
+                            wait(False)  # Wait to complete measuring.
+                            after_laser_error()
+
+                    if if_repeat_measure():
                         error = 2
                         set_process_error(1)
+                        set_repeat_measure(1)
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                  "| Scanning: repetition of process has failed because "
-                                 "(solvable) error has been occurred four times in a row.")
+                                 "(solvable) error has been occurred ten times in a row.")
                     if if_find_error():
-                        ErrorId.completeMeasuring[NumberOfSensor] = 2
+                        ErrorId.completeScanning[NumberOfSensor] = 2
                         save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                                 "| Scanning of the sensor has failed (during measurement).")
+                                 "| Scanning of the sensor has failed.")
 
                     if not if_find_error():
                         ErrorId.completeScanning[NumberOfSensor] = 1
@@ -777,6 +839,14 @@ def process(manually=False):
                     ErrorId.dataSizeTest[NumberOfSensor] = 1
                     save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                              "| Test of files has been successfully completed")
+
+                elif test_size > limit[1] and control_multi_runs(measurePath + sType[NumberOfSensor]
+                                                                 + "\\" + nameSensor[NumberOfSensor]):
+                    error = 2
+                    ErrorId.dataSizeTest[NumberOfSensor] = 2
+                    save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                             "| Test of files WARNING:\n\t\t   Size: " + str(test_size) + " B and not " + str(limit)
+                             + "\n\t\t   There are more measured data sets of one sensor in one file.")
 
                 else:
                     error = 2
@@ -868,6 +938,7 @@ def start():
 
         if error == 0:
             sensors_size = 0
+            defaultRepetition = 0
             NumberOfSensor = 0
 
             for NumberOfSensor in range(0, 9):
@@ -881,9 +952,9 @@ def start():
                                                           + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
-            assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
-                "There is too little of memory on local " + programPath[0:2] + "disk\nRequired: " \
-                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(programPath[0:2])) + " GB"
+            assert memory(measurePath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
+                "There is too little of memory on local " + measurePath[0:2] + "disk\nRequired: " \
+                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(measurePath[0:2])) + " GB"
 
             save_log(sys.argv[0] + "\nSTART MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
@@ -932,9 +1003,9 @@ def start():
                                                           + " GB, but is: " + str(memory(cloudPath)) + " GB"
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
-            assert memory(programPath[0:2]) > (round(sensors_size / (2 ** 30), 3)), \
-                "There is too little of memory on local " + programPath[0:2] + "disk\nRequired: " \
-                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(programPath[0:2])) + " GB"
+            assert memory(measurePath[0:2]) > (round(sensors_size / (2 ** 30), 3)), \
+                "There is too little of memory on local " + measurePath[0:2] + "disk\nRequired: " \
+                + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(measurePath[0:2])) + " GB"
 
             save_log("\n\nNEW START OF MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
@@ -1270,7 +1341,7 @@ def start():
         if control_string(traceback.format_exc())[0] <= 15 or control_string(traceback.format_exc())[1] <= 1200:
             pag.alert("Error has been occurred before or after measuring:\n\nPossible reason of the "
                       "error is problem with memory.\nFree date size on RAM: " + str(memory("RAM"))
-                      + " MB\nFree data size on DISK: " + str(memory(programPath[0:2])) + " GB"
+                      + " MB\nFree data size on DISK: " + str(memory(measurePath[0:2])) + " GB"
                       + 3 * "\n" + traceback.format_exc(), "ERROR", root=SMS)
         else:
             with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
@@ -1278,7 +1349,7 @@ def start():
                 error_file.write("Error has been occurred before or after measuring:\n\nPossible reason of the "
                                  "error is problem with memory.\nFree date size on RAM: "
                                  + str(memory("RAM")) + " MB\nFree data size on DISK: "
-                                 + str(memory(programPath[0:2])) + " GB" + 3 * "\n" + traceback.format_exc())
+                                 + str(memory(measurePath[0:2])) + " GB" + 3 * "\n" + traceback.format_exc())
                 error_file.close()
             pag.alert("Error is too long.\n\nIt will be in text file on desktop.", "ERROR", root=SMS)
 

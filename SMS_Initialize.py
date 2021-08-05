@@ -1,7 +1,8 @@
 # SCRIPT DECLARING BOOKMARKS AND BASIC VARIABLES AND VARIABLES FROM TEXT FILES
 
 import os
-# Bookmark for using operating system.
+import sys
+# Bookmarks for using operating system.
 import numpy as np
 # Bookmark for working with arrays
 from shutil import disk_usage, move, rmtree
@@ -26,6 +27,7 @@ import traceback
 # Bookmark for analysing errors.
 import tkinter
 # Bookmark creating GUI.
+from tkinter import messagebox
 from PIL import Image, ImageTk
 # Bookmark working with images.
 from psutil import virtual_memory, process_iter
@@ -65,7 +67,7 @@ runNumber = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of run numbers of measuring of 
 mSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for measurement of sensors (measurement (1) or not (0)).
 sSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for scanning of sensors (scanning (1) or not (0)).
 pSensor = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for APS of sensors (APS on (1) or off (0)).
-sensorPos = 1  # Array of variables for right or bad position of sensors (ok(1) or bad(0)).
+sensorPos = 1  # Variable for right or bad position of sensors (ok(1) or bad(0)).
 sensorPosition = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  # Array of variables for right or bad position of sensors.
 holderType = [1, 1, 1, 1, 1, 1, 1, 1, 1]  # Array of variables for type of holder holding sensors
 # (1 for R0, R1, R2 and 2 for R3, R4, R5).
@@ -356,6 +358,7 @@ with open(programPath + "config.txt", 'r') as f:
 
 
 class Img:
+    em = ImageTk.PhotoImage(Image.open(programPath + "screens\\em.png"))
     R0 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R0_.png"))
     R1 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1_.png"))
     R2 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2_.png"))
@@ -427,8 +430,10 @@ assert os.path.exists(programPath + "backup_script.exe"), "Program 'backup_scrip
 assert os.path.exists(programPath + "screens\\folderOn.png"), "Screen 'folderOn' has not been found!"
 assert os.path.exists(programPath + "screens\\f4On.png"), "Screen 'f4On' has not been found!"
 assert os.path.exists(programPath + "screens\\ctrlaOn.png"), "Screen 'ctrlaOn' has not been found!"
-assert os.path.exists(programPath + "screens\\resetXOn.png"), "Screen 'resetXOn' has not been found!"
-assert os.path.exists(programPath + "screens\\resetYOn.png"), "Screen 'resetYOn' has not been found!"
+assert os.path.exists(programPath + "screens\\resetXOn+.png"), "Screen 'resetXOn+' has not been found!"
+assert os.path.exists(programPath + "screens\\resetXOn-.png"), "Screen 'resetXOn-' has not been found!"
+assert os.path.exists(programPath + "screens\\resetYOn+.png"), "Screen 'resetYOn+' has not been found!"
+assert os.path.exists(programPath + "screens\\resetYOn-.png"), "Screen 'resetYOn-' has not been found!"
 assert os.path.exists(programPath + "screens\\resetZOn.png"), "Screen 'resetZOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetAngleOn.png"), "Screen 'resetAngleOn' has not been found!"
 assert os.path.exists(programPath + "screens\\filenameOn.png"), "Screen 'filenameOn' has not been found!"

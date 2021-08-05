@@ -53,7 +53,7 @@ try:
     print("Copy of data to server has been started ...")
 
 
-    def copy_dir(src, dst, symlinks=False, ignore=None):
+    def copy_dir(src, dst, symlinks=True, ignore=None):
         for item in os.listdir(src):
             s = os.path.join(src, item)
             d = os.path.join(dst, item)
@@ -62,6 +62,9 @@ try:
             else:
                 copy2(s, d)
 
+
+    if not os.path.exists(toPath):
+        os.mkdir(toPath)
     copy_dir(fromPath, toPath)
 
 except KeyboardInterrupt:
