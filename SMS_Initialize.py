@@ -28,6 +28,7 @@ import traceback
 import tkinter
 # Bookmark creating GUI.
 from tkinter import messagebox
+from tkinter import ttk
 from PIL import Image, ImageTk
 # Bookmark working with images.
 from psutil import virtual_memory, process_iter
@@ -36,12 +37,28 @@ import xml.etree.ElementTree as ET
 # Bookmark for working with .xml files.
 from requests import get as rq_get
 # Bookmark for downloading files from database
+import matplotlib.pyplot as plt
+# Bokmark for creating plots
 
 pag.FAILSAFE = False
 SMS = tkinter.Tk()
+SMS.title("Sensors measurement and scanning")
+SMS.resizable(0, 0)
 # ↑ Declaration tkinter object.
 
+progressLength = 200
+progress = ttk.Progressbar(SMS, orient=HORIZONTAL, length=progressLength, mode='indeterminate')
 
+
+def inc_progress(amount):
+    progress['value'] = int(amount * progressLength / 100)
+    SMS.update_idletasks()
+
+
+progress.pack()
+# ↑ Define progress bar
+
+running = 0  # check variable (due to cycling)
 measurePath = "C:\\Partrtn\\"  # Path to folder with routines and temporary measured data of senzors.
 cloudPath = "C:\\Partrtn\\"  # Path to folder where are saving all measured data.
 programPath = "C:\\Program Files\\MetrologyAndScanning\\"  # Path to folder with program data
@@ -100,6 +117,12 @@ class LimitDistance:
     Phi = [0.0, 0.0]  # Limit of automatic position system (APS) of sensor for angle phi.
     RightD = [0.0, 0.0]  # Limit of distance between corner of sensor and vertical edge of holder in APS.
     BottomD = [0.0, 0.0]  # Limit of distance between corner of sensor and horizontal edge of holder in APS.
+
+
+class ControlPar:
+    Angle = [999, 999, 999, 999, 999, 999, 999, 999, 999]   # Actual deviation of angle.
+    Hdis = [999, 999, 999, 999, 999, 999, 999, 999, 999]  # Actual deviation in horizontal distance.
+    Vdis = [999, 999, 999, 999, 999, 999, 999, 999, 999]  # Actual deviation in vertical distance.
 
 
 class LimitSize:
@@ -187,6 +210,7 @@ with open(programPath + "config.txt", 'r') as f:
     v3 = ["", ""]
     v4 = ["", "", "", ""]
     # ↑ Declaring local variables (using in function info_from_txt).
+    inc_progress(5)
 
     def info_from_txt(con):  # Local function for adding characters from text file.
         global b
@@ -238,60 +262,88 @@ with open(programPath + "config.txt", 'r') as f:
         if d:  # Saving data only after detect '=' and before '#'.
             if c == 1:
                 measurePathB += b
+                inc_progress(6)
             elif c == 2:
                 cloudPathB += b
+                inc_progress(7)
             elif c == 3:
                 programPathB += b
+                inc_progress(8)
             elif c == 4:
                 instituteB += b
+                inc_progress(9)
             elif c == 5:
                 versionB += b
+                inc_progress(10)
             elif c == 6:
                 sType = info_from_txt(1)
+                inc_progress(11)
             elif c == 7:
                 productType = info_from_txt(1)
+                inc_progress(12)
             elif c == 8:
                 sensorBatch = info_from_txt(1)
+                inc_progress(13)
             elif c == 9:
                 sensorWafer = info_from_txt(1)
+                inc_progress(14)
             elif c == 10:
                 dNameSensor = info_from_txt(1)
+                inc_progress(15)
             elif c == 11:
                 mSensor = info_from_txt(2)
+                inc_progress(16)
             elif c == 12:
                 sSensor = info_from_txt(2)
+                inc_progress(17)
             elif c == 13:
                 pSensor = info_from_txt(2)
+                inc_progress(18)
             elif c == 14:
                 holderType = info_from_txt(2)
+                inc_progress(19)
             elif c == 15:
                 sR0B = info_from_txt(4)
+                inc_progress(20)
             elif c == 16:
                 sR1B = info_from_txt(4)
+                inc_progress(21)
             elif c == 17:
                 sR2B = info_from_txt(4)
+                inc_progress(22)
             elif c == 18:
                 sR3B = info_from_txt(4)
+                inc_progress(23)
             elif c == 19:
                 sR4B = info_from_txt(4)
+                inc_progress(24)
             elif c == 20:
                 sR5B = info_from_txt(4)
+                inc_progress(25)
             elif c == 21:
                 sBB = info_from_txt(4)
+                inc_progress(26)
             elif c == 22:
                 rPhiB = info_from_txt(3)
+                inc_progress(27)
             elif c == 23:
                 rD1B = info_from_txt(3)
+                inc_progress(28)
             elif c == 24:
                 rD2B = info_from_txt(3)
+                inc_progress(29)
             elif c == 25:
                 max_sleep_timeB += b
+                inc_progress(30)
             elif c == 26:
                 database_path_B += b
+                inc_progress(31)
             elif c == 27:
                 database_temp_tag += b
+                inc_progress(32)
             elif c == 28:
                 database_hum_tag += b
+                inc_progress(33)
             # ↑ Different options of saving data according to sequence (variable 'c').
 
         a += 1
@@ -355,6 +407,7 @@ with open(programPath + "config.txt", 'r') as f:
     # ↑ Converting string to correct data type.
 
     f.close()
+    inc_progress(34)
 
 
 class Img:
@@ -363,65 +416,78 @@ class Img:
     R1 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1_.png"))
     R2 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2_.png"))
     R3 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R3_.png"))
+    inc_progress(38)
     R4 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R4_.png"))
     R5 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R5_.png"))
     B = ImageTk.PhotoImage(Image.open(programPath + "screens\\B_.png"))
     E = ImageTk.PhotoImage(Image.open(programPath + "screens\\E.png"))
     R0L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R0L.png"))
+    inc_progress(42)
     R1L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1L.png"))
     R2L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2L.png"))
     R3L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R3L.png"))
     R4L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R4L.png"))
     R5L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R5L.png"))
+    inc_progress(46)
     BL = ImageTk.PhotoImage(Image.open(programPath + "screens\\BL.png"))
     p0 = ImageTk.PhotoImage(Image.open(programPath + "screens\\0.png"))
     p1 = ImageTk.PhotoImage(Image.open(programPath + "screens\\1.png"))
     p2 = ImageTk.PhotoImage(Image.open(programPath + "screens\\2.png"))
     p3 = ImageTk.PhotoImage(Image.open(programPath + "screens\\3.png"))
+    inc_progress(50)
     p4 = ImageTk.PhotoImage(Image.open(programPath + "screens\\4.png"))
     p5 = ImageTk.PhotoImage(Image.open(programPath + "screens\\5.png"))
     p6 = ImageTk.PhotoImage(Image.open(programPath + "screens\\6.png"))
     p7 = ImageTk.PhotoImage(Image.open(programPath + "screens\\7.png"))
     p8 = ImageTk.PhotoImage(Image.open(programPath + "screens\\8.png"))
+    inc_progress(54)
     p0L = ImageTk.PhotoImage(Image.open(programPath + "screens\\0L.png"))
     p1L = ImageTk.PhotoImage(Image.open(programPath + "screens\\1L.png"))
     p2L = ImageTk.PhotoImage(Image.open(programPath + "screens\\2L.png"))
     p3L = ImageTk.PhotoImage(Image.open(programPath + "screens\\3L.png"))
     p4L = ImageTk.PhotoImage(Image.open(programPath + "screens\\4L.png"))
+    inc_progress(58)
     p5L = ImageTk.PhotoImage(Image.open(programPath + "screens\\5L.png"))
     p6L = ImageTk.PhotoImage(Image.open(programPath + "screens\\6L.png"))
     p7L = ImageTk.PhotoImage(Image.open(programPath + "screens\\7L.png"))
     p8L = ImageTk.PhotoImage(Image.open(programPath + "screens\\8L.png"))
     mm3dOn = Image.open(programPath + "screens\\mm3dOn.png")
+    inc_progress(62)
     mm3dOn2 = Image.open(programPath + "screens\\mm3dOn2.png")
     mm3dOn3 = Image.open(programPath + "screens\\mm3dOn3.png")
     mm3dOn4 = Image.open(programPath + "screens\\mm3dOn4.png")
     folderOn = Image.open(programPath + "screens\\folderOn.png")
     stopOn = Image.open(programPath + "screens\\StopOn.png")
+    inc_progress(66)
     resetSystem = Image.open(programPath + "screens\\resetSystem.png")
     cross = Image.open(programPath + "screens\\crossOn.png")
     error = Image.open(programPath + "screens\\error.png")
     laserError1 = Image.open(programPath + "screens\\laserError1.png")
     laserError2 = Image.open(programPath + "screens\\laserError2.png")
+    inc_progress(70)
     end_s = Image.open(programPath + "screens\\end_s.png")
     end_w = Image.open(programPath + "screens\\end_w.png")
     mm3d = Image.open(programPath + "screens\\mm3d.png")
     resetRoutine = Image.open(programPath + "screens\\resetRoutine.png")
     resetX = Image.open(programPath + "screens\\resetX.png")
+    inc_progress(74)
     resetY = Image.open(programPath + "screens\\resetY.png")
     resetZ = Image.open(programPath + "screens\\resetZ.png")
     resetAngle = Image.open(programPath + "screens\\resetAngle.png")
     start = Image.open(programPath + "screens\\start.png")
     saveRoutine = Image.open(programPath + "screens\\saveRoutine.png")
+    inc_progress(78)
     deleteSteps = Image.open(programPath + "screens\\deleteSteps.png")
     open = Image.open(programPath + "screens\\open.png")
     file = Image.open(programPath + "screens\\file.png")
     system = Image.open(programPath + "screens\\system.png")
     centroid = Image.open(programPath + "screens\\centroid.png")
+    inc_progress(72)
     touchBoundary = Image.open(programPath + "screens\\touchBoundary.png")
     autoIllumination = Image.open(programPath + "screens\\autoIllumination.png")
     quitStep = Image.open(programPath + "screens\\quitStep.png")
     language = Image.open(programPath + "screens\\language.png")
+    inc_progress(76)
 # ↑ Declaration of paths for images.
 
 
@@ -434,6 +500,7 @@ assert os.path.exists(programPath + "screens\\resetXOn+.png"), "Screen 'resetXOn
 assert os.path.exists(programPath + "screens\\resetXOn-.png"), "Screen 'resetXOn-' has not been found!"
 assert os.path.exists(programPath + "screens\\resetYOn+.png"), "Screen 'resetYOn+' has not been found!"
 assert os.path.exists(programPath + "screens\\resetYOn-.png"), "Screen 'resetYOn-' has not been found!"
+inc_progress(80)
 assert os.path.exists(programPath + "screens\\resetZOn.png"), "Screen 'resetZOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetAngleOn.png"), "Screen 'resetAngleOn' has not been found!"
 assert os.path.exists(programPath + "screens\\filenameOn.png"), "Screen 'filenameOn' has not been found!"
@@ -442,6 +509,28 @@ assert os.path.exists(programPath + "screens\\startRoutineOn.png"), "Screen 'sta
 assert os.path.exists(programPath + "screens\\desktopOn.png"), "Screen 'desktopOn' has not been found!"
 assert os.path.exists(programPath + "screens\\resetRoutineOn.png"), "Screen 'resetRoutineOn' has not been found!"
 assert os.path.exists(programPath + "screens\\deleteStepsOn.png"), "Screen 'deleteStepsOn' has not been found!"
+inc_progress(85)
+for num in range(1, 10):
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_Position-" + str(num) + "_1.RTN"), \
+        "Routine 'ATLASITK_Position-" + str(num) + "_1' has not been found"
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_Position-" + str(num) + "_2.RTN"), \
+        "Routine 'ATLASITK_Position-" + str(num) + "_2' has not been found"
+inc_progress(90)
+sensorTypesArray = ["R0", "R1", "R2", "R3", "R4", "R5"]
+for typ in sensorTypesArray:
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_" + typ + "_Control.RTN"), \
+        "Routine 'Routines\\ATLASITK_" + typ + "_Control.RTN' has not been found"
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_" + typ + "_Measuring.RTN"), \
+        "Routine 'Routines\\ATLASITK_" + typ + "_Measuring.RTN' has not been found"
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_" + typ + "_Scanning.RTN"), \
+        "Routine 'Routines\\ATLASITK_" + typ + "_Scanning.RTN' has not been found"
+    assert os.path.exists(measurePath + "Routines\\ATLASITK_" + typ + "_Measuring-Manually.RTN"), \
+        "Routine 'Routines\\ATLASITK_" + typ + "_Measuring-Manually.RTN' has not been found"
+assert os.path.exists(measurePath + "Routines\\ATLASITK_B_Scanning.RTN"), \
+    "Routine 'Routines\\ATLASITK_B_Scanning.RTN' has not been found"
+assert os.path.exists(measurePath + "Routines\\ATLASITK_B_Measuring-Manually.RTN"), \
+    "Routine 'Routines\\ATLASITK_B_Measuring-Manually.RTN' has not been found"
+inc_progress(98)
 timeNow = datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
 try:
     os.mkdir("C:\\Users\\Admin\\Desktop\\InitializeTesting_" + timeNow), \
@@ -458,3 +547,4 @@ except:
     raise AssertionError
 finally:
     rmtree("C:\\Users\\Admin\\Desktop\\InitializeTesting_" + timeNow)
+    inc_progress(100)

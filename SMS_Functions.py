@@ -24,6 +24,7 @@ def open_routine():
 
 def search_file():
     pag.hotkey("alt", "d")  # Select all text in searching box for transcription.
+    time.sleep(0.5)
 # ↑ For saving file of measuring.
 
 
@@ -48,12 +49,12 @@ def start_routine(routine):
         pag.typewrite(measurePath + "Routines")  # Search place in pc.
         time.sleep(1)
     if not if_find_error():
-        time.sleep(0.2)
         pag.typewrite(["enter"])
         wait(sleep_until="folderOn.png")
     if not if_find_error():
         file_name = pag.locateCenterOnScreen(programPath + "screens\\filenameOn.png")
         if file_name:
+            time.sleep(0.5)
             pag.click(file_name[0] + 100, file_name[1])
             time.sleep(0.2)
             pag.hotkey("ctrl", "a")
@@ -161,8 +162,14 @@ def default():
 
     if defaultRepetition < 3:
         defaultRepetition = defaultRepetition + 1
-        pag.screenshot(programPath + "Error Screenshots\\"
-                       + datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S") + ".png")
+        try:
+            pag.screenshot(programPath + "Error Screenshots\\"
+                           + datetime.datetime.now().strftime("%y_%m_%d_%H_%M_%S") + ".png")
+        except (MemoryError, BufferError):
+            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+                     + "| Taking of the screenshot has failed - (RAM: "
+                     + str(memory("RAM")) + " MB, DISK: " + str(memory(programPath[0:2]))
+                     + " GB).\n" + traceback.format_exc())
 
         time.sleep(0.5)
         error_icon = pag.locateCenterOnScreen(Img.error, grayscale=True)
@@ -308,7 +315,8 @@ def protocol_loop(line):
             if line == 1:
                 string += str(protocol_c + 1)
             if line == 2:
-                if sType[protocol_c] == "" or sType[protocol_c] == "E" or pSensor[protocol_c] == 0:
+                if sType[protocol_c] == "" or sType[protocol_c] == "E" \
+                        or pSensor[protocol_c] == 0 or nameSensor[protocol_c] == "":
                     string += "-"
                 elif sensorPosition[protocol_c] == 1:
                     string += "O"
@@ -546,7 +554,7 @@ def wait_previous(sleep_until):
 
 def wait_measure(saving=True):
     global error
-    if datetime.datetime.now().minute % 10 == 0 and datetime.datetime.now().second < 10:
+    if datetime.datetime.now().minute % 10 == 0 and datetime.datetime.now().second < 5:
         if not mm3d_on():
             pag.click(Position.mm3d)
     if pag.locateCenterOnScreen(Img.error, grayscale=True):
@@ -610,6 +618,14 @@ def set_repeat_measure(value=0):
     global sensorPos
 
     sensorPos = value
+
+
+def if_bad_pos():
+    global error
+    if error == 1:
+        return True
+    else:
+        return False
 
 
 def after_error_reset():
@@ -706,6 +722,15 @@ def check_database():
                     LabPar.Humidity = sub_part.text
 
 
+def write_accuracy(number_of_sensor):
+    return "\nAngle of sensor: " + str(round(ControlPar.Angle[number_of_sensor], 3)) \
+           + " - limit interval is (" + str(LimitDistance.Phi[0]) + " ; " + str(LimitDistance.Phi[1]) \
+           + ")\nHorizontal deviation of sensor: " + str(round(ControlPar.Hdis[number_of_sensor], 3)) \
+           + " - limit interval is (" + str(LimitDistance.RightD[0]) + " ; " + str(LimitDistance.RightD[1]) \
+           + ")\nVertical deviation of sensor: " + str(round(ControlPar.Vdis[number_of_sensor], 3)) \
+           + " - limit interval is (" + str(LimitDistance.BottomD[0]) + " ; " + str(LimitDistance.BottomD[1]) + ")"
+
+
 def edit_output(data_type, number_of_sensor):
     global planarityX
     global planarityY
@@ -782,7 +807,8 @@ def edit_output(data_type, number_of_sensor):
             final_txt += "\nTemperature: " + str(LabPar.Temperature)
             final_txt += "\nHumidity: " + str(LabPar.Humidity)
         final_txt += "\nComments: " + comments[number_of_sensor]
-
+        if data_type == 2:
+            final_txt += write_accuracy(number_of_sensor)
         if data_type == 1 or data_type == 2:
             planarity_thickness = round((min(planarityZ) * 10**3), 1)
             final_txt += "\nAvThickness: " + str(planarity_thickness) + "\n"
@@ -800,4 +826,92 @@ def edit_output(data_type, number_of_sensor):
                 ouput_row += 1
 
         final_file.write(final_txt)
+
+        if data_type == 2:
+            try:
+                fig = plt.figure()
+                ax = plt.subplot(projection="3d")
+                plot = ax.scatter(planarityX, planarityY, planarityZ, c=planarityZ, cmap='viridis', linewidth=1, s=100)
+                cbaxes = fig.add_axes([0.88, 0.15, 0.03, 0.7])
+                plt.colorbar(plot, cax=cbaxes)
+                ax.view_init(50, -60)
+
+                ax.set_title(nameSensor[number_of_sensor] + " - run n. " + str(runNumber[number_of_sensor]))
+                ax.set_xlabel("X [mm]")
+                ax.set_ylabel("Y [mm]")
+                ax.set_zlabel("Z [mm]")
+                plt.savefig(measurePath + sType[number_of_sensor] + "\\" + nameSensor[number_of_sensor]
+                            + "\\" + sensorBatch[number_of_sensor] + "-W" + sensorWafer[number_of_sensor] +
+                            "_Plot_" + "0"*(3 - len(str(runNumber[number_of_sensor])))
+                            + str(runNumber[number_of_sensor]) + ".pdf")
+
+            except:
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Creating of plot with measured planarity of the sensor has failed." +
+                         "\n" + traceback.format_exc())
+            else:
+                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                         "| Creating of plot with measured planarity of the sensor has been successfully completed.")
+
 # ↑ Function will edit output (text file) of measuring to better readable file for computer.
+
+
+def change_sensor(number_of_sensor=0):
+    global NumberOfSensor
+    global error
+    error = 1
+
+    for n in range(number_of_sensor, 9):
+        if sensorPosition[n] == 1 or sType[n] == "E" or sType[n] == "" \
+                or nameSensor[n] == "" or pSensor[n] == 0:
+            continue
+
+        bad_pos = 0
+        tips = ""
+        continue_message = ''
+
+        for nn in range(n, 9):
+            if sensorPosition[nn] == 1 or sType[nn] == "E" or sType[nn] == "" \
+                    or nameSensor[nn] == "" or pSensor[nn] == 0:
+                continue
+            bad_pos += 1
+        if bad_pos == 0:
+            continue_message = 'START MEASURING'
+            NumberOfSensor = 9
+        else:
+            continue_message = 'continue to next one'
+
+        if ControlPar.Angle[n] == 999:
+            tips = "Angle has not been measured, try repeat."
+        elif LimitDistance.Phi[0] > ControlPar.Angle[n]:
+            tips = "rotate the sensor in clockwise"
+        elif LimitDistance.Phi[1] < ControlPar.Angle[n]:
+            tips = "rotate the sensor in anti-clockwise"
+        if ControlPar.Hdis[n] == 999:
+            tips += "\nHorizontal deviation has not been measured, try repeat."
+        elif LimitDistance.RightD[0] > ControlPar.Hdis[n]:
+            tips += "\nmove right with the sensor"
+        elif LimitDistance.RightD[1] < ControlPar.Hdis[n]:
+            tips += "\nmove left with the sensor"
+        if ControlPar.Vdis[n] == 999:
+            tips += "\nVertical deviation has not been measured, try repeat."
+        elif LimitDistance.BottomD[0] > ControlPar.Vdis[n]:
+            tips += "\nmove up with the sensor"
+        elif LimitDistance.BottomD[1] < ControlPar.Vdis[n]:
+            tips += "\nmove down with the sensor"
+
+        ch_s_confirm = pag.confirm(write_accuracy(n) + "\n\nTIPS:\n" + tips,
+                                   "APS PROBLEM:   Sensor num. " + str(n + 1),
+                                   buttons=['edit sensor settings', continue_message])
+        if ch_s_confirm == 'edit sensor settings':
+            NumberOfSensor = n
+            break
+
+
+def check_running():
+    if running > 20:
+        SMS.destroy()
+    elif running > 17:
+        pag.alert("Suspicious behavior has been detected.\n"
+                  "Processes is cycling or the program is running too long."
+                  "\nPlease restart the program soon.", "Warning alert", timeout=1000*60*1)

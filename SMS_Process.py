@@ -413,6 +413,7 @@ def process(manually=False):
             save_log("\nFree RAM: " + str(memory("RAM")) + " MB")
 
             if not firstProcess:
+                time.sleep(5)
                 reset_mm3d(True)
             if if_find_error():
                 raise WaitError("Error has been occurred in 'reset_mm3d' function.")
@@ -492,34 +493,31 @@ def process(manually=False):
                     if if_repeat_measure():
                         set_repeat_measure(1)
                         repeat_measurement("Measurement", manually)
-                        if not if_find_error():
-                            wait()  # Wait to saving measuring.
-                            after_laser_error()
 
-                    if if_repeat_measure():
-                        error = 2
-                        set_process_error(1)
-                        set_repeat_measure(1)
-                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                                 "| Measurement: repetition of process has failed because "
-                                 "(solvable) error has been occurred two times in a row.")
-                    if if_find_error():
-                        ErrorId.completeMeasuring[NumberOfSensor] = 2
-                        save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                                 "| Measurement of the sensor has failed (before saving).")
-                    if not if_find_error():
+                        if if_repeat_measure():
+                            error = 2
+                            set_process_error(1)
+                            set_repeat_measure(1)
+                            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                     "| Measurement: repetition of process has failed because "
+                                     "(solvable) error has been occurred two times in a row (before saving).")
+                        if if_find_error():
+                            ErrorId.completeMeasuring[NumberOfSensor] = 2
+                            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                     "| Measurement of the sensor has failed (before saving).")
+                    elif not if_find_error():
                         search_file()
                         if if_find_error():
                             ErrorId.completeMeasuring[NumberOfSensor] = 2
                             save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
                                      "| Measurement of the sensor has failed (during file search).")
 
-                    if not if_find_error():
-                        save_file(measurePath + sType[NumberOfSensor] + "\\" + nameSensor[NumberOfSensor])
-                        if if_find_error():
-                            ErrorId.completeMeasuring[NumberOfSensor] = 2
-                            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
-                                     "| Measurement of the sensor has failed (during saving).")
+                        if not if_find_error():
+                            save_file(measurePath + sType[NumberOfSensor] + "\\" + nameSensor[NumberOfSensor])
+                            if if_find_error():
+                                ErrorId.completeMeasuring[NumberOfSensor] = 2
+                                save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S") +
+                                         "| Measurement of the sensor has failed (during saving).")
                     if not if_find_error():
                         wait(False)  # Wait to complete measuring.
                         if if_repeat_measure():
@@ -927,10 +925,13 @@ def process(manually=False):
 
 
 def start():
+    global running
     global NumberOfSensor
     global defaultRepetition
     global firstProcess
     global error
+    running += 3
+    check_running()
 
     try:
         mouse_1 = pag.position()
@@ -955,6 +956,8 @@ def start():
             assert memory(measurePath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
                 "There is too little of memory on local " + measurePath[0:2] + "disk\nRequired: " \
                 + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(measurePath[0:2])) + " GB"
+            assert memory(programPath[0:2]) > 1, "There is too little of memory for program files (disk " \
+                                                 + str(programPath[0:2]) + ")"
 
             save_log(sys.argv[0] + "\nSTART MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
@@ -1006,6 +1009,8 @@ def start():
             assert memory(measurePath[0:2]) > (round(sensors_size / (2 ** 30), 3)), \
                 "There is too little of memory on local " + measurePath[0:2] + "disk\nRequired: " \
                 + str(round(sensors_size / (2 ** 30), 3)) + " GB, but is: " + str(memory(measurePath[0:2])) + " GB"
+            assert memory(programPath[0:2]) > 1, "There is too little of memory for program files (disk " \
+                                                 + str(programPath[0:2]) + ")"
 
             save_log("\n\nNEW START OF MEASURING: " + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
                      + "\nFree data size on DISK: " + str(memory(cloudPath))
@@ -1030,7 +1035,11 @@ def start():
                     nameSensor[NumberOfSensor] == "" or sensorPosition[NumberOfSensor] == 1\
                     or pSensor[NumberOfSensor] == 0:
                 continue
-            start_routine("ATLASITK_Position-" + str(NumberOfSensor + 1) + ".RTN")
+            if sType[NumberOfSensor] == "R0" or sType[NumberOfSensor] == "R1" or sType[NumberOfSensor] == "R2":
+                start_routine("ATLASITK -" + str(NumberOfSensor + 1) + "_1.RTN")
+            elif sType[NumberOfSensor] == "R3" or sType[NumberOfSensor] == "R4" or sType[NumberOfSensor] == "R5":
+                start_routine("ATLASITK_Position-" + str(NumberOfSensor + 1) + "_2.RTN")
+
             if if_find_error():
                 raise WaitError("Error has been occurred in 'start_routine' function (specifically position routine).")
             wait(False)
@@ -1130,17 +1139,23 @@ def start():
                 if aps_actual_points[2] > aps_actual_points[0]:
                     aps_actual_angle = 180 - aps_actual_angle
 
-                aps_distance_horizontal = aps_actual_points[2] - aps_nominal_points[2]
-                aps_distance_vertical = aps_actual_points[3] - aps_nominal_points[3]
-                aps_angle = aps_actual_angle - aps_nominal_angle
+                ControlPar.Hdis[NumberOfSensor] = aps_actual_points[2] - aps_nominal_points[2]
+                ControlPar.Vdis[NumberOfSensor] = aps_actual_points[3] - aps_nominal_points[3]
+                ControlPar.Angle[NumberOfSensor] = aps_actual_angle - aps_nominal_angle
 
-                if not (LimitDistance.Phi[0] < aps_angle < LimitDistance.Phi[1]) \
-                        or not(LimitDistance.RightD[0] < aps_distance_horizontal < LimitDistance.RightD[1]) \
-                        or not(LimitDistance.BottomD[0] < aps_distance_vertical < LimitDistance.BottomD[1]):
+                if not (LimitDistance.Phi[0] < ControlPar.Angle[NumberOfSensor] < LimitDistance.Phi[1]) \
+                        or not(LimitDistance.RightD[0] < ControlPar.Hdis[NumberOfSensor] < LimitDistance.RightD[1]) \
+                        or not(LimitDistance.BottomD[0] < ControlPar.Vdis[NumberOfSensor] < LimitDistance.BottomD[1]):
                     sensorPosition[NumberOfSensor] = 0
                     error = 1
                 else:
                     sensorPosition[NumberOfSensor] = 1
+
+                c_string = ""
+                with open(programPath + "Control position system\\control.txt", 'r') as control_file:
+                    c_string = control_file.read()
+                with open(programPath + "Control position system\\control.txt", 'w') as control_file:
+                    control_file.write(c_string + "\n" + write_accuracy(NumberOfSensor))
 
                 os.rename(programPath + "Control position system\\control.txt",
                           programPath + "Control position system\\"
@@ -1228,7 +1243,7 @@ def start():
 
             aps_error_string = ""
             NumberOfSensor = 0
-            for NumberOfSensor in range(1, 9):
+            for NumberOfSensor in range(0, 9):
                 if sensorPosition[NumberOfSensor] == 1 or sType[NumberOfSensor] == "E" or\
                         sType[NumberOfSensor] == "" or nameSensor[NumberOfSensor] == "" or\
                         pSensor[NumberOfSensor] == 0:
@@ -1237,8 +1252,10 @@ def start():
                 aps_error_string += ", "
 
             pag.alert("SENSOR POSITION PROBLEM!" + 2*"\n" + "Please, improve the"
-                      " position of the following sensor(s):" + "\n" + aps_error_string
-                      + "\nThen click to 'Continue' button.", "ERROR", "Continue", root=SMS)
+                      " position of the following sensor(s):" + "\n" + aps_error_string,
+                      "ERROR", "Continue to first one", root=SMS)
+
+            change_sensor()
 
         else:
             after_error_reset()

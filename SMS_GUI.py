@@ -307,7 +307,7 @@ try:
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-                pag.alert("You must unique serial number of sensor!", "Message")
+                pag.alert("You must write unique serial number of sensor!", "Message")
             elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and \
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
@@ -557,109 +557,122 @@ try:
     def back():
         global NumberOfSensor
 
-        frameTop.pack_forget()
-        ButtonBack.pack_forget()
-        ButtonPrevious.pack(side=LEFT)
-        LSensor2.pack(side=RIGHT)
-        LSensor3.pack(side=LEFT)
-        ButtonNext.pack(side=LEFT)
-        ButtonStart["text"] = "Start measuring"
-        ButtonStart["bg"] = "light gray"
-        ButtonStart["fg"] = "black"
-        ButtonStart["activebackground"] = "dark red"
-        ButtonStart["command"] = pre_start
-
-        NumberOfSensor = 0
-        LSensor2["text"] = "  Sensor " + str(NumberOfSensor + 1)  # Edit label of number of sensor.
-        LSensor3["image"] = getattr(Img, "p" + str(NumberOfSensor))
-        # ↑ Set image of position of sensor on table.
-
-        TypeMenu.menu.delete(0, END)
-        if holderType[NumberOfSensor] == 1:
-            TypeMenu.menu.add_command(command=r0_select, image=Img.R0)
-            TypeMenu.menu.add_command(command=r1_select, image=Img.R1)
-            TypeMenu.menu.add_command(command=r2_select, image=Img.R2)
-        elif holderType[NumberOfSensor] == 2:
-            TypeMenu.menu.add_command(command=r3_select, image=Img.R3)
-            TypeMenu.menu.add_command(command=r4_select, image=Img.R4)
-            TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
-        TypeMenu.menu.add_command(command=b_select, image=Img.B)
-        TypeMenu.menu.add_command(command=e_select, image=Img.E)
-        TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
-        # ↑ Set buttons in menu.
-
-        if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
-            if sType[NumberOfSensor] == "E":
-                TypeMenu["text"] = "Select type of sensor   -   empty"
+        if if_bad_pos():
+            change_sensor(NumberOfSensor)
+            if NumberOfSensor >= 8:
+                start()
             else:
-                TypeMenu["text"] = "Select type of sensor"
-            CheckP["state"] = "disabled"
-            CheckM["state"] = "disabled"
-            CheckS["state"] = "disabled"
-            ProductType["state"] = "disabled"
-            SensorBatch["state"] = "disabled"
-            SensorWafer["state"] = "disabled"
-            NameOfSensor["state"] = "disabled"
-            SensorComments["state"] = "disabled"
-            SensorRunNumber["state"] = "disabled"
+                pre_start()
         else:
-            TypeMenu["text"] = "Select type of sensor   -   " + sType[NumberOfSensor]
-            if sType[NumberOfSensor] != "B":
-                CheckP["state"] = "active"
-            else:
+            frameTop.pack_forget()
+            ButtonBack.pack_forget()
+            ButtonPrevious.pack(side=LEFT)
+            LSensor2.pack(side=RIGHT)
+            LSensor3.pack(side=LEFT)
+            ButtonNext.pack(side=LEFT)
+            ButtonStart["text"] = "Start measuring"
+            ButtonStart["bg"] = "light gray"
+            ButtonStart["fg"] = "black"
+            ButtonStart["activebackground"] = "dark red"
+            ButtonStart["command"] = pre_start
+
+            NumberOfSensor = 0
+            LSensor2["text"] = "  Sensor " + str(NumberOfSensor + 1)  # Edit label of number of sensor.
+            LSensor3["image"] = getattr(Img, "p" + str(NumberOfSensor))
+            # ↑ Set image of position of sensor on table.
+
+            TypeMenu.menu.delete(0, END)
+            if holderType[NumberOfSensor] == 1:
+                TypeMenu.menu.add_command(command=r0_select, image=Img.R0)
+                TypeMenu.menu.add_command(command=r1_select, image=Img.R1)
+                TypeMenu.menu.add_command(command=r2_select, image=Img.R2)
+            elif holderType[NumberOfSensor] == 2:
+                TypeMenu.menu.add_command(command=r3_select, image=Img.R3)
+                TypeMenu.menu.add_command(command=r4_select, image=Img.R4)
+                TypeMenu.menu.add_command(command=r5_select, image=Img.R5)
+            TypeMenu.menu.add_command(command=b_select, image=Img.B)
+            TypeMenu.menu.add_command(command=e_select, image=Img.E)
+            TypeMenu.menu.add_command(command=edit_metrology, image=Img.em)
+            # ↑ Set buttons in menu.
+
+            if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
+                if sType[NumberOfSensor] == "E":
+                    TypeMenu["text"] = "Select type of sensor   -   empty"
+                else:
+                    TypeMenu["text"] = "Select type of sensor"
                 CheckP["state"] = "disabled"
-            CheckM["state"] = "active"
-            CheckS["state"] = "active"
-            ProductType["state"] = "normal"
-            SensorBatch["state"] = "normal"
-            SensorWafer["state"] = "normal"
-            NameOfSensor["state"] = "normal"
-            SensorComments["state"] = "normal"
-            SensorRunNumber["state"] = "normal"
-        # ↑ Write label of menu according to type of sensor.
+                CheckM["state"] = "disabled"
+                CheckS["state"] = "disabled"
+                ProductType["state"] = "disabled"
+                SensorBatch["state"] = "disabled"
+                SensorWafer["state"] = "disabled"
+                NameOfSensor["state"] = "disabled"
+                SensorComments["state"] = "disabled"
+                SensorRunNumber["state"] = "disabled"
+            else:
+                TypeMenu["text"] = "Select type of sensor   -   " + sType[NumberOfSensor]
+                if sType[NumberOfSensor] != "B":
+                    CheckP["state"] = "active"
+                else:
+                    CheckP["state"] = "disabled"
+                CheckM["state"] = "active"
+                CheckS["state"] = "active"
+                ProductType["state"] = "normal"
+                SensorBatch["state"] = "normal"
+                SensorWafer["state"] = "normal"
+                NameOfSensor["state"] = "normal"
+                SensorComments["state"] = "normal"
+                SensorRunNumber["state"] = "normal"
+            # ↑ Write label of menu according to type of sensor.
 
-        ProductType.delete(0, END)
-        SensorBatch.delete(0, END)
-        SensorWafer.delete(0, END)
-        NameOfSensor.delete(0, END)
-        SensorComments.delete(0, END)
-        SensorRunNumber.delete(0, END)
-        # ↑ Clear textbox for new data of next sensor.
-        ProductType.insert(0, productType[NumberOfSensor])
-        SensorBatch.insert(0, sensorBatch[NumberOfSensor])
-        SensorWafer.insert(0, sensorWafer[NumberOfSensor])
-        if nameSensor[NumberOfSensor] == "":
-            NameOfSensor.insert(0, dNameSensor[NumberOfSensor])
-        else:
-            NameOfSensor.insert(0, nameSensor[NumberOfSensor])
-        SensorComments.insert(0, comments[NumberOfSensor])
-        change_run_number(runNumber[NumberOfSensor])
-        # ↑ Write label of menu according to type of sensor.
+            ProductType.delete(0, END)
+            SensorBatch.delete(0, END)
+            SensorWafer.delete(0, END)
+            NameOfSensor.delete(0, END)
+            SensorComments.delete(0, END)
+            SensorRunNumber.delete(0, END)
+            # ↑ Clear textbox for new data of next sensor.
+            ProductType.insert(0, productType[NumberOfSensor])
+            SensorBatch.insert(0, sensorBatch[NumberOfSensor])
+            SensorWafer.insert(0, sensorWafer[NumberOfSensor])
+            if nameSensor[NumberOfSensor] == "":
+                NameOfSensor.insert(0, dNameSensor[NumberOfSensor])
+            else:
+                NameOfSensor.insert(0, nameSensor[NumberOfSensor])
+            SensorComments.insert(0, comments[NumberOfSensor])
+            change_run_number(runNumber[NumberOfSensor])
+            # ↑ Write label of menu according to type of sensor.
 
-        if mSensor[NumberOfSensor] == 1:
-            CheckM.select()
-        else:
-            CheckM.deselect()
-        if sSensor[NumberOfSensor] == 1:
-            CheckS.select()
-        else:
-            CheckS.deselect()
-        if pSensor[NumberOfSensor] == 1:
-            CheckP.select()
-            if sType[NumberOfSensor] == "B":
+            if mSensor[NumberOfSensor] == 1:
+                CheckM.select()
+            else:
+                CheckM.deselect()
+            if sSensor[NumberOfSensor] == 1:
+                CheckS.select()
+            else:
+                CheckS.deselect()
+            if pSensor[NumberOfSensor] == 1:
+                CheckP.select()
+                if sType[NumberOfSensor] == "B":
+                    CheckP.deselect()
+            else:
                 CheckP.deselect()
-        else:
-            CheckP.deselect()
-        # ↑ Selecting or deselecting of checkbox buttons.
+            # ↑ Selecting or deselecting of checkbox buttons.
 
 
     def confirm():
         global NumberOfSensor
-        if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
+        if if_bad_pos():
+            change_sensor(NumberOfSensor)
+            if NumberOfSensor >= 8:
+                start()
+            else:
+                pre_start()
+        elif CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                 and sType[NumberOfSensor] != "E":
             pag.alert("You must choice at least one possibility!", "Message")
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-            pag.alert("You must unique serial number of sensor!", "Message")
+            pag.alert("You must write unique serial number of sensor!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
                                                                                  or int(SensorRunNumber.get()) < 1
                                                                                  or int(SensorRunNumber.get()) > 999):
@@ -672,12 +685,23 @@ try:
             pag.alert("This sensor has been already measured, even with same run number!", "Message")
         elif sType[NumberOfSensor] == "B" and "EC" in ProductType.get():
             pag.alert("Incorrect combination of product type (end-cap) and sensor type (barrel).")
+        elif ((not os.path.exists(measurePath + "Routines\\" + str(NumberOfSensor + 1) + "_right.RTN")) and
+                CheckM.var.get() == 1 and CheckP.var.get() == 0) or \
+                ((not os.path.exists(measurePath + "Routines\\" + str(NumberOfSensor + 1) + "_left.RTN"))
+                 and CheckP.var.get() == 0):
+            pag.alert("There are no routine for position of the right bottom corner of the sensor!\n"
+                      "You must create it first to measure planarity of the sensor manually.", "Message")
         # ↑ Conditions for actual sensor.
         else:
             if CheckM.var.get() == 0 and CheckS.var.get() == 0 \
                     and sType[NumberOfSensor] != "E":
                 pag.alert("WARNING!\n\nYou have not set measuring neither scanning of sensor.", "Alert")
-
+            if CheckP.var.get() == 0:
+                routine_l_age = os.stat(measurePath + "Routines\\" + str(NumberOfSensor + 1) + "_left.RTN")
+                routine_r_age = os.stat(measurePath + "Routines\\" + str(NumberOfSensor + 1) + "_right.RTN")
+                if (time.time() - routine_l_age.st_mtime > 60*60) or (time.time() - routine_r_age.st_mtime > 60*60):
+                    pag.alert("WARNING!\n\nRoutines with position of the current sensor are suspiciously old.\n"
+                              "Check it, please. ONLY then confirm this alert.", "Alert")
             productType[NumberOfSensor] = ProductType.get()
             ProductType.delete(0, END)
             sensorBatch[NumberOfSensor] = SensorBatch.get()
@@ -866,10 +890,19 @@ try:
                 control_database()
 
                 start()  # Start program.
+                if if_bad_pos():
+                    if NumberOfSensor < 9:
+                        pre_start()
+                    else:
+                        start()
+                #  ↑ opening GUI for updating setting after APS.
 
 
     def pre_start():
+        global running
         global NumberOfSensor
+        running += 1
+        check_running()
 
         if CheckM.var.get() == 0 and CheckS.var.get() == 0 and CheckP.var.get() == 0 \
                 and sType[NumberOfSensor] != "E":
@@ -877,7 +910,7 @@ try:
         elif sType[NumberOfSensor] == "":
             pag.alert("You must choice type of sensor!", "Message")
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-            pag.alert("You must unique serial number of sensor!", "Message")
+            pag.alert("You must write unique serial number of sensor!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
                                                                                  or int(SensorRunNumber.get()) < 1
                                                                                  or int(SensorRunNumber.get()) > 999):
@@ -1070,7 +1103,7 @@ try:
     frameD3 = tkinter.Frame(frameD)
     ButtonPrevious = tkinter.Button(frameD1, text="Previous sensor", command=previous_sensor, bg="light gray",
                                     activebackground="gray", activeforeground="white")
-    LSensor2 = tkinter.Label(frameD1, text="  Sensor " + str(NumberOfSensor + 1))
+    LSensor2 = tkinter.Label(frameD1, text="  Sensor 1")
     LSensor3 = tkinter.Label(frameD, image=Img.p0)
     ButtonNext = tkinter.Button(frameD, text=" Next sensor ", command=next_sensor, bg="light gray",
                                 activebackground="gray", activeforeground="white")
@@ -1080,8 +1113,8 @@ try:
                                 activebackground="gray", activeforeground="white")
     # ↑ Set properties of window and objects(buttons, menu, etc...).
 
-    if sType[NumberOfSensor] == "E" or sType[NumberOfSensor] == "":
-        if sType[NumberOfSensor] == "E":
+    if sType[0] == "E" or sType[0] == "":
+        if sType[0] == "E":
             TypeMenu = tkinter.Menubutton(SMS, text="Select type of sensor   -   empty", relief=SUNKEN,
                                           bg="light gray", activebackground="gray", activeforeground="white")
         else:
@@ -1099,7 +1132,7 @@ try:
     else:
         TypeMenu = tkinter.Menubutton(SMS, text="Select type of sensor   -   " + str(sType[0]), relief=SUNKEN,
                                       bg="light gray", activebackground="gray", activeforeground="white")
-        if sType[NumberOfSensor] != "B":
+        if sType[0] != "B":
             CheckP["state"] = "active"
         else:
             CheckP["state"] = "disabled"
@@ -1114,6 +1147,7 @@ try:
     # ↑ Write label of menu according to type of sensor.
     # Conditionals for insert title on menu.
 
+    progress.pack_forget()
     TypeMenu.grid()
     TypeMenu.menu = Menu(TypeMenu, tearoff=1)
     TypeMenu["menu"] = TypeMenu.menu
@@ -1201,8 +1235,6 @@ try:
     ButtonStart.pack(side=RIGHT, fill=BOTH)
     # ↑ Set position of objects.
 
-    SMS.title("Sensors measurement and scanning")
-    SMS.resizable(0, 0)
     try:
         SMS.iconbitmap(programPath + "screens\\SensorMeasurement.ico")
     except TclError:

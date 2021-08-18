@@ -73,22 +73,12 @@ try:
         logFile = sys.argv[10]
         startArg = int(sys.argv[11])
         runNumber = int(sys.argv[12])
-        """
-        path = "D:\\"
-        sType = "Downloads"
-        nameSensor = "SN_18_02"
-        NumberOfSensor = 1
-        pSensor = 1
-        programPath1 = "C:\\Users\\Uzivatel\\Desktop\\"
-        programPath2 = ""
-        logFile = "log_5_5.txt"
-        """
         completeLogPath = programPath1 + " " + programPath2 + logFile
 
     except:
         raise ArgvError
 
-    with open(programPath1 + " " + programPath2 + "JS_configFile_" + sType + ".txt", 'r') as config_file:  # mezeru
+    with open(programPath1 + " " + programPath2 + "JS_configFile_" + sType + ".txt", 'r') as config_file:
         c_del = config_file.readline()
         del c_del
         c_y = int(config_file.readline())
@@ -108,7 +98,7 @@ try:
 
     except_con = 1
     try:
-        with open(programPath1 + " " + programPath2 + "JS_configFile_" + sType + ".txt", 'r') as config_file:  # mezeru
+        with open(programPath1 + " " + programPath2 + "JS_configFile_" + sType + ".txt", 'r') as config_file:
             c_char = ""
             c_num = 0
 
@@ -194,6 +184,7 @@ try:
 
     except OSError:
         raise ArrayError
+
     """
     defName = ["Sensor_A12-", "_Scanning-"]
     nX = 4
@@ -217,6 +208,8 @@ try:
     else:
         con = 5
     """
+    # ↑ System of implementing data
+
     m = startArg
     while m < (nX * nY):
         n = 0
