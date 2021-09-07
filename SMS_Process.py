@@ -947,10 +947,13 @@ def start():
                         or nameSensor[NumberOfSensor] == "":
                     continue
                 sensors_size += limit_size(NumberOfSensor)[1]
-            assert memory(cloudPath) > \
-                (round(2 * sensors_size / (2 ** 30), 3)), "There is too little of memory on server disk\n" \
-                                                          "Required: " + str(round(2 * sensors_size / (2 ** 30), 3))\
-                                                          + " GB, but is: " + str(memory(cloudPath)) + " GB"
+            try:
+                assert memory(cloudPath) > \
+                    (round(2 * sensors_size / (2 ** 30), 3)), "There is too little of memory on server disk\n" \
+                                                              "Required: " + str(round(2 * sensors_size / (2 ** 30), 3))\
+                                                              + " GB, but is: " + str(memory(cloudPath)) + " GB"
+            except OSError:
+                assert ErrorNAS
             assert memory("RAM") > 1000, "There is too little of RAM memory, only: " \
                                          + str(memory("RAM")) + " MB"
             assert memory(measurePath[0:2]) > (round(sensors_size / (2 ** 30), 3)),\
@@ -1036,7 +1039,7 @@ def start():
                     or pSensor[NumberOfSensor] == 0:
                 continue
             if sType[NumberOfSensor] == "R0" or sType[NumberOfSensor] == "R1" or sType[NumberOfSensor] == "R2":
-                start_routine("ATLASITK -" + str(NumberOfSensor + 1) + "_1.RTN")
+                start_routine("ATLASITK_Position-" + str(NumberOfSensor + 1) + "_1.RTN")
             elif sType[NumberOfSensor] == "R3" or sType[NumberOfSensor] == "R4" or sType[NumberOfSensor] == "R5":
                 start_routine("ATLASITK_Position-" + str(NumberOfSensor + 1) + "_2.RTN")
 
@@ -1286,6 +1289,21 @@ def start():
                       + "_error.txt", "w") as error_file:
                 error_file.write("Error has been occurred during measuring:\n\nPossible reasons of the problem are"
                                  "default or log file system.\nUse manual and error message below:"
+                                 + 3 * "\n" + traceback.format_exc())
+                error_file.close()
+            pag.alert("Error is too long.\n\nIt will be in text file on desktop.", "ERROR", root=SMS)
+
+    except ErrorNAS:
+        after_error_reset()
+        if control_string(traceback.format_exc())[0] <= 15 or control_string(traceback.format_exc())[1] <= 1200:
+            pag.alert("Error has been occurred before or after measuring:\n\nPossible reasons of the problem"
+                      " is disconnected NAS. Please, check it. For repair click on NAS folder in 'This PC'."
+                      + 3 * "\n" + traceback.format_exc(), "ERROR", root=SMS)
+        else:
+            with open("C:\\Users\\Admin\\Desktop\\" + datetime.datetime.now().strftime("%y_%m_%d_%H_%M")
+                      + "_error.txt", "w") as error_file:
+                error_file.write("Error has been occurred before or after measuring:\n\nPossible reasons of the problem"
+                                 " is disconnected NAS. Please, check it. For repair click on NAS folder in 'This PC'."
                                  + 3 * "\n" + traceback.format_exc())
                 error_file.close()
             pag.alert("Error is too long.\n\nIt will be in text file on desktop.", "ERROR", root=SMS)

@@ -101,6 +101,10 @@ class WaitError(Exception):
 class ErrorDuringProcessing(Exception):
     pass
 
+
+class ErrorNAS(Exception):
+    pass
+
 # ↑ Declaring own exceptions.
 
 
