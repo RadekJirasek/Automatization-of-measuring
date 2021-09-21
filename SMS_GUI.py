@@ -17,6 +17,59 @@ try:
             SMS.destroy()
     """
 
+
+    def name_of_sensor_enter_cursor(event):
+        NameOfSensor.select_range(0, END)
+
+
+    def sensor_database(event):
+        global databaseError
+
+        NameOfSensor.select_range(0, 0)
+        if len(NameOfSensor.get()) == 14:
+            try:
+                _product = np.array(df.loc[df['serialNumber'] == NameOfSensor.get()]['type'])[0]
+                _data = np.array(df.loc[df['serialNumber'] == NameOfSensor.get()]['alternativeIdentifier'])[0]
+                _batch, _wafer = _data.split('-')
+
+                if ((("R0" in _product or "R1" in _product or "R2" in _product)
+                     and holderType[NumberOfSensor] == 2)
+                        or (("R3" in _product or "R4" in _product or "R5" in _product)
+                            and holderType[NumberOfSensor] == 1)):
+                    if databaseError == 0:
+                        databaseError = 2
+                        pag.alert("Holder type in actual position does not match with type of sensor from database!\n"
+                                  "Control serial number of sensor or change holder type.", "Alert")
+                    else:
+                        databaseError -= 1
+                else:
+                    ProductType.delete(0, END)
+                    SensorBatch.delete(0, END)
+                    SensorWafer.delete(0, END)
+
+                    ProductType.insert(0, _product)
+                    SensorBatch.insert(0, _batch)
+                    SensorWafer.insert(0, _wafer)
+
+                    if "R0" in _product:
+                        r0_select()
+                    elif "R1" in _product:
+                        r1_select()
+                    elif "R2" in _product:
+                        r2_select()
+                    elif "R3" in _product:
+                        r3_select()
+                    elif "R4" in _product:
+                        r4_select()
+                    elif "R5" in _product:
+                        r5_select()
+                    elif "B" in _product:
+                        b_select()
+
+            except (AttributeError, IndexError):
+                pass
+
+
     def control_database():
         try:
             LabPar.Automatic = True
@@ -76,8 +129,8 @@ try:
         if os.path.exists(control_path):
             files = os.listdir(control_path)
             for file in files:
-                if file.endswith(str(SensorRunNumber.get()) + ".BMP") or\
-                        file.endswith(str(SensorRunNumber.get()) + ".dat"):
+                if (file.endswith(str(SensorRunNumber.get()) + ".BMP") and CheckS.var.get()) or\
+                        (file.endswith(str(SensorRunNumber.get()) + ".dat") and CheckM.var.get()):
                     return True
             return False
         else:
@@ -307,7 +360,10 @@ try:
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-                pag.alert("You must write unique serial number of sensor!", "Message")
+                pag.alert("You must write unique serial number of sensor!\n\n "
+                          "Serial number in the config file is the same as serial number in text box.", "Message")
+            elif len(NameOfSensor.get()) != 14 and (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != ""):
+                pag.alert("Serial number must have 14 characters!", "Message")
             elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and \
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
@@ -334,7 +390,8 @@ try:
                     ProductType.delete(0, END)
                     sensorBatch[NumberOfSensor] = SensorBatch.get()
                     SensorBatch.delete(0, END)
-                    sensorWafer[NumberOfSensor] = SensorWafer.get()
+                    _wafer = ''.join(i for i in SensorWafer.get() if i.isdigit())
+                    sensorWafer[NumberOfSensor] = "{:0>5d}".format(int(_wafer))
                     SensorWafer.delete(0, END)
                     nameSensor[NumberOfSensor] = NameOfSensor.get()
                     NameOfSensor.delete(0, END)
@@ -430,7 +487,10 @@ try:
                     and sType[NumberOfSensor] != "E":
                 pag.alert("You must choice at least one possibility!", "Message")
             elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-                pag.alert("You must write unique serial number of sensor!", "Message")
+                pag.alert("You must write unique serial number of sensor!\n\n "
+                          "Serial number in the config file is the same as serial number in text box.", "Message")
+            elif len(NameOfSensor.get()) != 14 and (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != ""):
+                pag.alert("Serial number must have 14 characters!", "Message")
             elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and \
                     ((not SensorRunNumber.get().isdigit())
                      or int(SensorRunNumber.get()) < 1 or int(SensorRunNumber.get()) > 999):
@@ -457,7 +517,8 @@ try:
                     ProductType.delete(0, END)
                     sensorBatch[NumberOfSensor] = SensorBatch.get()
                     SensorBatch.delete(0, END)
-                    sensorWafer[NumberOfSensor] = SensorWafer.get()
+                    _wafer = ''.join(i for i in SensorWafer.get() if i.isdigit())
+                    sensorWafer[NumberOfSensor] = "{:0>5d}".format(int(_wafer))
                     SensorWafer.delete(0, END)
                     nameSensor[NumberOfSensor] = NameOfSensor.get()
                     NameOfSensor.delete(0, END)
@@ -559,7 +620,7 @@ try:
 
         if if_bad_pos():
             change_sensor(NumberOfSensor)
-            if NumberOfSensor >= 8:
+            if not control_next_start():
                 start()
             else:
                 pre_start()
@@ -664,7 +725,7 @@ try:
         global NumberOfSensor
         if if_bad_pos():
             change_sensor(NumberOfSensor)
-            if NumberOfSensor >= 8:
+            if not control_next_start():
                 start()
             else:
                 pre_start()
@@ -672,7 +733,10 @@ try:
                 and sType[NumberOfSensor] != "E":
             pag.alert("You must choice at least one possibility!", "Message")
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-            pag.alert("You must write unique serial number of sensor!", "Message")
+            pag.alert("You must write unique serial number of sensor!\n\n "
+                      "Serial number in the config file is the same as serial number in text box.", "Message")
+        elif len(NameOfSensor.get()) != 14 and (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != ""):
+            pag.alert("Serial number must have 14 characters!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
                                                                                  or int(SensorRunNumber.get()) < 1
                                                                                  or int(SensorRunNumber.get()) > 999):
@@ -706,7 +770,8 @@ try:
             ProductType.delete(0, END)
             sensorBatch[NumberOfSensor] = SensorBatch.get()
             SensorBatch.delete(0, END)
-            sensorWafer[NumberOfSensor] = SensorWafer.get()
+            _wafer = ''.join(i for i in SensorWafer.get() if i.isdigit())
+            sensorWafer[NumberOfSensor] = "{:0>5d}".format(int(_wafer))
             SensorWafer.delete(0, END)
             nameSensor[NumberOfSensor] = NameOfSensor.get()
             NameOfSensor.delete(0, END)
@@ -910,7 +975,10 @@ try:
         elif sType[NumberOfSensor] == "":
             pag.alert("You must choice type of sensor!", "Message")
         elif NameOfSensor.get() == dNameSensor[NumberOfSensor] and sType[NumberOfSensor] != "E":
-            pag.alert("You must write unique serial number of sensor!", "Message")
+            pag.alert("You must write unique serial number of sensor!\n\n "
+                      "Serial number in the config file is the same as serial number in text box.", "Message")
+        elif len(NameOfSensor.get()) != 14 and (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != ""):
+            pag.alert("Serial number must have 14 characters!", "Message")
         elif (sType[NumberOfSensor] != "E" and sType[NumberOfSensor] != "") and ((not SensorRunNumber.get().isdigit())
                                                                                  or int(SensorRunNumber.get()) < 1
                                                                                  or int(SensorRunNumber.get()) > 999):
@@ -935,7 +1003,8 @@ try:
             ProductType.delete(0, END)
             sensorBatch[NumberOfSensor] = SensorBatch.get()
             SensorBatch.delete(0, END)
-            sensorWafer[NumberOfSensor] = SensorWafer.get()
+            _wafer = ''.join(i for i in SensorWafer.get() if i.isdigit())
+            sensorWafer[NumberOfSensor] = "{:0>5d}".format(int(_wafer))
             SensorWafer.delete(0, END)
             nameSensor[NumberOfSensor] = NameOfSensor.get()
             NameOfSensor.delete(0, END)
@@ -1151,6 +1220,8 @@ try:
     TypeMenu.grid()
     TypeMenu.menu = Menu(TypeMenu, tearoff=1)
     TypeMenu["menu"] = TypeMenu.menu
+    NameOfSensor.bind("<Leave>", sensor_database)
+    NameOfSensor.bind("<Enter>", name_of_sensor_enter_cursor)
 
     if holderType[0] == 1:
         TypeMenu.menu.add_command(command=r0_select, image=Img.R0)

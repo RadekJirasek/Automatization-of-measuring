@@ -39,6 +39,8 @@ from requests import get as rq_get
 # Bookmark for downloading files from database
 import matplotlib.pyplot as plt
 # Bokmark for creating plots
+import pandas as pd
+# Bookmark for work with data structures
 
 pag.FAILSAFE = False
 SMS = tkinter.Tk()
@@ -72,6 +74,7 @@ NumberOfSensor = 0  # Actual number of measured sensor.
 defaultRepetition = 0  # Number of repetition solving of one problem in a row.
 error = 0  # Variable of error system (if error = 0, everything is ok; error = 1, problem is in start segment;
 # error = 2, problem is process loop.)
+databaseError = 0  # Variable for saving failed attempts with database of sensors.
 processError = 0  # Variable for temporary error of processing (0 = all is ok, 1 = problem).
 sType = ["", "", "", "", "", "", "", "", ""]  # Array of variables for types of sensors.
 productType = ["", "", "", "", "", "", "", "", ""]  # Array of variables for type of prodution type (A12EC, etc...).
@@ -413,6 +416,14 @@ with open(programPath + "config.txt", 'r') as f:
     f.close()
     inc_progress(34)
 
+try:
+    df = pd.read_csv(programPath + "components.csv", skiprows=1)
+    np.array(df.loc[df['serialNumber'] == "test"]['type'])
+except:
+    pag.alert("Program can't update data from database of sensors. \n\n" + traceback.format_exc(), "Alert")
+
+inc_progress(35)
+
 
 class Img:
     em = ImageTk.PhotoImage(Image.open(programPath + "screens\\em.png"))
@@ -420,13 +431,13 @@ class Img:
     R1 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1_.png"))
     R2 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2_.png"))
     R3 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R3_.png"))
-    inc_progress(38)
+    inc_progress(39)
     R4 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R4_.png"))
     R5 = ImageTk.PhotoImage(Image.open(programPath + "screens\\R5_.png"))
     B = ImageTk.PhotoImage(Image.open(programPath + "screens\\B_.png"))
     E = ImageTk.PhotoImage(Image.open(programPath + "screens\\E.png"))
     R0L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R0L.png"))
-    inc_progress(42)
+    inc_progress(43)
     R1L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R1L.png"))
     R2L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R2L.png"))
     R3L = ImageTk.PhotoImage(Image.open(programPath + "screens\\R3L.png"))

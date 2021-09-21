@@ -160,7 +160,11 @@ def default():
     control_language()
     # ↑ Switch to eng keyboard if it doesn't.
 
-    if defaultRepetition < 3:
+    if defaultRepetition < 4:
+        if defaultRepetition == 2:
+            time.sleep(60*2)
+            save_log("\n" + datetime.datetime.now().strftime("%y-%m-%d %H:%M:%S")
+                     + "| Program has been gone to sleep for 2 minutes, because system don't respond.")
         defaultRepetition = defaultRepetition + 1
         try:
             pag.screenshot(programPath + "Error Screenshots\\"
@@ -249,7 +253,7 @@ def default():
                  "| It seems that system has been successfully reset by 'default function'.")
     else:
         raise WaitError("Error has been occurred in 'default' function.\n"
-                        "The program has failed to solve the problem even three times in a row.")
+                        "The program has failed to solve the problem even four times in a row.")
 
 # ↑ Set computer to default (know) position - mm3d program.
 
@@ -875,7 +879,7 @@ def change_sensor(number_of_sensor=0):
                     or nameSensor[nn] == "" or pSensor[nn] == 0:
                 continue
             bad_pos += 1
-        if bad_pos == 0:
+        if bad_pos == 1 or bad_pos == 0:
             continue_message = 'START MEASURING'
             NumberOfSensor = 9
         else:
@@ -906,6 +910,13 @@ def change_sensor(number_of_sensor=0):
         if ch_s_confirm == 'edit sensor settings':
             NumberOfSensor = n
             break
+
+
+def control_next_start():
+    if NumberOfSensor >= 8:
+        return False
+    else:
+        return True
 
 
 def check_running():
