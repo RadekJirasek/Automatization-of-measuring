@@ -1146,7 +1146,8 @@ def start():
                 ControlPar.Vdis[NumberOfSensor] = aps_actual_points[3] - aps_nominal_points[3]
                 ControlPar.Angle[NumberOfSensor] = aps_actual_angle - aps_nominal_angle
 
-                if not (LimitDistance.Phi[0] < ControlPar.Angle[NumberOfSensor] < LimitDistance.Phi[1]) \
+                if not (getattr(LimitDistance, "Phi_" + sType[NumberOfSensor])[0] < ControlPar.Angle[NumberOfSensor]
+                        < getattr(LimitDistance, "Phi_" + sType[NumberOfSensor])[1]) \
                         or not(LimitDistance.RightD[0] < ControlPar.Hdis[NumberOfSensor] < LimitDistance.RightD[1]) \
                         or not(LimitDistance.BottomD[0] < ControlPar.Vdis[NumberOfSensor] < LimitDistance.BottomD[1]):
                     sensorPosition[NumberOfSensor] = 0

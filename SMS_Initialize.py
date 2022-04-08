@@ -121,7 +121,12 @@ class LabPar:
 
 
 class LimitDistance:
-    Phi = [0.0, 0.0]  # Limit of automatic position system (APS) of sensor for angle phi.
+    Phi_R0 = [0.0, 0.0]  # Limit of automatic position system (APS) of sensor for angle phi.
+    Phi_R1 = [0.0, 0.0]
+    Phi_R2 = [0.0, 0.0]
+    Phi_R3 = [0.0, 0.0]
+    Phi_R4 = [0.0, 0.0]
+    Phi_R5 = [0.0, 0.0]
     RightD = [0.0, 0.0]  # Limit of distance between corner of sensor and vertical edge of holder in APS.
     BottomD = [0.0, 0.0]  # Limit of distance between corner of sensor and horizontal edge of holder in APS.
 
@@ -196,7 +201,12 @@ with open(programPath + "config.txt", 'r') as f:
     programPathB = ""
     instituteB = ""
     versionB = ""
-    rPhiB = ""
+    r0PhiB = ""
+    r1PhiB = ""
+    r2PhiB = ""
+    r3PhiB = ""
+    r4PhiB = ""
+    r5PhiB = ""
     max_sleep_timeB = ""
     rD1B = ["", ""]
     rD2B = ["", ""]
@@ -331,24 +341,34 @@ with open(programPath + "config.txt", 'r') as f:
                 sBB = info_from_txt(4)
                 inc_progress(26)
             elif c == 22:
-                rPhiB = info_from_txt(3)
+                r0PhiB = info_from_txt(3)
                 inc_progress(27)
             elif c == 23:
-                rD1B = info_from_txt(3)
+                r1PhiB = info_from_txt(3)
                 inc_progress(28)
             elif c == 24:
-                rD2B = info_from_txt(3)
-                inc_progress(29)
+                r2PhiB = info_from_txt(3)
             elif c == 25:
-                max_sleep_timeB += b
-                inc_progress(30)
+                r3PhiB = info_from_txt(3)
+                inc_progress(29)
             elif c == 26:
-                database_path_B += b
-                inc_progress(31)
+                r4PhiB = info_from_txt(3)
             elif c == 27:
-                database_temp_tag += b
-                inc_progress(32)
+                r5PhiB = info_from_txt(3)
+                inc_progress(30)
             elif c == 28:
+                rD1B = info_from_txt(3)
+            elif c == 29:
+                rD2B = info_from_txt(3)
+                inc_progress(31)
+            elif c == 30:
+                max_sleep_timeB += b
+            elif c == 31:
+                database_path_B += b
+                inc_progress(32)
+            elif c == 32:
+                database_temp_tag += b
+            elif c == 33:
                 database_hum_tag += b
                 inc_progress(33)
             # ↑ Different options of saving data according to sequence (variable 'c').
@@ -398,8 +418,18 @@ with open(programPath + "config.txt", 'r') as f:
     LimitSize.B[1] = int(sBB[1])
     LimitSize.B[2] = int(sBB[2])
     LimitSize.B[3] = int(sBB[3])
-    LimitDistance.Phi[0] = float(rPhiB[0])
-    LimitDistance.Phi[1] = float(rPhiB[1])
+    LimitDistance.Phi_R0[0] = float(r0PhiB[0])
+    LimitDistance.Phi_R0[1] = float(r0PhiB[1])
+    LimitDistance.Phi_R1[0] = float(r1PhiB[0])
+    LimitDistance.Phi_R1[1] = float(r1PhiB[1])
+    LimitDistance.Phi_R2[0] = float(r2PhiB[0])
+    LimitDistance.Phi_R2[1] = float(r2PhiB[1])
+    LimitDistance.Phi_R3[0] = float(r3PhiB[0])
+    LimitDistance.Phi_R3[1] = float(r3PhiB[1])
+    LimitDistance.Phi_R4[0] = float(r4PhiB[0])
+    LimitDistance.Phi_R4[1] = float(r4PhiB[1])
+    LimitDistance.Phi_R5[0] = float(r5PhiB[0])
+    LimitDistance.Phi_R5[1] = float(r5PhiB[1])
     LimitDistance.RightD[0] = float(rD1B[0])
     LimitDistance.RightD[1] = float(rD1B[1])
     LimitDistance.BottomD[0] = float(rD2B[0])

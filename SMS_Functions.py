@@ -728,7 +728,8 @@ def check_database():
 
 def write_accuracy(number_of_sensor):
     return "\nAngle of sensor: " + str(round(ControlPar.Angle[number_of_sensor], 3)) \
-           + " - limit interval is (" + str(LimitDistance.Phi[0]) + " ; " + str(LimitDistance.Phi[1]) \
+           + " - limit interval is (" + str((getattr(LimitDistance, "Phi_" + sType[NumberOfSensor]))[0]) + " ; " \
+           + str((getattr(LimitDistance, "Phi_" + sType[NumberOfSensor]))[1]) \
            + ")\nHorizontal deviation of sensor: " + str(round(ControlPar.Hdis[number_of_sensor], 3)) \
            + " - limit interval is (" + str(LimitDistance.RightD[0]) + " ; " + str(LimitDistance.RightD[1]) \
            + ")\nVertical deviation of sensor: " + str(round(ControlPar.Vdis[number_of_sensor], 3)) \
